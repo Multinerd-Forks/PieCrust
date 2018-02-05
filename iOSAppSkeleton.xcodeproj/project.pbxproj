@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		0701FE3C202830C90055AC19 /* iOSAppSkeleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0701FE3A202830C90055AC19 /* iOSAppSkeleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		072AE05D2028506B00D8DDAD /* iOSAppSkeletonAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 072AE05C2028506B00D8DDAD /* iOSAppSkeletonAssets.bundle */; };
+		075F3DF420287D1F00FC6F76 /* Borderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F3DF120287D1F00FC6F76 /* Borderable.swift */; };
+		075F3DF520287D1F00FC6F76 /* Shadowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F3DF220287D1F00FC6F76 /* Shadowable.swift */; };
+		075F3DF620287D1F00FC6F76 /* Shakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F3DF320287D1F00FC6F76 /* Shakeable.swift */; };
+		075F3DFB20287D3400FC6F76 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F3DF720287D3400FC6F76 /* SegmentedControl.swift */; };
+		075F3DFC20287D3400FC6F76 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F3DF820287D3400FC6F76 /* Button.swift */; };
+		075F3DFD20287D3400FC6F76 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F3DF920287D3400FC6F76 /* Label.swift */; };
+		075F3DFE20287D3400FC6F76 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F3DFA20287D3400FC6F76 /* TextField.swift */; };
 		077221C7202845310038E266 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077221C1202845310038E266 /* ConfettiView.swift */; };
 		077221C8202845310038E266 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077221C2202845310038E266 /* View.swift */; };
 		077221C9202845310038E266 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077221C4202845310038E266 /* NavigationController.swift */; };
@@ -22,6 +29,13 @@
 		0701FE3A202830C90055AC19 /* iOSAppSkeleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSAppSkeleton.h; sourceTree = "<group>"; };
 		0701FE3B202830C90055AC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		072AE05C2028506B00D8DDAD /* iOSAppSkeletonAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iOSAppSkeletonAssets.bundle; sourceTree = "<group>"; };
+		075F3DF120287D1F00FC6F76 /* Borderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Borderable.swift; sourceTree = "<group>"; };
+		075F3DF220287D1F00FC6F76 /* Shadowable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shadowable.swift; sourceTree = "<group>"; };
+		075F3DF320287D1F00FC6F76 /* Shakeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shakeable.swift; sourceTree = "<group>"; };
+		075F3DF720287D3400FC6F76 /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		075F3DF820287D3400FC6F76 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		075F3DF920287D3400FC6F76 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		075F3DFA20287D3400FC6F76 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		077221C1202845310038E266 /* ConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		077221C2202845310038E266 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		077221C4202845310038E266 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -73,11 +87,25 @@
 			path = Assets;
 			sourceTree = SOURCE_ROOT;
 		};
+		075F3DF020287D1F00FC6F76 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				075F3DF120287D1F00FC6F76 /* Borderable.swift */,
+				075F3DF220287D1F00FC6F76 /* Shadowable.swift */,
+				075F3DF320287D1F00FC6F76 /* Shakeable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		077221C0202845310038E266 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				077221C1202845310038E266 /* ConfettiView.swift */,
 				077221C2202845310038E266 /* View.swift */,
+				075F3DF820287D3400FC6F76 /* Button.swift */,
+				075F3DF920287D3400FC6F76 /* Label.swift */,
+				075F3DF720287D3400FC6F76 /* SegmentedControl.swift */,
+				075F3DFA20287D3400FC6F76 /* TextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +126,7 @@
 				072AE05B2028506B00D8DDAD /* Assets */,
 				0701FE3A202830C90055AC19 /* iOSAppSkeleton.h */,
 				0701FE3B202830C90055AC19 /* Info.plist */,
+				075F3DF020287D1F00FC6F76 /* Protocols */,
 				077221C3202845310038E266 /* Controllers */,
 				077221C0202845310038E266 /* Views */,
 				077221CE202845B10038E266 /* Extensions.swift */,
@@ -188,10 +217,17 @@
 			files = (
 				077221CB202845310038E266 /* ViewController.swift in Sources */,
 				077221CF202845B10038E266 /* Extensions.swift in Sources */,
+				075F3DFD20287D3400FC6F76 /* Label.swift in Sources */,
 				077221C8202845310038E266 /* View.swift in Sources */,
+				075F3DF420287D1F00FC6F76 /* Borderable.swift in Sources */,
+				075F3DFE20287D3400FC6F76 /* TextField.swift in Sources */,
 				077221CA202845310038E266 /* TabBarController.swift in Sources */,
+				075F3DF520287D1F00FC6F76 /* Shadowable.swift in Sources */,
 				077221C9202845310038E266 /* NavigationController.swift in Sources */,
+				075F3DF620287D1F00FC6F76 /* Shakeable.swift in Sources */,
+				075F3DFB20287D3400FC6F76 /* SegmentedControl.swift in Sources */,
 				077221C7202845310038E266 /* ConfettiView.swift in Sources */,
+				075F3DFC20287D3400FC6F76 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
