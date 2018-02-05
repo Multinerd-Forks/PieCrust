@@ -1,0 +1,19 @@
+PODS:
+  - iOSAppSkeleton (0.1):
+    - SnapKit (~> 4.0)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - iOSAppSkeleton (from `../`)
+
+EXTERNAL SOURCES:
+  iOSAppSkeleton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  iOSAppSkeleton: a05d4646061344d5c7e56dc6386a9269c7cc0fb4
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: c0600dd0bc8b52cd3f65e27185f6d93b8aaf3c00
+
+COCOAPODS: 1.4.0
