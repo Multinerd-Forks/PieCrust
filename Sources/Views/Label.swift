@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-open class Label: UILabel, Shakeable, Borderable {
+open class Label: UILabel, Shakeable, Borderable, Fadeable {
 
 	public convenience init (text: String? = "", textAlignment: NSTextAlignment = .natural, numberOfLines: Int = 1) {
 		self.init()
@@ -40,6 +40,16 @@ open class Label: UILabel, Shakeable, Borderable {
 	
 	open var preferredPadding: CGFloat {
 		return 20
+	}
+	
+	public var isEmpty: Bool {
+		guard let aText = text else { return true }
+		return aText.isEmpty
+	}
+	
+	public var trimmedText: String {
+		guard let aText = text else { return "" }
+		return aText.trimmingCharacters(in: .whitespacesAndNewlines)
 	}
 	
 }

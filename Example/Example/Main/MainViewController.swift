@@ -39,9 +39,15 @@ class MainViewController: ViewController {
 	override func keyboardWillHide(_ sender: Notification) {
 		mainView.handleKeyboardWillHide(sender)
 	}
-
+	
+	override func keyboardDidHide(_ sender: Notification) {
+		presentAlert(title: "Hello!", message: "Presenting alerts shouldn't be that difficult :)")
+	}
+	
 	@objc func didTapUpdateButton() {
-		guard let name = mainView.nameTextField.trimmedText, !name.isEmpty else {
+		let name = mainView.nameTextField.trimmedText
+		
+		guard !name.isEmpty else {
 			mainView.nameTextField.shake()
 			return
 		}

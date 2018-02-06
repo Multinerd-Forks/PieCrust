@@ -55,12 +55,7 @@ open class ConfettiView: View {
 		}
 	}
 	
-}
-
-// MARK: - Helpers
-private extension ConfettiView {
-	
-	func confetti(forColor color: UIColor) -> CAEmitterCell {
+	internal func confetti(forColor color: UIColor) -> CAEmitterCell {
 		let cell = CAEmitterCell()
 		cell.birthRate = intensity * 6
 		cell.lifetime = intensity * 12
@@ -81,4 +76,5 @@ private extension ConfettiView {
 		
 		return cell
 	}
+	
 }

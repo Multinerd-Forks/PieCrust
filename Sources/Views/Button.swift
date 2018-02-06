@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-open class Button: UIButton, Shakeable, Borderable {
+open class Button: UIButton, Shakeable, Borderable, Fadeable {
 	
 	public convenience init(type: UIButtonType = .custom, title: String? = nil, backgroundColor: UIColor? = .white) {
 		self.init(type: type)

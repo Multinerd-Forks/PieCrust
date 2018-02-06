@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 open class ViewController: UIViewController {
-
+	
 	override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 		
@@ -80,7 +80,7 @@ open class ViewController: UIViewController {
 	
 	@objc
 	open func keyboardDidChangeFrame(_ sender: Notification) {}
-
+	
 	deinit {
 		if shouldObserveKeyboardEvents {
 			removeKeyboardNotificationsObservers()
@@ -108,9 +108,52 @@ private extension ViewController {
 	
 }
 
-// MARK: - Methods
-private extension ViewController {
+// MARK: - Public methods
+public extension ViewController {
+	
+	@discardableResult
+	public func presentAlert(
+		title: String? = nil,
+		error: Error,
+		preferredStyle: UIAlertControllerStyle = .alert,
+		actions: [UIAlertAction] = [],
+		animated: Bool = true,
+		completion: (() -> Void)? = nil) -> UIAlertController {
+		
+		return presentAlert(title: title, message: error.localizedDescription,
+							preferredStyle: preferredStyle, actions: actions,
+							animated: animated, completion: completion)
+	}
+	
+	@discardableResult
+	public func presentAlert(
+		title: String? = nil,
+		message: String? = nil,
+		preferredStyle: UIAlertControllerStyle = .alert,
+		actions: [UIAlertAction] = [],
+		animated: Bool = true,
+		completion: (() -> Void)? = nil) -> UIAlertController {
+		
+		let alert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
+		
+		if actions.isEmpty {
+			let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+			alert.addAction(okAction)
+		}
+		
+		for action in actions {
+			alert.addAction(action)
+		}
+		
+		present(alert, animated: animated, completion: completion)
+		return alert
+	}
+	
+}
 
+// MARK: - Private methods
+private extension ViewController {
+	
 	func setTapToEndEditing() {
 		let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
 		view.addGestureRecognizer(tap)
@@ -119,9 +162,9 @@ private extension ViewController {
 }
 
 // MARK: - Keyboard
-extension ViewController {
+private extension ViewController {
 	
-	private func addKeyboardNotificationsObservers() {
+	func addKeyboardNotificationsObservers() {
 		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
 		NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow(_:)), name: .UIKeyboardDidShow, object: nil)
 		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
@@ -130,7 +173,7 @@ extension ViewController {
 		NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidChangeFrame(_:)), name: .UIKeyboardDidChangeFrame, object: nil)
 	}
 	
-	private func removeKeyboardNotificationsObservers() {
+	func removeKeyboardNotificationsObservers() {
 		NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
 		NotificationCenter.default.removeObserver(self, name: .UIKeyboardDidShow, object: nil)
 		NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)

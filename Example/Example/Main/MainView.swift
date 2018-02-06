@@ -64,6 +64,7 @@ class MainView: View {
 	}
 	
 	override func handleKeyboardWillShow(_ sender: Notification) {
+		updateButton.fadeIn()
 		nameTextField.snp.updateConstraints { make in
 			make.top.equalToSuperview().inset(preferredPadding * 2)
 		}
@@ -74,6 +75,7 @@ class MainView: View {
 	}
 	
 	override func handleKeyboardWillHide(_ sender: Notification) {
+		updateButton.fadeOut()
 		nameTextField.snp.updateConstraints { make in
 			make.top.equalToSuperview().inset(200)
 		}

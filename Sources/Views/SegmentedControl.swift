@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SegmentedControl: UISegmentedControl, Shakeable, Borderable {
+class SegmentedControl: UISegmentedControl, Shakeable, Borderable, Fadeable {
 
 	override public init(frame: CGRect) {
 		super.init(frame: frame)

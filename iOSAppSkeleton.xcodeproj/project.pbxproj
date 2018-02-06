@@ -21,7 +21,10 @@
 		077221C9202845310038E266 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077221C4202845310038E266 /* NavigationController.swift */; };
 		077221CA202845310038E266 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077221C5202845310038E266 /* TabBarController.swift */; };
 		077221CB202845310038E266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077221C6202845310038E266 /* ViewController.swift */; };
-		077221CF202845B10038E266 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077221CE202845B10038E266 /* Extensions.swift */; };
+		077C2D1F2029BF9600C6F6AE /* InternalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C2D1D2029BF9600C6F6AE /* InternalExtensions.swift */; };
+		077C2D202029BF9600C6F6AE /* PublicExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C2D1E2029BF9600C6F6AE /* PublicExtensions.swift */; };
+		077C2D222029C63100C6F6AE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C2D212029C63100C6F6AE /* WebViewController.swift */; };
+		077C2D242029C88800C6F6AE /* Fadeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C2D232029C88800C6F6AE /* Fadeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +44,10 @@
 		077221C4202845310038E266 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		077221C5202845310038E266 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		077221C6202845310038E266 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		077221CE202845B10038E266 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		077C2D1D2029BF9600C6F6AE /* InternalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalExtensions.swift; sourceTree = "<group>"; };
+		077C2D1E2029BF9600C6F6AE /* PublicExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicExtensions.swift; sourceTree = "<group>"; };
+		077C2D212029C63100C6F6AE /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		077C2D232029C88800C6F6AE /* Fadeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fadeable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				075F3DF120287D1F00FC6F76 /* Borderable.swift */,
+				077C2D232029C88800C6F6AE /* Fadeable.swift */,
 				075F3DF220287D1F00FC6F76 /* Shadowable.swift */,
 				075F3DF320287D1F00FC6F76 /* Shakeable.swift */,
 			);
@@ -116,20 +123,30 @@
 				077221C4202845310038E266 /* NavigationController.swift */,
 				077221C5202845310038E266 /* TabBarController.swift */,
 				077221C6202845310038E266 /* ViewController.swift */,
+				077C2D212029C63100C6F6AE /* WebViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		077C2D1C2029BF9600C6F6AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				077C2D1D2029BF9600C6F6AE /* InternalExtensions.swift */,
+				077C2D1E2029BF9600C6F6AE /* PublicExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		07A486ED2028368A0028148C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				077C2D1C2029BF9600C6F6AE /* Extensions */,
 				072AE05B2028506B00D8DDAD /* Assets */,
 				0701FE3A202830C90055AC19 /* iOSAppSkeleton.h */,
 				0701FE3B202830C90055AC19 /* Info.plist */,
 				075F3DF020287D1F00FC6F76 /* Protocols */,
 				077221C3202845310038E266 /* Controllers */,
 				077221C0202845310038E266 /* Views */,
-				077221CE202845B10038E266 /* Extensions.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -216,17 +233,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				077221CB202845310038E266 /* ViewController.swift in Sources */,
-				077221CF202845B10038E266 /* Extensions.swift in Sources */,
 				075F3DFD20287D3400FC6F76 /* Label.swift in Sources */,
+				077C2D1F2029BF9600C6F6AE /* InternalExtensions.swift in Sources */,
 				077221C8202845310038E266 /* View.swift in Sources */,
 				075F3DF420287D1F00FC6F76 /* Borderable.swift in Sources */,
 				075F3DFE20287D3400FC6F76 /* TextField.swift in Sources */,
 				077221CA202845310038E266 /* TabBarController.swift in Sources */,
 				075F3DF520287D1F00FC6F76 /* Shadowable.swift in Sources */,
+				077C2D202029BF9600C6F6AE /* PublicExtensions.swift in Sources */,
 				077221C9202845310038E266 /* NavigationController.swift in Sources */,
 				075F3DF620287D1F00FC6F76 /* Shakeable.swift in Sources */,
 				075F3DFB20287D3400FC6F76 /* SegmentedControl.swift in Sources */,
 				077221C7202845310038E266 /* ConfettiView.swift in Sources */,
+				077C2D242029C88800C6F6AE /* Fadeable.swift in Sources */,
+				077C2D222029C63100C6F6AE /* WebViewController.swift in Sources */,
 				075F3DFC20287D3400FC6F76 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
