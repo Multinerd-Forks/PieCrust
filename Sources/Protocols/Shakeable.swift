@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol Shakeable {
+public protocol Shakeable: class {
 	func shake()
 }
 

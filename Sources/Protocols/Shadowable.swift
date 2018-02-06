@@ -7,4 +7,4 @@
 
 import UIKit
 
-public protocol Shadowable {}
+public protocol Shadowable: class {}

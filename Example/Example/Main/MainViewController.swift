@@ -14,10 +14,6 @@ class MainViewController: ViewController {
 		return true
 	}
 	
-	override var shouldEndEditingOnTap: Bool {
-		return true
-	}
-	
 	override func loadView() {
 		view = MainView()
 	}
@@ -29,35 +25,13 @@ class MainViewController: ViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		mainView.updateButton.addTarget(self, action: #selector(didTapUpdateButton), for: .touchUpInside)
+		mainView.showCarListButton.addTarget(self, action: #selector(didTapShowCarListButton), for: .touchUpInside)
 	}
 
-	override func keyboardWillShow(_ sender: Notification) {
-		mainView.handleKeyboardWillShow(sender)
-	}
-	
-	override func keyboardWillHide(_ sender: Notification) {
-		mainView.handleKeyboardWillHide(sender)
-	}
-	
-	override func keyboardDidHide(_ sender: Notification) {
-		presentAlert(title: "Hello!", message: "Presenting alerts shouldn't be that difficult :)")
-	}
-	
-	@objc func didTapUpdateButton() {
-		let name = mainView.nameTextField.trimmedText
-		
-		guard !name.isEmpty else {
-			mainView.nameTextField.shake()
-			return
-		}
-		
-		mainView.welcomeLabel.text = "Welcome \(name)!"
-		mainView.nameTextField.resignFirstResponder()
-		mainView.startConfetti()
-		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-			self.mainView.stopConfetti()
-		}
+	@objc
+	func didTapShowCarListButton() {
+		let carsVC = CarsTableViewController(style: .grouped)
+		navigationController?.pushViewController(carsVC, animated: true)
 	}
 	
 }

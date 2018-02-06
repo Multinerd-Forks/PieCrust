@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol Borderable {
+public protocol Borderable: class {
 	var cornerRadius: CGFloat { get set }
 	var borderWidth: CGFloat { get set }
 	var borderColor: UIColor? { get set }

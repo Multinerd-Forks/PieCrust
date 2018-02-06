@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol Fadeable {
+public protocol Fadeable: class {
 	func fadeIn(withDuration duration: TimeInterval, delay: TimeInterval, completion: ((Bool) -> Void)?)
 	func fadeOut(withDuration duration: TimeInterval, delay: TimeInterval, completion: ((Bool) -> Void)?)
 }

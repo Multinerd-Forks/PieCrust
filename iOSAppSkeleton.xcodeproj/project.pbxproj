@@ -25,6 +25,12 @@
 		077C2D202029BF9600C6F6AE /* PublicExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C2D1E2029BF9600C6F6AE /* PublicExtensions.swift */; };
 		077C2D222029C63100C6F6AE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C2D212029C63100C6F6AE /* WebViewController.swift */; };
 		077C2D242029C88800C6F6AE /* Fadeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C2D232029C88800C6F6AE /* Fadeable.swift */; };
+		077C2D262029D8BD00C6F6AE /* GenericTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C2D252029D8BD00C6F6AE /* GenericTableController.swift */; };
+		077C2D332029F49800C6F6AE /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C2D322029F49800C6F6AE /* ImageView.swift */; };
+		07D93B542029FBC500A008CA /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D93B502029FBC500A008CA /* GenericTableViewCell.swift */; };
+		07D93B552029FBC500A008CA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D93B512029FBC500A008CA /* TableViewCell.swift */; };
+		07D93B562029FBC500A008CA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D93B532029FBC500A008CA /* CollectionViewCell.swift */; };
+		07D93B582029FC3800A008CA /* GenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D93B572029FC3800A008CA /* GenericCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,12 @@
 		077C2D1E2029BF9600C6F6AE /* PublicExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicExtensions.swift; sourceTree = "<group>"; };
 		077C2D212029C63100C6F6AE /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		077C2D232029C88800C6F6AE /* Fadeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fadeable.swift; sourceTree = "<group>"; };
+		077C2D252029D8BD00C6F6AE /* GenericTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableController.swift; sourceTree = "<group>"; };
+		077C2D322029F49800C6F6AE /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		07D93B502029FBC500A008CA /* GenericTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
+		07D93B512029FBC500A008CA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		07D93B532029FBC500A008CA /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		07D93B572029FC3800A008CA /* GenericCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +119,13 @@
 		077221C0202845310038E266 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				07D93B522029FBC500A008CA /* CollectionViewCells */,
+				07D93B4F2029FBC500A008CA /* TableViewCells */,
 				077221C1202845310038E266 /* ConfettiView.swift */,
 				077221C2202845310038E266 /* View.swift */,
 				075F3DF820287D3400FC6F76 /* Button.swift */,
 				075F3DF920287D3400FC6F76 /* Label.swift */,
+				077C2D322029F49800C6F6AE /* ImageView.swift */,
 				075F3DF720287D3400FC6F76 /* SegmentedControl.swift */,
 				075F3DFA20287D3400FC6F76 /* TextField.swift */,
 			);
@@ -121,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				077221C4202845310038E266 /* NavigationController.swift */,
+				077C2D252029D8BD00C6F6AE /* GenericTableController.swift */,
 				077221C5202845310038E266 /* TabBarController.swift */,
 				077221C6202845310038E266 /* ViewController.swift */,
 				077C2D212029C63100C6F6AE /* WebViewController.swift */,
@@ -150,6 +166,24 @@
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
+		};
+		07D93B4F2029FBC500A008CA /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				07D93B512029FBC500A008CA /* TableViewCell.swift */,
+				07D93B502029FBC500A008CA /* GenericTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		07D93B522029FBC500A008CA /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				07D93B532029FBC500A008CA /* CollectionViewCell.swift */,
+				07D93B572029FC3800A008CA /* GenericCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -232,19 +266,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077C2D332029F49800C6F6AE /* ImageView.swift in Sources */,
 				077221CB202845310038E266 /* ViewController.swift in Sources */,
 				075F3DFD20287D3400FC6F76 /* Label.swift in Sources */,
 				077C2D1F2029BF9600C6F6AE /* InternalExtensions.swift in Sources */,
+				07D93B582029FC3800A008CA /* GenericCollectionViewCell.swift in Sources */,
 				077221C8202845310038E266 /* View.swift in Sources */,
+				07D93B552029FBC500A008CA /* TableViewCell.swift in Sources */,
 				075F3DF420287D1F00FC6F76 /* Borderable.swift in Sources */,
 				075F3DFE20287D3400FC6F76 /* TextField.swift in Sources */,
 				077221CA202845310038E266 /* TabBarController.swift in Sources */,
+				077C2D262029D8BD00C6F6AE /* GenericTableController.swift in Sources */,
 				075F3DF520287D1F00FC6F76 /* Shadowable.swift in Sources */,
 				077C2D202029BF9600C6F6AE /* PublicExtensions.swift in Sources */,
 				077221C9202845310038E266 /* NavigationController.swift in Sources */,
+				07D93B542029FBC500A008CA /* GenericTableViewCell.swift in Sources */,
 				075F3DF620287D1F00FC6F76 /* Shakeable.swift in Sources */,
 				075F3DFB20287D3400FC6F76 /* SegmentedControl.swift in Sources */,
 				077221C7202845310038E266 /* ConfettiView.swift in Sources */,
+				07D93B562029FBC500A008CA /* CollectionViewCell.swift in Sources */,
 				077C2D242029C88800C6F6AE /* Fadeable.swift in Sources */,
 				077C2D222029C63100C6F6AE /* WebViewController.swift in Sources */,
 				075F3DFC20287D3400FC6F76 /* Button.swift in Sources */,
