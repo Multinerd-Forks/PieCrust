@@ -1,25 +1,30 @@
 //
-//  ViewController.swift
+//  TableViewController.swift
 //  iOSAppSkeleton
 //
-//  Created by Omar Albeik on 5.02.2018.
+//  Created by Omar Albeik on 7.02.2018.
 //  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import UIKit
-import SnapKit
 
-open class ViewController: UIViewController {
+open class TableViewController: UITableViewController {
 	
-	override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+	public override init(style: UITableViewStyle) {
+		super.init(style: style)
 		
 		setTabBarItem()
 	}
 	
+	override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+
+		setTabBarItem()
+	}
+
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
-		
+
 		setTabBarItem()
 	}
 	
@@ -90,7 +95,7 @@ open class ViewController: UIViewController {
 }
 
 // MARK: - UIGestureRecognizerDelegate
-extension ViewController: UIGestureRecognizerDelegate {
+extension TableViewController: UIGestureRecognizerDelegate {
 	
 	public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
 		return shouldPopinteractively
@@ -99,7 +104,7 @@ extension ViewController: UIGestureRecognizerDelegate {
 }
 
 // MARK: - Actions
-private extension ViewController {
+private extension TableViewController {
 	
 	@objc
 	func hideKeyboard() {
@@ -109,7 +114,7 @@ private extension ViewController {
 }
 
 // MARK: - Public methods
-public extension ViewController {
+public extension TableViewController {
 	
 	@discardableResult
 	public func presentAlert(
@@ -142,7 +147,7 @@ public extension ViewController {
 }
 
 // MARK: - Private methods
-private extension ViewController {
+private extension TableViewController {
 	
 	func setTapToEndEditing() {
 		let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
@@ -152,7 +157,7 @@ private extension ViewController {
 }
 
 // MARK: - Keyboard
-private extension ViewController {
+private extension TableViewController {
 	
 	func addKeyboardNotificationsObservers() {
 		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
@@ -173,4 +178,3 @@ private extension ViewController {
 	}
 	
 }
-

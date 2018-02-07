@@ -8,4 +8,4 @@
 
 import UIKit
 
-open class ImageView: UIImageView, Shakeable, Borderable, Fadeable, Pushable {}
+open class ImageView: UIImageView, Animatable, Borderable {}

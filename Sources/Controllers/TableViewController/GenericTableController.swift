@@ -8,15 +8,15 @@
 
 import UIKit
 
-open class GenericTableController<T: GenericTableViewCell<U>, U>: UITableViewController {
+open class GenericTableController<T: GenericTableViewCell<U>, U>: TableViewController {
 	
-	public override init(style: UITableViewStyle) {
+	override public init(style: UITableViewStyle) {
 		super.init(style: style)
 		
 		registerCell()
 	}
 	
-	public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+	override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 		
 		registerCell()

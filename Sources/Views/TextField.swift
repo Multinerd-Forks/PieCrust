@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-open class TextField: UITextField, Shakeable, Borderable, Fadeable {
+open class TextField: UITextField, Animatable, Borderable {
 
 	/// TextField text type.
 	///

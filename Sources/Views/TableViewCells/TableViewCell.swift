@@ -9,9 +9,9 @@
 import UIKit
 import SnapKit
 
-open class TableViewCell: UITableViewCell, Pushable {
+open class TableViewCell: UITableViewCell, Animatable {
 
-	public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+	override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
 		
 		setViews()

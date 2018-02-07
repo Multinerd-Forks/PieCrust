@@ -8,9 +8,9 @@
 
 import UIKit
 
-open class CollectionViewCell: UICollectionViewCell, Pushable {
+open class CollectionViewCell: UICollectionViewCell, Animatable {
 	
-	public override init(frame: CGRect) {
+	override public init(frame: CGRect) {
 		super.init(frame: frame)
 		
 		setViews()

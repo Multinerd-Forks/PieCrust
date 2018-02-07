@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-open class Label: UILabel, Shakeable, Borderable, Fadeable {
+open class Label: UILabel, Animatable, Borderable {
 
 	public convenience init (text: String? = "", textAlignment: NSTextAlignment = .natural, numberOfLines: Int = 1) {
 		self.init()

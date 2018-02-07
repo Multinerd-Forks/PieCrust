@@ -6,16 +6,17 @@
 //  Copyright © 2018 Mobilion. All rights reserved.
 //
 
+import UIKit
 import iOSAppSkeleton
 
 class MainView: View {
-
+	
 	lazy var showCarListButton: Button = {
 		var button = Button(title: "Show Car List", backgroundColor: .gray)
 		button.cornerRadius = 8
 		return button
 	}()
-
+	
 	override func setViews() {
 		super.setViews()
 		
@@ -23,8 +24,6 @@ class MainView: View {
 	}
 	
 	override func layoutViews() {
-		super.layoutViews()
-
 		showCarListButton.snp.makeConstraints { make in
 			make.center.equalToSuperview()
 			make.height.equalTo(showCarListButton.preferredHeight)

@@ -26,3 +26,29 @@ internal extension UIScreen {
 	}
 	
 }
+
+internal extension UIViewController {
+
+	@discardableResult
+	internal func alert(
+		title: String? = nil,
+		message: String? = nil,
+		preferredStyle: UIAlertControllerStyle = .alert,
+		actions: [UIAlertAction] = [],
+		animated: Bool = true) -> UIAlertController {
+		
+		let alert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
+		
+		if actions.isEmpty {
+			let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+			alert.addAction(okAction)
+		}
+		
+		for action in actions {
+			alert.addAction(action)
+		}
+		
+		return alert
+	}
+	
+}
