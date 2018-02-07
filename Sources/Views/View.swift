@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-open class View: UIView, Shakeable, Borderable, Fadeable {
+open class View: UIView, Shakeable, Borderable, Fadeable, Pushable {
 	
 	private lazy var confettiView: ConfettiView = {
 		return ConfettiView()

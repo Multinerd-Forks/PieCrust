@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-open class TableViewCell: UITableViewCell {
+open class TableViewCell: UITableViewCell, Pushable {
 
 	public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)

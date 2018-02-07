@@ -47,5 +47,13 @@ open class GenericTableController<T: GenericTableViewCell<U>, U>: UITableViewCon
 		cell.item = items[indexPath.section][indexPath.row]
 		return cell
 	}
+	
+	open override func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+		tableView.cellForRow(at: indexPath)?.isHighlighted = true
+	}
+	
+	open override func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+		tableView.cellForRow(at: indexPath)?.isHighlighted = false
+	}
 
 }

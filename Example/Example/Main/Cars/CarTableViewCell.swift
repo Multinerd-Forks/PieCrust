@@ -67,4 +67,10 @@ class CarTableViewCell: GenericTableViewCell<Car> {
 		
 	}
 	
+	override var isHighlighted: Bool {
+		didSet {
+			isHighlighted ? carImageView.pushIn() : carImageView.pushOut()
+		}
+	}
+	
 }

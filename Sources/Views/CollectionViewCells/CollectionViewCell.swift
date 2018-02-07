@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class CollectionViewCell: UICollectionViewCell {
+open class CollectionViewCell: UICollectionViewCell, Pushable {
 	
 	public override init(frame: CGRect) {
 		super.init(frame: frame)
