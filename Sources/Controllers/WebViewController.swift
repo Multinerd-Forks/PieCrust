@@ -11,16 +11,22 @@ import SnapKit
 
 open class WebViewController: ViewController {
 
+	/// Create WebViewController.
+	///
+	/// - Parameter url: url.
 	public convenience init(url: URL) {
 		self.init()
 		
 		self.url = url
 	}
 	
-	public var url: URL?
+	/// url.
+	open var url: URL?
 	
-	public let webView: UIWebView = {
+	/// Web view.
+	open lazy var webView: UIWebView = {
 		let view = UIWebView()
+		view.backgroundColor = .white
 		return view
 	}()
 	

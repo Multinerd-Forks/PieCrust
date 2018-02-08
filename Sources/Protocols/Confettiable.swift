@@ -8,11 +8,25 @@
 
 import UIKit
 
+/// Conform to Confettiable protocol to show confetti.
 public protocol Confettiable: class {
+
+	/// Show confetti.
+	///
+	/// - Parameters:
+	///   - duration: confetti duration in seconds.
+	///   - delay: confetti delay in seconds.
 	func showConfetti(duration: TimeInterval, delay: TimeInterval)
+
 }
 
- public extension Confettiable where Self: UIViewController {
+public extension Confettiable where Self: UIViewController {
+
+	/// Show confetti.
+	///
+	/// - Parameters:
+	///   - duration: confetti duration in seconds (default is 2).
+	///   - delay: confetti delay in seconds (default is 0).
 	func showConfetti(duration: TimeInterval = 2.0, delay: TimeInterval = 0) {
 		let confettiView = ConfettiView(frame: view.bounds)
 		confettiView.layer.zPosition = 100

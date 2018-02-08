@@ -9,7 +9,7 @@
 import iOSAppSkeleton
 
 class MainView: View {
-	
+
 	lazy var showCarListButton: LoadingButton = {
 		var button = LoadingButton(title: "Show Car List", backgroundColor: .gray, tintColor: .white)
 		button.cornerRadius = 8
@@ -18,7 +18,6 @@ class MainView: View {
 	
 	override func setViews() {
 		super.setViews()
-		
 		addSubview(showCarListButton)
 	}
 	

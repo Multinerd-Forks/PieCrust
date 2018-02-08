@@ -8,11 +8,47 @@
 
 import UIKit
 
+/// Conform to Animatable protocol to animate view.
 public protocol Animatable {
+
+	/// Fade in view.
+	///
+	/// - Parameters:
+	///   - duration: animation duration in seconds.
+	///   - delay: animation delay in seconds.
+	///   - completion: optional completion handler to run with animation finishes.
 	func fadeIn(withDuration duration: TimeInterval, delay: TimeInterval, completion: ((Bool) -> Void)?)
+
+	/// Fade out view.
+	///
+	/// - Parameters:
+	///   - duration: animation duration in seconds.
+	///   - delay: animation delay in seconds.
+	///   - completion: optional completion handler to run with animation finishes.
 	func fadeOut(withDuration duration: TimeInterval, delay: TimeInterval, completion: ((Bool) -> Void)?)
+
+	/// Pop in view.
+	///
+	/// - Parameters:
+	///   - duration: animation duration in seconds.
+	///   - delay: animation delay in seconds.
+	///   - completion: optional completion handler to run with animation finishes.
 	func popIn(withDuration duration: TimeInterval, delay: TimeInterval, completion: ((Bool) -> Void)?)
+
+	/// Pop out view.
+	///
+	/// - Parameters:
+	///   - duration: animation duration in seconds.
+	///   - delay: animation delay in seconds.
+	///   - completion: optional completion handler to run with animation finishes.
 	func popOut(withDuration duration: TimeInterval, delay: TimeInterval, completion: ((Bool) -> Void)?)
+
+	/// Shake view horizontally.
+	///
+	/// - Parameters:
+	///   - duration: animation duration in seconds.
+	///   - delay: animation delay in seconds.
+	///   - completion: optional completion handler to run with animation finishes.
 	func shake(withDuration duration: TimeInterval, delay: TimeInterval, completion: (() -> Void)?)
 }
 
@@ -42,7 +78,7 @@ public extension Animatable where Self: UIView {
 		}, completion: completion)
 	}
 	
-	/// SwifterSwift: Pop in view.
+	/// Pop in view.
 	///
 	/// - Parameters:
 	///   - duration: animation duration in seconds (default is 1 second).
@@ -54,7 +90,7 @@ public extension Animatable where Self: UIView {
 		}, completion: completion)
 	}
 	
-	/// SwifterSwift: Pop out view.
+	/// Pop out view.
 	///
 	/// - Parameters:
 	///   - duration: animation duration in seconds (default is 1 second).

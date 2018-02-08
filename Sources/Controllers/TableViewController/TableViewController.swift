@@ -39,8 +39,8 @@ open class TableViewController: UITableViewController, Alertable {
 			addKeyboardNotificationsObservers()
 		}
 		
-		navigationController?.interactivePopGestureRecognizer?.delegate = shouldPopinteractively ? self : nil
-		navigationController?.interactivePopGestureRecognizer?.isEnabled = shouldPopinteractively
+		navigationController?.interactivePopGestureRecognizer?.delegate = shouldPopInteractively ? self : nil
+		navigationController?.interactivePopGestureRecognizer?.isEnabled = shouldPopInteractively
 		
 		setGestureRecognizers()
 		becomeFirstResponder()
@@ -49,43 +49,76 @@ open class TableViewController: UITableViewController, Alertable {
 	override open var canBecomeFirstResponder: Bool {
 		return true
 	}
-	
+
+	/// Set navigation item here.
 	open func setNavigationItem() {}
-	
+
+	/// Set tab bar item here.
 	open func setTabBarItem() {}
-	
+
+	/// Set gesture recognizers here.
 	open func setGestureRecognizers() {}
 	
 	open var shouldEndEditingOnTap: Bool {
 		return false
 	}
-	
-	open var shouldPopinteractively: Bool {
+
+	/// Set to true to pop view controller interactively.
+	open var shouldPopInteractively: Bool {
 		return true
 	}
-	
+
+	/// Set to true to observe keyboard events from system.
 	open var shouldObserveKeyboardEvents: Bool {
 		return false
 	}
-	
+
+	/// controller's custom NavigationController (if applicable)
+	open var customNavigationController: NavigationController? {
+		return navigationController as? NavigationController
+	}
+
+	/// controller's custom TabBarController (if applicable)
+	open var customTabBarController: TabBarController? {
+		return tabBarController as? TabBarController
+	}
+
 	@objc
+	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillShow notification is prodcasted by system.
+	///
+	/// - Parameter sender: .UIKeyboardWillShow notification.
 	open func keyboardWillShow(_ sender: Notification) {}
 
 	@objc
+	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidShow notification is prodcasted by system.
+	///
+	/// - Parameter sender: .UIKeyboardDidShow notification.
 	open func keyboardDidShow(_ sender: Notification) {}
 
 	@objc
+	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillHide notification is prodcasted by system.
+	///
+	/// - Parameter sender: .UIKeyboardWillHide notification.
 	open func keyboardWillHide(_ sender: Notification) {}
 
 	@objc
+	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidHide notification is prodcasted by system.
+	///
+	/// - Parameter sender: .UIKeyboardDidHide notification.
 	open func keyboardDidHide(_ sender: Notification) {}
 
 	@objc
+	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillChangeFrame notification is prodcasted by system.
+	///
+	/// - Parameter sender: .UIKeyboardWillChangeFrame notification.
 	open func keyboardWillChangeFrame(_ sender: Notification) {}
 
 	@objc
+	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidChangeFrame notification is prodcasted by system.
+	///
+	/// - Parameter sender: .UIKeyboardDidChangeFrame notification.
 	open func keyboardDidChangeFrame(_ sender: Notification) {}
-	
+
 	deinit {
 		if shouldObserveKeyboardEvents {
 			removeKeyboardNotificationsObservers()
@@ -98,12 +131,12 @@ open class TableViewController: UITableViewController, Alertable {
 extension TableViewController: UIGestureRecognizerDelegate {
 	
 	public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-		return shouldPopinteractively
+		return shouldPopInteractively
 	}
 	
 }
 
-// MARK: - Actions
+// MARK: - Private actions
 private extension TableViewController {
 	
 	@objc
@@ -123,7 +156,7 @@ private extension TableViewController {
 	
 }
 
-// MARK: - Keyboard
+// MARK: - Keyboard helpers
 private extension TableViewController {
 	
 	func addKeyboardNotificationsObservers() {

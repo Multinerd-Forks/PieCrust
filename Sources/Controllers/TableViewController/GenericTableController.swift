@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Generic TableController.
 open class GenericTableController<T: GenericTableViewCell<U>, U>: TableViewController {
 	
 	override public init(style: UITableViewStyle) {
@@ -28,6 +29,7 @@ open class GenericTableController<T: GenericTableViewCell<U>, U>: TableViewContr
 		registerCell()
 	}
 	
+	/// Generic items array.
 	open var items: [[U]] = [[]]
 	
 	private func registerCell() {

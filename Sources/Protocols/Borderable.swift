@@ -7,14 +7,22 @@
 
 import UIKit
 
+/// Conform to Borderable protocol to set border reloated properties for views.
 public protocol Borderable: class {
+
+	/// View corner radius.
 	var cornerRadius: CGFloat { get set }
+
+	/// View border width.
 	var borderWidth: CGFloat { get set }
+
+	/// View border color.
 	var borderColor: UIColor? { get set }
 }
 
 public extension Borderable where Self: UIView {
-	
+
+	/// View corner radius.
 	public var cornerRadius: CGFloat {
 		get {
 			return layer.cornerRadius
@@ -23,7 +31,8 @@ public extension Borderable where Self: UIView {
 			layer.cornerRadius = newValue
 		}
 	}
-	
+
+	/// View border width.
 	public var borderWidth: CGFloat {
 		get {
 			return layer.borderWidth
@@ -32,7 +41,8 @@ public extension Borderable where Self: UIView {
 			layer.borderWidth = newValue
 		}
 	}
-	
+
+	/// View border color.
 	public var borderColor: UIColor? {
 		get {
 			guard let color = layer.borderColor else { return nil }

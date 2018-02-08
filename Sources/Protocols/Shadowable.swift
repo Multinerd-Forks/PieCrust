@@ -7,4 +7,5 @@
 
 import UIKit
 
+/// Conform to Shadowable protocol to set shadow related propertoes for views.
 public protocol Shadowable: class {}

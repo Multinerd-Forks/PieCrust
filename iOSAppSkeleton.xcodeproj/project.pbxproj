@@ -154,14 +154,14 @@
 		0711C5C1202C6CA0008BF833 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0711C5C2202C6CA0008BF833 /* ActivityIndicatorView.swift */,
-				0711C5C4202C6CA0008BF833 /* Buttons */,
-				0711C5C7202C6CA0008BF833 /* CollectionViewCells */,
 				0711C5F0202C7122008BF833 /* Views */,
+				0711C5CF202C6CA0008BF833 /* TableViewCells */,
+				0711C5C7202C6CA0008BF833 /* CollectionViewCells */,
+				0711C5C4202C6CA0008BF833 /* Buttons */,
+				0711C5C2202C6CA0008BF833 /* ActivityIndicatorView.swift */,
 				0711C5CC202C6CA0008BF833 /* Label.swift */,
 				0711C5CD202C6CA0008BF833 /* SegmentedControl.swift */,
 				0711C5CE202C6CA0008BF833 /* Switch.swift */,
-				0711C5CF202C6CA0008BF833 /* TableViewCells */,
 				0711C5D2202C6CA0008BF833 /* TextField.swift */,
 			);
 			path = Views;
