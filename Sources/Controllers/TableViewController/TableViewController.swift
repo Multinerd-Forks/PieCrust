@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class TableViewController: UITableViewController {
+open class TableViewController: UITableViewController, Alertable {
 	
 	public override init(style: UITableViewStyle) {
 		super.init(style: style)
@@ -109,39 +109,6 @@ private extension TableViewController {
 	@objc
 	func hideKeyboard() {
 		view.endEditing(true)
-	}
-	
-}
-
-// MARK: - Public methods
-public extension TableViewController {
-	
-	@discardableResult
-	public func presentAlert(
-		title: String? = nil,
-		error: Error,
-		preferredStyle: UIAlertControllerStyle = .alert,
-		actions: [UIAlertAction] = [],
-		animated: Bool = true,
-		completion: (() -> Void)? = nil) -> UIAlertController {
-		
-		return presentAlert(title: title, message: error.localizedDescription,
-							preferredStyle: preferredStyle, actions: actions,
-							animated: animated, completion: completion)
-	}
-	
-	@discardableResult
-	public func presentAlert(
-		title: String? = nil,
-		message: String? = nil,
-		preferredStyle: UIAlertControllerStyle = .alert,
-		actions: [UIAlertAction] = [],
-		animated: Bool = true,
-		completion: (() -> Void)? = nil) -> UIAlertController {
-		
-		let alert = self.alert(title: title, message: message, preferredStyle: preferredStyle, actions: actions, animated: animated)
-		present(alert, animated: animated, completion: completion)
-		return alert
 	}
 	
 }

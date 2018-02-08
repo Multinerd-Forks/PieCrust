@@ -28,6 +28,7 @@
 		077C2D332029F49800C6F6AE /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C2D322029F49800C6F6AE /* ImageView.swift */; };
 		07B9DA96202B285A006061B2 /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9DA95202B285A006061B2 /* BarButtonItem.swift */; };
 		07B9DA98202B2966006061B2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9DA97202B2966006061B2 /* TableViewController.swift */; };
+		07BCBCFC202C36D900BF2F17 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BCBCFB202C36D900BF2F17 /* Alertable.swift */; };
 		07D93B542029FBC500A008CA /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D93B502029FBC500A008CA /* GenericTableViewCell.swift */; };
 		07D93B552029FBC500A008CA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D93B512029FBC500A008CA /* TableViewCell.swift */; };
 		07D93B562029FBC500A008CA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D93B532029FBC500A008CA /* CollectionViewCell.swift */; };
@@ -58,6 +59,7 @@
 		077C2D322029F49800C6F6AE /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		07B9DA95202B285A006061B2 /* BarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItem.swift; sourceTree = "<group>"; };
 		07B9DA97202B2966006061B2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		07BCBCFB202C36D900BF2F17 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 		07D93B502029FBC500A008CA /* GenericTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
 		07D93B512029FBC500A008CA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		07D93B532029FBC500A008CA /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				075F3DF120287D1F00FC6F76 /* Borderable.swift */,
 				071E4419202B441400C47944 /* Animatable.swift */,
 				075F3DF220287D1F00FC6F76 /* Shadowable.swift */,
+				07BCBCFB202C36D900BF2F17 /* Alertable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				077C2D1F2029BF9600C6F6AE /* InternalExtensions.swift in Sources */,
 				07D93B582029FC3800A008CA /* GenericCollectionViewCell.swift in Sources */,
 				07B9DA96202B285A006061B2 /* BarButtonItem.swift in Sources */,
+				07BCBCFC202C36D900BF2F17 /* Alertable.swift in Sources */,
 				077221C8202845310038E266 /* View.swift in Sources */,
 				07D93B552029FBC500A008CA /* TableViewCell.swift in Sources */,
 				075F3DF420287D1F00FC6F76 /* Borderable.swift in Sources */,
