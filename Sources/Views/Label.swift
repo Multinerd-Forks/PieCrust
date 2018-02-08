@@ -8,14 +8,32 @@
 import UIKit
 import SnapKit
 
+/// Custom UILabel.
 open class Label: UILabel, Animatable, Borderable {
 
-	public convenience init (text: String? = "", textAlignment: NSTextAlignment = .natural, numberOfLines: Int = 1) {
+	/// Create label and set its properties in one line.
+	///
+	/// - Parameters:
+	///   - text: label text (default is "").
+	///   - textAlignment: label text alignment (default is .natural).
+	///   - numberOfLines: number of lines (default is 1).
+	///   - backgroundColor: label background color (default is .white).
+	///   - textColor: label text color (defaul is .black).
+	///   - font: label font (defaul is system font).
+	public convenience init (text: String? = "",
+							 textAlignment: NSTextAlignment = .natural,
+							 numberOfLines: Int = 1,
+							 backgroundColor: UIColor = .white,
+							 textColor: UIColor = .black,
+							 font: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)) {
 		self.init()
 		
 		self.text = text
 		self.textAlignment = textAlignment
 		self.numberOfLines = numberOfLines
+		self.backgroundColor = backgroundColor
+		self.textColor = textColor
+		self.font = font
 	}
 	
 	override public init(frame: CGRect) {
@@ -31,25 +49,26 @@ open class Label: UILabel, Animatable, Borderable {
 		setViews()
 		layoutViews()
 	}
-	
-	open func setViews() {
-		backgroundColor = .white
-	}
-	
+
+	/// Use this method to set and add your custom views.
+	open func setViews() {}
+
+	/// Use this method to layout your custom views using SnapKit.
 	open func layoutViews() {}
-	
+
+	/// Preferred padding for autolayout (default is 20).
 	open var preferredPadding: CGFloat {
-		return 20
+		return 20.0
 	}
-	
+
+	/// Check if label trimmed text is empty.
 	public var isEmpty: Bool {
-		guard let aText = text else { return true }
-		return aText.isEmpty
+		return trimmedText.isEmpty
 	}
-	
+
+	/// Label text trimming whitespaces and new lines.
 	public var trimmedText: String {
-		guard let aText = text else { return "" }
-		return aText.trimmingCharacters(in: .whitespacesAndNewlines)
+		return text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 	}
 	
 }

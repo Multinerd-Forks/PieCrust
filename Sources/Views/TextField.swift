@@ -8,11 +8,14 @@
 import UIKit
 import SnapKit
 
+/// Custom UITextField.
 open class TextField: UITextField, Animatable, Borderable {
 
 	/// TextField text type.
 	///
 	/// - emailAddress: TextField is used to enter email addresses.
+	/// - phoneNumber: TextField is used to enter phone numbers.
+	/// - decimal: TextField is used to enter decimal numbers.
 	/// - password: TextField is used to enter passwords.
 	/// - generic: TextField is used to enter generic text.
 	public enum TextType {
@@ -23,13 +26,32 @@ open class TextField: UITextField, Animatable, Borderable {
 		case generic
 	}
 	
-	public convenience init(placeholder: String? = "", textAlignment: NSTextAlignment = .center, backgroundColor: UIColor? = .white, textType: TextType = .generic) {
+	/// Create text field and set its properties in one line.
+	///
+	/// - Parameters:
+	///   - placeholder: text field placeholder text (default is "").
+	///   - text: text field text (default is "").
+	///   - textAlignment: text field text alignment (default is .natural).
+	///   - textType: text field text type (default is .generic).
+	///   - backgroundColor: text field background color (default is .white).
+	///   - textColor: text field text color (default is .black).
+	///   - font: text field font (default is system font).
+	public convenience init(placeholder: String? = "",
+							text: String = "",
+							textAlignment: NSTextAlignment = .natural,
+							textType: TextType = .generic,
+							backgroundColor: UIColor? = .white,
+							textColor: UIColor = .black,
+							font: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)) {
 		self.init()
 		
 		self.placeholder = placeholder
+		self.text = text
 		self.textAlignment = textAlignment
-		self.backgroundColor = backgroundColor
 		self.textType = textType
+		self.backgroundColor = backgroundColor
+		self.textColor = textColor
+		self.font = font
 	}
 	
 	override public init(frame: CGRect) {
@@ -45,32 +67,36 @@ open class TextField: UITextField, Animatable, Borderable {
 		setViews()
 		layoutViews()
 	}
-	
+
+	/// Use this method to set and add your custom views.
 	open func setViews() {
 		backgroundColor = .white
-		textType = .generic
 	}
-	
+
+	/// Use this method to layout your custom views using SnapKit.
 	open func layoutViews() {}
-	
+
+	/// Preferred padding for autolayout (default is 20).
 	open var preferredPadding: CGFloat {
-		return 20
+		return 20.0
 	}
 	
+	/// Preferred height for autolayout (default is 42 for small screens and 48 for other screen sizes).
 	open var preferredHeight: CGFloat {
-		return UIScreen.main.isSmall ? 42 : 48
+		return UIScreen.main.isSmall ? 42.0 : 48.0
 	}
 	
+	/// Check if text field trimmed text is empty.
 	public var isEmpty: Bool {
-		guard let aText = text else { return true }
-		return aText.isEmpty
+		return trimmedText.isEmpty
 	}
 	
+	/// Text field text trimming whitespaces and new lines.
 	public var trimmedText: String {
-		guard let aText = text else { return "" }
-		return aText.trimmingCharacters(in: .whitespacesAndNewlines)
+		return text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 	}
 	
+	/// Text field text as email address (if applicable).
 	public var emailAddress: String? {
 		let emailText = trimmedText
 		guard !emailText.isEmpty else { return nil }
@@ -80,11 +106,12 @@ open class TextField: UITextField, Animatable, Borderable {
 		return emailText
 	}
 	
+	/// Check if text field text is a valid email address.
 	public var hasValidEmail: Bool {
 		return emailAddress != nil
 	}
 	
-	/// Set TextField for common text types.
+	/// Sets TextField for common text types.
 	public var textType: TextType = .generic {
 		didSet {
 			isSecureTextEntry = textType == .password

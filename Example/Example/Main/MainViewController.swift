@@ -25,15 +25,19 @@ class MainViewController: ViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		mainView.showCarListButton.addTarget(self, action: #selector(didTapShowCarListButton), for: .touchUpInside)
+		mainView.showCarListButton.addTarget(self, action: #selector(didTapShowCarListButton(sender:)), for: .touchUpInside)
 	}
 	
 	@objc
-	func didTapShowCarListButton() {
-		customNavigationController?.showConfetti()
+	func didTapShowCarListButton(sender: LoadingButton) {
+		sender.isLoading = true
+		DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+			sender.isLoading = false
 
-		let carsVC = CarsTableViewController(style: .grouped)
-		navigationController?.pushViewController(carsVC, animated: true)
+			let carsVC = CarsTableViewController(style: .grouped)
+			self.navigationController?.pushViewController(carsVC, animated: true)
+		}
+
 	}
 	
 }

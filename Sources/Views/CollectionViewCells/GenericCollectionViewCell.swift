@@ -8,8 +8,10 @@
 
 import UIKit
 
+/// Generic CollectionViewCell.
 open class GenericCollectionViewCell<T>: CollectionViewCell {
-	
+
+	/// Generic item, override this to set your UI.
 	open var item: T!
 	
 }

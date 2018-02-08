@@ -9,7 +9,8 @@
 import UIKit
 import SnapKit
 
-open class TableViewCell: UITableViewCell, Animatable {
+/// Custom UITableViewCell.
+open class TableViewCell: UITableViewCell, Animatable, Borderable {
 
 	override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -24,16 +25,19 @@ open class TableViewCell: UITableViewCell, Animatable {
 		setViews()
 		layoutViews()
 	}
-	
+
+	/// Use this method to set and add your custom views.
 	open func setViews() {
 		backgroundColor = .white
 		selectionStyle = .none
 	}
-	
+
+	/// Use this method to layout your custom views using SnapKit.
 	open func layoutViews() {}
-	
+
+	/// Preferred padding for autolayout (default is 20).
 	open var preferredPadding: CGFloat {
-		return 20
+		return 20.0
 	}
 
 }

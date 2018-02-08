@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import SnapKit
 
-open class CollectionViewCell: UICollectionViewCell, Animatable {
+/// Custom UICollectionViewCell.
+open class CollectionViewCell: UICollectionViewCell, Animatable, Borderable {
 	
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
@@ -23,15 +25,18 @@ open class CollectionViewCell: UICollectionViewCell, Animatable {
 		setViews()
 		layoutViews()
 	}
-	
+
+	/// Use this method to set and add your custom views.
 	open func setViews() {
 		backgroundColor = .white
 	}
-	
+
+	/// Use this method to layout your custom views using SnapKit.
 	open func layoutViews() {}
-	
+
+	/// Preferred padding for autolayout (default is 20).
 	open var preferredPadding: CGFloat {
-		return 20
+		return 20.0
 	}
 	
 }

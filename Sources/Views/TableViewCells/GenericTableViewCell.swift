@@ -8,8 +8,10 @@
 
 import UIKit
 
+/// Generic TableViewCell.
 open class GenericTableViewCell<T>: TableViewCell {
 	
+	/// Generic item, override this to set your UI.
 	open var item: T!
 	
 }

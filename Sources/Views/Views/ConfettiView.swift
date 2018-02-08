@@ -5,8 +5,10 @@
 //  Created by Omar Albeik on 5.02.2018.
 //
 
+import UIKit
 import QuartzCore
 
+/// Confetti View.
 open class ConfettiView: View {
 	
 	private var emitter = CAEmitterLayer()
@@ -19,8 +21,10 @@ open class ConfettiView: View {
 		UIColor(red: 0.58, green: 0.39, blue: 0.55, alpha: 1.0)
 	]
 	
+	/// Confetti intensity (default is 0.5).
 	public var intensity: Float = 0.5
 	
+	/// Set this to start or stop confetti.
 	public var isActive: Bool = false {
 		didSet {
 			emitter.birthRate = isActive ? (intensity * 6) : 0
@@ -55,7 +59,7 @@ open class ConfettiView: View {
 		}
 	}
 	
-	internal func confetti(forColor color: UIColor) -> CAEmitterCell {
+	private func confetti(forColor color: UIColor) -> CAEmitterCell {
 		let cell = CAEmitterCell()
 		cell.birthRate = intensity * 6
 		cell.lifetime = intensity * 12

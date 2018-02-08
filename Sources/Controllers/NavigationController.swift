@@ -8,4 +8,10 @@
 import UIKit
 import SnapKit
 
-open class NavigationController: UINavigationController, Alertable, Confettiable {}
+open class NavigationController: UINavigationController, Alertable, Confettiable {
+
+	open var customTabBarController: TabBarController? {
+		return tabBarController as? TabBarController
+	}
+
+}

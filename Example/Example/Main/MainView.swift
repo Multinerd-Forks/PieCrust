@@ -6,13 +6,12 @@
 //  Copyright © 2018 Mobilion. All rights reserved.
 //
 
-import UIKit
 import iOSAppSkeleton
 
 class MainView: View {
 	
-	lazy var showCarListButton: Button = {
-		var button = Button(title: "Show Car List", backgroundColor: .gray)
+	lazy var showCarListButton: LoadingButton = {
+		var button = LoadingButton(title: "Show Car List", backgroundColor: .gray, tintColor: .white)
 		button.cornerRadius = 8
 		return button
 	}()
