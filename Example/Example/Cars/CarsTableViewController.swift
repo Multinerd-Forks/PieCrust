@@ -20,5 +20,12 @@ class CarsTableViewController: GenericTableController<CarTableViewCell, Car> {
 	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		return Car.makes[section]
 	}
+
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let car = items[indexPath.section][indexPath.row]
+
+		let infoVC = CarInfoViewController(car: car)
+		navigationController?.pushViewController(infoVC, animated: true)
+	}
 	
 }
