@@ -9,21 +9,12 @@ import UIKit
 import SnapKit
 
 open class View: UIView, Borderable, Animatable {
-	
-	private lazy var confettiView: ConfettiView = {
-		return ConfettiView()
-	}()
-	
+
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
 		
 		setViews()
 		layoutViews()
-		
-		if showsConfetti {
-			addSubview(confettiView)
-			confettiView.snp.makeConstraints { $0.edges.equalToSuperview() }
-		}
 	}
 	
 	required public init?(coder aDecoder: NSCoder) {
@@ -31,11 +22,6 @@ open class View: UIView, Borderable, Animatable {
 		
 		setViews()
 		layoutViews()
-		
-		if showsConfetti {
-			addSubview(confettiView)
-			confettiView.snp.makeConstraints { $0.edges.equalToSuperview() }
-		}
 	}
 	
 	open func setViews() {
@@ -47,11 +33,7 @@ open class View: UIView, Borderable, Animatable {
 	open var preferredPadding: CGFloat {
 		return 20
 	}
-	
-	open var showsConfetti: Bool {
-		return false
-	}
-	
+
 	open func handleKeyboardWillShow(_ sender: Notification) {}
 	
 	open func handleKeyboardDidShow(_ sender: Notification) {}
@@ -63,18 +45,6 @@ open class View: UIView, Borderable, Animatable {
 	open func handleKeyboardWillChangeFrame(_ sender: Notification) {}
 	
 	open func handleKeyboardDidChangeFrame(_ sender: Notification) {}
-	
-	public func startConfetti() {
-		guard showsConfetti else {
-			debugPrint("iOSAppSkeleton: Set showsConfetti to true before starting confetti!")
-			return
-		}
-		confettiView.isActive = true
-	}
-	
-	public func stopConfetti() {
-		confettiView.isActive = false
-	}
 	
 }
 

@@ -70,19 +70,19 @@ open class TableViewController: UITableViewController, Alertable {
 	
 	@objc
 	open func keyboardWillShow(_ sender: Notification) {}
-	
+
 	@objc
 	open func keyboardDidShow(_ sender: Notification) {}
-	
+
 	@objc
 	open func keyboardWillHide(_ sender: Notification) {}
-	
+
 	@objc
 	open func keyboardDidHide(_ sender: Notification) {}
-	
+
 	@objc
 	open func keyboardWillChangeFrame(_ sender: Notification) {}
-	
+
 	@objc
 	open func keyboardDidChangeFrame(_ sender: Notification) {}
 	

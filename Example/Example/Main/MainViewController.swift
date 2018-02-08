@@ -24,12 +24,14 @@ class MainViewController: ViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+
 		mainView.showCarListButton.addTarget(self, action: #selector(didTapShowCarListButton), for: .touchUpInside)
 	}
-
+	
 	@objc
 	func didTapShowCarListButton() {
+		customNavigationController?.showConfetti()
+
 		let carsVC = CarsTableViewController(style: .grouped)
 		navigationController?.pushViewController(carsVC, animated: true)
 	}

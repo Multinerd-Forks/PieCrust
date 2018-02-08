@@ -8,4 +8,4 @@
 import UIKit
 import SnapKit
 
-open class TabBarController: UITabBarController, Alertable {}
+open class TabBarController: UITabBarController, Alertable, Confettiable {}

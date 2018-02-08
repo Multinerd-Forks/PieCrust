@@ -8,4 +8,4 @@
 import UIKit
 import SnapKit
 
-open class NavigationController: UINavigationController, Alertable {}
+open class NavigationController: UINavigationController, Alertable, Confettiable {}

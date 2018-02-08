@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-open class ViewController: UIViewController, Alertable {
+open class ViewController: UIViewController, Alertable, Confettiable {
 	
 	override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -61,6 +61,14 @@ open class ViewController: UIViewController, Alertable {
 	
 	open var shouldObserveKeyboardEvents: Bool {
 		return false
+	}
+
+	open var customNavigationController: NavigationController? {
+		return navigationController as? NavigationController
+	}
+
+	open var customTabBarController: TabBarController? {
+		return tabBarController as? TabBarController
 	}
 	
 	@objc
