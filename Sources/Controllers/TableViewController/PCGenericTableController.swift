@@ -11,6 +11,11 @@ import UIKit
 /// Generic TableController.
 open class PCGenericTableController<T: PCGenericTableViewCell<U>, U>: PCTableViewController {
 
+    /// Create a generic table view controller and set its items.
+    ///
+    /// - Parameters:
+    ///   - style: table view style (default is .grouped)
+    ///   - items: array of generic items arrays.
     public convenience init(style: UITableViewStyle = .grouped, items: [[U]]) {
         self.init(style: style)
 

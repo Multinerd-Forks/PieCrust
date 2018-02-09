@@ -8,8 +8,10 @@
 
 import UIKit
 
+/// Generic PCView
 open class PCGenericView<U>: PCView {
 
+    /// Optional generic item.
     open var item: U?
 
 }
