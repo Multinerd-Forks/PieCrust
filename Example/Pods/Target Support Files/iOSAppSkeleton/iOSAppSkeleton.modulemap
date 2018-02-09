@@ -1,6 +1,0 @@
-framework module iOSAppSkeleton {
-  umbrella header "iOSAppSkeleton-umbrella.h"
-
-  export *
-  module * { export * }
-}

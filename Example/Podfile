@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 
-target 'Example' do
+target 'PieCrustExample' do
   use_frameworks!
   
-  pod 'iOSAppSkeleton', :path => '../'
+  pod 'PieCrust', :path => '../'
 
 end

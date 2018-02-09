@@ -1,19 +1,19 @@
 PODS:
-  - iOSAppSkeleton (0.1):
+  - PieCrust (0.1):
     - SnapKit (~> 4.0)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
-  - iOSAppSkeleton (from `../`)
+  - PieCrust (from `../`)
 
 EXTERNAL SOURCES:
-  iOSAppSkeleton:
+  PieCrust:
     :path: ../
 
 SPEC CHECKSUMS:
-  iOSAppSkeleton: a05d4646061344d5c7e56dc6386a9269c7cc0fb4
+  PieCrust: 54e51a04e5e9ae1d911ce82bb18a77c06328cb57
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: c0600dd0bc8b52cd3f65e27185f6d93b8aaf3c00
+PODFILE CHECKSUM: dfd5ddd251420908a6e0c32adba8954aee3c5d9e
 
 COCOAPODS: 1.4.0
