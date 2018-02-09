@@ -11,13 +11,25 @@ import SnapKit
 
 open class PCWebViewController: PCViewController {
 
+    /// Web request type.
+    ///
+    /// - url: load a url in web view.
+    /// - htmlString: load an html string with a base URL in web view.
+    public enum WebRequestType {
+        case url(_: URL)
+        case htmlString(_: String, baseURL: URL?)
+    }
+
+    /// Optional web request type.
+    public var requestType: WebRequestType?
+
 	/// Create WebViewController.
 	///
-	/// - Parameter url: url.
-	public convenience init(url: URL) {
+	/// - Parameter requestType: web request type.
+	public convenience init(requestType: WebRequestType) {
 		self.init()
 		
-		self.url = url
+		self.requestType = requestType
 	}
 	
 	/// url.
@@ -39,10 +51,15 @@ open class PCWebViewController: PCViewController {
 	
 	open override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		
-		if let aUrl = url {
-			let request = URLRequest(url: aUrl)
-			webView.loadRequest(request)
-		}
+
+        guard let type = requestType else { return }
+        switch type {
+        case .url(let url):
+            let request = URLRequest(url: url)
+            webView.loadRequest(request)
+
+        case .htmlString(let htmlString, let baseURL):
+            webView.loadHTMLString(htmlString, baseURL: baseURL)
+        }
 	}
 }
