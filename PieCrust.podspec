@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name = 'PieCrust'
     s.version = '0.1'
-    s.summary = 'Congrats on creating your new Xcode project, install this first things first!'
+    s.summary = '[WIP] PieCrust is the foundation layer we use here at Mobilion to write iOS apps with ease.'
     s.homepage = 'https://github.com/MobilionOSS/PieCrust'
     s.license = { :type => 'MIT', :file => 'LICENSE' }
     
