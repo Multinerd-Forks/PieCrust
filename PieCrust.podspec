@@ -15,9 +15,7 @@ Pod::Spec.new do |s|
     s.source_files = 'Sources/**/*.swift'
     s.ios.resource_bundle = { 'PieCrustAssets' => 'Assets/PieCrustAssets.bundle/Images' }
     s.requires_arc = true
-    s.pod_target_xcconfig = {
-        'SWIFT_VERSION' => '4.0'
-    }
+    s.swift_version = '4.0'
 
     s.ios.framework  = 'UIKit'
     s.dependency 'SnapKit', '~> 4.0'
