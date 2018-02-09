@@ -39,6 +39,8 @@
 		072AE05D2028506B00D8DDAD /* PieCrustAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 072AE05C2028506B00D8DDAD /* PieCrustAssets.bundle */; };
 		079F8F4D202DD6B700599D22 /* PCGenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F4C202DD6B700599D22 /* PCGenericView.swift */; };
 		079F8F4F202DD70800599D22 /* PCGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F4E202DD70800599D22 /* PCGenericViewController.swift */; };
+		079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */; };
+		079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		072AE05C2028506B00D8DDAD /* PieCrustAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PieCrustAssets.bundle; sourceTree = "<group>"; };
 		079F8F4C202DD6B700599D22 /* PCGenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericView.swift; sourceTree = "<group>"; };
 		079F8F4E202DD70800599D22 /* PCGenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericViewController.swift; sourceTree = "<group>"; };
+		079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewController.swift; sourceTree = "<group>"; };
+		079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 				0711C5B2202C6CA0008BF833 /* PCTabBarController.swift */,
 				079F8F50202DDCAD00599D22 /* ViewController */,
 				0711C5B3202C6CA0008BF833 /* TableViewController */,
+				079F8F6F202DE4FB00599D22 /* CollectionViewController */,
 				0711C5B7202C6CA0008BF833 /* PCWebViewController.swift */,
 			);
 			path = Controllers;
@@ -233,6 +238,15 @@
 				079F8F4C202DD6B700599D22 /* PCGenericView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		079F8F6F202DE4FB00599D22 /* CollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */,
+				079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */,
+			);
+			path = CollectionViewController;
 			sourceTree = "<group>";
 		};
 		07A486ED2028368A0028148C /* Sources */ = {
@@ -357,7 +371,9 @@
 				0711C5DD202C6CA0008BF833 /* PCConfettiable.swift in Sources */,
 				0711C5D7202C6CA0008BF833 /* PCTableViewController.swift in Sources */,
 				0711C5EA202C6CA0008BF833 /* PCSegmentedControl.swift in Sources */,
+				079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */,
 				0711C5DC202C6CA0008BF833 /* PCBorderable.swift in Sources */,
+				079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */,
 				0711C5E1202C6CA0008BF833 /* PCActivityIndicatorView.swift in Sources */,
 				079F8F4D202DD6B700599D22 /* PCGenericView.swift in Sources */,
 			);

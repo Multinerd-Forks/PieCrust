@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Generic TableController.
+/// Generic PCTableController.
 open class PCGenericTableController<T: PCGenericTableViewCell<U>, U>: PCTableViewController {
 
     /// Create a generic table view controller and set its items.
