@@ -10,7 +10,13 @@ import UIKit
 
 /// Generic TableController.
 open class PCGenericTableController<T: PCGenericTableViewCell<U>, U>: PCTableViewController {
-	
+
+    public convenience init(style: UITableViewStyle = .grouped, items: [[U]]) {
+        self.init(style: style)
+
+        self.items = items
+    }
+
 	override public init(style: UITableViewStyle) {
 		super.init(style: style)
 		

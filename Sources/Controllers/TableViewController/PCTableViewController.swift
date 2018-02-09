@@ -9,7 +9,7 @@
 import UIKit
 
 open class PCTableViewController: UITableViewController, PCAlertable {
-	
+
 	public override init(style: UITableViewStyle) {
 		super.init(style: style)
 		

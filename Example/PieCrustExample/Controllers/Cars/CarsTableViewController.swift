@@ -9,14 +9,13 @@
 import PieCrust
 
 class CarsTableViewController: PCGenericTableController<CarTableViewCell, Car> {
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		items = Car.cars
-		tableView.reloadData()
-	}
-	
+
+    override var items: [[Car]] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+
 	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		return Car.makes[section]
 	}
@@ -24,7 +23,7 @@ class CarsTableViewController: PCGenericTableController<CarTableViewCell, Car> {
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let car = items[indexPath.section][indexPath.row]
 
-		let infoVC = CarInfoViewController(car: car)
+		let infoVC = CarInfoViewController(item: car)
 		navigationController?.pushViewController(infoVC, animated: true)
 	}
 	
