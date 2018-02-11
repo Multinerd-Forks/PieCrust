@@ -16,9 +16,10 @@ open class PCActivityIndicatorView: UIActivityIndicatorView {
 	/// - Parameters:
 	///   - style: activity indicator view style (default is .white).
 	///   - color: activity indicator view color.
-	public convenience init(activityIndicatorStyle style: UIActivityIndicatorViewStyle = .white,
-							color: UIColor) {
-		
+	public convenience init(
+		activityIndicatorStyle style: UIActivityIndicatorViewStyle = .white,
+		color: UIColor) {
+
 		self.init(activityIndicatorStyle: style)
 
 		self.color = color

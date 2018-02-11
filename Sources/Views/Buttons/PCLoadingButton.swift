@@ -19,11 +19,12 @@ open class PCLoadingButton: PCButton {
 	///   - backgroundColor: button background color (defaul is .white).
 	///   - tintColor: button tint color (defaul is .black).
 	///   - contentEdgeInsets: button content edge insets (defaul is top: 0, left: 40, bottom: 0, right: 40).
-	public convenience init(type: UIButtonType = .custom,
-							title: String? = nil,
-							backgroundColor: UIColor? = .white,
-							tintColor: UIColor? = .black,
-							contentEdgeInsets: UIEdgeInsets = .init(top: 0, left: 40, bottom: 0, right: 40)) {
+	public convenience init(
+		type: UIButtonType = .custom,
+		title: String? = nil,
+		backgroundColor: UIColor? = .white,
+		tintColor: UIColor? = .black,
+		contentEdgeInsets: UIEdgeInsets = .init(top: 0, left: 40, bottom: 0, right: 40)) {
 
 		self.init(type: type)
 

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SnapKit
 
-/// PCCollectionViewController
+/// PCCollectionViewController.
 open class PCCollectionViewController: UICollectionViewController {
 
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -24,6 +25,8 @@ open class PCCollectionViewController: UICollectionViewController {
     }
 
     override open func viewDidLoad() {
+		super.viewDidLoad()
+
         setNavigationItem()
 
         if shouldEndEditingOnTap {
@@ -33,9 +36,6 @@ open class PCCollectionViewController: UICollectionViewController {
         if shouldObserveKeyboardEvents {
             addKeyboardNotificationsObservers()
         }
-
-        navigationController?.interactivePopGestureRecognizer?.delegate = shouldPopInteractively ? self : nil
-        navigationController?.interactivePopGestureRecognizer?.isEnabled = shouldPopInteractively
 
         setGestureRecognizers()
         becomeFirstResponder()
@@ -58,11 +58,6 @@ open class PCCollectionViewController: UICollectionViewController {
         return false
     }
 
-    /// Set to true to pop view controller interactively.
-    open var shouldPopInteractively: Bool {
-        return true
-    }
-
     /// Set to true to observe keyboard events from system.
     open var shouldObserveKeyboardEvents: Bool {
         return false
@@ -81,54 +76,43 @@ open class PCCollectionViewController: UICollectionViewController {
     @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillShow notification is prodcasted by system.
     ///
-    /// - Parameter sender: .UIKeyboardWillShow notification.
-    open func keyboardWillShow(_ sender: Notification) {}
+    /// - Parameter notification: .UIKeyboardWillShow notification.
+    open func keyboardWillShow(_ notification: Notification) {}
 
     @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidShow notification is prodcasted by system.
     ///
-    /// - Parameter sender: .UIKeyboardDidShow notification.
-    open func keyboardDidShow(_ sender: Notification) {}
+    /// - Parameter notification: .UIKeyboardDidShow notification.
+    open func keyboardDidShow(_ notification: Notification) {}
 
     @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillHide notification is prodcasted by system.
     ///
-    /// - Parameter sender: .UIKeyboardWillHide notification.
-    open func keyboardWillHide(_ sender: Notification) {}
+    /// - Parameter notification: .UIKeyboardWillHide notification.
+    open func keyboardWillHide(_ notification: Notification) {}
 
     @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidHide notification is prodcasted by system.
     ///
-    /// - Parameter sender: .UIKeyboardDidHide notification.
-    open func keyboardDidHide(_ sender: Notification) {}
+    /// - Parameter notification: .UIKeyboardDidHide notification.
+    open func keyboardDidHide(_ notification: Notification) {}
 
     @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillChangeFrame notification is prodcasted by system.
     ///
-    /// - Parameter sender: .UIKeyboardWillChangeFrame notification.
-    open func keyboardWillChangeFrame(_ sender: Notification) {}
+    /// - Parameter notification: .UIKeyboardWillChangeFrame notification.
+    open func keyboardWillChangeFrame(_ notification: Notification) {}
 
     @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidChangeFrame notification is prodcasted by system.
     ///
-    /// - Parameter sender: .UIKeyboardDidChangeFrame notification.
-    open func keyboardDidChangeFrame(_ sender: Notification) {}
+    /// - Parameter notification: .UIKeyboardDidChangeFrame notification.
+    open func keyboardDidChangeFrame(_ notification: Notification) {}
 
     deinit {
         if shouldObserveKeyboardEvents {
             removeKeyboardNotificationsObservers()
         }
-    }
-
-
-
-}
-
-// MARK: - UIGestureRecognizerDelegate
-extension PCCollectionViewController: UIGestureRecognizerDelegate {
-
-    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return shouldPopInteractively
     }
 
 }

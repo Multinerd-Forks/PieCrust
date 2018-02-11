@@ -10,7 +10,7 @@ import SnapKit
 
 /// PCButton.
 open class PCButton: UIButton, PCAnimatable, PCBorderable {
-	
+
 	/// Create button and set its properties in one line.
 	///
 	/// - Parameters:
@@ -19,14 +19,15 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 	///   - backgroundColor: button background color (defaul is .white).
 	///   - tintColor: button tint color (defaul is .black).
 	///   - contentEdgeInsets: button content edge insets (defaul is top: 0, left: 20, bottom: 0, right: 20).
-	public convenience init(type: UIButtonType = .custom,
-							title: String? = nil,
-							backgroundColor: UIColor? = .white,
-							tintColor: UIColor? = .black,
-							contentEdgeInsets: UIEdgeInsets = .init(top: 0, left: 20, bottom: 0, right: 20)) {
+	public convenience init(
+		type: UIButtonType = .custom,
+		title: String? = nil,
+		backgroundColor: UIColor? = .white,
+		tintColor: UIColor? = .black,
+		contentEdgeInsets: UIEdgeInsets = .init(top: 0, left: 20, bottom: 0, right: 20)) {
 
 		self.init(type: type)
-		
+
 		self.setTitle(title, for: .normal)
 		self.backgroundColor = backgroundColor
 
@@ -43,10 +44,10 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 		setViews()
 		layoutViews()
 	}
-	
+
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
-		
+
 		setViews()
 		layoutViews()
 	}

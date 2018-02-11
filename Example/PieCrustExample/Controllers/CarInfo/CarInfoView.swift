@@ -8,13 +8,13 @@
 
 import PieCrust
 
-class CarInfoView: PCGenericView<Car> {
+class CarInfoView: PCView {
 
-    override var item: Car? {
+    var car: Car! {
         didSet {
-            imageView.image = item?.image
-            modelLabel.text = item?.model
-            makeLabel.text = item?.make
+            imageView.image = car.image
+            modelLabel.text = car.model
+            makeLabel.text = car.make
         }
     }
 

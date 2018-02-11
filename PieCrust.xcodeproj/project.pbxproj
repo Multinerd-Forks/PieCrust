@@ -37,8 +37,6 @@
 		0711C5EE202C6CA0008BF833 /* PCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711C5D2202C6CA0008BF833 /* PCTextField.swift */; };
 		0711C5EF202C6CA0008BF833 /* PCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711C5D3202C6CA0008BF833 /* PCView.swift */; };
 		072AE05D2028506B00D8DDAD /* PieCrustAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 072AE05C2028506B00D8DDAD /* PieCrustAssets.bundle */; };
-		079F8F4D202DD6B700599D22 /* PCGenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F4C202DD6B700599D22 /* PCGenericView.swift */; };
-		079F8F4F202DD70800599D22 /* PCGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F4E202DD70800599D22 /* PCGenericViewController.swift */; };
 		079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */; };
 		079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -76,8 +74,6 @@
 		0711C5D2202C6CA0008BF833 /* PCTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCTextField.swift; sourceTree = "<group>"; };
 		0711C5D3202C6CA0008BF833 /* PCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCView.swift; sourceTree = "<group>"; };
 		072AE05C2028506B00D8DDAD /* PieCrustAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PieCrustAssets.bundle; sourceTree = "<group>"; };
-		079F8F4C202DD6B700599D22 /* PCGenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericView.swift; sourceTree = "<group>"; };
-		079F8F4E202DD70800599D22 /* PCGenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericViewController.swift; sourceTree = "<group>"; };
 		079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewController.swift; sourceTree = "<group>"; };
 		079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +118,7 @@
 			children = (
 				0711C5B1202C6CA0008BF833 /* PCNavigationController.swift */,
 				0711C5B2202C6CA0008BF833 /* PCTabBarController.swift */,
-				079F8F50202DDCAD00599D22 /* ViewController */,
+				0711C5B6202C6CA0008BF833 /* PCViewController.swift */,
 				0711C5B3202C6CA0008BF833 /* TableViewController */,
 				079F8F6F202DE4FB00599D22 /* CollectionViewController */,
 				0711C5B7202C6CA0008BF833 /* PCWebViewController.swift */,
@@ -198,8 +194,8 @@
 		0711C5CF202C6CA0008BF833 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				0711C5D0202C6CA0008BF833 /* PCGenericTableViewCell.swift */,
 				0711C5D1202C6CA0008BF833 /* PCTableViewCell.swift */,
+				0711C5D0202C6CA0008BF833 /* PCGenericTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -207,7 +203,7 @@
 		0711C5F0202C7122008BF833 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				079F8F51202DDCD800599D22 /* View */,
+				0711C5D3202C6CA0008BF833 /* PCView.swift */,
 				0711C5CA202C6CA0008BF833 /* PCConfettiView.swift */,
 				0711C5CB202C6CA0008BF833 /* PCImageView.swift */,
 			);
@@ -221,24 +217,6 @@
 			);
 			path = Assets;
 			sourceTree = SOURCE_ROOT;
-		};
-		079F8F50202DDCAD00599D22 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				0711C5B6202C6CA0008BF833 /* PCViewController.swift */,
-				079F8F4E202DD70800599D22 /* PCGenericViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		079F8F51202DDCD800599D22 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0711C5D3202C6CA0008BF833 /* PCView.swift */,
-				079F8F4C202DD6B700599D22 /* PCGenericView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
 		};
 		079F8F6F202DE4FB00599D22 /* CollectionViewController */ = {
 			isa = PBXGroup;
@@ -345,7 +323,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0711C5E0202C6CA0008BF833 /* PublicExtensions.swift in Sources */,
-				079F8F4F202DD70800599D22 /* PCGenericViewController.swift in Sources */,
 				0711C5EC202C6CA0008BF833 /* PCGenericTableViewCell.swift in Sources */,
 				0711C5D8202C6CA0008BF833 /* PCViewController.swift in Sources */,
 				0711C5E5202C6CA0008BF833 /* PCCollectionViewCell.swift in Sources */,
@@ -375,7 +352,6 @@
 				0711C5DC202C6CA0008BF833 /* PCBorderable.swift in Sources */,
 				079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */,
 				0711C5E1202C6CA0008BF833 /* PCActivityIndicatorView.swift in Sources */,
-				079F8F4D202DD6B700599D22 /* PCGenericView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

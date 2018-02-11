@@ -15,17 +15,17 @@ class MainView: PCView {
 		button.cornerRadius = 8
 		return button
 	}()
-	
+
 	override func setViews() {
 		super.setViews()
 		addSubview(showCarListButton)
 	}
-	
+
 	override func layoutViews() {
 		showCarListButton.snp.makeConstraints { make in
 			make.center.equalToSuperview()
 			make.height.equalTo(showCarListButton.preferredHeight)
 		}
 	}
-	
+
 }

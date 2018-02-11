@@ -8,10 +8,25 @@
 
 import PieCrust
 
-class CarInfoViewController: PCGenericViewController<CarInfoView, Car> {
+class CarInfoViewController: PCViewController<CarInfoView> {
 
-    override func setNavigationItem() {
-        navigationItem.title = item?.model
-    }
+	convenience init(car: Car) {
+		self.init()
+
+		self.car = car
+	}
+
+	var car: Car!
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+		edgesForExtendedLayout = []
+		pcView.car = car
+	}
+
+	override func setNavigationItem() {
+		navigationItem.title = car.model
+	}
 
 }

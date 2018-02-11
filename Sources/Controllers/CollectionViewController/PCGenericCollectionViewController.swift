@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Generic PCCollectionViewController
+/// Generic PCCollectionViewController.
 open class PCGenericCollectionViewController<T: PCGenericCollectionViewCell<U>, U>: PCCollectionViewController {
 
     public convenience init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, items: [[U]]) {

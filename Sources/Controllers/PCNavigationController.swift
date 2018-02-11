@@ -8,11 +8,18 @@
 import UIKit
 import SnapKit
 
+/// PCNavigationController.
 open class PCNavigationController: UINavigationController, PCAlertable, PCConfettiable {
 
-	/// controller's custom TabBarController (if applicable)
-	open var customTabBarController: PCTabBarController? {
+	/// controller's PCTabBarController (if applicable)
+	open var pcTabBarController: PCTabBarController? {
 		return tabBarController as? PCTabBarController
+	}
+
+	open override func viewDidLoad() {
+		super.viewDidLoad()
+
+		view.backgroundColor = .white
 	}
 
 }

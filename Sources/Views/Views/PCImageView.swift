@@ -55,32 +55,32 @@ open class PCImageView: UIImageView, PCAnimatable, PCBorderable {
 
 	/// Call this method from view contoller to handle KeyboardWillShow notification.
 	///
-	/// - Parameter sender: keyboard notificaton sent from system.
-	open func handleKeyboardWillShow(_ sender: Notification) {}
+	/// - Parameter notification: keyboard notificaton sent from system.
+	open func handleKeyboardWillShow(_ notification: Notification) {}
 
 	/// Call this method from view contoller to handle handleKeyboardDidShow notification.
 	///
-	/// - Parameter sender: keyboard notificaton sent from system.
-	open func handleKeyboardDidShow(_ sender: Notification) {}
+	/// - Parameter notification: keyboard notificaton sent from system.
+	open func handleKeyboardDidShow(_ notification: Notification) {}
 
 	/// Call this method from view contoller to handle handleKeyboardWillHide notification.
 	///
-	/// - Parameter sender: keyboard notificaton sent from system.
-	open func handleKeyboardWillHide(_ sender: Notification) {}
+	/// - Parameter notification: keyboard notificaton sent from system.
+	open func handleKeyboardWillHide(_ notification: Notification) {}
 
 	/// Call this method from view contoller to handle handleKeyboardDidHide notification.
 	///
-	/// - Parameter sender: keyboard notificaton sent from system.
-	open func handleKeyboardDidHide(_ sender: Notification) {}
+	/// - Parameter notification: keyboard notificaton sent from system.
+	open func handleKeyboardDidHide(_ notification: Notification) {}
 
 	/// Call this method from view contoller to handle handleKeyboardWillChangeFrame notification.
 	///
-	/// - Parameter sender: keyboard notificaton sent from system.
-	open func handleKeyboardWillChangeFrame(_ sender: Notification) {}
+	/// - Parameter notification: keyboard notificaton sent from system.
+	open func handleKeyboardWillChangeFrame(_ notification: Notification) {}
 
 	/// Call this method from view contoller to handle handleKeyboardDidChangeFrame notification.
 	///
-	/// - Parameter sender: keyboard notificaton sent from system.
-	open func handleKeyboardDidChangeFrame(_ sender: Notification) {}
+	/// - Parameter notification: keyboard notificaton sent from system.
+	open func handleKeyboardDidChangeFrame(_ notification: Notification) {}
 
 }

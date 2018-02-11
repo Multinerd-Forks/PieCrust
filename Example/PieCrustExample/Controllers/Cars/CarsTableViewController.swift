@@ -23,8 +23,8 @@ class CarsTableViewController: PCGenericTableController<CarTableViewCell, Car> {
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let car = items[indexPath.section][indexPath.row]
 
-		let infoVC = CarInfoViewController(item: car)
+		let infoVC = CarInfoViewController(car: car)
 		navigationController?.pushViewController(infoVC, animated: true)
 	}
-	
+
 }

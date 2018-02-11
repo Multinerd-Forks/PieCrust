@@ -10,10 +10,12 @@ import UIKit
 
 public extension Notification {
 
+    /// Keyboard size from a system notication.
     public var keyboardSize: CGSize? {
         return (userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.size
     }
 
+	/// Keyboard animation duration from a system notication.
     public var keyboardAnimationDuration: Double? {
         return userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double
     }

@@ -9,7 +9,8 @@
 import UIKit
 import SnapKit
 
-open class PCWebViewController: PCViewController {
+/// PCWebViewController.
+open class PCWebViewController: PCViewController<PCView> {
 
     /// Web request type.
     ///
@@ -31,24 +32,24 @@ open class PCWebViewController: PCViewController {
 		
 		self.requestType = requestType
 	}
-	
+
 	/// url.
 	open var url: URL?
-	
+
 	/// Web view.
 	open lazy var webView: UIWebView = {
 		let view = UIWebView()
 		view.backgroundColor = .white
 		return view
 	}()
-	
+
 	override open func viewDidLoad() {
         super.viewDidLoad()
 		
 		view.addSubview(webView)
 		webView.snp.makeConstraints { $0.edges.equalToSuperview() }
     }
-	
+
 	open override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 
@@ -62,4 +63,5 @@ open class PCWebViewController: PCViewController {
             webView.loadHTMLString(htmlString, baseURL: baseURL)
         }
 	}
+
 }

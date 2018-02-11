@@ -35,14 +35,14 @@ open class PCSegmentedControl: UISegmentedControl, PCAnimatable, PCBorderable {
 
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
-		
+
 		setViews()
 		layoutViews()
 	}
-	
+
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
-		
+
 		setViews()
 		layoutViews()
 	}

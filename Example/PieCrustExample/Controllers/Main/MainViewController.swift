@@ -8,7 +8,7 @@
 
 import PieCrust
 
-class MainViewController: PCViewController {
+class MainViewController: PCViewController<MainView> {
 
     override var shouldObserveKeyboardEvents: Bool {
         return true
@@ -33,8 +33,8 @@ class MainViewController: PCViewController {
         sender.isLoading = true
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             sender.isLoading = false
-            
-            let carsVC = CarsTableViewController(items: Car.cars)
+
+			let carsVC = CarsTableViewController(items: Car.cars)
             self.navigationController?.pushViewController(carsVC, animated: true)
         }
 

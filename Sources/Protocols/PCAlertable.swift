@@ -23,7 +23,7 @@ public protocol PCAlertable: class {
 	///   - completion: optional completion handler is called after the alert is presented.
 	/// - Returns: presented alert.
 	func presentAlert(title: String?, message: String?, preferredStyle: UIAlertControllerStyle, actions: [UIAlertAction], animated: Bool, completion: (() -> Void)?) -> UIAlertController
-	
+
 	@discardableResult
 	/// Present alert from an error.
 	///
@@ -40,7 +40,7 @@ public protocol PCAlertable: class {
 }
 
 public extension PCAlertable where Self: UIViewController {
-	
+
 	@discardableResult
 	/// Present alert.
 	///
@@ -76,4 +76,5 @@ public extension PCAlertable where Self: UIViewController {
 		present(alert, animated: animated, completion: completion)
 		return alert
 	}
+
 }

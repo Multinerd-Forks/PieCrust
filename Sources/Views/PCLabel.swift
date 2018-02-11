@@ -20,14 +20,16 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 	///   - backgroundColor: label background color (default is .white).
 	///   - textColor: label text color (defaul is .black).
 	///   - font: label font (defaul is system font).
-	public convenience init (text: String? = "",
-							 textAlignment: NSTextAlignment = .natural,
-							 numberOfLines: Int = 1,
-							 backgroundColor: UIColor = .white,
-							 textColor: UIColor = .black,
-							 font: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)) {
+	public convenience init (
+		text: String? = "",
+		textAlignment: NSTextAlignment = .natural,
+		numberOfLines: Int = 1,
+		backgroundColor: UIColor = .white,
+		textColor: UIColor = .black,
+		font: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)) {
+
 		self.init()
-		
+
 		self.text = text
 		self.textAlignment = textAlignment
 		self.numberOfLines = numberOfLines
@@ -35,17 +37,17 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 		self.textColor = textColor
 		self.font = font
 	}
-	
+
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
-		
+
 		setViews()
 		layoutViews()
 	}
-	
+
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
-		
+
 		setViews()
 		layoutViews()
 	}
@@ -70,5 +72,5 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 	public var trimmedText: String {
 		return text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 	}
-	
+
 }
