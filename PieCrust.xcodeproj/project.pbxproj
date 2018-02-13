@@ -37,6 +37,8 @@
 		0711C5EE202C6CA0008BF833 /* PCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711C5D2202C6CA0008BF833 /* PCTextField.swift */; };
 		0711C5EF202C6CA0008BF833 /* PCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711C5D3202C6CA0008BF833 /* PCView.swift */; };
 		072AE05D2028506B00D8DDAD /* PieCrustAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 072AE05C2028506B00D8DDAD /* PieCrustAssets.bundle */; };
+		079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */; };
+		079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		0711C5D2202C6CA0008BF833 /* PCTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCTextField.swift; sourceTree = "<group>"; };
 		0711C5D3202C6CA0008BF833 /* PCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCView.swift; sourceTree = "<group>"; };
 		072AE05C2028506B00D8DDAD /* PieCrustAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PieCrustAssets.bundle; sourceTree = "<group>"; };
+		079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewController.swift; sourceTree = "<group>"; };
+		079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +118,9 @@
 			children = (
 				0711C5B1202C6CA0008BF833 /* PCNavigationController.swift */,
 				0711C5B2202C6CA0008BF833 /* PCTabBarController.swift */,
-				0711C5B3202C6CA0008BF833 /* TableViewController */,
 				0711C5B6202C6CA0008BF833 /* PCViewController.swift */,
+				0711C5B3202C6CA0008BF833 /* TableViewController */,
+				079F8F6F202DE4FB00599D22 /* CollectionViewController */,
 				0711C5B7202C6CA0008BF833 /* PCWebViewController.swift */,
 			);
 			path = Controllers;
@@ -124,8 +129,8 @@
 		0711C5B3202C6CA0008BF833 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0711C5B4202C6CA0008BF833 /* PCGenericTableController.swift */,
 				0711C5B5202C6CA0008BF833 /* PCTableViewController.swift */,
+				0711C5B4202C6CA0008BF833 /* PCGenericTableController.swift */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -189,8 +194,8 @@
 		0711C5CF202C6CA0008BF833 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				0711C5D0202C6CA0008BF833 /* PCGenericTableViewCell.swift */,
 				0711C5D1202C6CA0008BF833 /* PCTableViewCell.swift */,
+				0711C5D0202C6CA0008BF833 /* PCGenericTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -198,9 +203,9 @@
 		0711C5F0202C7122008BF833 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0711C5D3202C6CA0008BF833 /* PCView.swift */,
 				0711C5CA202C6CA0008BF833 /* PCConfettiView.swift */,
 				0711C5CB202C6CA0008BF833 /* PCImageView.swift */,
-				0711C5D3202C6CA0008BF833 /* PCView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +217,15 @@
 			);
 			path = Assets;
 			sourceTree = SOURCE_ROOT;
+		};
+		079F8F6F202DE4FB00599D22 /* CollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */,
+				079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */,
+			);
+			path = CollectionViewController;
+			sourceTree = "<group>";
 		};
 		07A486ED2028368A0028148C /* Sources */ = {
 			isa = PBXGroup;
@@ -334,7 +348,9 @@
 				0711C5DD202C6CA0008BF833 /* PCConfettiable.swift in Sources */,
 				0711C5D7202C6CA0008BF833 /* PCTableViewController.swift in Sources */,
 				0711C5EA202C6CA0008BF833 /* PCSegmentedControl.swift in Sources */,
+				079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */,
 				0711C5DC202C6CA0008BF833 /* PCBorderable.swift in Sources */,
+				079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */,
 				0711C5E1202C6CA0008BF833 /* PCActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

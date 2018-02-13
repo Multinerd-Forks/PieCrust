@@ -9,7 +9,7 @@
 import PieCrust
 
 class CarTableViewCell: PCGenericTableViewCell<Car> {
-	
+
 	override var item: Car! {
 		didSet {
 			carImageView.image = item.image
@@ -17,7 +17,7 @@ class CarTableViewCell: PCGenericTableViewCell<Car> {
 			yearLabel.text = "\(item.year)"
 		}
 	}
-	
+
 	lazy var carImageView: PCImageView = {
 		return PCImageView()
 	}()
@@ -27,29 +27,29 @@ class CarTableViewCell: PCGenericTableViewCell<Car> {
 		label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
 		return label
 	}()
-	
+
 	lazy var yearLabel: PCLabel = {
 		return PCLabel()
 	}()
-	
+
 	lazy var labelsStackView: UIStackView = {
 		let view = UIStackView(arrangedSubviews: [modelLabel, yearLabel])
 		view.axis = .vertical
 		return view
 	}()
-	
+
 	override var preferredPadding: CGFloat {
 		return 10
 	}
-	
+
 	override func setViews() {
 		super.setViews()
-		
+
 		separatorInset = .init(top: 0, left: 100, bottom: 0, right: 0)
 		addSubview(carImageView)
 		addSubview(labelsStackView)
 	}
-	
+
 	override func layoutViews() {
 		carImageView.snp.makeConstraints { make in
 			make.leading.equalToSuperview().inset(preferredPadding)
@@ -58,19 +58,19 @@ class CarTableViewCell: PCGenericTableViewCell<Car> {
 			make.height.equalTo(80)
 			make.width.equalTo(80)
 		}
-		
+
 		labelsStackView.snp.makeConstraints { make in
 			make.leading.equalTo(carImageView.snp.trailing).offset(preferredPadding)
 			make.centerY.equalToSuperview()
 			make.trailing.equalToSuperview().inset(preferredPadding)
 		}
-		
+
 	}
-	
+
 	override var isHighlighted: Bool {
 		didSet {
 			isHighlighted ? carImageView.popIn() : carImageView.popOut()
 		}
 	}
-	
+
 }

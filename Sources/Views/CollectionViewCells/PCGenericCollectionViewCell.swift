@@ -13,5 +13,5 @@ open class PCGenericCollectionViewCell<T>: PCCollectionViewCell {
 
 	/// Generic item, override this to set your UI.
 	open var item: T!
-	
+
 }

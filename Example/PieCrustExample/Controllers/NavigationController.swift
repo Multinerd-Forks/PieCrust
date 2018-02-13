@@ -1,5 +1,5 @@
 //
-//  MainNavigationController.swift
+//  NavigationController.swift
 //  PieCrustExample
 //
 //  Created by Omar Albeik on 8.02.2018.
@@ -8,4 +8,4 @@
 
 import PieCrust
 
-class MainNavigationController: PCNavigationController {}
+class NavigationController: PCNavigationController {}

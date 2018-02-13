@@ -9,40 +9,59 @@
 import UIKit
 import SnapKit
 
-open class PCWebViewController: PCViewController {
+/// PCWebViewController.
+open class PCWebViewController: PCViewController<PCView> {
+
+    /// Web request type.
+    ///
+    /// - url: load a url in web view.
+    /// - htmlString: load an html string with a base URL in web view.
+    public enum WebRequestType {
+        case url(_: URL)
+        case htmlString(_: String, baseURL: URL?)
+    }
+
+    /// Optional web request type.
+    public var requestType: WebRequestType?
 
 	/// Create WebViewController.
 	///
-	/// - Parameter url: url.
-	public convenience init(url: URL) {
+	/// - Parameter requestType: web request type.
+	public convenience init(requestType: WebRequestType) {
 		self.init()
 		
-		self.url = url
+		self.requestType = requestType
 	}
-	
+
 	/// url.
 	open var url: URL?
-	
+
 	/// Web view.
 	open lazy var webView: UIWebView = {
 		let view = UIWebView()
 		view.backgroundColor = .white
 		return view
 	}()
-	
+
 	override open func viewDidLoad() {
         super.viewDidLoad()
 		
 		view.addSubview(webView)
 		webView.snp.makeConstraints { $0.edges.equalToSuperview() }
     }
-	
+
 	open override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		
-		if let aUrl = url {
-			let request = URLRequest(url: aUrl)
-			webView.loadRequest(request)
-		}
+
+        guard let type = requestType else { return }
+        switch type {
+        case .url(let url):
+            let request = URLRequest(url: url)
+            webView.loadRequest(request)
+
+        case .htmlString(let htmlString, let baseURL):
+            webView.loadHTMLString(htmlString, baseURL: baseURL)
+        }
 	}
+
 }

@@ -14,14 +14,14 @@ open class PCTableViewCell: UITableViewCell, PCAnimatable, PCBorderable {
 
 	override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
-		
+
 		setViews()
 		layoutViews()
 	}
-	
+
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
-		
+
 		setViews()
 		layoutViews()
 	}

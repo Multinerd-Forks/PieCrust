@@ -20,5 +20,5 @@ open class PCBarButtonItem: UIBarButtonItem {
 		self.target = target
 		self.action = action
 	}
-	
+
 }

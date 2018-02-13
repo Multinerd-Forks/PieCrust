@@ -9,22 +9,22 @@
 import UIKit
 
 internal extension Bundle {
-	
+
 	internal static var PieCrustAssetsBundle: Bundle? {
 		let podBundle = Bundle(for: PCViewController.self)
 		guard let resourceBundleUrl = podBundle.url(forResource: "PieCrustAssets", withExtension: "bundle") else { return nil }
 		guard let resourceBundle = Bundle(url: resourceBundleUrl) else { return nil }
 		return resourceBundle
 	}
-	
+
 }
 
 internal extension UIScreen {
-	
+
 	internal var isSmall: Bool {
 		return bounds.width < 375
 	}
-	
+
 }
 
 internal extension UIViewController {
@@ -50,5 +50,5 @@ internal extension UIViewController {
 		
 		return alert
 	}
-	
+
 }

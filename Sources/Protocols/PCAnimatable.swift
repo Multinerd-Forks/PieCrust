@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Conform to PCAnimatable protocol to animate view.
+/// Conform to PCAnimatable protocol to animate views.
 public protocol PCAnimatable {
 
 	/// Fade in view.
@@ -50,10 +50,11 @@ public protocol PCAnimatable {
 	///   - delay: animation delay in seconds.
 	///   - completion: optional completion handler to run with animation finishes.
 	func shake(withDuration duration: TimeInterval, delay: TimeInterval, completion: (() -> Void)?)
+
 }
 
 public extension PCAnimatable where Self: UIView {
-	
+
 	/// Fade in view.
 	///
 	/// - Parameters:
@@ -65,7 +66,7 @@ public extension PCAnimatable where Self: UIView {
 			self.alpha = 1.0
 		}, completion: completion)
 	}
-	
+
 	/// Fade out view.
 	///
 	/// - Parameters:
@@ -77,7 +78,7 @@ public extension PCAnimatable where Self: UIView {
 			self.alpha = 0
 		}, completion: completion)
 	}
-	
+
 	/// Pop in view.
 	///
 	/// - Parameters:
@@ -89,7 +90,7 @@ public extension PCAnimatable where Self: UIView {
 			self.transform = .init(scaleX: 0.95, y: 0.95)
 		}, completion: completion)
 	}
-	
+
 	/// Pop out view.
 	///
 	/// - Parameters:
@@ -101,7 +102,7 @@ public extension PCAnimatable where Self: UIView {
 			self.transform = .identity
 		}, completion: completion)
 	}
-	
+
 	/// Shake view.
 	///
 	/// - Parameters:
@@ -120,6 +121,6 @@ public extension PCAnimatable where Self: UIView {
 			CATransaction.commit()
 		}
 	}
-	
+
 }
 

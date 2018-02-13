@@ -10,9 +10,9 @@ import QuartzCore
 
 /// PCConfettiView.
 open class PCConfettiView: PCView {
-	
+
 	private var emitter = CAEmitterLayer()
-	
+
 	private var colors: [UIColor] = [
 		UIColor(red: 0.95, green: 0.40, blue: 0.27, alpha: 1.0),
 		UIColor(red: 1.00, green: 0.78, blue: 0.36, alpha: 1.0),
@@ -20,17 +20,17 @@ open class PCConfettiView: PCView {
 		UIColor(red: 0.30, green: 0.76, blue: 0.85, alpha: 1.0),
 		UIColor(red: 0.58, green: 0.39, blue: 0.55, alpha: 1.0)
 	]
-	
+
 	/// Confetti intensity (default is 0.5).
 	public var intensity: Float = 0.5
-	
+
 	/// Set this to start or stop confetti.
 	public var isActive: Bool = false {
 		didSet {
 			emitter.birthRate = isActive ? (intensity * 6) : 0
 		}
 	}
-	
+
 	public convenience init(colors: [UIColor] = [], intensity: Float = 0.5) {
 		self.init()
 		
@@ -39,7 +39,7 @@ open class PCConfettiView: PCView {
 		}
 		self.intensity = intensity
 	}
-	
+
 	override open func setViews() {
 		backgroundColor = .clear
 		isUserInteractionEnabled = false
@@ -52,13 +52,13 @@ open class PCConfettiView: PCView {
 		layer.addSublayer(emitter)
 		emitter.birthRate = 0
 	}
-	
+
 	override open var bounds: CGRect {
 		didSet {
 			setViews()
 		}
 	}
-	
+
 	private func confetti(forColor color: UIColor) -> CAEmitterCell {
 		let cell = CAEmitterCell()
 		cell.birthRate = intensity * 6
@@ -80,5 +80,5 @@ open class PCConfettiView: PCView {
 		
 		return cell
 	}
-	
+
 }

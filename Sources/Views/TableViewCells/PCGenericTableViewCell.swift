@@ -10,8 +10,8 @@ import UIKit
 
 /// Generic PCTableViewCell.
 open class PCGenericTableViewCell<T>: PCTableViewCell {
-	
+
 	/// Generic item, override this to set your UI.
 	open var item: T!
-	
+
 }
