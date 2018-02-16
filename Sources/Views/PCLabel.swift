@@ -11,7 +11,6 @@ import SnapKit
 /// PCLabel.
 open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 
-	/// Create label and set its properties in one line.
 	///
 	/// - Parameters:
 	///   - text: label text (default is "").
@@ -20,22 +19,49 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 	///   - backgroundColor: label background color (default is .white).
 	///   - textColor: label text color (defaul is .black).
 	///   - font: label font (defaul is system font).
+
+
+	/// Create label and set its properties in one line.
+	///
+	/// - Parameters:
+	///   - text: label text (default is "").
+	///   - attributedText: label attributed text (default is nil).
+	///   - textAlignment: label text alignment (default is .natural).
+	///   - numberOfLines: number of lines (default is 1).
+	///   - backgroundColor: label background color (default is .white).
+	///   - textColor: label text color (defaul is .black).
+	///   - alpha: alpha (default is 1.0).
+	///   - font: label font (defaul is system font).
+	///   - minimumScaleFactor: minimum text scale factor (default is 1).
 	public convenience init (
 		text: String? = "",
+		attributedText: NSAttributedString? = nil,
 		textAlignment: NSTextAlignment = .natural,
 		numberOfLines: Int = 1,
 		backgroundColor: UIColor = .white,
 		textColor: UIColor = .black,
-		font: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)) {
+		alpha: CGFloat = 1.0,
+		font: UIFont? = nil,
+		minimumScaleFactor: CGFloat = 1.0) {
 
 		self.init()
 
 		self.text = text
+		self.attributedText = attributedText
 		self.textAlignment = textAlignment
 		self.numberOfLines = numberOfLines
 		self.backgroundColor = backgroundColor
 		self.textColor = textColor
-		self.font = font
+		self.alpha = alpha
+
+		if let aFont = font {
+			self.font = aFont
+		}
+
+		if minimumScaleFactor < 1 {
+			self.adjustsFontSizeToFitWidth = true
+			self.minimumScaleFactor = minimumScaleFactor
+		}
 	}
 
 	override public init(frame: CGRect) {

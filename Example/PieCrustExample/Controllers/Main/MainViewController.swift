@@ -8,7 +8,7 @@
 
 import PieCrust
 
-class MainViewController: PCViewController<MainView> {
+class MainViewController: PCViewController {
 
     override var shouldObserveKeyboardEvents: Bool {
         return true
@@ -18,14 +18,14 @@ class MainViewController: PCViewController<MainView> {
         view = MainView()
     }
 
-    var mainView: MainView {
-        return view as! MainView
-    }
+	override var pcView: MainView {
+		return view as! MainView
+	}
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        mainView.showCarListButton.addTarget(self, action: #selector(didTapShowCarListButton(sender:)), for: .touchUpInside)
+        pcView.showCarListButton.addTarget(self, action: #selector(didTapShowCarListButton(sender:)), for: .touchUpInside)
     }
 
     @objc

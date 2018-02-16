@@ -1,12 +1,14 @@
 {
   "name": "PieCrust",
-  "version": "0.1",
+  "version": "0.2",
   "summary": "[WIP] PieCrust is the foundation layer we use here at Mobilion to write iOS apps with ease.",
+  "description": "PieCrust is the foundation layer we use here at Mobilion to write iOS apps with ease.",
   "homepage": "https://github.com/MobilionOSS/PieCrust",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
+  "social_media_url": "http://twitter.com/omaralbeik",
   "authors": {
     "Mobilion": "https://github.com/MobilionOSS",
     "Omar Albeik": "https://twitter.com/omaralbeik"
@@ -16,7 +18,7 @@
   },
   "source": {
     "git": "https://github.com/MobilionOSS/PieCrust.git",
-    "tag": "0.1"
+    "tag": "0.2"
   },
   "source_files": "Sources/**/*.swift",
   "ios": {
