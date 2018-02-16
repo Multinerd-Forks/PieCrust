@@ -53,7 +53,7 @@ public extension PCAlertable where Self: UIViewController {
 	///   - completion: optional completion handler is called after the alert is presented (default is nil).
 	/// - Returns: presented alert.
 	public func presentAlert(title: String?, message: String?, preferredStyle: UIAlertControllerStyle = .alert, actions: [UIAlertAction] = [], animated: Bool = true, completion: (() -> Void)? = nil) -> UIAlertController {
-		
+
 		let alert = self.alert(title: title, message: message, preferredStyle: preferredStyle, actions: actions, animated: animated)
 		present(alert, animated: animated, completion: completion)
 		return alert
@@ -71,7 +71,7 @@ public extension PCAlertable where Self: UIViewController {
 	///   - completion: optional completion handler is called after the alert is presented (default is nil).
 	/// - Returns: presented alert.
 	public func presentAlert(title: String?, error: Error, preferredStyle: UIAlertControllerStyle = .alert, actions: [UIAlertAction] = [], animated: Bool = true, completion: (() -> Void)? = nil) -> UIAlertController {
-		
+
 		let alert = self.alert(title: title, message: error.localizedDescription, preferredStyle: preferredStyle, actions: actions, animated: animated)
 		present(alert, animated: animated, completion: completion)
 		return alert

@@ -33,7 +33,7 @@ open class PCConfettiView: PCView {
 
 	public convenience init(colors: [UIColor] = [], intensity: Float = 0.5) {
 		self.init()
-		
+
 		if !colors.isEmpty {
 			self.colors = colors
 		}
@@ -43,11 +43,11 @@ open class PCConfettiView: PCView {
 	override open func setViews() {
 		backgroundColor = .clear
 		isUserInteractionEnabled = false
-		
+
 		emitter.position = CGPoint(x: UIScreen.main.bounds.width / 2, y: 0)
 		emitter.emitterShape = kCAEmitterLayerLine
 		emitter.emitterSize = CGSize(width: UIScreen.main.bounds.width, height: 1)
-		
+
 		emitter.emitterCells = colors.map { self.confetti(forColor: $0) }
 		layer.addSublayer(emitter)
 		emitter.birthRate = 0
@@ -72,12 +72,12 @@ open class PCConfettiView: PCView {
 		cell.spinRange = CGFloat(intensity * 4)
 		cell.scaleRange = CGFloat(intensity)
 		cell.scaleSpeed = CGFloat(intensity * -0.1)
-		
+
 		guard let bundle = Bundle.PieCrustAssetsBundle else { return cell }
 		guard let path = bundle.path(forResource: "Images/confetti", ofType: "png") else { return cell }
 		guard let image = UIImage(contentsOfFile: path) else { return cell }
 		cell.contents = image.cgImage
-		
+
 		return cell
 	}
 

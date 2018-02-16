@@ -29,7 +29,7 @@ open class PCWebViewController: PCViewController {
 	/// - Parameter requestType: web request type.
 	public convenience init(requestType: WebRequestType) {
 		self.init()
-		
+
 		self.requestType = requestType
 	}
 
@@ -45,7 +45,7 @@ open class PCWebViewController: PCViewController {
 
 	override open func viewDidLoad() {
         super.viewDidLoad()
-		
+
 		view.addSubview(webView)
 		webView.snp.makeConstraints { $0.edges.equalToSuperview() }
     }

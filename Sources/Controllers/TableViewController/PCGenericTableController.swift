@@ -28,13 +28,13 @@ open class PCGenericTableController<T: PCGenericTableViewCell<U>, U>: PCTableVie
 
 		registerCell()
 	}
-	
+
 	override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
 		registerCell()
 	}
-	
+
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 

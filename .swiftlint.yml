@@ -1,0 +1,11 @@
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+  - vertical_parameter_alignment
+  - function_parameter_count
+  - force_cast
+
+excluded:
+  - Carthage
+  - Pods
+  - Example

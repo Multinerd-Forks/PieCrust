@@ -43,6 +43,7 @@
 		07DADFB82036DBEA002A6088 /* PCConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADFA82036DBE9002A6088 /* PCConfettiView.swift */; };
 		07DADFB92036DBEA002A6088 /* PCStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADFA92036DBE9002A6088 /* PCStackView.swift */; };
 		10BECFC5A4C6CA13C783D623 /* Pods_PieCrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A24FF575DD603DF0641541 /* Pods_PieCrust.framework */; };
+		9CABBA96D3664D76A93E5EEF /* Pods_PieCrustTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB90DEA029ADF1603D9AA19 /* Pods_PieCrustTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,9 @@
 		12A24FF575DD603DF0641541 /* Pods_PieCrust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PieCrust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CBBC1DC7D2FD0A302F9602 /* Pods-PieCrust.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrust.release.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust.release.xcconfig"; sourceTree = "<group>"; };
 		3E29A3584D79B23F9A56D03F /* Pods-PieCrust.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrust.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust.debug.xcconfig"; sourceTree = "<group>"; };
+		BBB90DEA029ADF1603D9AA19 /* Pods_PieCrustTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PieCrustTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBE8D9167CE34F1DC69FF1A /* Pods-PieCrustTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrustTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrustTests/Pods-PieCrustTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2F4630D8073FA1DEE419AC4 /* Pods-PieCrustTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrustTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrustTests/Pods-PieCrustTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0795087D2036FF5D003EA142 /* PieCrust.framework in Frameworks */,
+				9CABBA96D3664D76A93E5EEF /* Pods_PieCrustTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,8 +127,8 @@
 		0701FE2D202830C90055AC19 = {
 			isa = PBXGroup;
 			children = (
-				079508792036FF5D003EA142 /* Tests */,
 				07A486ED2028368A0028148C /* Sources */,
+				079508792036FF5D003EA142 /* Tests */,
 				0701FE38202830C90055AC19 /* Products */,
 				6BC224016352FA0A4E178310 /* Pods */,
 				23E40FE59AC690FA33604311 /* Frameworks */,
@@ -305,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				12A24FF575DD603DF0641541 /* Pods_PieCrust.framework */,
+				BBB90DEA029ADF1603D9AA19 /* Pods_PieCrustTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 			children = (
 				3E29A3584D79B23F9A56D03F /* Pods-PieCrust.debug.xcconfig */,
 				25CBBC1DC7D2FD0A302F9602 /* Pods-PieCrust.release.xcconfig */,
+				F2F4630D8073FA1DEE419AC4 /* Pods-PieCrustTests.debug.xcconfig */,
+				CBBE8D9167CE34F1DC69FF1A /* Pods-PieCrustTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -342,6 +350,7 @@
 				0701FE34202830C90055AC19 /* Headers */,
 				0701FE35202830C90055AC19 /* Resources */,
 				B1073115025D9A5B9C4AEC39 /* [CP] Copy Pods Resources */,
+				079E2CCF20371F1C00FCFF63 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -356,9 +365,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 079508822036FF5D003EA142 /* Build configuration list for PBXNativeTarget "PieCrustTests" */;
 			buildPhases = (
+				11DDBF76ADA80655A4BBD928 /* [CP] Check Pods Manifest.lock */,
 				079508742036FF5D003EA142 /* Sources */,
 				079508752036FF5D003EA142 /* Frameworks */,
 				079508762036FF5D003EA142 /* Resources */,
+				BA9CA720C7822C11B5FC996F /* [CP] Embed Pods Frameworks */,
+				7DCA98015FA45DE983FF648B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,6 +440,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		079E2CCF20371F1C00FCFF63 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		11DDBF76ADA80655A4BBD928 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PieCrustTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DCA98015FA45DE983FF648B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PieCrustTests/Pods-PieCrustTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A2D184603B7F25B73ADA0E14 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -459,6 +517,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA9CA720C7822C11B5FC996F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PieCrustTests/Pods-PieCrustTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PieCrustTests/Pods-PieCrustTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -683,6 +759,7 @@
 		};
 		079508802036FF5D003EA142 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2F4630D8073FA1DEE419AC4 /* Pods-PieCrustTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK6AZMQTF3;
@@ -698,6 +775,7 @@
 		};
 		079508812036FF5D003EA142 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBBE8D9167CE34F1DC69FF1A /* Pods-PieCrustTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK6AZMQTF3;

@@ -8,8 +8,9 @@ env:
     - IOS_DESTINATION='platform=iOS Simulator,name=iPhone X'
 
 before_install:
-  - bundle install
   - brew update
+  - gem install cocoapods
+  - gem install xcpretty
   - brew outdated xctool || brew upgrade xctool
 
 script:

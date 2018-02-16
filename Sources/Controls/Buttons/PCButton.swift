@@ -46,7 +46,7 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
-		
+
 		setViews()
 		layoutViews()
 	}

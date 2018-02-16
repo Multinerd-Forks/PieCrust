@@ -36,18 +36,18 @@ internal extension UIViewController {
 		preferredStyle: UIAlertControllerStyle = .alert,
 		actions: [UIAlertAction] = [],
 		animated: Bool = true) -> UIAlertController {
-		
+
 		let alert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
-		
+
 		if actions.isEmpty {
 			let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
 			alert.addAction(okAction)
 		}
-		
+
 		for action in actions {
 			alert.addAction(action)
 		}
-		
+
 		return alert
 	}
 

@@ -13,15 +13,15 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 
 	/// TextField text type.
 	///
-    /// - emailAddress: TextField is used to enter email addresses.
-    /// - emailAddress: TextField is used to enter URLs.
+	/// - emailAddress: TextField is used to enter email addresses.
+	/// - emailAddress: TextField is used to enter URLs.
 	/// - phoneNumber: TextField is used to enter phone numbers.
 	/// - decimal: TextField is used to enter decimal numbers.
 	/// - password: TextField is used to enter passwords.
 	/// - generic: TextField is used to enter generic text.
 	public enum TextType {
 		case emailAddress
-        case url
+		case url
 		case phoneNumber
 		case decimal
 		case password
@@ -32,61 +32,61 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 	///
 	/// - Parameters:
 	///   - placeholder: The string that is displayed when there is no other text in the text field.
-    ///   - text: The text displayed by the text field. (default is nil)
-    ///   - attributedPlaceholder: The styled string that is displayed when there is no other text in the text field (default is nil).
-    ///   - attributedText: The styled text displayed by the text field (default is nil).
+	///   - text: The text displayed by the text field. (default is nil)
+	///   - attributedPlaceholder: The styled string that is displayed when there is no other text in the text field (default is nil).
+	///   - attributedText: The styled text displayed by the text field (default is nil).
 	///   - textAlignment: The technique to use for aligning the text (default is .natural).
-    ///   - textType: The text field's text type (default is .generic).
-    ///   - clearsOnBeginEditing: A Boolean value indicating whether the text field removes old text when editing begins (default is false).
+	///   - textType: The text field's text type (default is .generic).
+	///   - clearsOnBeginEditing: A Boolean value indicating whether the text field removes old text when editing begins (default is false).
 	///   - backgroundColor: The text field's background color (default is .white).
 	///   - textColor: The color of the text (default is .black).
-    ///   - font: The font of the text (default is system font).
-    ///   - minimumFontSize: The size of the smallest permissible font with which to draw the text field’s text (default is nil).
-    ///   - borderStyle: The type of border drawn around the text field (default is .none).
-    ///   - isEnabled: The enabled state to use when drawing the label’s text. (default is true).
-    ///   - alpha: Text field's alpha (default is 1.0).
+	///   - font: The font of the text (default is system font).
+	///   - minimumFontSize: The size of the smallest permissible font with which to draw the text field’s text (default is nil).
+	///   - borderStyle: The type of border drawn around the text field (default is .none).
+	///   - isEnabled: The enabled state to use when drawing the label’s text. (default is true).
+	///   - alpha: Text field's alpha (default is 1.0).
 	public convenience init(
 		placeholder: String?,
 		text: String? = nil,
-        attributedPlaceholder: NSAttributedString? = nil,
-        attributedText: NSAttributedString? = nil,
+		attributedPlaceholder: NSAttributedString? = nil,
+		attributedText: NSAttributedString? = nil,
 		textAlignment: NSTextAlignment = .natural,
 		textType: TextType = .generic,
-        clearsOnBeginEditing: Bool = false,
+		clearsOnBeginEditing: Bool = false,
 		backgroundColor: UIColor? = .white,
 		textColor: UIColor = .black,
-        font: UIFont? = nil,
-        minimumFontSize: CGFloat? = nil,
-        borderStyle: UITextBorderStyle = .none,
-        isEnabled: Bool = true,
-        alpha: CGFloat = 1.0) {
+		font: UIFont? = nil,
+		minimumFontSize: CGFloat? = nil,
+		borderStyle: UITextBorderStyle = .none,
+		isEnabled: Bool = true,
+		alpha: CGFloat = 1.0) {
 
 		self.init()
 
 		self.placeholder = placeholder
 		self.text = text
 
-        self.attributedPlaceholder = attributedPlaceholder
-        self.attributedText = attributedText
+		self.attributedPlaceholder = attributedPlaceholder
+		self.attributedText = attributedText
 
 		self.textAlignment = textAlignment
 		self.textType = textType
-        self.clearsOnBeginEditing = clearsOnBeginEditing
+		self.clearsOnBeginEditing = clearsOnBeginEditing
 		self.backgroundColor = backgroundColor
 		self.textColor = textColor
 
-        if let aFont = font {
-            self.font = aFont
-        }
+		if let aFont = font {
+			self.font = aFont
+		}
 
-        if let aMinimumFontSize = minimumFontSize {
-            self.adjustsFontSizeToFitWidth = true
-            self.minimumFontSize = aMinimumFontSize
-        }
+		if let aMinimumFontSize = minimumFontSize {
+			self.adjustsFontSizeToFitWidth = true
+			self.minimumFontSize = aMinimumFontSize
+		}
 
-        self.borderStyle = borderStyle
-        self.isEnabled = isEnabled
-        self.alpha = alpha
+		self.borderStyle = borderStyle
+		self.isEnabled = isEnabled
+		self.alpha = alpha
 	}
 
 	override public init(frame: CGRect) {
@@ -157,10 +157,10 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 				autocorrectionType = .no
 				autocapitalizationType = .none
 
-            case .url:
-                keyboardType = .URL
-                autocorrectionType = .no
-                autocapitalizationType = .none
+			case .url:
+				keyboardType = .URL
+				autocorrectionType = .no
+				autocapitalizationType = .none
 
 			case .phoneNumber:
 				if #available(iOS 10.0, *) {
