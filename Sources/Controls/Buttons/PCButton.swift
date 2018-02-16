@@ -14,21 +14,26 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 	/// Create button and set its properties in one line.
 	///
 	/// - Parameters:
-	///   - type: button type (default is .custom).
-	///   - title: button title (defaul is nil).
-	///   - backgroundColor: button background color (defaul is .white).
-	///   - tintColor: button tint color (defaul is .black).
-	///   - contentEdgeInsets: button content edge insets (defaul is top: 0, left: 20, bottom: 0, right: 20).
+	///   - type: The button type (default is .custom).
+    ///   - title: The button title for normal state.
+    ///   - image: The button image for normal state (defaul is nil).
+	///   - backgroundColor: The button background color (defaul is .white).
+	///   - tintColor: The button tint color (defaul is .black).
+	///   - contentEdgeInsets: The button's content edge insets (defaul is top: 0, left: 20, bottom: 0, right: 20).
+    ///   - alpha: The button's alpha (default is 1.0).
 	public convenience init(
 		type: UIButtonType = .custom,
-		title: String? = nil,
+		title: String?,
+        image: UIImage? = nil,
 		backgroundColor: UIColor? = .white,
 		tintColor: UIColor? = .black,
-		contentEdgeInsets: UIEdgeInsets = .init(top: 0, left: 20, bottom: 0, right: 20)) {
+        contentEdgeInsets: UIEdgeInsets = .init(top: 0, left: 20, bottom: 0, right: 20),
+        alpha: CGFloat = 1.0) {
 
 		self.init(type: type)
 
 		self.setTitle(title, for: .normal)
+        self.setImage(image, for: .normal)
 		self.backgroundColor = backgroundColor
 
 		if let color = tintColor {
@@ -36,6 +41,7 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 		}
 
 		self.contentEdgeInsets = contentEdgeInsets
+        self.alpha = alpha
 	}
 
 	override public init(frame: CGRect) {
@@ -53,9 +59,7 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 	}
 
 	/// Use this method to set and add your custom views.
-	open func setViews() {
-		backgroundColor = .white
-	}
+	open func setViews() {}
 
 	/// Use this method to layout your custom views using SnapKit.
 	open func layoutViews() {}
@@ -65,9 +69,9 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 		return 20
 	}
 
-	/// Preferred height for autolayout (default is 42 for small screens and 48 for other screen sizes).
+	/// Preferred height for autolayout (default is 40.0 for small screens and 48.0 for other screen sizes).
 	open var preferredHeight: CGFloat {
-		return UIScreen.main.isSmall ? 42 : 48
+		return UIScreen.main.isSmall ? 40.0 : 48.0
 	}
 
 }

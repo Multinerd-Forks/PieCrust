@@ -23,9 +23,7 @@ class CarTableViewCell: PCGenericTableViewCell<Car> {
 	}()
 
 	lazy var modelLabel: PCLabel = {
-		let label = PCLabel()
-		label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-		return label
+        return PCLabel(font: UIFont.systemFont(ofSize: 20, weight: .bold))
 	}()
 
 	lazy var yearLabel: PCLabel = {
@@ -33,9 +31,7 @@ class CarTableViewCell: PCGenericTableViewCell<Car> {
 	}()
 
 	lazy var labelsStackView: UIStackView = {
-		let view = UIStackView(arrangedSubviews: [modelLabel, yearLabel])
-		view.axis = .vertical
-		return view
+        return [modelLabel, yearLabel].stacked(axis: .vertical)
 	}()
 
 	override var preferredPadding: CGFloat {

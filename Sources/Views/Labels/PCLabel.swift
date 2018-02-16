@@ -11,38 +11,30 @@ import SnapKit
 /// PCLabel.
 open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 
+    /// Create label and set its properties in one line.
 	///
 	/// - Parameters:
-	///   - text: label text (default is "").
-	///   - textAlignment: label text alignment (default is .natural).
-	///   - numberOfLines: number of lines (default is 1).
-	///   - backgroundColor: label background color (default is .white).
-	///   - textColor: label text color (defaul is .black).
-	///   - font: label font (defaul is system font).
-
-
-	/// Create label and set its properties in one line.
-	///
-	/// - Parameters:
-	///   - text: label text (default is "").
-	///   - attributedText: label attributed text (default is nil).
-	///   - textAlignment: label text alignment (default is .natural).
-	///   - numberOfLines: number of lines (default is 1).
-	///   - backgroundColor: label background color (default is .white).
-	///   - textColor: label text color (defaul is .black).
-	///   - alpha: alpha (default is 1.0).
-	///   - font: label font (defaul is system font).
-	///   - minimumScaleFactor: minimum text scale factor (default is 1).
+	///   - text: Label's text (default is "").
+	///   - attributedText: Label's attributed text (default is nil).
+	///   - textAlignment: The technique to use for aligning the text (default is .natural).
+	///   - numberOfLines: The maximum number of lines to use for rendering text (default is 1).
+    ///   - backgroundColor: The label's background color (default is .white).
+    ///   - textColor: The color of the text (defaul is .black).
+    ///   - font: label font (defaul is system font).
+    ///   - minimumScaleFactor: The minimum scale factor supported for the label’s text (default is 1).
+    ///   - lineBreakMode: The technique to use for wrapping and truncating the label’s text (default is .byTruncatingTail).
+    ///   - alpha: Label's alpha (default is 1.0).
 	public convenience init (
 		text: String? = "",
 		attributedText: NSAttributedString? = nil,
 		textAlignment: NSTextAlignment = .natural,
 		numberOfLines: Int = 1,
-		backgroundColor: UIColor = .white,
-		textColor: UIColor = .black,
-		alpha: CGFloat = 1.0,
-		font: UIFont? = nil,
-		minimumScaleFactor: CGFloat = 1.0) {
+        backgroundColor: UIColor = .white,
+        textColor: UIColor = .black,
+        font: UIFont? = nil,
+        minimumScaleFactor: CGFloat = 1.0,
+        lineBreakMode: NSLineBreakMode = .byTruncatingTail,
+        alpha: CGFloat = 1.0) {
 
 		self.init()
 
@@ -52,7 +44,6 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 		self.numberOfLines = numberOfLines
 		self.backgroundColor = backgroundColor
 		self.textColor = textColor
-		self.alpha = alpha
 
 		if let aFont = font {
 			self.font = aFont
@@ -62,6 +53,9 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 			self.adjustsFontSizeToFitWidth = true
 			self.minimumScaleFactor = minimumScaleFactor
 		}
+
+        self.lineBreakMode = lineBreakMode
+        self.alpha = alpha
 	}
 
 	override public init(frame: CGRect) {
@@ -89,12 +83,12 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 		return 20.0
 	}
 
-	/// Check if label trimmed text is empty.
+	/// Check if label's trimmed text is empty.
 	public var isEmpty: Bool {
 		return trimmedText.isEmpty
 	}
 
-	/// Label text trimming whitespaces and new lines.
+	/// Label's text trimming whitespaces and new lines.
 	public var trimmedText: String {
 		return text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 	}

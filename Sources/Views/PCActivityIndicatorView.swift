@@ -14,15 +14,21 @@ open class PCActivityIndicatorView: UIActivityIndicatorView {
 	/// Create activity indicator view and set its properties in one line.
 	///
 	/// - Parameters:
-	///   - style: activity indicator view style (default is .white).
-	///   - color: activity indicator view color.
+	///   - activityIndicatorStyle: The basic appearance of the activity indicator (default is .white).
+    ///   - hidesWhenStopped: A Boolean value that controls whether the receiver is hidden when the animation is stopped (default is true).
+    ///   - color: The color of the activity indicator.
+    ///   - alpha: Activity indicator's alpha (default is 1.0).
 	public convenience init(
-		activityIndicatorStyle style: UIActivityIndicatorViewStyle = .white,
-		color: UIColor) {
+		activityIndicatorStyle: UIActivityIndicatorViewStyle = .white,
+        hidesWhenStopped: Bool = true,
+        color: UIColor?,
+        alpha: CGFloat = 1.0) {
 
-		self.init(activityIndicatorStyle: style)
+		self.init(activityIndicatorStyle: activityIndicatorStyle)
 
+        self.hidesWhenStopped = hidesWhenStopped
 		self.color = color
+        self.alpha = alpha
 	}
 
 }
