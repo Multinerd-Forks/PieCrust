@@ -1,0 +1,20 @@
+language: objective-c
+osx_image: xcode9.2
+
+env:
+  global:
+    - WORKSPACE='PieCrust.xcworkspace'
+    - IOS_SCHEME='PieCrust'
+    - IOS_DESTINATION='platform=iOS Simulator,name=iPhone X'
+
+before_install:
+  - bundle install
+  - brew update
+  - brew outdated xctool || brew upgrade xctool
+
+script:
+  - set -o pipefail
+  - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$IOS_SCHEME" -destination "$IOS_DESTINATION" | xcpretty
+  - bash <(curl -s https://codecov.io/bash) -cF ios -J 'PieCrust'
+  - swiftlint lint
+  - pod lib lint

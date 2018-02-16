@@ -22,6 +22,8 @@
 		0711C5DF202C6CA0008BF833 /* InternalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711C5BF202C6CA0008BF833 /* InternalExtensions.swift */; };
 		0711C5E0202C6CA0008BF833 /* PublicExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711C5C0202C6CA0008BF833 /* PublicExtensions.swift */; };
 		072AE05D2028506B00D8DDAD /* PieCrustAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 072AE05C2028506B00D8DDAD /* PieCrustAssets.bundle */; };
+		0795087B2036FF5D003EA142 /* PieCrustTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795087A2036FF5D003EA142 /* PieCrustTests.swift */; };
+		0795087D2036FF5D003EA142 /* PieCrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0701FE37202830C90055AC19 /* PieCrust.framework */; };
 		079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */; };
 		079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */; };
 		07DADFAA2036DBE9002A6088 /* PCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADF942036DBE9002A6088 /* PCButton.swift */; };
@@ -40,7 +42,18 @@
 		07DADFB72036DBEA002A6088 /* PCImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADFA72036DBE9002A6088 /* PCImageView.swift */; };
 		07DADFB82036DBEA002A6088 /* PCConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADFA82036DBE9002A6088 /* PCConfettiView.swift */; };
 		07DADFB92036DBEA002A6088 /* PCStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADFA92036DBE9002A6088 /* PCStackView.swift */; };
+		10BECFC5A4C6CA13C783D623 /* Pods_PieCrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A24FF575DD603DF0641541 /* Pods_PieCrust.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0795087E2036FF5D003EA142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0701FE2E202830C90055AC19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0701FE36202830C90055AC19;
+			remoteInfo = PieCrust;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0701FE37202830C90055AC19 /* PieCrust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PieCrust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +73,9 @@
 		0711C5BF202C6CA0008BF833 /* InternalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalExtensions.swift; sourceTree = "<group>"; };
 		0711C5C0202C6CA0008BF833 /* PublicExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicExtensions.swift; sourceTree = "<group>"; };
 		072AE05C2028506B00D8DDAD /* PieCrustAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PieCrustAssets.bundle; sourceTree = "<group>"; };
+		079508782036FF5D003EA142 /* PieCrustTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PieCrustTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0795087A2036FF5D003EA142 /* PieCrustTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieCrustTests.swift; sourceTree = "<group>"; };
+		0795087C2036FF5D003EA142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewController.swift; sourceTree = "<group>"; };
 		079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericCollectionViewController.swift; sourceTree = "<group>"; };
 		07DADF942036DBE9002A6088 /* PCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCButton.swift; sourceTree = "<group>"; };
@@ -78,6 +94,9 @@
 		07DADFA72036DBE9002A6088 /* PCImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCImageView.swift; sourceTree = "<group>"; };
 		07DADFA82036DBE9002A6088 /* PCConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCConfettiView.swift; sourceTree = "<group>"; };
 		07DADFA92036DBE9002A6088 /* PCStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCStackView.swift; sourceTree = "<group>"; };
+		12A24FF575DD603DF0641541 /* Pods_PieCrust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PieCrust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CBBC1DC7D2FD0A302F9602 /* Pods-PieCrust.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrust.release.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust.release.xcconfig"; sourceTree = "<group>"; };
+		3E29A3584D79B23F9A56D03F /* Pods-PieCrust.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrust.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +104,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BECFC5A4C6CA13C783D623 /* Pods_PieCrust.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079508752036FF5D003EA142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0795087D2036FF5D003EA142 /* PieCrust.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +122,11 @@
 		0701FE2D202830C90055AC19 = {
 			isa = PBXGroup;
 			children = (
-				0701FE39202830C90055AC19 /* PieCrust */,
+				079508792036FF5D003EA142 /* Tests */,
+				07A486ED2028368A0028148C /* Sources */,
 				0701FE38202830C90055AC19 /* Products */,
+				6BC224016352FA0A4E178310 /* Pods */,
+				23E40FE59AC690FA33604311 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,16 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				0701FE37202830C90055AC19 /* PieCrust.framework */,
+				079508782036FF5D003EA142 /* PieCrustTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		0701FE39202830C90055AC19 /* PieCrust */ = {
-			isa = PBXGroup;
-			children = (
-				07A486ED2028368A0028148C /* Sources */,
-			);
-			path = PieCrust;
 			sourceTree = "<group>";
 		};
 		0711C5B0202C6CA0008BF833 /* Controllers */ = {
@@ -165,6 +189,15 @@
 			);
 			path = Assets;
 			sourceTree = SOURCE_ROOT;
+		};
+		079508792036FF5D003EA142 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0795087A2036FF5D003EA142 /* PieCrustTests.swift */,
+				0795087C2036FF5D003EA142 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
 		};
 		079F8F6F202DE4FB00599D22 /* CollectionViewController */ = {
 			isa = PBXGroup;
@@ -268,6 +301,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		23E40FE59AC690FA33604311 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12A24FF575DD603DF0641541 /* Pods_PieCrust.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BC224016352FA0A4E178310 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E29A3584D79B23F9A56D03F /* Pods-PieCrust.debug.xcconfig */,
+				25CBBC1DC7D2FD0A302F9602 /* Pods-PieCrust.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -286,10 +336,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0701FE3F202830C90055AC19 /* Build configuration list for PBXNativeTarget "PieCrust" */;
 			buildPhases = (
+				A2D184603B7F25B73ADA0E14 /* [CP] Check Pods Manifest.lock */,
 				0701FE32202830C90055AC19 /* Sources */,
 				0701FE33202830C90055AC19 /* Frameworks */,
 				0701FE34202830C90055AC19 /* Headers */,
 				0701FE35202830C90055AC19 /* Resources */,
+				B1073115025D9A5B9C4AEC39 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,18 +352,41 @@
 			productReference = 0701FE37202830C90055AC19 /* PieCrust.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		079508772036FF5D003EA142 /* PieCrustTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079508822036FF5D003EA142 /* Build configuration list for PBXNativeTarget "PieCrustTests" */;
+			buildPhases = (
+				079508742036FF5D003EA142 /* Sources */,
+				079508752036FF5D003EA142 /* Frameworks */,
+				079508762036FF5D003EA142 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0795087F2036FF5D003EA142 /* PBXTargetDependency */,
+			);
+			name = PieCrustTests;
+			productName = PieCrustTests;
+			productReference = 079508782036FF5D003EA142 /* PieCrustTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0701FE2E202830C90055AC19 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Mobilion;
 				TargetAttributes = {
 					0701FE36202830C90055AC19 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					079508772036FF5D003EA142 = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -329,6 +404,7 @@
 			projectRoot = "";
 			targets = (
 				0701FE36202830C90055AC19 /* PieCrust */,
+				079508772036FF5D003EA142 /* PieCrustTests */,
 			);
 		};
 /* End PBXProject section */
@@ -342,7 +418,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		079508762036FF5D003EA142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2D184603B7F25B73ADA0E14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PieCrust-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1073115025D9A5B9C4AEC39 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0701FE32202830C90055AC19 /* Sources */ = {
@@ -383,7 +502,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		079508742036FF5D003EA142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0795087B2036FF5D003EA142 /* PieCrustTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0795087F2036FF5D003EA142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0701FE36202830C90055AC19 /* PieCrust */;
+			targetProxy = 0795087E2036FF5D003EA142 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0701FE3D202830C90055AC19 /* Debug */ = {
@@ -501,6 +636,7 @@
 		};
 		0701FE40202830C90055AC19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E29A3584D79B23F9A56D03F /* Pods-PieCrust.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -524,6 +660,7 @@
 		};
 		0701FE41202830C90055AC19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25CBBC1DC7D2FD0A302F9602 /* Pods-PieCrust.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -539,6 +676,36 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tr.com.mobilion.PieCrust;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		079508802036FF5D003EA142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6AZMQTF3;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tr.com.mobilion.PieCrustTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		079508812036FF5D003EA142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6AZMQTF3;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tr.com.mobilion.PieCrustTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -561,6 +728,15 @@
 			buildConfigurations = (
 				0701FE40202830C90055AC19 /* Debug */,
 				0701FE41202830C90055AC19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		079508822036FF5D003EA142 /* Build configuration list for PBXNativeTarget "PieCrustTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079508802036FF5D003EA142 /* Debug */,
+				079508812036FF5D003EA142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
