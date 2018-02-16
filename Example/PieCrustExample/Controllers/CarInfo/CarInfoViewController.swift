@@ -8,7 +8,7 @@
 
 import PieCrust
 
-class CarInfoViewController: PCViewController<CarInfoView> {
+class CarInfoViewController: PCViewController {
 
 	convenience init(car: Car) {
 		self.init()
@@ -17,6 +17,14 @@ class CarInfoViewController: PCViewController<CarInfoView> {
 	}
 
 	var car: Car!
+
+	override func loadView() {
+		view = CarInfoView()
+	}
+
+	override var pcView: CarInfoView {
+		return view as! CarInfoView
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

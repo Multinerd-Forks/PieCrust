@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 /// PCWebViewController.
-open class PCWebViewController: PCViewController<PCView> {
+open class PCWebViewController: PCViewController {
 
     /// Web request type.
     ///

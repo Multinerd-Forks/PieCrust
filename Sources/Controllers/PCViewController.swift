@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 /// PCViewController.
-open class PCViewController<V: PCView>: UIViewController, PCAlertable, PCConfettiable {
+open class PCViewController: UIViewController, PCAlertable, PCConfettiable {
 
 	override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -24,13 +24,9 @@ open class PCViewController<V: PCView>: UIViewController, PCAlertable, PCConfett
 		setTabBarItem()
 	}
 
-	open override func loadView() {
-		view = V()
-	}
-
 	/// PCView
-	open var pcView: V {
-		return view as! V
+	open var pcView: PCView {
+		return view as! PCView
 	}
 
 	override open func viewDidLoad() {

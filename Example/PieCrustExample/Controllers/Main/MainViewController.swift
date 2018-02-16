@@ -8,25 +8,26 @@
 
 import PieCrust
 
-class MainViewController: PCViewController<MainView> {
+class MainViewController: PCViewController {
 
-    override var shouldObserveKeyboardEvents: Bool {
-        return true
-    }
-
-    override func loadView() {
+   override func loadView() {
         view = MainView()
     }
 
-    var mainView: MainView {
-        return view as! MainView
-    }
+	override var pcView: MainView {
+		return view as! MainView
+	}
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        mainView.showCarListButton.addTarget(self, action: #selector(didTapShowCarListButton(sender:)), for: .touchUpInside)
+        pcView.showCarListButton.addTarget(self, action: #selector(didTapShowCarListButton(sender:)), for: .touchUpInside)
     }
+
+}
+
+// MARK: - Actions
+private extension MainViewController {
 
     @objc
     func didTapShowCarListButton(sender: PCLoadingButton) {
@@ -34,10 +35,9 @@ class MainViewController: PCViewController<MainView> {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             sender.isLoading = false
 
-			let carsVC = CarsTableViewController(items: Car.cars)
+            let carsVC = CarsTableViewController(items: Car.cars)
             self.navigationController?.pushViewController(carsVC, animated: true)
         }
-
     }
 
 }

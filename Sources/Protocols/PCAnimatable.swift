@@ -9,7 +9,7 @@
 import UIKit
 
 /// Conform to PCAnimatable protocol to animate views.
-public protocol PCAnimatable {
+public protocol PCAnimatable: class {
 
 	/// Fade in view.
 	///

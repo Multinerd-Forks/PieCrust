@@ -60,9 +60,9 @@ open class PCSegmentedControl: UISegmentedControl, PCAnimatable, PCBorderable {
 		return 20.0
 	}
 
-	/// Preferred height for autolayout (default is 42 for small screens and 48 for other screen sizes).
+	/// Preferred height for autolayout (default is 40.0 for small screens and 48.0 for other screen sizes).
 	open var preferredHeight: CGFloat {
-		return UIScreen.main.isSmall ? 42 : 48
+		return UIScreen.main.isSmall ? 40.0 : 48.0
 	}
 
 	/// Segments titles.
