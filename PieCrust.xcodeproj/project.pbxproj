@@ -22,7 +22,7 @@
 		0711C5DF202C6CA0008BF833 /* InternalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711C5BF202C6CA0008BF833 /* InternalExtensions.swift */; };
 		0711C5E0202C6CA0008BF833 /* PublicExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711C5C0202C6CA0008BF833 /* PublicExtensions.swift */; };
 		072AE05D2028506B00D8DDAD /* PieCrustAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 072AE05C2028506B00D8DDAD /* PieCrustAssets.bundle */; };
-		0795087B2036FF5D003EA142 /* PieCrustTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795087A2036FF5D003EA142 /* PieCrustTests.swift */; };
+		074EDDD62037309D00343889 /* PCLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074EDDD52037309D00343889 /* PCLabelTests.swift */; };
 		0795087D2036FF5D003EA142 /* PieCrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0701FE37202830C90055AC19 /* PieCrust.framework */; };
 		079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */; };
 		079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */; };
@@ -42,6 +42,7 @@
 		07DADFB72036DBEA002A6088 /* PCImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADFA72036DBE9002A6088 /* PCImageView.swift */; };
 		07DADFB82036DBEA002A6088 /* PCConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADFA82036DBE9002A6088 /* PCConfettiView.swift */; };
 		07DADFB92036DBEA002A6088 /* PCStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADFA92036DBE9002A6088 /* PCStackView.swift */; };
+		07EE01A0203A9C3300B26C25 /* PCTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EE019E203A9C1500B26C25 /* PCTextFieldTests.swift */; };
 		10BECFC5A4C6CA13C783D623 /* Pods_PieCrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A24FF575DD603DF0641541 /* Pods_PieCrust.framework */; };
 		9CABBA96D3664D76A93E5EEF /* Pods_PieCrustTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB90DEA029ADF1603D9AA19 /* Pods_PieCrustTests.framework */; };
 /* End PBXBuildFile section */
@@ -74,8 +75,8 @@
 		0711C5BF202C6CA0008BF833 /* InternalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalExtensions.swift; sourceTree = "<group>"; };
 		0711C5C0202C6CA0008BF833 /* PublicExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicExtensions.swift; sourceTree = "<group>"; };
 		072AE05C2028506B00D8DDAD /* PieCrustAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PieCrustAssets.bundle; sourceTree = "<group>"; };
+		074EDDD52037309D00343889 /* PCLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCLabelTests.swift; sourceTree = "<group>"; };
 		079508782036FF5D003EA142 /* PieCrustTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PieCrustTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0795087A2036FF5D003EA142 /* PieCrustTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieCrustTests.swift; sourceTree = "<group>"; };
 		0795087C2036FF5D003EA142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewController.swift; sourceTree = "<group>"; };
 		079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericCollectionViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		07DADFA72036DBE9002A6088 /* PCImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCImageView.swift; sourceTree = "<group>"; };
 		07DADFA82036DBE9002A6088 /* PCConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCConfettiView.swift; sourceTree = "<group>"; };
 		07DADFA92036DBE9002A6088 /* PCStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCStackView.swift; sourceTree = "<group>"; };
+		07EE019E203A9C1500B26C25 /* PCTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTextFieldTests.swift; sourceTree = "<group>"; };
 		12A24FF575DD603DF0641541 /* Pods_PieCrust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PieCrust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CBBC1DC7D2FD0A302F9602 /* Pods-PieCrust.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrust.release.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust.release.xcconfig"; sourceTree = "<group>"; };
 		3E29A3584D79B23F9A56D03F /* Pods-PieCrust.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrust.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust.debug.xcconfig"; sourceTree = "<group>"; };
@@ -195,11 +197,28 @@
 			path = Assets;
 			sourceTree = SOURCE_ROOT;
 		};
+		074EDDD72037421600343889 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				074EDDD52037309D00343889 /* PCLabelTests.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		074EDDD82037422000343889 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				074EDDD72037421600343889 /* Labels */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		079508792036FF5D003EA142 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0795087A2036FF5D003EA142 /* PieCrustTests.swift */,
+				07B5706D203AECCF002960D4 /* Controls */,
 				0795087C2036FF5D003EA142 /* Info.plist */,
+				074EDDD82037422000343889 /* Views */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -228,10 +247,19 @@
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
+		07B5706D203AECCF002960D4 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				07EE019D203A9BD500B26C25 /* TextFields */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		07DADF922036DBE9002A6088 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
 				07DADF932036DBE9002A6088 /* Buttons */,
+				07DADF9A2036DBE9002A6088 /* TextFields */,
 				07DADF972036DBE9002A6088 /* PCSwitch.swift */,
 				07DADF982036DBE9002A6088 /* PCSegmentedControl.swift */,
 			);
@@ -251,7 +279,6 @@
 		07DADF992036DBE9002A6088 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				07DADF9A2036DBE9002A6088 /* TextFields */,
 				07DADF9C2036DBE9002A6088 /* TableViewCells */,
 				07DADF9F2036DBE9002A6088 /* Labels */,
 				07DADFA12036DBE9002A6088 /* CollectionViewCells */,
@@ -304,6 +331,14 @@
 				07DADFA92036DBE9002A6088 /* PCStackView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		07EE019D203A9BD500B26C25 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				07EE019E203A9C1500B26C25 /* PCTextFieldTests.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 		23E40FE59AC690FA33604311 /* Frameworks */ = {
@@ -582,7 +617,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0795087B2036FF5D003EA142 /* PieCrustTests.swift in Sources */,
+				07EE01A0203A9C3300B26C25 /* PCTextFieldTests.swift in Sources */,
+				074EDDD62037309D00343889 /* PCLabelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,6 +31,11 @@ open class PCConfettiView: PCView {
 		}
 	}
 
+    /// Create a new confetti view and set its properties.
+    ///
+    /// - Parameters:
+    ///   - colors: confetti colors array.
+    ///   - intensity: confetti emitter intensity (default is 0.5).
 	public convenience init(colors: [UIColor] = [], intensity: Float = 0.5) {
 		self.init()
 
@@ -40,6 +45,7 @@ open class PCConfettiView: PCView {
 		self.intensity = intensity
 	}
 
+    /// Use this method to set and add your custom views.
 	override open func setViews() {
 		backgroundColor = .clear
 		isUserInteractionEnabled = false
@@ -53,6 +59,7 @@ open class PCConfettiView: PCView {
 		emitter.birthRate = 0
 	}
 
+    /// The bounds rectangle, which describes the view’s location and size in its own coordinate system.
 	override open var bounds: CGRect {
 		didSet {
 			setViews()

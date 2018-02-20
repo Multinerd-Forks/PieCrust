@@ -23,11 +23,11 @@ class CarTableViewCell: PCGenericTableViewCell<Car> {
 	}()
 
 	lazy var modelLabel: PCLabel = {
-        return PCLabel(font: UIFont.systemFont(ofSize: 20, weight: .bold))
+        return PCLabel(text: "Model", font: UIFont.systemFont(ofSize: 20, weight: .bold))
 	}()
 
 	lazy var yearLabel: PCLabel = {
-		return PCLabel()
+		return PCLabel(text: "Year")
 	}()
 
 	lazy var labelsStackView: UIStackView = {

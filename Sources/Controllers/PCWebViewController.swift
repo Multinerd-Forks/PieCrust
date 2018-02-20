@@ -43,6 +43,7 @@ open class PCWebViewController: PCViewController {
 		return view
 	}()
 
+    /// Called after the controller's view is loaded into memory.
 	override open func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,6 +51,7 @@ open class PCWebViewController: PCViewController {
 		webView.snp.makeConstraints { $0.edges.equalToSuperview() }
     }
 
+    /// Notifies the view controller that its view is about to be added to a view hierarchy.
 	open override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 

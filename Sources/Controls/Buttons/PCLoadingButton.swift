@@ -67,6 +67,7 @@ open class PCLoadingButton: PCButton {
 		}
 	}
 
+    /// Use this method to set and add your custom views.
 	override open func setViews() {
 		super.setViews()
 

@@ -12,6 +12,7 @@ import SnapKit
 /// PCTableViewCell.
 open class PCTableViewCell: UITableViewCell, PCAnimatable, PCBorderable {
 
+    /// Initializes a table cell with a style and a reuse identifier and returns it to the caller.
 	override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
 
@@ -19,6 +20,7 @@ open class PCTableViewCell: UITableViewCell, PCAnimatable, PCBorderable {
 		layoutViews()
 	}
 
+    /// Returns a PCTableViewCell object initialized from data in a given unarchiver.
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 

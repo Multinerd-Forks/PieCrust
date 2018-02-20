@@ -1,5 +1,5 @@
 PODS:
-  - PieCrust (0.2):
+  - PieCrust (0.3):
     - SnapKit (~> 4.0)
   - SnapKit (4.0.0)
 
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  PieCrust: 86caa693bd96bf96a76617ae42cae9c3ae7388de
+  PieCrust: 3a43a4deedd414c2f6a42dc6810556a0256b5794
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
 PODFILE CHECKSUM: dfd5ddd251420908a6e0c32adba8954aee3c5d9e

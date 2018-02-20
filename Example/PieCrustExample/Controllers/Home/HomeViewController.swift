@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  HomeViewController.swift
 //  PieCrustExample
 //
 //  Created by Omar Albeik on 5.02.2018.
@@ -8,26 +8,28 @@
 
 import PieCrust
 
-class MainViewController: PCViewController {
+class HomeViewController: PCViewController {
 
    override func loadView() {
-        view = MainView()
+        view = HomeView()
     }
 
-	override var pcView: MainView {
-		return view as! MainView
+	override var pcView: HomeView {
+		return view as! HomeView
 	}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func setTabBarItem() {
+        tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "tab_bar_home"), selectedImage: #imageLiteral(resourceName: "tab_bar_home"))
+    }
 
-        pcView.showCarListButton.addTarget(self, action: #selector(didTapShowCarListButton(sender:)), for: .touchUpInside)
+    override func setNavigationItem() {
+        navigationItem.title = "Home"
     }
 
 }
 
 // MARK: - Actions
-private extension MainViewController {
+private extension HomeViewController {
 
     @objc
     func didTapShowCarListButton(sender: PCLoadingButton) {

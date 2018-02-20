@@ -11,6 +11,7 @@ import SnapKit
 /// PCView.
 open class PCView: UIView, PCAnimatable, PCBorderable {
 
+    /// Initializes and returns a newly allocated view object with the specified frame rectangle.
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
 
@@ -18,6 +19,7 @@ open class PCView: UIView, PCAnimatable, PCBorderable {
 		layoutViews()
 	}
 
+    /// Returns a PCView object initialized from data in a given unarchiver.
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 

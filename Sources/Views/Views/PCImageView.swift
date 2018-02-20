@@ -12,6 +12,7 @@ import SnapKit
 /// PCImageView.
 open class PCImageView: UIImageView, PCAnimatable, PCBorderable {
 
+    /// Returns an image view initialized with the specified image.
 	public override init(image: UIImage?) {
 		super.init(image: image)
 
@@ -19,6 +20,7 @@ open class PCImageView: UIImageView, PCAnimatable, PCBorderable {
 		layoutViews()
 	}
 
+    /// Returns an image view initialized with the specified regular and highlighted images.
 	public override init(image: UIImage?, highlightedImage: UIImage?) {
 		super.init(image: image, highlightedImage: highlightedImage)
 
@@ -26,6 +28,7 @@ open class PCImageView: UIImageView, PCAnimatable, PCBorderable {
 		layoutViews()
 	}
 
+    /// Initializes and returns a newly allocated image-view object with the specified frame rectangle.
 	public override init(frame: CGRect) {
 		super.init(frame: frame)
 
@@ -33,6 +36,7 @@ open class PCImageView: UIImageView, PCAnimatable, PCBorderable {
 		layoutViews()
 	}
 
+    /// Returns a PCView object initialized from data in a given unarchiver.
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 

@@ -14,7 +14,7 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
     /// Create label and set its properties in one line.
 	///
 	/// - Parameters:
-	///   - text: Label's text (default is "").
+	///   - text: Label's text.
 	///   - attributedText: Label's attributed text (default is nil).
 	///   - textAlignment: The technique to use for aligning the text (default is .natural).
 	///   - numberOfLines: The maximum number of lines to use for rendering text (default is 1).
@@ -24,8 +24,8 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
     ///   - minimumScaleFactor: The minimum scale factor supported for the label’s text (default is 1).
     ///   - lineBreakMode: The technique to use for wrapping and truncating the label’s text (default is .byTruncatingTail).
     ///   - alpha: Label's alpha (default is 1.0).
-	public convenience init (
-		text: String? = "",
+	public convenience init(
+		text: String?,
 		attributedText: NSAttributedString? = nil,
 		textAlignment: NSTextAlignment = .natural,
 		numberOfLines: Int = 1,
@@ -35,11 +35,13 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
         minimumScaleFactor: CGFloat = 1.0,
         lineBreakMode: NSLineBreakMode = .byTruncatingTail,
         alpha: CGFloat = 1.0) {
-
 		self.init()
-
 		self.text = text
-		self.attributedText = attributedText
+
+		if let attrText = attributedText {
+			self.attributedText = attrText
+		}
+		
 		self.textAlignment = textAlignment
 		self.numberOfLines = numberOfLines
 		self.backgroundColor = backgroundColor
@@ -58,6 +60,7 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
         self.alpha = alpha
 	}
 
+    /// Initializes and returns a newly allocated label object with the specified frame rectangle.
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
 
@@ -65,6 +68,7 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 		layoutViews()
 	}
 
+    /// Returns a PCLabel object initialized from data in a given unarchiver.
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 

@@ -12,6 +12,7 @@ import SnapKit
 /// PCCollectionViewCell.
 open class PCCollectionViewCell: UICollectionViewCell, PCAnimatable, PCBorderable {
 
+    /// Initializes and returns a newly allocated collection-view cell object with the specified frame rectangle.
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
 
@@ -19,6 +20,7 @@ open class PCCollectionViewCell: UICollectionViewCell, PCAnimatable, PCBorderabl
 		layoutViews()
 	}
 
+    /// Returns a PCCollectionViewCell object initialized from data in a given unarchiver.
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 

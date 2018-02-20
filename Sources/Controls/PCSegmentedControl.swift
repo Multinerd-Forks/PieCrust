@@ -33,6 +33,7 @@ open class PCSegmentedControl: UISegmentedControl, PCAnimatable, PCBorderable {
 		self.segmentImages = segmentImages
 	}
 
+    /// Initializes and returns a newly allocated segmented control object with the specified frame rectangle.
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
 
@@ -40,6 +41,7 @@ open class PCSegmentedControl: UISegmentedControl, PCAnimatable, PCBorderable {
 		layoutViews()
 	}
 
+    /// Returns a PCSegmentedControl object initialized from data in a given unarchiver.
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 

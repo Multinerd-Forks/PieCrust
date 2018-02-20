@@ -66,11 +66,19 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 		self.placeholder = placeholder
 		self.text = text
 
-		self.attributedPlaceholder = attributedPlaceholder
-		self.attributedText = attributedText
+        if let attrPlaceholder = attributedPlaceholder {
+            self.attributedPlaceholder = attrPlaceholder
+        }
+
+        if let attrText = attributedText {
+            self.attributedText = attrText
+        }
 
 		self.textAlignment = textAlignment
+
 		self.textType = textType
+        self.update(forTextType: textType)
+
 		self.clearsOnBeginEditing = clearsOnBeginEditing
 		self.backgroundColor = backgroundColor
 		self.textColor = textColor
@@ -89,6 +97,7 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 		self.alpha = alpha
 	}
 
+    /// Initializes and returns a newly allocated text field object with the specified frame rectangle.
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
 
@@ -96,6 +105,7 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 		layoutViews()
 	}
 
+    /// Returns a PCTextField object initialized from data in a given unarchiver.
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 
@@ -128,7 +138,8 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 
 	/// Text field's text trimming whitespaces and new lines.
 	public var trimmedText: String {
-		return text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        guard let aText = text, !aText.isEmpty else { return "" }
+		return aText.trimmingCharacters(in: .whitespacesAndNewlines)
 	}
 
 	/// Text field text as email address (if applicable).
@@ -149,40 +160,44 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 	/// Sets TextField for common text types.
 	public var textType: TextType = .generic {
 		didSet {
-			isSecureTextEntry = (textType == .password)
-
-			switch textType {
-			case .emailAddress:
-				keyboardType = .emailAddress
-				autocorrectionType = .no
-				autocapitalizationType = .none
-
-			case .url:
-				keyboardType = .URL
-				autocorrectionType = .no
-				autocapitalizationType = .none
-
-			case .phoneNumber:
-				if #available(iOS 10.0, *) {
-					keyboardType = .asciiCapableNumberPad
-				} else {
-					keyboardType = .numberPad
-				}
-
-			case .decimal:
-				keyboardType = .decimalPad
-
-			case .password:
-				keyboardType = .asciiCapable
-				autocorrectionType = .no
-				autocapitalizationType = .none
-
-			case .generic:
-				keyboardType = .asciiCapable
-				autocorrectionType = .default
-				autocapitalizationType = .sentences
-			}
+            update(forTextType: textType)
 		}
 	}
+
+    private func update(forTextType type: TextType) {
+        isSecureTextEntry = (textType == .password)
+
+        switch type {
+        case .emailAddress:
+            keyboardType = .emailAddress
+            autocorrectionType = .no
+            autocapitalizationType = .none
+
+        case .url:
+            keyboardType = .URL
+            autocorrectionType = .no
+            autocapitalizationType = .none
+
+        case .phoneNumber:
+            if #available(iOS 10.0, *) {
+                keyboardType = .asciiCapableNumberPad
+            } else {
+                keyboardType = .numberPad
+            }
+
+        case .decimal:
+            keyboardType = .decimalPad
+
+        case .password:
+            keyboardType = .asciiCapable
+            autocorrectionType = .no
+            autocapitalizationType = .none
+
+        case .generic:
+            keyboardType = .asciiCapable
+            autocorrectionType = .default
+            autocapitalizationType = .sentences
+        }
+    }
 
 }

@@ -12,20 +12,23 @@ import SnapKit
 /// PCCollectionViewController.
 open class PCCollectionViewController: UICollectionViewController {
 
+    /// Returns a newly initialized view controller with the nib file in the specified bundle.
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
         setTabBarItem()
     }
 
+    /// Returns a PCCollectionViewController object initialized from data in a given unarchiver.
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
         setTabBarItem()
     }
 
+    /// Called after the controller's view is loaded into memory.
     override open func viewDidLoad() {
-		super.viewDidLoad()
+        super.viewDidLoad()
 
         setNavigationItem()
 
@@ -41,6 +44,7 @@ open class PCCollectionViewController: UICollectionViewController {
         becomeFirstResponder()
     }
 
+    /// Returns a Boolean value indicating whether this viwe controller can become the first responder.
     override open var canBecomeFirstResponder: Bool {
         return true
     }
@@ -54,6 +58,7 @@ open class PCCollectionViewController: UICollectionViewController {
     /// Set gesture recognizers here.
     open func setGestureRecognizers() {}
 
+    /// Set to true to end editing on tap.
     open var shouldEndEditingOnTap: Bool {
         return false
     }
@@ -63,51 +68,45 @@ open class PCCollectionViewController: UICollectionViewController {
         return false
     }
 
-    /// controller's PCNavigationController (if applicable)
+    /// The nearest ancestor in the view controller hierarchy that is a PCNavigationController.
     open var pcNavigationController: PCNavigationController? {
         return navigationController as? PCNavigationController
     }
 
-    /// controller's PCTabBarController (if applicable)
+    /// The nearest ancestor in the view controller hierarchy that is a PCTabBarController.
     open var pcTabBarController: PCTabBarController? {
         return tabBarController as? PCTabBarController
     }
 
-    @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillShow notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardWillShow notification.
-    open func keyboardWillShow(_ notification: Notification) {}
+    @objc open func keyboardWillShow(_ notification: Notification) {}
 
-    @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidShow notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardDidShow notification.
-    open func keyboardDidShow(_ notification: Notification) {}
+    @objc open func keyboardDidShow(_ notification: Notification) {}
 
-    @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillHide notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardWillHide notification.
-    open func keyboardWillHide(_ notification: Notification) {}
+    @objc open func keyboardWillHide(_ notification: Notification) {}
 
-    @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidHide notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardDidHide notification.
-    open func keyboardDidHide(_ notification: Notification) {}
+    @objc open func keyboardDidHide(_ notification: Notification) {}
 
-    @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillChangeFrame notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardWillChangeFrame notification.
-    open func keyboardWillChangeFrame(_ notification: Notification) {}
+    @objc open func keyboardWillChangeFrame(_ notification: Notification) {}
 
-    @objc
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidChangeFrame notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardDidChangeFrame notification.
-    open func keyboardDidChangeFrame(_ notification: Notification) {}
+    @objc open func keyboardDidChangeFrame(_ notification: Notification) {}
 
     deinit {
         if shouldObserveKeyboardEvents {
@@ -117,18 +116,12 @@ open class PCCollectionViewController: UICollectionViewController {
 
 }
 
-// MARK: - Private actions
+// MARK: - Private methods.
 private extension PCCollectionViewController {
 
-    @objc
-    func hideKeyboard() {
+    @objc func hideKeyboard() {
         view.endEditing(true)
     }
-
-}
-
-// MARK: - Private methods
-private extension PCCollectionViewController {
 
     func setTapToEndEditing() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))

@@ -44,6 +44,7 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
         self.alpha = alpha
 	}
 
+    /// Initializes and returns a newly allocated button object with the specified frame rectangle.
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
 
@@ -51,6 +52,7 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 		layoutViews()
 	}
 
+    /// Returns a PCButton object initialized from data in a given unarchiver.
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 

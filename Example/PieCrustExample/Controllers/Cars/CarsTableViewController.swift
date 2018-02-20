@@ -16,6 +16,21 @@ class CarsTableViewController: PCGenericTableController<CarTableViewCell, Car> {
         }
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        items = Car.cars
+    }
+
+    override func setTabBarItem() {
+        tabBarItem = UITabBarItem(title: "Cars", image: #imageLiteral(resourceName: "tab_bar_cars"), selectedImage: #imageLiteral(resourceName: "tab_bar_cars"))
+    }
+
+    override func setNavigationItem() {
+        navigationItem.title = "Cars"
+        navigationItem.rightBarButtonItem = PCBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAddButton))
+    }
+
 	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		return Car.makes[section]
 	}
@@ -26,5 +41,9 @@ class CarsTableViewController: PCGenericTableController<CarTableViewCell, Car> {
 		let infoVC = CarInfoViewController(car: car)
 		navigationController?.pushViewController(infoVC, animated: true)
 	}
+
+    @objc private func didTapAddButton() {
+
+    }
 
 }
