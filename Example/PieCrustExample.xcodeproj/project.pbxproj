@@ -22,6 +22,8 @@
 		07DABFCD203C0AFF00AEE848 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABFCC203C0AFF00AEE848 /* SettingsViewController.swift */; };
 		07DABFD0203C108500AEE848 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABFCF203C108500AEE848 /* AuthViewController.swift */; };
 		07DABFD2203C117900AEE848 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABFD1203C117900AEE848 /* AuthView.swift */; };
+		07E23DF3203D7DF100292303 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E23DF2203D7DF100292303 /* SettingsView.swift */; };
+		07E23DF5203D809300292303 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E23DF4203D809300292303 /* User.swift */; };
 		490848299AA6E6BEA7F8CCBE /* Pods_PieCrustExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552DEE73EDEB8F26760D6E26 /* Pods_PieCrustExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		07DABFCC203C0AFF00AEE848 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		07DABFCF203C108500AEE848 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		07DABFD1203C117900AEE848 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		07E23DF2203D7DF100292303 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		07E23DF4203D809300292303 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		552DEE73EDEB8F26760D6E26 /* Pods_PieCrustExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PieCrustExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDD15FD9D20635F9A776C93 /* Pods-PieCrustExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrustExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrustExample/Pods-PieCrustExample.debug.xcconfig"; sourceTree = "<group>"; };
 		AE75553603462D7B7983859E /* Pods-PieCrustExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrustExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrustExample/Pods-PieCrustExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				079FEAB9202D8D800056CEE8 /* Car.swift */,
+				07E23DF4203D809300292303 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 		07DABFCB203C0ADD00AEE848 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				07E23DF2203D7DF100292303 /* SettingsView.swift */,
 				07DABFCC203C0AFF00AEE848 /* SettingsViewController.swift */,
 			);
 			path = Settings;
@@ -311,6 +317,8 @@
 				079F8F64202DDD8B00599D22 /* HomeViewController.swift in Sources */,
 				07DABFD0203C108500AEE848 /* AuthViewController.swift in Sources */,
 				07DABFCA203C02ED00AEE848 /* TabBarController.swift in Sources */,
+				07E23DF3203D7DF100292303 /* SettingsView.swift in Sources */,
+				07E23DF5203D809300292303 /* User.swift in Sources */,
 				079F8F68202DDD8B00599D22 /* CarInfoViewController.swift in Sources */,
 				079F8F65202DDD8B00599D22 /* HomeView.swift in Sources */,
 				079F8F6A202DDD8B00599D22 /* CarTableViewCell.swift in Sources */,

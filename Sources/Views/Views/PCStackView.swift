@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// PCStackView.
 open class PCStackView: UIStackView {
 
     /// Create a PCStackView and set its properties on one line.
