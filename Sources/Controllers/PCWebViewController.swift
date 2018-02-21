@@ -39,7 +39,7 @@ open class PCWebViewController: PCViewController {
 	/// Web view.
 	open lazy var webView: UIWebView = {
 		let view = UIWebView()
-		view.backgroundColor = .white
+		view.backgroundColor = PCColor.white
 		return view
 	}()
 

@@ -46,8 +46,8 @@ class PCTextFieldTests: XCTestCase {
         XCTAssertEqual(textFieldWithDefaultArgs.textAlignment, .natural)
         XCTAssertEqual(textFieldWithDefaultArgs.textType, .generic)
         XCTAssertFalse(textFieldWithDefaultArgs.clearsOnBeginEditing)
-        XCTAssertEqual(textFieldWithDefaultArgs.backgroundColor, UIColor.white)
-        XCTAssertEqual(textFieldWithDefaultArgs.textColor, UIColor.black)
+        XCTAssertEqual(textFieldWithDefaultArgs.backgroundColor, PCColor.white)
+        XCTAssertEqual(textFieldWithDefaultArgs.textColor, PCColor.black)
         XCTAssertEqual(textFieldWithDefaultArgs.font, UITextField().font)
         XCTAssertFalse(textFieldWithDefaultArgs.adjustsFontSizeToFitWidth)
         XCTAssertEqual(textFieldWithDefaultArgs.borderStyle, .none)
@@ -59,7 +59,7 @@ class PCTextFieldTests: XCTestCase {
         XCTAssertEqual(attributedTextFieldWithDefaultArgs.attributedPlaceholder!.string, attributedString.string)
         XCTAssertEqual(attributedTextFieldWithDefaultArgs.attributedText!.string, attributedString.string)
 
-        let font = UIFont.systemFont(ofSize: 50, weight: .bold)
+        let font = PCFont.systemFont(ofSize: 50, weight: .bold)
         let textFieldWithCustomFont = PCTextField(placeholder: "hello world!", font: font)
         XCTAssertEqual(textFieldWithCustomFont.font, font)
 

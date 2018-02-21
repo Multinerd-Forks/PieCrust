@@ -38,8 +38,8 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 	///   - textAlignment: The technique to use for aligning the text (default is .natural).
 	///   - textType: The text field's text type (default is .generic).
 	///   - clearsOnBeginEditing: A Boolean value indicating whether the text field removes old text when editing begins (default is false).
-	///   - backgroundColor: The text field's background color (default is .white).
-	///   - textColor: The color of the text (default is .black).
+	///   - backgroundColor: The text field's background color (default is PCColor.white).
+	///   - textColor: The color of the text (default is PCColor.black).
 	///   - font: The font of the text (default is system font).
 	///   - minimumFontSize: The size of the smallest permissible font with which to draw the text field’s text (default is nil).
 	///   - borderStyle: The type of border drawn around the text field (default is .none).
@@ -53,8 +53,8 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 		textAlignment: NSTextAlignment = .natural,
 		textType: TextType = .generic,
 		clearsOnBeginEditing: Bool = false,
-		backgroundColor: UIColor? = .white,
-		textColor: UIColor = .black,
+		backgroundColor: UIColor? = PCColor.white,
+		textColor: UIColor? = PCColor.black,
 		font: UIFont? = nil,
 		minimumFontSize: CGFloat? = nil,
 		borderStyle: UITextBorderStyle = .none,
@@ -115,7 +115,7 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 
 	/// Use this method to set and add your custom views.
 	open func setViews() {
-		backgroundColor = .white
+		backgroundColor = PCColor.white
 	}
 
 	/// Use this method to layout your custom views using SnapKit.

@@ -18,8 +18,8 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 	///   - attributedText: Label's attributed text (default is nil).
 	///   - textAlignment: The technique to use for aligning the text (default is .natural).
 	///   - numberOfLines: The maximum number of lines to use for rendering text (default is 1).
-    ///   - backgroundColor: The label's background color (default is .white).
-    ///   - textColor: The color of the text (defaul is .black).
+    ///   - backgroundColor: The label's background color (default is PCColor.white).
+    ///   - textColor: The color of the text (defaul is PCColor.black).
     ///   - font: label font (defaul is system font).
     ///   - minimumScaleFactor: The minimum scale factor supported for the label’s text (default is 1).
     ///   - lineBreakMode: The technique to use for wrapping and truncating the label’s text (default is .byTruncatingTail).
@@ -29,8 +29,8 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable {
 		attributedText: NSAttributedString? = nil,
 		textAlignment: NSTextAlignment = .natural,
 		numberOfLines: Int = 1,
-        backgroundColor: UIColor = .white,
-        textColor: UIColor = .black,
+        backgroundColor: UIColor? = PCColor.white,
+        textColor: UIColor? = PCColor.black,
         font: UIFont? = nil,
         minimumScaleFactor: CGFloat = 1.0,
         lineBreakMode: NSLineBreakMode = .byTruncatingTail,

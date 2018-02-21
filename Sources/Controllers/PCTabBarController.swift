@@ -15,7 +15,7 @@ open class PCTabBarController: UITabBarController, PCAlertable, PCConfettiable {
 	open override func viewDidLoad() {
 		super.viewDidLoad()
 
-		view.backgroundColor = .white
+		view.backgroundColor = PCColor.white
 	}
 
 }

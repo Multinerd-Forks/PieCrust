@@ -40,8 +40,8 @@ class PCLabelTests: XCTestCase {
 		XCTAssertEqual(labelWithDefaultArgs.text!, "hello world!")
 		XCTAssertEqual(labelWithDefaultArgs.textAlignment, .natural)
 		XCTAssertEqual(labelWithDefaultArgs.numberOfLines, 1)
-		XCTAssertEqual(labelWithDefaultArgs.backgroundColor, UIColor.white)
-		XCTAssertEqual(labelWithDefaultArgs.textColor, UIColor.black)
+		XCTAssertEqual(labelWithDefaultArgs.backgroundColor, PCColor.white)
+		XCTAssertEqual(labelWithDefaultArgs.textColor, PCColor.black)
 		XCTAssertEqual(labelWithDefaultArgs.font, UILabel().font)
 		XCTAssertFalse(labelWithDefaultArgs.adjustsFontSizeToFitWidth)
 		XCTAssertEqual(labelWithDefaultArgs.minimumScaleFactor, 0.0)
@@ -53,7 +53,7 @@ class PCLabelTests: XCTestCase {
 		let attributedLabelWithDefaultArgs = PCLabel(text: nil, attributedText: attributedString)
 		XCTAssertEqual(attributedLabelWithDefaultArgs.attributedText!.string, attributedString.string)
 
-		let font = UIFont.systemFont(ofSize: 50, weight: .bold)
+		let font = PCFont.systemFont(ofSize: 50, weight: .bold)
 		let labelWithCustomFont = PCLabel(text: "hello world!", font: font)
 		XCTAssertEqual(labelWithCustomFont.font, font)
 

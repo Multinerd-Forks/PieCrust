@@ -17,16 +17,16 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 	///   - type: The button type (default is .custom).
     ///   - title: The button title for normal state.
     ///   - image: The button image for normal state (defaul is nil).
-	///   - backgroundColor: The button background color (defaul is .white).
-	///   - tintColor: The button tint color (defaul is .black).
+	///   - backgroundColor: The button background color (defaul is PCColor.white).
+	///   - tintColor: The button tint color (defaul is PCColor.black).
 	///   - contentEdgeInsets: The button's content edge insets (defaul is top: 0, left: 20, bottom: 0, right: 20).
     ///   - alpha: The button's alpha (default is 1.0).
 	public convenience init(
 		type: UIButtonType = .custom,
 		title: String?,
         image: UIImage? = nil,
-		backgroundColor: UIColor? = .white,
-		tintColor: UIColor? = .black,
+		backgroundColor: UIColor? = PCColor.white,
+		tintColor: UIColor? = PCColor.black,
         contentEdgeInsets: UIEdgeInsets = .init(top: 0, left: 20, bottom: 0, right: 20),
         alpha: CGFloat = 1.0) {
 

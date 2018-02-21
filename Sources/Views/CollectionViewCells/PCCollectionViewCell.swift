@@ -30,7 +30,7 @@ open class PCCollectionViewCell: UICollectionViewCell, PCAnimatable, PCBorderabl
 
 	/// Use this method to set and add your custom views.
 	open func setViews() {
-		backgroundColor = .white
+		backgroundColor = PCColor.white
 	}
 
 	/// Use this method to layout your custom views using SnapKit.

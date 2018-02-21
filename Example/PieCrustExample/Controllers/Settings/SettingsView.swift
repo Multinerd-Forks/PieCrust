@@ -27,7 +27,7 @@ class SettingsView: PCView {
     }()
 
     lazy var emailLabel: PCLabel = {
-        return PCLabel(text: "Email", textAlignment: .center, numberOfLines: 1, minimumScaleFactor: 0.5)
+        return PCLabel(text: "Email", textAlignment: .center, numberOfLines: 1, textColor: PCColor(hex: 0x6B6B6B), minimumScaleFactor: 0.5)
     }()
 
     lazy var stackView: PCStackView = {
@@ -51,8 +51,8 @@ class SettingsView: PCView {
         profileImageView.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(preferredPadding)
             make.centerX.equalToSuperview()
-            make.width.equalTo(80.0)
-            make.height.equalTo(80.0)
+            make.width.equalTo(100.0)
+            make.height.equalTo(100.0)
         }
 
         stackView.snp.makeConstraints { make in
