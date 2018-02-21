@@ -35,10 +35,15 @@ class AuthView: PCView {
         return views.stacked(axis: .vertical, alignment: .fill, distribution: .fill, spacing: 8.0)
     }()
 
+    private lazy var versionLabel: PCAppVersionLabel = {
+        return PCAppVersionLabel()
+    }()
+
     override func setViews() {
         super.setViews()
 
         addSubview(stackView)
+        addSubview(versionLabel)
     }
 
     override func layoutViews() {
@@ -55,6 +60,11 @@ class AuthView: PCView {
         }
 
         centerStackView()
+
+        versionLabel.snp.makeConstraints { make in
+            make.top.equalTo(stackView.snp.bottom).offset(preferredPadding)
+            make.centerX.equalToSuperview()
+        }
     }
 
     override func handleKeyboardWillShow(_ notification: Notification) {
