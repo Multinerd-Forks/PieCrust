@@ -66,4 +66,4 @@ Special thanks to [Bashar Ghadanfar](https://github.com/lionbytes) for coming up
 
 
 ## License
-PieCrust is released under the MIT license. See [LICENSE]((https://github.com/MobilionOSS/PieCrust/blob/master/LICENSE)) for details.
+PieCrust is released under the MIT license. See [LICENSE](https://github.com/MobilionOSS/PieCrust/blob/master/LICENSE) for details.
