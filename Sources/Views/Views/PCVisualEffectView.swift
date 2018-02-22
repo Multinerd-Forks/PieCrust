@@ -9,7 +9,7 @@
 import UIKit
 
 /// PCVisualEffectView.
-open class PCVisualEffectView: UIVisualEffectView, PCAnimatable, PCBorderable {
+open class PCVisualEffectView: UIVisualEffectView, PCAnimatable, PCBorderable, PCShadowable {
 
     /// Preferred padding for autolayout (default is 20).
     open var preferredPadding: CGFloat {

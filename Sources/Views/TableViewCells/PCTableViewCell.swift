@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 /// PCTableViewCell.
-open class PCTableViewCell: UITableViewCell, PCAnimatable, PCBorderable {
+open class PCTableViewCell: UITableViewCell, PCAnimatable, PCBorderable, PCShadowable {
 
     /// Initializes a table cell with a style and a reuse identifier and returns it to the caller.
 	override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {

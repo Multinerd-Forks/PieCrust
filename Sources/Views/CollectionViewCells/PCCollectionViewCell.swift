@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 /// PCCollectionViewCell.
-open class PCCollectionViewCell: UICollectionViewCell, PCAnimatable, PCBorderable {
+open class PCCollectionViewCell: UICollectionViewCell, PCAnimatable, PCBorderable, PCShadowable {
 
     /// Initializes and returns a newly allocated collection-view cell object with the specified frame rectangle.
 	override public init(frame: CGRect) {
