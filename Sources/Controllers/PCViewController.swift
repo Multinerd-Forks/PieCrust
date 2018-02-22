@@ -57,6 +57,15 @@ open class PCViewController: UIViewController, PCAlertable, PCConfettiable {
     /// Set navigation item here.
     open func setNavigationItem() {}
 
+    public var navigationItemLogo: UIImage? {
+        didSet {
+            let logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
+            logoImageView.contentMode = .scaleAspectFit
+            logoImageView.image = navigationItemLogo
+            navigationItem.titleView = logoImageView
+        }
+    }
+
     /// Set tab bar item here.
     open func setTabBarItem() {}
 

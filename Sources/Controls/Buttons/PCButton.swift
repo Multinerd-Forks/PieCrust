@@ -16,6 +16,7 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 	/// - Parameters:
 	///   - type: The button type (default is .custom).
     ///   - title: The button title for normal state.
+    ///   - titleFont: The button title label's font (default is nil).
     ///   - image: The button image for normal state (defaul is nil).
 	///   - backgroundColor: The button background color (defaul is PCColor.white).
 	///   - tintColor: The button tint color (defaul is PCColor.black).
@@ -24,6 +25,7 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 	public convenience init(
 		type: UIButtonType = .custom,
 		title: String?,
+        titleFont: UIFont? = nil,
         image: UIImage? = nil,
 		backgroundColor: UIColor? = PCColor.white,
 		tintColor: UIColor? = PCColor.black,
@@ -34,6 +36,11 @@ open class PCButton: UIButton, PCAnimatable, PCBorderable {
 
 		self.setTitle(title, for: .normal)
         self.setImage(image, for: .normal)
+
+        if let font = titleFont {
+            titleLabel?.font = font
+        }
+
 		self.backgroundColor = backgroundColor
 
 		if let color = tintColor {

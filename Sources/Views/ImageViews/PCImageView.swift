@@ -12,6 +12,28 @@ import SnapKit
 /// PCImageView.
 open class PCImageView: UIImageView, PCAnimatable, PCBorderable {
 
+    /// Create PCImageView and set its properties in one line.
+    ///
+    /// - Parameters:
+    ///   - image: image.
+    ///   - contentMode: contentMode.
+    ///   - backgroundColor: background color (default is PCColor.white).
+    ///   - alpha: alpha (default is 1.0).
+    public convenience init(
+        image: UIImage?,
+        contentMode: UIViewContentMode,
+        backgroundColor: UIColor = PCColor.white,
+        tintColor: UIColor = PCColor.white,
+        alpha: CGFloat = 1.0) {
+
+        self.init(image: image)
+
+        self.contentMode = contentMode
+        self.backgroundColor = backgroundColor
+        self.tintColor = tintColor
+        self.alpha = alpha
+    }
+
     /// Returns an image view initialized with the specified image.
 	public override init(image: UIImage?) {
 		super.init(image: image)

@@ -23,4 +23,17 @@ open class PCNavigationController: UINavigationController, PCAlertable, PCConfet
 		view.backgroundColor = PCColor.white
 	}
 
+    /// Make navigation controller's navigation bar transparent.
+    ///
+    /// - Parameter tint: tint color (default is .white).
+    public func makeNavigaitonBarTransparent(withTint tint: UIColor = PCColor.white) {
+        navigationBar.isTranslucent = true
+        navigationBar.backgroundColor = .clear
+        navigationBar.barTintColor = .clear
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.tintColor = tint
+        navigationBar.titleTextAttributes = [.foregroundColor: tint]
+        navigationBar.shadowImage = UIImage()
+    }
+
 }
