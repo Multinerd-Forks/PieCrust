@@ -28,6 +28,7 @@
 		0755B1E3203EDCEE0086C9EF /* PCPillTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755B1E2203EDCEE0086C9EF /* PCPillTextField.swift */; };
 		0791BA272040076E00FCDC45 /* PCLayoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0791BA262040076E00FCDC45 /* PCLayoutable.swift */; };
 		0791BA2920400D6800FCDC45 /* PCrustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0791BA2820400D6800FCDC45 /* PCrustable.swift */; };
+		0791BA31204033FB00FCDC45 /* PCPillLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0791BA30204033FB00FCDC45 /* PCPillLoadingButton.swift */; };
 		0795087D2036FF5D003EA142 /* PieCrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0701FE37202830C90055AC19 /* PieCrust.framework */; };
 		079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */; };
 		079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */; };
@@ -90,6 +91,7 @@
 		0755B1E2203EDCEE0086C9EF /* PCPillTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillTextField.swift; sourceTree = "<group>"; };
 		0791BA262040076E00FCDC45 /* PCLayoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCLayoutable.swift; sourceTree = "<group>"; };
 		0791BA2820400D6800FCDC45 /* PCrustable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCrustable.swift; sourceTree = "<group>"; };
+		0791BA30204033FB00FCDC45 /* PCPillLoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillLoadingButton.swift; sourceTree = "<group>"; };
 		079508782036FF5D003EA142 /* PieCrustTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PieCrustTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0795087C2036FF5D003EA142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewController.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				0755B1D6203EC7250086C9EF /* PCPillButton.swift */,
 				07DADF952036DBE9002A6088 /* PCBarButtonItem.swift */,
 				07DADF962036DBE9002A6088 /* PCLoadingButton.swift */,
+				0791BA30204033FB00FCDC45 /* PCPillLoadingButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0791BA31204033FB00FCDC45 /* PCPillLoadingButton.swift in Sources */,
 				07DADFB12036DBEA002A6088 /* PCGenericTableViewCell.swift in Sources */,
 				0711C5E0202C6CA0008BF833 /* PublicExtensions.swift in Sources */,
 				07DADFB72036DBEA002A6088 /* PCImageView.swift in Sources */,

@@ -37,8 +37,6 @@ open class PCTableViewController: UITableViewController, PCrustable, PCAlertable
     override open func viewDidLoad() {
         super.viewDidLoad()
 
-        setNavigationItem()
-
         if shouldEndEditingOnTap {
             setTapToEndEditing()
         }
@@ -49,6 +47,13 @@ open class PCTableViewController: UITableViewController, PCrustable, PCAlertable
 
         setGestureRecognizers()
         becomeFirstResponder()
+    }
+
+    /// Notifies the view controller that its view is about to be added to a view hierarchy.
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        setNavigationItem()
     }
 
     /// Returns a Boolean value indicating whether this viwe controller can become the first responder.
