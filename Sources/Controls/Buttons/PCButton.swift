@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 /// PCButton.
-open class PCButton: UIButton, PCAnimatable, PCBorderable {
+open class PCButton: UIButton, PCLayoutable, PCAnimatable, PCBorderable {
 
 	/// Create button and set its properties in one line.
 	///

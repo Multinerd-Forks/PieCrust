@@ -26,6 +26,7 @@
 		0755B1D5203EC2BD0086C9EF /* PCVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755B1D4203EC2BD0086C9EF /* PCVisualEffectView.swift */; };
 		0755B1D7203EC7250086C9EF /* PCPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755B1D6203EC7250086C9EF /* PCPillButton.swift */; };
 		0755B1E3203EDCEE0086C9EF /* PCPillTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755B1E2203EDCEE0086C9EF /* PCPillTextField.swift */; };
+		0791BA272040076E00FCDC45 /* PCLayoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0791BA262040076E00FCDC45 /* PCLayoutable.swift */; };
 		0795087D2036FF5D003EA142 /* PieCrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0701FE37202830C90055AC19 /* PieCrust.framework */; };
 		079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */; };
 		079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */; };
@@ -86,6 +87,7 @@
 		0755B1D4203EC2BD0086C9EF /* PCVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCVisualEffectView.swift; sourceTree = "<group>"; };
 		0755B1D6203EC7250086C9EF /* PCPillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillButton.swift; sourceTree = "<group>"; };
 		0755B1E2203EDCEE0086C9EF /* PCPillTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillTextField.swift; sourceTree = "<group>"; };
+		0791BA262040076E00FCDC45 /* PCLayoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCLayoutable.swift; sourceTree = "<group>"; };
 		079508782036FF5D003EA142 /* PieCrustTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PieCrustTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0795087C2036FF5D003EA142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				0711C5B9202C6CA0008BF833 /* PCAlertable.swift */,
+				0791BA262040076E00FCDC45 /* PCLayoutable.swift */,
 				0711C5BA202C6CA0008BF833 /* PCAnimatable.swift */,
 				0711C5BB202C6CA0008BF833 /* PCBorderable.swift */,
 				0711C5BC202C6CA0008BF833 /* PCConfettiable.swift */,
@@ -640,6 +643,7 @@
 				0711C5DA202C6CA0008BF833 /* PCAlertable.swift in Sources */,
 				0711C5DF202C6CA0008BF833 /* InternalExtensions.swift in Sources */,
 				0711C5D9202C6CA0008BF833 /* PCWebViewController.swift in Sources */,
+				0791BA272040076E00FCDC45 /* PCLayoutable.swift in Sources */,
 				0711C5D4202C6CA0008BF833 /* PCNavigationController.swift in Sources */,
 				07DADFAC2036DBE9002A6088 /* PCLoadingButton.swift in Sources */,
 				07DADFB42036DBEA002A6088 /* PCGenericCollectionViewCell.swift in Sources */,

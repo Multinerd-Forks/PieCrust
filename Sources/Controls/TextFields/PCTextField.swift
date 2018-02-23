@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 /// PCTextField.
-open class PCTextField: UITextField, PCAnimatable, PCBorderable {
+open class PCTextField: UITextField, PCLayoutable, PCAnimatable, PCBorderable {
 
 	/// TextField text type.
 	///

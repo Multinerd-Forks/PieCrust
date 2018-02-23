@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 /// PCSegmentedControl.
-open class PCSegmentedControl: UISegmentedControl, PCAnimatable, PCBorderable {
+open class PCSegmentedControl: UISegmentedControl, PCLayoutable, PCAnimatable, PCBorderable {
 
 	/// Create segmented control and set its segment titles in one line.
 	///

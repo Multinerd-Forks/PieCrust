@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 /// PCImageView.
-open class PCImageView: UIImageView, PCAnimatable, PCBorderable, PCShadowable {
+open class PCImageView: UIImageView, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
 
     /// Create PCImageView and set its properties in one line.
     ///

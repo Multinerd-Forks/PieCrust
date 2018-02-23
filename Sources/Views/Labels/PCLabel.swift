@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 /// PCLabel.
-open class PCLabel: UILabel, PCAnimatable, PCBorderable, PCShadowable {
+open class PCLabel: UILabel, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
 
     /// Create label and set its properties in one line.
 	///
