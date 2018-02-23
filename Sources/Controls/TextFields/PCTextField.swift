@@ -9,7 +9,12 @@ import UIKit
 import SnapKit
 
 /// PCTextField.
-open class PCTextField: UITextField, PCAnimatable, PCBorderable {
+///
+/// - Conforms to:
+///   - PCAnimatable
+///   - PCBorderable
+///   - PCShadowable
+open class PCTextField: UITextField, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// TextField text type.
 	///
@@ -38,8 +43,9 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 	///   - textAlignment: The technique to use for aligning the text (default is .natural).
 	///   - textType: The text field's text type (default is .generic).
 	///   - clearsOnBeginEditing: A Boolean value indicating whether the text field removes old text when editing begins (default is false).
-	///   - backgroundColor: The text field's background color (default is .white).
-	///   - textColor: The color of the text (default is .black).
+	///   - backgroundColor: The text field's background color (default is PCColor.white).
+    ///   - textColor: The color of the text (default is PCColor.black).
+    ///   - textColor: The tint color of the text field (default is PCColor.black).
 	///   - font: The font of the text (default is system font).
 	///   - minimumFontSize: The size of the smallest permissible font with which to draw the text field’s text (default is nil).
 	///   - borderStyle: The type of border drawn around the text field (default is .none).
@@ -53,8 +59,9 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 		textAlignment: NSTextAlignment = .natural,
 		textType: TextType = .generic,
 		clearsOnBeginEditing: Bool = false,
-		backgroundColor: UIColor? = .white,
-		textColor: UIColor = .black,
+		backgroundColor: UIColor? = PCColor.white,
+		textColor: UIColor? = PCColor.black,
+        tintColor: UIColor? = PCColor.black,
 		font: UIFont? = nil,
 		minimumFontSize: CGFloat? = nil,
 		borderStyle: UITextBorderStyle = .none,
@@ -83,6 +90,10 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 		self.backgroundColor = backgroundColor
 		self.textColor = textColor
 
+        if let color = tintColor {
+            self.tintColor = color
+        }
+
 		if let aFont = font {
 			self.font = aFont
 		}
@@ -95,35 +106,6 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 		self.borderStyle = borderStyle
 		self.isEnabled = isEnabled
 		self.alpha = alpha
-	}
-
-    /// Initializes and returns a newly allocated text field object with the specified frame rectangle.
-	override public init(frame: CGRect) {
-		super.init(frame: frame)
-
-		setViews()
-		layoutViews()
-	}
-
-    /// Returns a PCTextField object initialized from data in a given unarchiver.
-	required public init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
-
-		setViews()
-		layoutViews()
-	}
-
-	/// Use this method to set and add your custom views.
-	open func setViews() {
-		backgroundColor = .white
-	}
-
-	/// Use this method to layout your custom views using SnapKit.
-	open func layoutViews() {}
-
-	/// Preferred padding for autolayout (default is 20).
-	open var preferredPadding: CGFloat {
-		return 20.0
 	}
 
 	/// Preferred height for autolayout (default is 40.0 for small screens and 48.0 for other screen sizes).
@@ -156,6 +138,14 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable {
 	public var hasValidEmail: Bool {
 		return emailAddress != nil
 	}
+
+    /// Set placeholder text color.
+    ///
+    /// - Parameter color: placeholder text color.
+    public func setPlaceHolderTextColor(_ color: UIColor) {
+        guard let holder = placeholder, !holder.isEmpty else { return }
+        self.attributedPlaceholder = NSAttributedString(string: holder, attributes: [.foregroundColor: color])
+    }
 
 	/// Sets TextField for common text types.
 	public var textType: TextType = .generic {

@@ -9,6 +9,10 @@ import UIKit
 import SnapKit
 
 /// PCNavigationController.
+/// 
+/// - Conforms to:
+///   - PCAlertable
+///   - PCConfettiable
 open class PCNavigationController: UINavigationController, PCAlertable, PCConfettiable {
 
 	/// The nearest ancestor in the view controller hierarchy that is a PCTabBarController.
@@ -20,7 +24,22 @@ open class PCNavigationController: UINavigationController, PCAlertable, PCConfet
 	open override func viewDidLoad() {
 		super.viewDidLoad()
 
-		view.backgroundColor = .white
+		view.backgroundColor = PCColor.white
 	}
+
+    /// Set navigationBar background and text colors
+    ///
+    /// - Parameters:
+    ///   - background: backgound color
+    ///   - text: text color
+    public func setNavigaitonBarColors(background: UIColor, tint: UIColor) {
+        navigationBar.isTranslucent = (background == .clear)
+        navigationBar.backgroundColor = background
+        navigationBar.barTintColor = background
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.tintColor = tint
+        navigationBar.titleTextAttributes = [.foregroundColor: tint]
+        navigationBar.shadowImage = UIImage()
+    }
 
 }

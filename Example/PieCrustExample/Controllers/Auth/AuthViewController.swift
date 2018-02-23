@@ -21,6 +21,8 @@ class AuthViewController: PCViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+		registerForKeyboardEvents()
+
         edgesForExtendedLayout = []
         pcView.loginButton.addTarget(self, action: #selector(didTapLoginButton(_:)), for: .touchUpInside)
     }
@@ -29,17 +31,17 @@ class AuthViewController: PCViewController {
         return true
     }
 
-    override var shouldObserveKeyboardEvents: Bool {
-        return true
-    }
+	override func keyboardWillShow(_ notification: Notification) {
+		pcView.handleKeyboardWillShow(notification)
+	}
 
-    override func keyboardWillShow(_ notification: Notification) {
-        pcView.handleKeyboardWillShow(notification)
-    }
+	override func keyboardWillHide(_ notification: Notification) {
+		pcView.handleKeyboardWillHide(notification)
+	}
 
-    override func keyboardWillHide(_ notification: Notification) {
-        pcView.handleKeyboardWillHide(notification)
-    }
+	deinit {
+		unregisterFromKeyboardEvents()
+	}
 
 }
 

@@ -28,6 +28,7 @@ public extension PCBorderable where Self: UIView {
 			return layer.cornerRadius
 		}
 		set {
+            clipsToBounds = true
 			layer.cornerRadius = newValue
 		}
 	}

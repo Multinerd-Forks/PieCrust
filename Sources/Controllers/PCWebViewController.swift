@@ -33,13 +33,10 @@ open class PCWebViewController: PCViewController {
 		self.requestType = requestType
 	}
 
-	/// url.
-	open var url: URL?
-
 	/// Web view.
 	open lazy var webView: UIWebView = {
 		let view = UIWebView()
-		view.backgroundColor = .white
+		view.backgroundColor = PCColor.white
 		return view
 	}()
 

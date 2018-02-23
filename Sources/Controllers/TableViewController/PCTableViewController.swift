@@ -10,24 +10,37 @@ import UIKit
 import SnapKit
 
 /// PCTableViewController.
-open class PCTableViewController: UITableViewController, PCAlertable {
+///
+/// - Conforms to:
+///   - PCrustable
+///   - PCKeyboardObservable
+///   - PCAlertable
+open class PCTableViewController: UITableViewController, PCrustable, PCKeyboardObservable, PCAlertable {
 
     /// Initializes a table-view controller to manage a table view of a given style.
+    ///
+    /// - Parameter style: A constant that specifies the style of table view that the controller object is to manage.
     public override init(style: UITableViewStyle) {
         super.init(style: style)
 
         setTabBarItem()
     }
 
-    /// Returns a newly initialized view controller with the nib file in the specified bundle.
+	/// Returns a newly initialized view controller with the nib file in the specified bundle.
+	///
+	/// - Parameters:
+	///   - nibNameOrNil: The name of the nib file to associate with the view controller. The nib file name should not contain any leading path information. If you specify nil, the nibName property is set to nil.
+	///   - nibBundleOrNil: The bundle in which to search for the nib file. This method looks for the nib file in the bundle's language-specific project directories first, followed by the Resources directory. If this parameter is nil, the method uses the heuristics described below to locate the nib file.
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
         setTabBarItem()
     }
 
-    /// Returns a PCTableViewController object initialized from data in a given unarchiver.
-    required public init?(coder aDecoder: NSCoder) {
+	/// Returns an object initialized from data in a given unarchiver.
+	///
+	/// - Parameter aDecoder: An unarchiver object.
+	required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
         setTabBarItem()
@@ -37,18 +50,21 @@ open class PCTableViewController: UITableViewController, PCAlertable {
     override open func viewDidLoad() {
         super.viewDidLoad()
 
-        setNavigationItem()
-
         if shouldEndEditingOnTap {
             setTapToEndEditing()
         }
-
-        if shouldObserveKeyboardEvents {
-            addKeyboardNotificationsObservers()
-        }
-
+		
         setGestureRecognizers()
         becomeFirstResponder()
+    }
+
+    /// Notifies the view controller that its view is about to be added to a view hierarchy.
+    ///
+    /// - Parameter animated: If true, the view is being added to the window using an animation.
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        setNavigationItem()
     }
 
     /// Returns a Boolean value indicating whether this viwe controller can become the first responder.
@@ -70,11 +86,6 @@ open class PCTableViewController: UITableViewController, PCAlertable {
         return false
     }
 
-    /// Set to true to observe keyboard events from system.
-    open var shouldObserveKeyboardEvents: Bool {
-        return false
-    }
-
     /// The nearest ancestor in the view controller hierarchy that is a PCNavigationController.
     open var pcNavigationController: PCNavigationController? {
         return navigationController as? PCNavigationController
@@ -85,41 +96,35 @@ open class PCTableViewController: UITableViewController, PCAlertable {
         return tabBarController as? PCTabBarController
     }
 
-    /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillShow notification is prodcasted by system.
-    ///
-    /// - Parameter notification: .UIKeyboardWillShow notification.
-    @objc open func keyboardWillShow(_ notification: Notification) {}
+	/// Called when .UIKeyboardWillShow notification is prodcasted by system.
+	///
+	/// - Parameter notification: .UIKeyboardWillShow notification.
+	open func keyboardWillShow(_ notification: Notification) {}
 
-    /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidShow notification is prodcasted by system.
-    ///
-    /// - Parameter notification: .UIKeyboardDidShow notification.
-    @objc open func keyboardDidShow(_ notification: Notification) {}
+	/// Called when .UIKeyboardDidShow notification is prodcasted by system.
+	///
+	/// - Parameter notification: .UIKeyboardDidShow notification.
+	open func keyboardDidShow(_ notification: Notification) {}
 
-    /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillHide notification is prodcasted by system.
-    ///
-    /// - Parameter notification: .UIKeyboardWillHide notification.
-    @objc open func keyboardWillHide(_ notification: Notification) {}
+	/// Called when .UIKeyboardWillHide notification is prodcasted by system.
+	///
+	/// - Parameter notification: .UIKeyboardWillHide notification.
+	open func keyboardWillHide(_ notification: Notification) {}
 
-    /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidHide notification is prodcasted by system.
-    ///
-    /// - Parameter notification: .UIKeyboardDidHide notification.
-    @objc open func keyboardDidHide(_ notification: Notification) {}
+	/// Called when .UIKeyboardDidHide notification is prodcasted by system.
+	///
+	/// - Parameter notification: .UIKeyboardDidHide notification.
+	open func keyboardDidHide(_ notification: Notification) {}
 
-    /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillChangeFrame notification is prodcasted by system.
-    ///
-    /// - Parameter notification: .UIKeyboardWillChangeFrame notification.
-    @objc open func keyboardWillChangeFrame(_ notification: Notification) {}
+	/// Called when .UIKeyboardWillChangeFrame notification is prodcasted by system.
+	///
+	/// - Parameter notification: .UIKeyboardWillChangeFrame notification.
+	open func keyboardWillChangeFrame(_ notification: Notification) {}
 
-    /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidChangeFrame notification is prodcasted by system.
-    ///
-    /// - Parameter notification: .UIKeyboardDidChangeFrame notification.
-    @objc open func keyboardDidChangeFrame(_ notification: Notification) {}
-
-    deinit {
-        if shouldObserveKeyboardEvents {
-            removeKeyboardNotificationsObservers()
-        }
-    }
+	/// Called when .UIKeyboardDidChangeFrame notification is prodcasted by system.
+	///
+	/// - Parameter notification: .UIKeyboardDidChangeFrame notification.
+	open func keyboardDidChangeFrame(_ notification: Notification) {}
 
 }
 
@@ -133,29 +138,6 @@ private extension PCTableViewController {
     func setTapToEndEditing() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         view.addGestureRecognizer(tap)
-    }
-
-}
-
-// MARK: - Keyboard helpers
-private extension PCTableViewController {
-
-    func addKeyboardNotificationsObservers() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow(_:)), name: .UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidHide(_:)), name: .UIKeyboardDidHide, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: .UIKeyboardWillChangeFrame, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidChangeFrame(_:)), name: .UIKeyboardDidChangeFrame, object: nil)
-    }
-
-    func removeKeyboardNotificationsObservers() {
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardDidHide, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillChangeFrame, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardDidChangeFrame, object: nil)
     }
 
 }

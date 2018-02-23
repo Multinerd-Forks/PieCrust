@@ -9,9 +9,18 @@ import UIKit
 import SnapKit
 
 /// PCView.
-open class PCView: UIView, PCAnimatable, PCBorderable {
+///
+/// - Conforms to:
+///   - PCLayoutable
+///   - PCKeyboardControllable
+///   - PCAnimatable
+///   - PCBorderable
+///   - PCShadowable
+open class PCView: UIView, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
 
-    /// Initializes and returns a newly allocated view object with the specified frame rectangle.
+	/// Initializes and returns a newly allocated view object with the specified frame rectangle.
+	///
+	/// - Parameter frame: The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
 
@@ -19,7 +28,9 @@ open class PCView: UIView, PCAnimatable, PCBorderable {
 		layoutViews()
 	}
 
-    /// Returns a PCView object initialized from data in a given unarchiver.
+	/// Returns an object initialized from data in a given unarchiver.
+	///
+	/// - Parameter aDecoder: An unarchiver object.
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 
@@ -29,7 +40,7 @@ open class PCView: UIView, PCAnimatable, PCBorderable {
 
 	/// Use this method to set and add your custom views.
 	open func setViews() {
-		backgroundColor = .white
+		backgroundColor = PCColor.white
 	}
 
 	/// Use this method to layout your custom views using SnapKit.

@@ -8,7 +8,13 @@
 
 import UIKit
 
-open class PCStackView: UIStackView {
+/// PCStackView.
+///
+/// - Conforms to:
+///   - PCAnimatable
+///   - PCBorderable
+///   - PCShadowable
+open class PCStackView: UIStackView, PCAnimatable, PCBorderable, PCShadowable {
 
     /// Create a PCStackView and set its properties on one line.
     ///

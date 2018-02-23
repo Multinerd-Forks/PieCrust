@@ -17,16 +17,19 @@ open class PCLoadingButton: PCButton {
     ///   - type: The button type (default is .custom).
     ///   - title: The button title for normal state.
     ///   - image: The button image for normal state (defaul is nil).
-    ///   - backgroundColor: The button background color (defaul is .white).
-    ///   - tintColor: The button tint color (defaul is .black).
+    ///   - backgroundColor: The button background color (defaul is PCColor.white).
+    ///   - tintColor: The button tint color (defaul is PCColor.black).
+    ///   - activityIndicatorTintColor: The button's activitiy indicator's tint color (defaul is PCColor.black).
     ///   - contentEdgeInsets: The button's content edge insets (defaul is top: 0, left: 40, bottom: 0, right: 40).
     ///   - alpha: The button's alpha (default is 1.0).
 	public convenience init(
 		type: UIButtonType = .custom,
 		title: String?,
+        titleFont: UIFont? = nil,
         image: UIImage? = nil,
-		backgroundColor: UIColor? = .white,
-		tintColor: UIColor? = .black,
+		backgroundColor: UIColor? = PCColor.white,
+        tintColor: UIColor? = PCColor.black,
+        activityIndicatorTintColor: UIColor? = PCColor.black,
 		contentEdgeInsets: UIEdgeInsets = .init(top: 0, left: 40, bottom: 0, right: 40),
         alpha: CGFloat = 1.0) {
 
@@ -36,10 +39,17 @@ open class PCLoadingButton: PCButton {
         self.setImage(image, for: .normal)
 		self.backgroundColor = backgroundColor
 
+        if let font = titleFont {
+            titleLabel?.font = font
+        }
+
 		if let color = tintColor {
 			self.tintColor = color
-			activityIndicator.color = tintColor
 		}
+
+        if let color = activityIndicatorTintColor {
+            activityIndicator.color = color
+        }
 
 		self.contentEdgeInsets = contentEdgeInsets
         self.alpha = alpha

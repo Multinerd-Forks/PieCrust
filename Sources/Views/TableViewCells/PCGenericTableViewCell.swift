@@ -11,7 +11,7 @@ import UIKit
 /// Generic PCTableViewCell.
 open class PCGenericTableViewCell<T>: PCTableViewCell {
 
-	/// Generic item, override this to set your UI.
+	/// Generic item, override this to set your UI elements.
 	open var item: T!
 
 }

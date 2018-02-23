@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window = UIWindow(frame: UIScreen.main.bounds)
 		window?.makeKeyAndVisible()
 
-        showAuthController(animated: false)
+        showTabController(animated: false)
 
 		return true
 	}

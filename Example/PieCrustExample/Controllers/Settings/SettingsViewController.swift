@@ -10,6 +10,22 @@ import PieCrust
 
 class SettingsViewController: PCViewController {
 
+    override func loadView() {
+        view = SettingsView()
+    }
+
+    override var pcView: SettingsView {
+        return view as! SettingsView
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        edgesForExtendedLayout = []
+        
+        pcView.user = User.steveJobs
+    }
+
     override func setTabBarItem() {
         tabBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "tab_bar_settings"), selectedImage: #imageLiteral(resourceName: "tab_bar_settings"))
     }

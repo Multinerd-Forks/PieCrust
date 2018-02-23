@@ -39,9 +39,10 @@ public extension PCConfettiable where Self: UIViewController {
 		let totalDelay = delay + duration
 		DispatchQueue.main.asyncAfter(deadline: .now() + totalDelay) {
 			confettiView.isActive = false
-			DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+
+			DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
 				confettiView.removeFromSuperview()
-			})
+			}
 		}
 
 	}
