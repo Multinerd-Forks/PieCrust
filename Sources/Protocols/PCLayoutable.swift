@@ -9,7 +9,7 @@
 import Foundation
 
 /// Conform to PCLayoutable protocol to set and layout subviews in your view.
-public protocol PCLayoutable {
+public protocol PCLayoutable: class {
 
     /// Use this method to set and add your custom views.
     func setViews()

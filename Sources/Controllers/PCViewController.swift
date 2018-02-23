@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 /// PCViewController.
-open class PCViewController: UIViewController, PCrustable, PCAlertable, PCConfettiable {
+open class PCViewController: UIViewController, PCrustable, PCKeyboardObservable, PCAlertable, PCConfettiable {
 
     /// Returns a newly initialized view controller with the nib file in the specified bundle.
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -39,9 +39,9 @@ open class PCViewController: UIViewController, PCrustable, PCAlertable, PCConfet
             setTapToEndEditing()
         }
 
-        if shouldObserveKeyboardEvents {
-            addKeyboardNotificationsObservers()
-        }
+//        if shouldObserveKeyboardEvents {
+//            registerForKeyboardEvents()
+//        }
 
         setGestureRecognizers()
         becomeFirstResponder()
@@ -73,11 +73,6 @@ open class PCViewController: UIViewController, PCrustable, PCAlertable, PCConfet
         return false
     }
 
-    /// Set to true to observe keyboard events from system.
-    open var shouldObserveKeyboardEvents: Bool {
-        return false
-    }
-
     /// The nearest ancestor in the view controller hierarchy that is a PCNavigationController.
     open var pcNavigationController: PCNavigationController? {
         return navigationController as? PCNavigationController
@@ -91,38 +86,32 @@ open class PCViewController: UIViewController, PCrustable, PCAlertable, PCConfet
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillShow notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardWillShow notification.
-    @objc open func keyboardWillShow(_ notification: Notification) {}
+    open func keyboardWillShow(_ notification: Notification) {}
 
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidShow notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardDidShow notification.
-    @objc open func keyboardDidShow(_ notification: Notification) {}
+    open func keyboardDidShow(_ notification: Notification) {}
 
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillHide notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardWillHide notification.
-    @objc open func keyboardWillHide(_ notification: Notification) {}
+    open func keyboardWillHide(_ notification: Notification) {}
 
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidHide notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardDidHide notification.
-    @objc  open func keyboardDidHide(_ notification: Notification) {}
+    open func keyboardDidHide(_ notification: Notification) {}
 
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillChangeFrame notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardWillChangeFrame notification.
-    @objc open func keyboardWillChangeFrame(_ notification: Notification) {}
+    open func keyboardWillChangeFrame(_ notification: Notification) {}
 
     /// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidChangeFrame notification is prodcasted by system.
     ///
     /// - Parameter notification: .UIKeyboardDidChangeFrame notification.
-    @objc open func keyboardDidChangeFrame(_ notification: Notification) {}
-
-    deinit {
-        if shouldObserveKeyboardEvents {
-            removeKeyboardNotificationsObservers()
-        }
-    }
+    open func keyboardDidChangeFrame(_ notification: Notification) {}
 
 }
 
@@ -136,29 +125,6 @@ private extension PCViewController {
     func setTapToEndEditing() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         view.addGestureRecognizer(tap)
-    }
-
-}
-
-// MARK: - Keyboard helpers.
-private extension PCViewController {
-
-    func addKeyboardNotificationsObservers() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow(_:)), name: .UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidHide(_:)), name: .UIKeyboardDidHide, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: .UIKeyboardWillChangeFrame, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidChangeFrame(_:)), name: .UIKeyboardDidChangeFrame, object: nil)
-    }
-
-    func removeKeyboardNotificationsObservers() {
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardDidHide, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillChangeFrame, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardDidChangeFrame, object: nil)
     }
 
 }

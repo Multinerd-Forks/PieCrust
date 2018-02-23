@@ -61,7 +61,9 @@ public extension PCAnimatable where Self: UIView {
 	///   - duration: animation duration in seconds (default is 1 second).
 	///   - delay: animation delay in seconds (default is 0 second).
 	///   - completion: optional completion handler to run with animation finishes (default is nil)
-	public func fadeIn(withDuration duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
+	public func fadeIn(withDuration duration: TimeInterval = 1.0,
+					   delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
+
 		UIView.animate(withDuration: duration, delay: delay, options: [], animations: {
 			self.alpha = 1.0
 		}, completion: completion)
@@ -73,9 +75,11 @@ public extension PCAnimatable where Self: UIView {
 	///   - duration: animation duration in seconds (default is 1 second).
 	///   - delay: animation delay in seconds (default is 0 second).
 	///   - completion: optional completion handler to run with animation finishes (default is nil)
-	public func fadeOut(withDuration duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
+	public func fadeOut(withDuration duration: TimeInterval = 1.0,
+						delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
+
 		UIView.animate(withDuration: duration, delay: delay, options: [], animations: {
-			self.alpha = 0
+			self.alpha = 0.0
 		}, completion: completion)
 	}
 
@@ -85,7 +89,9 @@ public extension PCAnimatable where Self: UIView {
 	///   - duration: animation duration in seconds (default is 1 second).
 	///   - delay: animation delay in seconds (default is 0 second).
 	///   - completion: optional completion handler to run with animation finishes (default is nil)
-	public func popIn(withDuration duration: TimeInterval = 0.2, delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
+	public func popIn(withDuration duration: TimeInterval = 0.2,
+					  delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
+
 		UIView.animate(withDuration: duration, delay: delay, options: [], animations: {
 			self.transform = .init(scaleX: 0.95, y: 0.95)
 		}, completion: completion)
@@ -97,7 +103,9 @@ public extension PCAnimatable where Self: UIView {
 	///   - duration: animation duration in seconds (default is 1 second).
 	///   - delay: animation delay in seconds (default is 0 second).
 	///   - completion: optional completion handler to run with animation finishes (default is nil)
-	public func popOut(withDuration duration: TimeInterval = 0.2, delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
+	public func popOut(withDuration duration: TimeInterval = 0.2,
+					   delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
+
 		UIView.animate(withDuration: duration, delay: delay, options: [], animations: {
 			self.transform = .identity
 		}, completion: completion)
@@ -109,7 +117,9 @@ public extension PCAnimatable where Self: UIView {
 	///   - duration: animation duration in seconds (default is 1 second).
 	///   - delay: animation delay in seconds (default is 0 second).
 	///   - completion: optional completion handler to run with animation finishes (default is nil).
-	public func shake(withDuration duration: TimeInterval = 1, delay: TimeInterval = 0.0, completion: (() -> Void)? = nil) {
+	public func shake(withDuration duration: TimeInterval = 1.0,
+					  delay: TimeInterval = 0.0, completion: (() -> Void)? = nil) {
+
 		DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
 			CATransaction.begin()
 			let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")

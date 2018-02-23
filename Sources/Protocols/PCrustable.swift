@@ -9,29 +9,34 @@
 import Foundation
 
 /// Conform to PCrustable to set view controllers in code.
-public protocol PCrustable {
+public protocol PCrustable: class {
 
-    /// Set tab bar item here.
-    func setTabBarItem()
+	/// Set tab bar item here.
+	func setTabBarItem()
 
-    /// Set navigation item here.
-    func setNavigationItem()
+	/// Set navigation item here.
+	func setNavigationItem()
 
-    /// Set gesture recognizers here.
-    func setGestureRecognizers()
+	/// Set gesture recognizers here.
+	func setGestureRecognizers()
 
-    /// Set Navigation Item logo image.
-    func setNavigationItemLogo(_ image: UIImage, width: CGFloat, height: CGFloat)
+	/// Set Navigation Item logo image.
+	///
+	/// - Parameter image: logo image.
+	func setNavigationItemLogo(_ image: UIImage)
 
 }
 
 extension PCrustable where Self: UIViewController {
 
-    public func setNavigationItemLogo(_ image: UIImage, width: CGFloat = 100, height: CGFloat = 30) {
-        let logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
-        logoImageView.contentMode = .scaleAspectFit
-        logoImageView.image = image
-        navigationItem.titleView = logoImageView
-    }
+	/// Set Navigation Item logo image.
+	///
+	/// - Parameter image: logo image.
+	public func setNavigationItemLogo(_ image: UIImage) {
+		let logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100.0, height: 30.0))
+		logoImageView.contentMode = .scaleAspectFit
+		logoImageView.image = image
+		navigationItem.titleView = logoImageView
+	}
 
 }

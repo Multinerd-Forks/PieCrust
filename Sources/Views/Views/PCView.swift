@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 /// PCView.
-open class PCView: UIView, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
+open class PCView: UIView, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
 
     /// Initializes and returns a newly allocated view object with the specified frame rectangle.
 	override public init(frame: CGRect) {

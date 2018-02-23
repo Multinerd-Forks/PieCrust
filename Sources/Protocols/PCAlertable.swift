@@ -18,11 +18,18 @@ public protocol PCAlertable: class {
 	///   - title: alert title.
 	///   - message: alert message.
 	///   - preferredStyle: alert preferred style.
+	///   - tintColor: alert tint color.
 	///   - actions: alert actions array.
 	///   - animated: set to true to animate alert presentation.
 	///   - completion: optional completion handler is called after the alert is presented.
 	/// - Returns: presented alert.
-	func presentAlert(title: String?, message: String?, preferredStyle: UIAlertControllerStyle, actions: [UIAlertAction], animated: Bool, completion: (() -> Void)?) -> UIAlertController
+	func presentAlert(title: String?,
+					  message: String?,
+					  preferredStyle: UIAlertControllerStyle,
+					  tintColor: UIColor?,
+					  actions: [UIAlertAction],
+					  animated: Bool,
+					  completion: (() -> Void)?) -> UIAlertController
 
 	@discardableResult
 	/// Present alert from an error.
@@ -31,11 +38,18 @@ public protocol PCAlertable: class {
 	///   - title: alert title.
 	///   - error: error.
 	///   - preferredStyle: alert preferred style.
+	///   - tintColor: alert tint color.
 	///   - actions: alert actions array.
 	///   - animated: set to true to animate alert presentation.
 	///   - completion: optional completion handler is called after the alert is presented.
 	/// - Returns: presented alert.
-	func presentAlert(title: String?, error: Error, preferredStyle: UIAlertControllerStyle, actions: [UIAlertAction], animated: Bool, completion: (() -> Void)?) -> UIAlertController
+	func presentAlert(title: String?,
+					  error: Error,
+					  preferredStyle: UIAlertControllerStyle,
+					  tintColor: UIColor?,
+					  actions: [UIAlertAction],
+					  animated: Bool,
+					  completion: (() -> Void)?) -> UIAlertController
 
 }
 
@@ -48,14 +62,32 @@ public extension PCAlertable where Self: UIViewController {
 	///   - title: alert title.
 	///   - message: alert message.
 	///   - preferredStyle: alert preferred style (default is .alert).
+	///   - tintColor: alert tint color (default is nil).
 	///   - actions: alert actions array (default is []).
 	///   - animated: set to true to animate alert presentation (defalt is true).
 	///   - completion: optional completion handler is called after the alert is presented (default is nil).
 	/// - Returns: presented alert.
-	public func presentAlert(title: String?, message: String?, preferredStyle: UIAlertControllerStyle = .alert, actions: [UIAlertAction] = [], animated: Bool = true, completion: (() -> Void)? = nil) -> UIAlertController {
+	public func presentAlert(title: String?,
+							 message: String?,
+							 preferredStyle: UIAlertControllerStyle = .alert,
+							 tintColor: UIColor? = nil,
+							 actions: [UIAlertAction] = [],
+							 animated: Bool = true,
+							 completion: (() -> Void)? = nil) -> UIAlertController {
 
-		let alert = self.alert(title: title, message: message, preferredStyle: preferredStyle, actions: actions, animated: animated)
+		let alert = self.alert(title: title, message: message,
+							   preferredStyle: preferredStyle, actions: actions, animated: animated)
+
+		if let color = tintColor {
+			alert.view.tintColor = color
+		}
+
 		present(alert, animated: animated, completion: completion)
+
+		if let color = tintColor {
+			alert.view.tintColor = color
+		}
+
 		return alert
 	}
 
@@ -66,14 +98,32 @@ public extension PCAlertable where Self: UIViewController {
 	///   - title: alert title.
 	///   - error: error.
 	///   - preferredStyle: alert preferred style (default is .alert).
+	///   - tintColor: alert tint color (default is nil).
 	///   - actions: alert actions array (default is []).
 	///   - animated: set to true to animate alert presentation (defalt is true).
 	///   - completion: optional completion handler is called after the alert is presented (default is nil).
 	/// - Returns: presented alert.
-	public func presentAlert(title: String?, error: Error, preferredStyle: UIAlertControllerStyle = .alert, actions: [UIAlertAction] = [], animated: Bool = true, completion: (() -> Void)? = nil) -> UIAlertController {
+	public func presentAlert(title: String?,
+							 error: Error,
+							 preferredStyle: UIAlertControllerStyle = .alert,
+							 tintColor: UIColor? = nil,
+							 actions: [UIAlertAction] = [],
+							 animated: Bool = true,
+							 completion: (() -> Void)? = nil) -> UIAlertController {
 
-		let alert = self.alert(title: title, message: error.localizedDescription, preferredStyle: preferredStyle, actions: actions, animated: animated)
+		let alert = self.alert(title: title, message: error.localizedDescription,
+							   preferredStyle: preferredStyle, actions: actions, animated: animated)
+
+		if let color = tintColor {
+			alert.view.tintColor = color
+		}
+
 		present(alert, animated: animated, completion: completion)
+
+		if let color = tintColor {
+			alert.view.tintColor = color
+		}
+
 		return alert
 	}
 
