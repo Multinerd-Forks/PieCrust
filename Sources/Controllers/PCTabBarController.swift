@@ -9,6 +9,10 @@ import UIKit
 import SnapKit
 
 /// PCTabBarController.
+///
+/// - Conforms to:
+///   - PCAlertable
+///   - PCConfettiable
 open class PCTabBarController: UITabBarController, PCAlertable, PCConfettiable {
 
     /// Called after the controller's view is loaded into memory.

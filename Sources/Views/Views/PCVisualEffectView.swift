@@ -9,6 +9,11 @@
 import UIKit
 
 /// PCVisualEffectView.
+///
+/// - Conforms to:
+///   - PCAnimatable
+///   - PCBorderable
+///   - PCShadowable
 open class PCVisualEffectView: UIVisualEffectView, PCAnimatable, PCBorderable, PCShadowable {
 
     /// Preferred padding for autolayout (default is 20).

@@ -10,17 +10,28 @@ import UIKit
 import SnapKit
 
 /// PCCollectionViewController.
+///
+/// - Conforms to:
+///   - PCrustable
+///   - PCKeyboardObservable
+///   - PCAlertable
 open class PCCollectionViewController: UICollectionViewController, PCrustable, PCKeyboardObservable, PCAlertable {
 
-    /// Returns a newly initialized view controller with the nib file in the specified bundle.
+	/// Returns a newly initialized view controller with the nib file in the specified bundle.
+	///
+	/// - Parameters:
+	///   - nibNameOrNil: The name of the nib file to associate with the view controller. The nib file name should not contain any leading path information. If you specify nil, the nibName property is set to nil.
+	///   - nibBundleOrNil: The bundle in which to search for the nib file. This method looks for the nib file in the bundle's language-specific project directories first, followed by the Resources directory. If this parameter is nil, the method uses the heuristics described below to locate the nib file.
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
         setTabBarItem()
     }
 
-    /// Returns a PCCollectionViewController object initialized from data in a given unarchiver.
-    required public init?(coder aDecoder: NSCoder) {
+	/// Returns an object initialized from data in a given unarchiver.
+	///
+	/// - Parameter aDecoder: An unarchiver object.
+	required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
         setTabBarItem()
@@ -39,6 +50,8 @@ open class PCCollectionViewController: UICollectionViewController, PCrustable, P
     }
 
     /// Notifies the view controller that its view is about to be added to a view hierarchy.
+    ///
+    /// - Parameter animated: If true, the view is being added to the window using an animation.
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
@@ -74,32 +87,32 @@ open class PCCollectionViewController: UICollectionViewController, PCrustable, P
         return tabBarController as? PCTabBarController
     }
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillShow notification is prodcasted by system.
+	/// Called when .UIKeyboardWillShow notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardWillShow notification.
 	open func keyboardWillShow(_ notification: Notification) {}
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidShow notification is prodcasted by system.
+	/// Called when .UIKeyboardDidShow notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardDidShow notification.
 	open func keyboardDidShow(_ notification: Notification) {}
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillHide notification is prodcasted by system.
+	/// Called when .UIKeyboardWillHide notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardWillHide notification.
 	open func keyboardWillHide(_ notification: Notification) {}
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidHide notification is prodcasted by system.
+	/// Called when .UIKeyboardDidHide notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardDidHide notification.
 	open func keyboardDidHide(_ notification: Notification) {}
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillChangeFrame notification is prodcasted by system.
+	/// Called when .UIKeyboardWillChangeFrame notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardWillChangeFrame notification.
 	open func keyboardWillChangeFrame(_ notification: Notification) {}
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidChangeFrame notification is prodcasted by system.
+	/// Called when .UIKeyboardDidChangeFrame notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardDidChangeFrame notification.
 	open func keyboardDidChangeFrame(_ notification: Notification) {}

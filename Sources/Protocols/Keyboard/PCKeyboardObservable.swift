@@ -8,34 +8,35 @@
 
 import Foundation
 
+/// Conform to PCKeyboardObservable protocol to obbserve UIKeyboard events in a view controller.
 public protocol PCKeyboardObservable: class {
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillShow notification is prodcasted by system.
+	/// Called when .UIKeyboardWillShow notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardWillShow notification.
 	func keyboardWillShow(_ notification: Notification)
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidShow notification is prodcasted by system.
+	/// Called when .UIKeyboardDidShow notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardDidShow notification.
 	func keyboardDidShow(_ notification: Notification)
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillHide notification is prodcasted by system.
+	/// Called when .UIKeyboardWillHide notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardWillHide notification.
 	func keyboardWillHide(_ notification: Notification)
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidHide notification is prodcasted by system.
+	/// Called when .UIKeyboardDidHide notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardDidHide notification.
 	func keyboardDidHide(_ notification: Notification)
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardWillChangeFrame notification is prodcasted by system.
+	/// Called when .UIKeyboardWillChangeFrame notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardWillChangeFrame notification.
 	func keyboardWillChangeFrame(_ notification: Notification)
 
-	/// Called when shouldObserveKeyboardEvents is true and .UIKeyboardDidChangeFrame notification is prodcasted by system.
+	/// Called when .UIKeyboardDidChangeFrame notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardDidChangeFrame notification.
 	func keyboardDidChangeFrame(_ notification: Notification)

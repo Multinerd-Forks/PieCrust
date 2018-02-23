@@ -9,6 +9,10 @@ import UIKit
 import SnapKit
 
 /// PCNavigationController.
+/// 
+/// - Conforms to:
+///   - PCAlertable
+///   - PCConfettiable
 open class PCNavigationController: UINavigationController, PCAlertable, PCConfettiable {
 
 	/// The nearest ancestor in the view controller hierarchy that is a PCTabBarController.

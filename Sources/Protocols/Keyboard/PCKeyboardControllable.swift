@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Conform to PCKeyboardControllable protocol to handle UIKeyboard events from a view controller.
 public protocol PCKeyboardControllable: class {
 
 	/// Call this method from view contoller to handle KeyboardWillShow notification.

@@ -25,7 +25,7 @@ class AuthView: PCView {
     }()
 
     lazy var loginButton: PCLoadingButton = {
-        var button = PCLoadingButton(title: "Login", backgroundColor: .black, tintColor: .white)
+		var button = PCLoadingButton(title: "Login", backgroundColor: .black, tintColor: .white, activityIndicatorTintColor: .white)
         button.cornerRadius = 8
         return button
     }()

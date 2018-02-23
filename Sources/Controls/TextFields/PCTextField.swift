@@ -9,7 +9,12 @@ import UIKit
 import SnapKit
 
 /// PCTextField.
-open class PCTextField: UITextField, PCLayoutable, PCAnimatable, PCBorderable {
+///
+/// - Conforms to:
+///   - PCAnimatable
+///   - PCBorderable
+///   - PCShadowable
+open class PCTextField: UITextField, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// TextField text type.
 	///
@@ -101,35 +106,6 @@ open class PCTextField: UITextField, PCLayoutable, PCAnimatable, PCBorderable {
 		self.borderStyle = borderStyle
 		self.isEnabled = isEnabled
 		self.alpha = alpha
-	}
-
-    /// Initializes and returns a newly allocated text field object with the specified frame rectangle.
-	override public init(frame: CGRect) {
-		super.init(frame: frame)
-
-		setViews()
-		layoutViews()
-	}
-
-    /// Returns a PCTextField object initialized from data in a given unarchiver.
-	required public init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
-
-		setViews()
-		layoutViews()
-	}
-
-	/// Use this method to set and add your custom views.
-	open func setViews() {
-		backgroundColor = PCColor.white
-	}
-
-	/// Use this method to layout your custom views using SnapKit.
-	open func layoutViews() {}
-
-	/// Preferred padding for autolayout (default is 20).
-	open var preferredPadding: CGFloat {
-		return 20.0
 	}
 
 	/// Preferred height for autolayout (default is 40.0 for small screens and 48.0 for other screen sizes).

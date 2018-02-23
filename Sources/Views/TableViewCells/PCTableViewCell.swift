@@ -10,9 +10,19 @@ import UIKit
 import SnapKit
 
 /// PCTableViewCell.
+///
+/// - Conforms to:
+///   - PCLayoutable
+///   - PCAnimatable
+///   - PCBorderable
+///   - PCShadowable
 open class PCTableViewCell: UITableViewCell, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
 
-    /// Initializes a table cell with a style and a reuse identifier and returns it to the caller.
+	/// Initializes a table cell with a style and a reuse identifier and returns it to the caller.
+	///
+	/// - Parameters:
+	///   - style: A constant indicating a cell style. See UITableViewCellStyle for descriptions of these constants.
+	///   - reuseIdentifier: A constant indicating a cell style. See UITableViewCellStyle for descriptions of these constants.
 	override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
 
@@ -20,7 +30,9 @@ open class PCTableViewCell: UITableViewCell, PCLayoutable, PCAnimatable, PCBorde
 		layoutViews()
 	}
 
-    /// Returns a PCTableViewCell object initialized from data in a given unarchiver.
+	/// Returns an object initialized from data in a given unarchiver.
+	///
+	/// - Parameter aDecoder: An unarchiver object.
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 

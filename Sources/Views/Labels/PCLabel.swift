@@ -9,7 +9,12 @@ import UIKit
 import SnapKit
 
 /// PCLabel.
-open class PCLabel: UILabel, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
+///
+/// - Conforms to:
+///   - PCAnimatable
+///   - PCBorderable
+///   - PCShadowable
+open class PCLabel: UILabel, PCAnimatable, PCBorderable, PCShadowable {
 
     /// Create label and set its properties in one line.
 	///
@@ -58,33 +63,6 @@ open class PCLabel: UILabel, PCLayoutable, PCAnimatable, PCBorderable, PCShadowa
 
         self.lineBreakMode = lineBreakMode
         self.alpha = alpha
-	}
-
-    /// Initializes and returns a newly allocated label object with the specified frame rectangle.
-	override public init(frame: CGRect) {
-		super.init(frame: frame)
-
-		setViews()
-		layoutViews()
-	}
-
-    /// Returns a PCLabel object initialized from data in a given unarchiver.
-	required public init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
-
-		setViews()
-		layoutViews()
-	}
-
-	/// Use this method to set and add your custom views.
-	open func setViews() {}
-
-	/// Use this method to layout your custom views using SnapKit.
-	open func layoutViews() {}
-
-	/// Preferred padding for autolayout (default is 20).
-	open var preferredPadding: CGFloat {
-		return 20.0
 	}
 
 	/// Check if label's trimmed text is empty.

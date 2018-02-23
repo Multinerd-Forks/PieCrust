@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// PCPillTextField.
 open class PCPillTextField: PCTextField {
 
     override open var bounds: CGRect {

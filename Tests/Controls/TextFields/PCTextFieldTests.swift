@@ -11,25 +11,6 @@ import XCTest
 
 private class CustomTextField: PCTextField {
 
-    var didCallSetView = false
-    var didCallLayoutViews = false
-
-    override func setViews() {
-        super.setViews()
-
-        didCallSetView = true
-    }
-
-    override func layoutViews() {
-        super.layoutViews()
-
-        didCallLayoutViews = true
-    }
-
-    override var preferredPadding: CGFloat {
-        return 10.0
-    }
-
 	override var preferredHeight: CGFloat {
 		return 10.0
 	}
@@ -74,27 +55,6 @@ class PCTextFieldTests: XCTestCase {
 
         let customTextField = CustomTextField(coder: coder)
         XCTAssertNotNil(customTextField)
-
-        XCTAssert(customTextField!.didCallSetView)
-        XCTAssert(customTextField!.didCallLayoutViews)
-    }
-
-    func testSetViews() {
-        let customTextField = CustomTextField()
-        XCTAssert(customTextField.didCallSetView)
-    }
-
-    func testDidLayoutViews() {
-        let customTextField = CustomTextField()
-        XCTAssert(customTextField.didCallLayoutViews)
-    }
-
-    func testPreferredPadding() {
-        let textField = PCTextField()
-        XCTAssertEqual(textField.preferredPadding, 20.0)
-
-        let customTextField = CustomTextField()
-        XCTAssertEqual(customTextField.preferredPadding, 10.0)
     }
 
 	func testPreferredHeight() {

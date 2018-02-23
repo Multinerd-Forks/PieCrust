@@ -9,9 +9,15 @@ import UIKit
 import SnapKit
 
 /// PCButton.
-open class PCButton: UIButton, PCLayoutable, PCAnimatable, PCBorderable {
+///
+/// - Conforms to:
+///   - PCLayoutable
+///   - PCAnimatable
+///   - PCBorderable
+///   - PCShadowable
+open class PCButton: UIButton, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
 
-	/// Create button and set its properties in one line.
+	/// Creates and returns a new button with setting its properties in one line.
 	///
 	/// - Parameters:
 	///   - type: The button type (default is .custom).
@@ -51,7 +57,8 @@ open class PCButton: UIButton, PCLayoutable, PCAnimatable, PCBorderable {
         self.alpha = alpha
 	}
 
-    /// Initializes and returns a newly allocated button object with the specified frame rectangle.
+	/// Initializes and returns a newly allocated view object with the specified frame rectangle.	///
+	/// - Parameter frame: The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.
 	override public init(frame: CGRect) {
 		super.init(frame: frame)
 
@@ -59,7 +66,9 @@ open class PCButton: UIButton, PCLayoutable, PCAnimatable, PCBorderable {
 		layoutViews()
 	}
 
-    /// Returns a PCButton object initialized from data in a given unarchiver.
+	/// Returns an object initialized from data in a given unarchiver.
+	///
+	/// - Parameter aDecoder: An unarchiver object.
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 

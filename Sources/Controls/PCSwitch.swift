@@ -8,7 +8,12 @@
 import UIKit
 
 /// PCSwitch.
-open class PCSwitch: UISwitch, PCAnimatable {
+///
+/// - Conforms to:
+///   - PCAnimatable
+///   - PCBorderable
+///   - PCShadowable
+open class PCSwitch: UISwitch, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Toggle Switch.
 	///

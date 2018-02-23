@@ -8,13 +8,16 @@
 
 import UIKit
 
+/// PCAppVersionLabel.
 open class PCAppVersionLabel: PCLabel {
 
+    /// Client app Version
     open var version: String? {
         guard let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else { return nil }
         return hasVPrefeix ? "v\(appVersion)" : appVersion
     }
 
+    /// Weither the label has the "v" prefix or not.
     open var hasVPrefeix = true
 
     /// Create label and set its properties in one line.
@@ -29,14 +32,18 @@ open class PCAppVersionLabel: PCLabel {
     }
 
     /// Initializes and returns a newly allocated label object with the specified frame rectangle.
+    ///
+    /// - Parameter frame: weither
     public override init(frame: CGRect) {
         super.init(frame: frame)
 
         self.text = version
     }
 
-    /// Returns a PCAppVersionLabel object initialized from data in a given unarchiver.
-    required public init?(coder aDecoder: NSCoder) {
+	/// Returns an object initialized from data in a given unarchiver.
+	///
+	/// - Parameter aDecoder: An unarchiver object.
+	required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
         self.text = version
