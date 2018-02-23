@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 /// PCTableViewController.
-open class PCTableViewController: UITableViewController, PCAlertable {
+open class PCTableViewController: UITableViewController, PCrustable, PCAlertable {
 
     /// Initializes a table-view controller to manage a table view of a given style.
     public override init(style: UITableViewStyle) {

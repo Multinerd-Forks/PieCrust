@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 /// PCCollectionViewController.
-open class PCCollectionViewController: UICollectionViewController {
+open class PCCollectionViewController: UICollectionViewController, PCrustable, PCAlertable {
 
     /// Returns a newly initialized view controller with the nib file in the specified bundle.
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {

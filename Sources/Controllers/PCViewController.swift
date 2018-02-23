@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 /// PCViewController.
-open class PCViewController: UIViewController, PCAlertable, PCConfettiable {
+open class PCViewController: UIViewController, PCrustable, PCAlertable, PCConfettiable {
 
     /// Returns a newly initialized view controller with the nib file in the specified bundle.
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -56,15 +56,6 @@ open class PCViewController: UIViewController, PCAlertable, PCConfettiable {
 
     /// Set navigation item here.
     open func setNavigationItem() {}
-
-    public var navigationItemLogo: UIImage? {
-        didSet {
-            let logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
-            logoImageView.contentMode = .scaleAspectFit
-            logoImageView.image = navigationItemLogo
-            navigationItem.titleView = logoImageView
-        }
-    }
 
     /// Set tab bar item here.
     open func setTabBarItem() {}
