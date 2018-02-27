@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwifterSwift
 
 internal extension Bundle {
 

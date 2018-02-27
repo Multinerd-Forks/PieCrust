@@ -6,7 +6,7 @@
 //  Copyright © 2018 Mobilion. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// Conform to PCrustable to set view controllers in code.
 public protocol PCrustable: class {

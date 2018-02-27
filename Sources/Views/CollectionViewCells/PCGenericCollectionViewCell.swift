@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SnapKit
+import SwifterSwift
 
 /// Generic PCCollectionViewCell.
 open class PCGenericCollectionViewCell<T>: PCCollectionViewCell {

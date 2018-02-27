@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SnapKit
+import SwifterSwift
 
 /// Generic PCTableViewCell.
 open class PCGenericTableViewCell<T>: PCTableViewCell {
