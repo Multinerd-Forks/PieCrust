@@ -3,6 +3,7 @@
 //  PieCrust
 //
 //  Created by Omar Albeik on 5.02.2018.
+//  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import UIKit
@@ -38,19 +39,20 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable, PCShadowable {
 	///
 	/// - Parameters:
 	///   - placeholder: The string that is displayed when there is no other text in the text field.
-	///   - text: The text displayed by the text field. (default is nil)
+	///   - text: The text displayed by the text field (default is nil)
 	///   - attributedPlaceholder: The styled string that is displayed when there is no other text in the text field (default is nil).
 	///   - attributedText: The styled text displayed by the text field (default is nil).
 	///   - textAlignment: The technique to use for aligning the text (default is .natural).
 	///   - textType: The text field's text type (default is .generic).
 	///   - clearsOnBeginEditing: A Boolean value indicating whether the text field removes old text when editing begins (default is false).
-	///   - backgroundColor: The text field's background color (default is PCColor.white).
     ///   - textColor: The color of the text (default is PCColor.black).
-    ///   - textColor: The tint color of the text field (default is PCColor.black).
-	///   - font: The font of the text (default is system font).
-	///   - minimumFontSize: The size of the smallest permissible font with which to draw the text field’s text (default is nil).
-	///   - borderStyle: The type of border drawn around the text field (default is .none).
-	///   - isEnabled: The enabled state to use when drawing the label’s text. (default is true).
+    ///   - font: The font of the text (default is system font).
+    ///   - minimumFontSize: The size of the smallest permissible font with which to draw the text field’s text (default is nil).
+    ///   - borderStyle: The type of border drawn around the text field (default is .none).
+    ///   - keyboardAppearance: The appearance style of the keyboard that is associated with the text object (default is .default).
+    ///   - backgroundColor: The text field's background color (default is PCColor.white).
+    ///   - tintColor: The tint color of the text field (default is nil).
+    ///   - isEnabled: The enabled state to use when drawing the text field (default is true).
 	///   - alpha: Text field's alpha (default is 1.0).
 	public convenience init(
 		placeholder: String?,
@@ -60,12 +62,13 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable, PCShadowable {
 		textAlignment: NSTextAlignment = .natural,
 		textType: TextType = .generic,
 		clearsOnBeginEditing: Bool = false,
-		backgroundColor: UIColor? = PCColor.white,
-		textColor: UIColor? = PCColor.black,
-        tintColor: UIColor? = PCColor.black,
-		font: UIFont? = nil,
-		minimumFontSize: CGFloat? = nil,
-		borderStyle: UITextBorderStyle = .none,
+        textColor: UIColor? = PCColor.black,
+        font: UIFont? = nil,
+        minimumFontSize: CGFloat? = nil,
+        borderStyle: UITextBorderStyle = .none,
+        keyboardAppearance: UIKeyboardAppearance = .default,
+        backgroundColor: UIColor? = PCColor.white,
+        tintColor: UIColor? = nil,
 		isEnabled: Bool = true,
 		alpha: CGFloat = 1.0) {
 
@@ -88,12 +91,7 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable, PCShadowable {
         self.update(forTextType: textType)
 
 		self.clearsOnBeginEditing = clearsOnBeginEditing
-		self.backgroundColor = backgroundColor
-		self.textColor = textColor
-
-        if let color = tintColor {
-            self.tintColor = color
-        }
+        self.textColor = textColor
 
 		if let aFont = font {
 			self.font = aFont
@@ -104,7 +102,15 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable, PCShadowable {
 			self.minimumFontSize = aMinimumFontSize
 		}
 
+        self.keyboardAppearance = keyboardAppearance
 		self.borderStyle = borderStyle
+
+        self.backgroundColor = backgroundColor
+
+        if let color = tintColor {
+            self.tintColor = color
+        }
+
 		self.isEnabled = isEnabled
 		self.alpha = alpha
 	}
@@ -121,18 +127,13 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Text field's text trimming whitespaces and new lines.
 	public var trimmedText: String {
-        guard let aText = text, !aText.isEmpty else { return "" }
-		return aText.trimmingCharacters(in: .whitespacesAndNewlines)
+        return text?.trimmed ?? ""
 	}
 
 	/// Text field text as email address (if applicable).
 	public var emailAddress: String? {
-		let emailText = trimmedText
-		guard !emailText.isEmpty else { return nil }
-
-		let emailPattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-		guard emailText.range(of: emailPattern, options: .regularExpression, range: nil, locale: nil) != nil else { return nil }
-		return emailText
+        guard trimmedText.isEmail else { return nil }
+		return trimmedText
 	}
 
 	/// Check if text field's text is a valid email address.

@@ -20,9 +20,10 @@ open class PCDatePicker: UIDatePicker {
     ///   - maximumDate: The maximum date that a date picker can show (default is nil).
     ///   - minuteInterval: The interval at which the date picker should display minutes (default is 1).
     ///   - countDownDuration: The value displayed by the date picker when the mode property is set to countDownTimer (default is 0.0)
+    ///   - textColor: Text color of the date picker (default is nil).
     ///   - backgroundColor: Background color of the date picker (default is PCColor.white).
-    ///   - tintColor: Tint color of the date picker (default is nil).
     ///   - tintColor: Text color of the date picker (default is nil).
+    ///   - isEnabled: The enabled state to use when drawing the date picker (default is true).
     ///   - alpha: Alpha of the date picker (default is 1.0).
     public convenience init(
         datePickerMode: UIDatePickerMode,
@@ -31,10 +32,12 @@ open class PCDatePicker: UIDatePicker {
         maximumDate: Date? = nil,
         minuteInterval: Int = 1,
         countDownDuration: TimeInterval = 0.0,
+        textColor: UIColor? = nil,
         backgroundColor: UIColor? = PCColor.white,
         tintColor: UIColor? = nil,
-        textColor: UIColor? = nil,
+        isEnabled: Bool = true,
         alpha: CGFloat = 1.0) {
+        
         self.init()
 
         self.datePickerMode = datePickerMode
@@ -56,6 +59,7 @@ open class PCDatePicker: UIDatePicker {
             self.textColor = color
         }
 
+        self.isEnabled = isEnabled
         self.alpha = alpha
     }
 

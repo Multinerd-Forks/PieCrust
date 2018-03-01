@@ -26,19 +26,24 @@ open class PCImageView: UIImageView, PCLayoutable, PCKeyboardControllable, PCAni
     ///   - image: image.
     ///   - contentMode: contentMode.
     ///   - backgroundColor: background color (default is PCColor.white).
+    ///   - tintColor: Text color of the view (default is nil).
     ///   - alpha: alpha (default is 1.0).
     public convenience init(
         image: UIImage?,
         contentMode: UIViewContentMode,
         backgroundColor: UIColor? = PCColor.white,
-        tintColor: UIColor = PCColor.white,
+        tintColor: UIColor? = nil,
         alpha: CGFloat = 1.0) {
 
         self.init(image: image)
 
         self.contentMode = contentMode
         self.backgroundColor = backgroundColor
-        self.tintColor = tintColor
+
+        if let color = tintColor {
+            self.tintColor = color
+        }
+
         self.alpha = alpha
     }
 

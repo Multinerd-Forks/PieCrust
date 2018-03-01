@@ -3,6 +3,7 @@
 //  PieCrust
 //
 //  Created by Omar Albeik on 5.02.2018.
+//  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import UIKit
@@ -21,11 +22,30 @@ open class PCSegmentedControl: UISegmentedControl, PCAnimatable, PCBorderable, P
 	///
 	/// - Parameters:
 	///   - frame: The segmented control frame (default is .zero).
-	///   - segmentTitles: segmented control segment titles.
-	public convenience init(frame: CGRect = .zero, segmentTitles: [String]) {
+    ///   - segmentTitles: segmented control segment titles.
+    ///   - backgroundColor: The text field's background color (default is PCColor.white).
+    ///   - tintColor: The tint color of the text field (default is nil).
+    ///   - isEnabled: The enabled state to use when drawing the segmented control (default is true).
+    ///   - alpha: Alpha of the segmented control (default is 1.0).
+	public convenience init(
+        frame: CGRect = .zero,
+        segmentTitles: [String],
+        backgroundColor: UIColor? = PCColor.white,
+        tintColor: UIColor? = nil,
+        isEnabled: Bool = true,
+        alpha: CGFloat = 0.0) {
+
 		self.init(frame: frame)
 
 		self.segmentTitles = segmentTitles
+        self.backgroundColor = backgroundColor
+
+        if let color = tintColor {
+            self.tintColor = color
+        }
+
+        self.isEnabled = isEnabled
+        self.alpha = alpha
 	}
 
 	/// Create segmented control and set its segment images in one line.
@@ -33,10 +53,29 @@ open class PCSegmentedControl: UISegmentedControl, PCAnimatable, PCBorderable, P
 	/// - Parameters:
 	///   - frame: segmented control frame (default is .zero).
 	///   - segmentImages: segmented control segment images.
-	public convenience init(frame: CGRect = .zero, segmentImages: [UIImage]) {
+    ///   - backgroundColor: The text field's background color (default is PCColor.white).
+    ///   - tintColor: The tint color of the text field (default is nil).
+    ///   - isEnabled: The enabled state to use when drawing the segmented control (default is true).
+    ///   - alpha: Alpha of the segmented control (default is 1.0).
+	public convenience init(
+        frame: CGRect = .zero,
+        segmentImages: [UIImage],
+        backgroundColor: UIColor? = PCColor.white,
+        tintColor: UIColor? = nil,
+        isEnabled: Bool = true,
+        alpha: CGFloat = 0.0) {
+
 		self.init(frame: frame)
 
 		self.segmentImages = segmentImages
+        self.backgroundColor = backgroundColor
+
+        if let color = tintColor {
+            self.tintColor = color
+        }
+
+        self.isEnabled = isEnabled
+        self.alpha = alpha
 	}
 
 	/// Preferred height for autolayout (default is 40.0 for small screens and 48.0 for other screen sizes).

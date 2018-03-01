@@ -3,6 +3,7 @@
 //  PieCrust
 //
 //  Created by Omar Albeik on 5.02.2018.
+//  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import UIKit
@@ -38,18 +39,27 @@ open class PCConfettiView: PCView {
     /// - Parameters:
     ///   - colors: confetti colors array.
     ///   - intensity: confetti emitter intensity (default is 0.5).
-	public convenience init(colors: [UIColor] = [], intensity: Float = 0.5) {
-		self.init()
+    ///   - backgroundColor: Background color of the confetti view (default is PCColor.clear).
+    ///   - tintColor: Text color of the confetti view (default is nil).
+    ///   - alpha: Alpha of the confetti view (default is 1.0).
+	public convenience init(
+        colors: [UIColor] = [],
+        intensity: Float = 0.5,
+        backgroundColor: UIColor? = PCColor.clear,
+        tintColor: UIColor? = nil,
+        alpha: CGFloat = 1.0) {
+
+        self.init(backgroundColor: backgroundColor, tintColor: tintColor, alpha: alpha)
 
 		if !colors.isEmpty {
 			self.colors = colors
 		}
+
 		self.intensity = intensity
 	}
 
     /// Use this method to set and add your custom views.
 	override open func setViews() {
-		backgroundColor = .clear
 		isUserInteractionEnabled = false
 
 		emitter.position = CGPoint(x: UIScreen.main.bounds.width / 2, y: 0)

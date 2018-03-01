@@ -311,9 +311,9 @@
 			children = (
 				07DADF942036DBE9002A6088 /* PCButton.swift */,
 				0755B1D6203EC7250086C9EF /* PCPillButton.swift */,
-				07DADF952036DBE9002A6088 /* PCBarButtonItem.swift */,
 				07DADF962036DBE9002A6088 /* PCLoadingButton.swift */,
 				0791BA30204033FB00FCDC45 /* PCPillLoadingButton.swift */,
+				07DADF952036DBE9002A6088 /* PCBarButtonItem.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -321,12 +321,12 @@
 		07DADF992036DBE9002A6088 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				07DADFA52036DBE9002A6088 /* Views */,
 				07DADF9C2036DBE9002A6088 /* TableViewCells */,
 				07DADF9F2036DBE9002A6088 /* Labels */,
 				07DADFA12036DBE9002A6088 /* CollectionViewCells */,
 				07DADFA42036DBE9002A6088 /* PCActivityIndicatorView.swift */,
 				07E23DF1203D7D3600292303 /* ImageViews */,
-				07DADFA52036DBE9002A6088 /* Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";

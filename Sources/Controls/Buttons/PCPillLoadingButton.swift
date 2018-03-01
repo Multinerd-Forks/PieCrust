@@ -16,7 +16,7 @@ open class PCPillLoadingButton: PCLoadingButton {
 	/// The bounds rectangle, which describes the view’s location and size in its own coordinate system.
     override open var bounds: CGRect {
         didSet {
-            cornerRadius = bounds.height / 2
+            cornerRadius = bounds.height / 2.0
         }
     }
 

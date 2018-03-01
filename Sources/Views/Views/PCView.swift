@@ -3,6 +3,7 @@
 //  PieCrust
 //
 //  Created by Omar Albeik on 5.02.2018.
+//  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import UIKit
@@ -19,18 +20,26 @@ import SwifterSwift
 ///   - PCShadowable
 open class PCView: UIView, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
 
+    /// Create a PCView and set its properties in one line.
+    ///
+    /// - Parameters:
+    ///   - backgroundColor: Background color of the view (default is PCColor.white).
+    ///   - tintColor: Text color of the view (default is nil).
+    ///   - alpha: Alpha of the view (default is 1.0).
 	public convenience init(
-		backgroundColor: UIColor?,
-		cornerRadius: CGFloat = 0,
-		borderWidth: CGFloat = 0,
-		borderColor: UIColor? = nil) {
+		backgroundColor: UIColor? = PCColor.white,
+        tintColor: UIColor? = nil,
+        alpha: CGFloat = 1.0) {
 
 		self.init()
 
 		self.backgroundColor = backgroundColor
-		self.cornerRadius = cornerRadius
-		self.borderWidth = borderWidth
-		self.borderColor = borderColor
+
+        if let color = tintColor {
+            self.tintColor = color
+        }
+
+        self.alpha = alpha
 	}
 
 	/// Initializes and returns a newly allocated view object with the specified frame rectangle.

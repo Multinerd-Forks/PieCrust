@@ -37,9 +37,19 @@ public extension Notification {
         return (userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.size
     }
 
+    /// Estimated keyboard size from a system notication.
+    public var estimatedKeyboardSize: CGSize {
+        return keyboardSize ?? CGSize(width: UIScreen.main.bounds.width, height: 250.0)
+    }
+
 	/// Keyboard animation duration from a system notication.
     public var keyboardAnimationDuration: Double? {
         return userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double
+    }
+
+    /// Estimated keyboard animation duration from a system notication.
+    public var estimatedKeyboardAnimationDuration: Double? {
+        return keyboardAnimationDuration ?? 0.25
     }
 
 }

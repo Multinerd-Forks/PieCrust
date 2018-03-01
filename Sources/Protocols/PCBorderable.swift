@@ -3,6 +3,7 @@
 //  PieCrust
 //
 //  Created by Omar Albeik on 5.02.2018.
+//  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import UIKit
@@ -18,6 +19,14 @@ public protocol PCBorderable: class {
 
 	/// View border color.
 	var borderColor: UIColor? { get set }
+
+    /// Set border properties for a view.
+    ///
+    /// - Parameters:
+    ///   - width: View border width.
+    ///   - color: View border color.
+    ///   - radius: View corner radius.
+    func setBorder(width: CGFloat?, color: UIColor?, radius: CGFloat?)
 }
 
 public extension PCBorderable where Self: UIView {
@@ -53,5 +62,23 @@ public extension PCBorderable where Self: UIView {
 			layer.borderColor = newValue?.cgColor
 		}
 	}
+
+    /// Set border properties for a view.
+    ///
+    /// - Parameters:
+    ///   - width: View border width (default is nil).
+    ///   - color: View border color (default is nil).
+    ///   - radius: View corner radius (default is nil).
+    public func setBorder(width: CGFloat? = nil, color: UIColor? = nil, radius: CGFloat? = nil) {
+        if let borderWidth = width {
+            self.borderWidth = borderWidth
+        }
+
+        self.borderColor = color
+
+        if let cornerRadius = radius {
+            self.cornerRadius = cornerRadius
+        }
+    }
 
 }

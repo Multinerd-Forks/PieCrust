@@ -19,48 +19,52 @@ open class PCLoadingButton: PCButton {
     ///   - type: The button type (default is .custom).
     ///   - title: The button title for normal state.
     ///   - image: The button image for normal state (defaul is nil).
+    ///   - contentEdgeInsets: The button's content edge insets (defaul is top: 0.0, left: 40.0, bottom: 0.0, right: 40.0).
     ///   - backgroundColor: The button background color (defaul is PCColor.white).
-    ///   - tintColor: The button tint color (defaul is PCColor.black).
-    ///   - activityIndicatorTintColor: The button's activitiy indicator's tint color (defaul is PCColor.black).
-    ///   - contentEdgeInsets: The button's content edge insets (defaul is top: 0, left: 40, bottom: 0, right: 40).
+    ///   - tintColor: The button tint color (defaul is nil).
+    ///   - activityIndicatorTintColor: The button's activitiy indicator's tint color (defaul is nil).
+    ///   - isEnabled: The enabled state to use when drawing the button (default is true).
     ///   - alpha: The button's alpha (default is 1.0).
 	public convenience init(
 		type: UIButtonType = .custom,
 		title: String?,
         titleFont: UIFont? = nil,
         image: UIImage? = nil,
-		backgroundColor: UIColor? = PCColor.white,
-        tintColor: UIColor? = PCColor.black,
-        activityIndicatorTintColor: UIColor? = PCColor.black,
-		contentEdgeInsets: UIEdgeInsets = .init(top: 0, left: 40, bottom: 0, right: 40),
+        contentEdgeInsets: UIEdgeInsets = .init(top: 0.0, left: 40.0, bottom: 0.0, right: 40.0),
+        backgroundColor: UIColor? = PCColor.white,
+        tintColor: UIColor? = nil,
+        activityIndicatorTintColor: UIColor? = nil,
+        isEnabled: Bool = true,
         alpha: CGFloat = 1.0) {
 
 		self.init(type: type)
 
 		self.setTitle(title, for: .normal)
         self.setImage(image, for: .normal)
-		self.backgroundColor = backgroundColor
 
         if let font = titleFont {
             titleLabel?.font = font
         }
 
-		if let color = tintColor {
-			self.tintColor = color
-		}
+        self.contentEdgeInsets = contentEdgeInsets
+
+        self.backgroundColor = backgroundColor
+
+        if let color = tintColor {
+            self.tintColor = color
+        }
 
         if let color = activityIndicatorTintColor {
             activityIndicator.color = color
         }
-
-		self.contentEdgeInsets = contentEdgeInsets
+        
         self.alpha = alpha
 	}
 
 	/// Loading activity indicator view.
 	open lazy var activityIndicator: PCActivityIndicatorView = {
 		let indicator = PCActivityIndicatorView(activityIndicatorStyle: .white, color: tintColor)
-		indicator.frame = CGRect(x: preferredPadding - 10, y: (preferredHeight / 2) - 10, width: 20.0, height: 20.0)
+		indicator.frame = CGRect(x: preferredPadding - 10.0, y: (preferredHeight / 2.0) - 10.0, width: 20.0, height: 20.0)
 		return indicator
 	}()
 
