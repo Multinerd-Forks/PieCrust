@@ -19,6 +19,20 @@ import SwifterSwift
 ///   - PCShadowable
 open class PCView: UIView, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
 
+	public convenience init(
+		backgroundColor: UIColor?,
+		cornerRadius: CGFloat = 0,
+		borderWidth: CGFloat = 0,
+		borderColor: UIColor? = nil) {
+
+		self.init()
+
+		self.backgroundColor = backgroundColor
+		self.cornerRadius = cornerRadius
+		self.borderWidth = borderWidth
+		self.borderColor = borderColor
+	}
+
 	/// Initializes and returns a newly allocated view object with the specified frame rectangle.
 	///
 	/// - Parameter frame: The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This method uses the frame rectangle to set the center and bounds properties accordingly.

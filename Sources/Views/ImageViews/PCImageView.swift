@@ -30,7 +30,7 @@ open class PCImageView: UIImageView, PCLayoutable, PCKeyboardControllable, PCAni
     public convenience init(
         image: UIImage?,
         contentMode: UIViewContentMode,
-        backgroundColor: UIColor = PCColor.white,
+        backgroundColor: UIColor? = PCColor.white,
         tintColor: UIColor = PCColor.white,
         alpha: CGFloat = 1.0) {
 

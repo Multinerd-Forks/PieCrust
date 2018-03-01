@@ -41,6 +41,7 @@ open class PCLabel: UILabel, PCAnimatable, PCBorderable, PCShadowable {
         minimumScaleFactor: CGFloat = 1.0,
         lineBreakMode: NSLineBreakMode = .byTruncatingTail,
         alpha: CGFloat = 1.0) {
+		
 		self.init()
 		self.text = text
 
