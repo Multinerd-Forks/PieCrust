@@ -50,9 +50,9 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable, PCShadowable {
     ///   - minimumFontSize: The size of the smallest permissible font with which to draw the text field’s text (default is nil).
     ///   - borderStyle: The type of border drawn around the text field (default is .none).
     ///   - keyboardAppearance: The appearance style of the keyboard that is associated with the text object (default is .default).
+    ///   - isEnabled: The enabled state to use when drawing the text field (default is true).
     ///   - backgroundColor: The text field's background color (default is PCColor.white).
     ///   - tintColor: The tint color of the text field (default is nil).
-    ///   - isEnabled: The enabled state to use when drawing the text field (default is true).
 	///   - alpha: Text field's alpha (default is 1.0).
 	public convenience init(
 		placeholder: String?,
@@ -67,57 +67,48 @@ open class PCTextField: UITextField, PCAnimatable, PCBorderable, PCShadowable {
         minimumFontSize: CGFloat? = nil,
         borderStyle: UITextBorderStyle = .none,
         keyboardAppearance: UIKeyboardAppearance = .default,
+        isEnabled: Bool = true,
         backgroundColor: UIColor? = PCColor.white,
         tintColor: UIColor? = nil,
-		isEnabled: Bool = true,
 		alpha: CGFloat = 1.0) {
 
 		self.init()
 
 		self.placeholder = placeholder
 		self.text = text
-
         if let attrPlaceholder = attributedPlaceholder {
             self.attributedPlaceholder = attrPlaceholder
         }
-
         if let attrText = attributedText {
             self.attributedText = attrText
         }
-
 		self.textAlignment = textAlignment
-
 		self.textType = textType
         self.update(forTextType: textType)
-
 		self.clearsOnBeginEditing = clearsOnBeginEditing
         self.textColor = textColor
-
 		if let aFont = font {
 			self.font = aFont
 		}
-
 		if let aMinimumFontSize = minimumFontSize {
 			self.adjustsFontSizeToFitWidth = true
 			self.minimumFontSize = aMinimumFontSize
 		}
-
         self.keyboardAppearance = keyboardAppearance
 		self.borderStyle = borderStyle
+        self.isEnabled = isEnabled
 
         self.backgroundColor = backgroundColor
-
         if let color = tintColor {
             self.tintColor = color
         }
-
-		self.isEnabled = isEnabled
 		self.alpha = alpha
 	}
 
 	/// Preferred height for autolayout (default is 40.0 for small screens and 48.0 for other screen sizes).
+    /// Override this value by setting `preferredHeight` in `PCConstants` to change it app-wide, or just here to set it for this text field only.
 	open var preferredHeight: CGFloat {
-		return UIScreen.main.isSmall ? 40.0 : 48.0
+		return PCConstants.preferredHeight
 	}
 
 	/// Check if text field's trimmed text is empty.

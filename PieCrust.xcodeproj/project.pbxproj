@@ -28,6 +28,7 @@
 		0755B1D5203EC2BD0086C9EF /* PCVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755B1D4203EC2BD0086C9EF /* PCVisualEffectView.swift */; };
 		0755B1D7203EC7250086C9EF /* PCPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755B1D6203EC7250086C9EF /* PCPillButton.swift */; };
 		0755B1E3203EDCEE0086C9EF /* PCPillTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755B1E2203EDCEE0086C9EF /* PCPillTextField.swift */; };
+		0776A9DD204928EB00B7B1BB /* PCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0776A9DC204928EB00B7B1BB /* PCConstants.swift */; };
 		0791BA272040076E00FCDC45 /* PCLayoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0791BA262040076E00FCDC45 /* PCLayoutable.swift */; };
 		0791BA2920400D6800FCDC45 /* PCrustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0791BA2820400D6800FCDC45 /* PCrustable.swift */; };
 		0791BA31204033FB00FCDC45 /* PCPillLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0791BA30204033FB00FCDC45 /* PCPillLoadingButton.swift */; };
@@ -94,6 +95,7 @@
 		0755B1D4203EC2BD0086C9EF /* PCVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCVisualEffectView.swift; sourceTree = "<group>"; };
 		0755B1D6203EC7250086C9EF /* PCPillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillButton.swift; sourceTree = "<group>"; };
 		0755B1E2203EDCEE0086C9EF /* PCPillTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillTextField.swift; sourceTree = "<group>"; };
+		0776A9DC204928EB00B7B1BB /* PCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCConstants.swift; sourceTree = "<group>"; };
 		0791BA262040076E00FCDC45 /* PCLayoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCLayoutable.swift; sourceTree = "<group>"; };
 		0791BA2820400D6800FCDC45 /* PCrustable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCrustable.swift; sourceTree = "<group>"; };
 		0791BA30204033FB00FCDC45 /* PCPillLoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillLoadingButton.swift; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 			children = (
 				07E23DFD203D8A7F00292303 /* PCColor.swift */,
 				07E23DFF203D8D0100292303 /* PCFont.swift */,
+				0776A9DC204928EB00B7B1BB /* PCConstants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				0711C5D7202C6CA0008BF833 /* PCTableViewController.swift in Sources */,
 				079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */,
 				0711C5DC202C6CA0008BF833 /* PCBorderable.swift in Sources */,
+				0776A9DD204928EB00B7B1BB /* PCConstants.swift in Sources */,
 				0755B1D5203EC2BD0086C9EF /* PCVisualEffectView.swift in Sources */,
 				079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */,
 			);

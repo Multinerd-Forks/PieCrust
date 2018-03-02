@@ -47,11 +47,9 @@ open class PCStackView: UIStackView, PCAnimatable, PCBorderable, PCShadowable {
         self.spacing = spacing
 
         self.backgroundColor = backgroundColor
-
         if let color = tintColor {
             self.tintColor = color
         }
-
         self.alpha = alpha
     }
 
