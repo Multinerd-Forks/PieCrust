@@ -64,11 +64,11 @@ open class PCCollectionViewController: UICollectionViewController, PCrustable, P
         return true
     }
 
-    /// Set navigation item here.
-    open func setNavigationItem() {}
-
     /// Set tab bar item here.
     open func setTabBarItem() {}
+
+    /// Set navigation item here.
+    open func setNavigationItem() {}
 
     /// Set gesture recognizers here.
     open func setGestureRecognizers() {}
@@ -121,7 +121,7 @@ open class PCCollectionViewController: UICollectionViewController, PCrustable, P
 }
 
 // MARK: - Private methods.
-private extension PCCollectionViewController {
+fileprivate extension PCCollectionViewController {
 
     @objc func hideKeyboard() {
         view.endEditing(true)

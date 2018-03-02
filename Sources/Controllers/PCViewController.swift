@@ -39,11 +39,6 @@ open class PCViewController: UIViewController, PCrustable, PCKeyboardObservable,
         setTabBarItem()
     }
 
-    /// The PCView that the controller manages.
-    open var pcView: PCView {
-        return view as! PCView
-    }
-
     /// Called after the controller's view is loaded into memory.
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -70,11 +65,16 @@ open class PCViewController: UIViewController, PCrustable, PCKeyboardObservable,
         return true
     }
 
-    /// Set navigation item here.
-    open func setNavigationItem() {}
+    /// The PCView that the controller manages.
+    open var pcView: PCView {
+        return view as! PCView
+    }
 
     /// Set tab bar item here.
     open func setTabBarItem() {}
+
+    /// Set navigation item here.
+    open func setNavigationItem() {}
 
     /// Set gesture recognizers here.
     open func setGestureRecognizers() {}
@@ -127,7 +127,7 @@ open class PCViewController: UIViewController, PCrustable, PCKeyboardObservable,
 }
 
 // MARK: - Private methods.
-private extension PCViewController {
+fileprivate extension PCViewController {
 
     @objc func hideKeyboard() {
         view.endEditing(true)

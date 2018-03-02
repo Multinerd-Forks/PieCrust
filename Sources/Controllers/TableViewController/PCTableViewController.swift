@@ -73,11 +73,11 @@ open class PCTableViewController: UITableViewController, PCrustable, PCKeyboardO
         return true
     }
 
-    /// Set navigation item here.
-    open func setNavigationItem() {}
-
     /// Set tab bar item here.
     open func setTabBarItem() {}
+    
+    /// Set navigation item here.
+    open func setNavigationItem() {}
 
     /// Set gesture recognizers here.
     open func setGestureRecognizers() {}
@@ -130,7 +130,7 @@ open class PCTableViewController: UITableViewController, PCrustable, PCKeyboardO
 }
 
 // MARK: - Private methods.
-private extension PCTableViewController {
+fileprivate extension PCTableViewController {
 
     @objc func hideKeyboard() {
         view.endEditing(true)

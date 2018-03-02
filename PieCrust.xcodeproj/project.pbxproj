@@ -302,8 +302,8 @@
 				07DADF932036DBE9002A6088 /* Buttons */,
 				07DADF9A2036DBE9002A6088 /* TextFields */,
 				07DADF972036DBE9002A6088 /* PCSwitch.swift */,
-				0795448C2047FA9800003711 /* PCDatePicker.swift */,
 				07DADF982036DBE9002A6088 /* PCSegmentedControl.swift */,
+				0795448C2047FA9800003711 /* PCDatePicker.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -327,7 +327,6 @@
 				07DADF9C2036DBE9002A6088 /* TableViewCells */,
 				07DADF9F2036DBE9002A6088 /* Labels */,
 				07DADFA12036DBE9002A6088 /* CollectionViewCells */,
-				07DADFA42036DBE9002A6088 /* PCActivityIndicatorView.swift */,
 				07E23DF1203D7D3600292303 /* ImageViews */,
 			);
 			path = Views;
@@ -376,6 +375,7 @@
 				0755B1D4203EC2BD0086C9EF /* PCVisualEffectView.swift */,
 				07DADFA82036DBE9002A6088 /* PCConfettiView.swift */,
 				07DADFA92036DBE9002A6088 /* PCStackView.swift */,
+				07DADFA42036DBE9002A6088 /* PCActivityIndicatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -392,9 +392,9 @@
 		07E23DFC203D8A7F00292303 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0776A9DC204928EB00B7B1BB /* PCConstants.swift */,
 				07E23DFD203D8A7F00292303 /* PCColor.swift */,
 				07E23DFF203D8D0100292303 /* PCFont.swift */,
-				0776A9DC204928EB00B7B1BB /* PCConstants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
