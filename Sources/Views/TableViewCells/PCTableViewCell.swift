@@ -13,11 +13,12 @@ import SwifterSwift
 /// PCTableViewCell.
 ///
 /// - Conforms to:
+///   - PCrustable
 ///   - PCLayoutable
 ///   - PCAnimatable
 ///   - PCBorderable
 ///   - PCShadowable
-open class PCTableViewCell: UITableViewCell, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
+open class PCTableViewCell: UITableViewCell, PCrustable, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Initializes a table cell with a style and a reuse identifier and returns it to the caller.
 	///
@@ -49,11 +50,5 @@ open class PCTableViewCell: UITableViewCell, PCLayoutable, PCAnimatable, PCBorde
 
 	/// Use this method to layout your custom views using SnapKit.
 	open func layoutViews() {}
-
-	/// Preferred padding for autolayout (default is 20).
-    /// Override this value by setting `preferredPadding` in `PCConstants` to change it app-wide, or just here to set it for this view only.
-	open var preferredPadding: CGFloat {
-		return PCConstants.preferredPadding
-	}
 
 }

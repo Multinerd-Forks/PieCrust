@@ -29,10 +29,4 @@ open class PCVisualEffectView: UIVisualEffectView, PCAnimatable, PCBorderable, P
         self.alpha = alpha
     }
 
-    /// Preferred padding for autolayout (default is 20).
-    /// Override this value by setting `preferredPadding` in `PCConstants` to change it app-wide, or just here to set it for this view only.
-    open var preferredPadding: CGFloat {
-        return PCConstants.preferredPadding
-    }
-
 }

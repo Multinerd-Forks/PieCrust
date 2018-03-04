@@ -13,16 +13,8 @@ import SwifterSwift
 /// PCSwitch.
 ///
 /// - Conforms to:
+///   - PCrustable
 ///   - PCAnimatable
 ///   - PCBorderable
 ///   - PCShadowable
-open class PCSwitch: UISwitch, PCAnimatable, PCBorderable, PCShadowable {
-
-	/// Toggle Switch.
-	///
-	/// - Parameter animated: set true to animate the change (default is true).
-	open func toggle(animated: Bool = true) {
-		setOn(!isOn, animated: animated)
-	}
-
-}
+open class PCSwitch: UISwitch, PCrustable, PCAnimatable, PCBorderable, PCShadowable {}

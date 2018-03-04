@@ -97,12 +97,6 @@ open class PCImageView: UIImageView, PCLayoutable, PCKeyboardControllable, PCAni
 	/// Use this method to layout your custom views using SnapKit.
 	open func layoutViews() {}
 
-	/// Preferred padding for autolayout (default is 20).
-    /// Override this value by setting `preferredPadding` in `PCConstants` to change it app-wide, or just here to set it for this view only.
-	open var preferredPadding: CGFloat {
-		return PCConstants.preferredPadding
-	}
-
 	/// Call this method from view contoller to handle KeyboardWillShow notification.
 	///
 	/// - Parameter notification: keyboard notificaton sent from system.

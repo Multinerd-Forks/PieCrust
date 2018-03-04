@@ -13,34 +13,13 @@ import SwifterSwift
 /// PCView.
 ///
 /// - Conforms to:
+///   - PCrustable
 ///   - PCLayoutable
 ///   - PCKeyboardControllable
 ///   - PCAnimatable
 ///   - PCBorderable
 ///   - PCShadowable
-open class PCView: UIView, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
-
-    /// Create a PCView and set its properties in one line.
-    ///
-    /// - Parameters:
-    ///   - backgroundColor: Background color of the view (default is PCColor.white).
-    ///   - tintColor: Text color of the view (default is nil).
-    ///   - alpha: Alpha of the view (default is 1.0).
-	public convenience init(
-		backgroundColor: UIColor? = PCColor.white,
-        tintColor: UIColor? = nil,
-        alpha: CGFloat = 1.0) {
-
-		self.init()
-
-		self.backgroundColor = backgroundColor
-
-        if let color = tintColor {
-            self.tintColor = color
-        }
-
-        self.alpha = alpha
-	}
+open class PCView: UIView, PCrustable, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Initializes and returns a newly allocated view object with the specified frame rectangle.
 	///
@@ -69,12 +48,6 @@ open class PCView: UIView, PCLayoutable, PCKeyboardControllable, PCAnimatable, P
 
 	/// Use this method to layout your custom views using SnapKit.
 	open func layoutViews() {}
-
-	/// Preferred padding for autolayout (default is 20).
-    /// Override this value by setting `preferredPadding` in `PCConstants` to change it app-wide, or just here to set it for this view only.
-	open var preferredPadding: CGFloat {
-		return PCConstants.preferredPadding
-	}
 
 	/// Call this method from view contoller to handle KeyboardWillShow notification.
 	///
