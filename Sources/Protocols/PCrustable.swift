@@ -246,7 +246,7 @@ public extension PCrustable where Self: UITextField {
 			self.attributedText = attrText
 		}
 		self.textAlignment = textAlignment
-		self.update(forTextType: textType)
+		self.setTextType(textType)
 		self.clearsOnBeginEditing = clearsOnBeginEditing
 		self.textColor = textColor
 		if let aFont = font {
@@ -267,7 +267,7 @@ public extension PCrustable where Self: UITextField {
 		self.alpha = alpha
 	}
 
-	private func update(forTextType type: PCTextFieldType) {
+	public func setTextType(_ type: PCTextFieldType) {
 		isSecureTextEntry = (type == .password)
 
 		switch type {
