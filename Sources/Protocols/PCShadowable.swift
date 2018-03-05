@@ -44,6 +44,8 @@ public extension PCShadowable where Self: UIView {
 		}
 		set {
 			layer.shadowColor = newValue?.cgColor
+            layer.shouldRasterize = true
+            layer.rasterizationScale = UIScreen.main.scale
 		}
 	}
 
@@ -54,6 +56,8 @@ public extension PCShadowable where Self: UIView {
 		}
 		set {
 			layer.shadowOffset = newValue
+            layer.shouldRasterize = true
+            layer.rasterizationScale = UIScreen.main.scale
 		}
 	}
 
@@ -64,6 +68,8 @@ public extension PCShadowable where Self: UIView {
 		}
 		set {
 			layer.shadowOpacity = newValue
+            layer.shouldRasterize = true
+            layer.rasterizationScale = UIScreen.main.scale
 		}
 	}
 
@@ -74,6 +80,8 @@ public extension PCShadowable where Self: UIView {
 		}
 		set {
 			layer.shadowRadius = newValue
+            layer.shouldRasterize = true
+            layer.rasterizationScale = UIScreen.main.scale
 		}
 	}
 
