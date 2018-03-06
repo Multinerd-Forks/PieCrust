@@ -11,7 +11,7 @@ import XCTest
 
 private class CustomTextField: PCTextField {
 
-	override var preferredHeight: CGFloat {
+	var preferredHeight: CGFloat {
 		return 10.0
 	}
 
@@ -25,7 +25,6 @@ class PCTextFieldTests: XCTestCase {
         XCTAssertEqual(textFieldWithDefaultArgs.placeholder!, "hello world")
         XCTAssert(textFieldWithDefaultArgs.text!.isEmpty)
         XCTAssertEqual(textFieldWithDefaultArgs.textAlignment, .natural)
-        XCTAssertEqual(textFieldWithDefaultArgs.textType, .generic)
         XCTAssertFalse(textFieldWithDefaultArgs.clearsOnBeginEditing)
         XCTAssertEqual(textFieldWithDefaultArgs.backgroundColor, PCColor.white)
         XCTAssertEqual(textFieldWithDefaultArgs.textColor, PCColor.black)
@@ -114,19 +113,19 @@ class PCTextFieldTests: XCTestCase {
     func testTextType() {
         let textField = PCTextField(placeholder: "hello world!")
 
-        textField.textType = .emailAddress
+        textField.setTextType(.emailAddress)
         XCTAssertFalse(textField.isSecureTextEntry)
         XCTAssertEqual(textField.keyboardType, .emailAddress)
         XCTAssertEqual(textField.autocorrectionType, .no)
         XCTAssertEqual(textField.autocapitalizationType, .none)
 
-        textField.textType = .url
+		textField.setTextType(.url)
         XCTAssertFalse(textField.isSecureTextEntry)
         XCTAssertEqual(textField.keyboardType, .URL)
         XCTAssertEqual(textField.autocorrectionType, .no)
         XCTAssertEqual(textField.autocapitalizationType, .none)
 
-        textField.textType = .phoneNumber
+		textField.setTextType(.phoneNumber)
         XCTAssertFalse(textField.isSecureTextEntry)
         if #available(iOS 10.0, *) {
             XCTAssertEqual(textField.keyboardType, .asciiCapableNumberPad)
@@ -134,17 +133,17 @@ class PCTextFieldTests: XCTestCase {
             XCTAssertEqual(textField.keyboardType, .numberPad)
         }
 
-        textField.textType = .decimal
+		textField.setTextType(.decimal)
         XCTAssertFalse(textField.isSecureTextEntry)
         XCTAssertEqual(textField.keyboardType, .decimalPad)
 
-        textField.textType = .password
+		textField.setTextType(.password)
         XCTAssert(textField.isSecureTextEntry)
         XCTAssertEqual(textField.keyboardType, .asciiCapable)
         XCTAssertEqual(textField.autocorrectionType, .no)
         XCTAssertEqual(textField.autocapitalizationType, .none)
 
-        textField.textType = .generic
+		textField.setTextType(.generic)
         XCTAssertFalse(textField.isSecureTextEntry)
         XCTAssertEqual(textField.keyboardType, .asciiCapable)
         XCTAssertEqual(textField.autocorrectionType, .default)

@@ -3,17 +3,20 @@
 //  PieCrust
 //
 //  Created by Omar Albeik on 5.02.2018.
+//  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import UIKit
 import SnapKit
+import SwifterSwift
 
 /// PCNavigationController.
 /// 
 /// - Conforms to:
+///   - PCrustable
 ///   - PCAlertable
 ///   - PCConfettiable
-open class PCNavigationController: UINavigationController, PCAlertable, PCConfettiable {
+open class PCNavigationController: UINavigationController, PCrustable, PCAlertable, PCConfettiable {
 
 	/// The nearest ancestor in the view controller hierarchy that is a PCTabBarController.
 	open var pcTabBarController: PCTabBarController? {
@@ -26,20 +29,5 @@ open class PCNavigationController: UINavigationController, PCAlertable, PCConfet
 
 		view.backgroundColor = PCColor.white
 	}
-
-    /// Set navigationBar background and text colors
-    ///
-    /// - Parameters:
-    ///   - background: backgound color
-    ///   - text: text color
-    public func setNavigaitonBarColors(background: UIColor, tint: UIColor) {
-        navigationBar.isTranslucent = (background == .clear)
-        navigationBar.backgroundColor = background
-        navigationBar.barTintColor = background
-        navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationBar.tintColor = tint
-        navigationBar.titleTextAttributes = [.foregroundColor: tint]
-        navigationBar.shadowImage = UIImage()
-    }
 
 }

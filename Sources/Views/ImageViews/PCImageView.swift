@@ -8,38 +8,18 @@
 
 import UIKit
 import SnapKit
+import SwifterSwift
 
 /// PCImageView.
 ///
 /// - Conforms to:
+///   - PCrustable
 ///   - PCLayoutable
 ///   - PCKeyboardControllable
 ///   - PCAnimatable
 ///   - PCBorderable
 ///   - PCShadowable
-open class PCImageView: UIImageView, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
-
-    /// Create PCImageView and set its properties in one line.
-    ///
-    /// - Parameters:
-    ///   - image: image.
-    ///   - contentMode: contentMode.
-    ///   - backgroundColor: background color (default is PCColor.white).
-    ///   - alpha: alpha (default is 1.0).
-    public convenience init(
-        image: UIImage?,
-        contentMode: UIViewContentMode,
-        backgroundColor: UIColor = PCColor.white,
-        tintColor: UIColor = PCColor.white,
-        alpha: CGFloat = 1.0) {
-
-        self.init(image: image)
-
-        self.contentMode = contentMode
-        self.backgroundColor = backgroundColor
-        self.tintColor = tintColor
-        self.alpha = alpha
-    }
+open class PCImageView: UIImageView, PCrustable, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Returns an image view initialized with the specified image.
 	///
@@ -90,11 +70,6 @@ open class PCImageView: UIImageView, PCLayoutable, PCKeyboardControllable, PCAni
 
 	/// Use this method to layout your custom views using SnapKit.
 	open func layoutViews() {}
-
-	/// Preferred padding for autolayout (default is 20).
-	open var preferredPadding: CGFloat {
-		return 20.0
-	}
 
 	/// Call this method from view contoller to handle KeyboardWillShow notification.
 	///

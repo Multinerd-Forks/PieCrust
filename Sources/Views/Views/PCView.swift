@@ -3,20 +3,23 @@
 //  PieCrust
 //
 //  Created by Omar Albeik on 5.02.2018.
+//  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import UIKit
 import SnapKit
+import SwifterSwift
 
 /// PCView.
 ///
 /// - Conforms to:
+///   - PCrustable
 ///   - PCLayoutable
 ///   - PCKeyboardControllable
 ///   - PCAnimatable
 ///   - PCBorderable
 ///   - PCShadowable
-open class PCView: UIView, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
+open class PCView: UIView, PCrustable, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Initializes and returns a newly allocated view object with the specified frame rectangle.
 	///
@@ -45,11 +48,6 @@ open class PCView: UIView, PCLayoutable, PCKeyboardControllable, PCAnimatable, P
 
 	/// Use this method to layout your custom views using SnapKit.
 	open func layoutViews() {}
-
-	/// Preferred padding for autolayout (default is 20).
-	open var preferredPadding: CGFloat {
-		return 20.0
-	}
 
 	/// Call this method from view contoller to handle KeyboardWillShow notification.
 	///

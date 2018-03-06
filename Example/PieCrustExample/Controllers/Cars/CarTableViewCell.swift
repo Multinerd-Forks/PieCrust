@@ -34,7 +34,7 @@ class CarTableViewCell: PCGenericTableViewCell<Car> {
         return [modelLabel, yearLabel].stacked(axis: .vertical)
 	}()
 
-	override var preferredPadding: CGFloat {
+	var preferredPadding: CGFloat {
 		return 10
 	}
 

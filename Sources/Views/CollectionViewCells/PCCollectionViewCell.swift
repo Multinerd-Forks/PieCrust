@@ -8,15 +8,17 @@
 
 import UIKit
 import SnapKit
+import SwifterSwift
 
 /// PCCollectionViewCell.
 ///
 /// - Conforms to:
+///   - PCrustable
 ///   - PCLayoutable
 ///   - PCAnimatable
 ///   - PCBorderable
 ///   - PCShadowable
-open class PCCollectionViewCell: UICollectionViewCell, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
+open class PCCollectionViewCell: UICollectionViewCell, PCrustable, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Initializes and returns a newly allocated view object with the specified frame rectangle.
 	///
@@ -45,10 +47,5 @@ open class PCCollectionViewCell: UICollectionViewCell, PCLayoutable, PCAnimatabl
 
 	/// Use this method to layout your custom views using SnapKit.
 	open func layoutViews() {}
-
-	/// Preferred padding for autolayout (default is 20).
-	open var preferredPadding: CGFloat {
-		return 20.0
-	}
 
 }

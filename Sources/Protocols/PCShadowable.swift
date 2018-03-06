@@ -3,6 +3,7 @@
 //  PieCrust
 //
 //  Created by Omar Albeik on 5.02.2018.
+//  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import UIKit
@@ -22,6 +23,13 @@ public protocol PCShadowable: class {
 	/// Shadow radius of view.
 	var shadowRadius: CGFloat { get set }
 
+    /// Set shadow properties for a view.
+    ///
+    /// - Parameters:
+    ///   - color: Shadow color of view.
+    ///   - offset: Shadow offset of view.
+    ///   - opacity: Shadow opacity of view.
+    ///   - radius: Shadow radius of view.
 	func setShadow(color: UIColor?, offset: CGSize, opacity: Float, radius: CGFloat)
 
 }
@@ -36,6 +44,8 @@ public extension PCShadowable where Self: UIView {
 		}
 		set {
 			layer.shadowColor = newValue?.cgColor
+            layer.shouldRasterize = true
+            layer.rasterizationScale = UIScreen.main.scale
 		}
 	}
 
@@ -46,6 +56,8 @@ public extension PCShadowable where Self: UIView {
 		}
 		set {
 			layer.shadowOffset = newValue
+            layer.shouldRasterize = true
+            layer.rasterizationScale = UIScreen.main.scale
 		}
 	}
 
@@ -56,6 +68,8 @@ public extension PCShadowable where Self: UIView {
 		}
 		set {
 			layer.shadowOpacity = newValue
+            layer.shouldRasterize = true
+            layer.rasterizationScale = UIScreen.main.scale
 		}
 	}
 
@@ -66,6 +80,8 @@ public extension PCShadowable where Self: UIView {
 		}
 		set {
 			layer.shadowRadius = newValue
+            layer.shouldRasterize = true
+            layer.rasterizationScale = UIScreen.main.scale
 		}
 	}
 
@@ -81,6 +97,7 @@ public extension PCShadowable where Self: UIView {
 		shadowOffset = offset
 		shadowOpacity = opacity
 		shadowRadius = radius
+        clipsToBounds = false
 	}
 
 }
