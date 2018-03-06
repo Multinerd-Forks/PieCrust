@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import SwifterSwift
 
 /// PCFont.
-open class PCFont: UIFont {}
+///
+/// - Conforms to:
+///   - PCFontable
+open class PCFont: UIFont, PCFontable {}

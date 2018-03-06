@@ -13,39 +13,13 @@ import SwifterSwift
 /// PCImageView.
 ///
 /// - Conforms to:
+///   - PCrustable
 ///   - PCLayoutable
 ///   - PCKeyboardControllable
 ///   - PCAnimatable
 ///   - PCBorderable
 ///   - PCShadowable
-open class PCImageView: UIImageView, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
-
-    /// Create PCImageView and set its properties in one line.
-    ///
-    /// - Parameters:
-    ///   - image: image.
-    ///   - contentMode: contentMode.
-    ///   - backgroundColor: background color (default is PCColor.white).
-    ///   - tintColor: Text color of the view (default is nil).
-    ///   - alpha: alpha (default is 1.0).
-    public convenience init(
-        image: UIImage?,
-        contentMode: UIViewContentMode,
-        backgroundColor: UIColor? = PCColor.white,
-        tintColor: UIColor? = nil,
-        alpha: CGFloat = 1.0) {
-
-        self.init(image: image)
-
-        self.contentMode = contentMode
-        self.backgroundColor = backgroundColor
-
-        if let color = tintColor {
-            self.tintColor = color
-        }
-
-        self.alpha = alpha
-    }
+open class PCImageView: UIImageView, PCrustable, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Returns an image view initialized with the specified image.
 	///

@@ -13,20 +13,8 @@ import SwifterSwift
 /// PCVisualEffectView.
 ///
 /// - Conforms to:
+///   - PCrustable
 ///   - PCAnimatable
 ///   - PCBorderable
 ///   - PCShadowable
-open class PCVisualEffectView: UIVisualEffectView, PCAnimatable, PCBorderable, PCShadowable {
-
-    /// Create PCVisualEffectView and set its properties in one line.
-    ///
-    /// - Parameters:
-    ///   - effect: The UIVisualEffect you provide for the view. This can be a UIBlurEffect or a UIVibrancyEffect.
-    ///   - alpha: Alpha of the visual view (default is 1.0).
-    public convenience init(effect: UIVisualEffect?, alpha: CGFloat = 1.0) {
-        self.init(effect: effect)
-
-        self.alpha = alpha
-    }
-
-}
+open class PCVisualEffectView: UIVisualEffectView, PCrustable, PCAnimatable, PCBorderable, PCShadowable {}

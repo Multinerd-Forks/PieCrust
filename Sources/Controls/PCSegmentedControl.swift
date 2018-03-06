@@ -13,6 +13,7 @@ import SwifterSwift
 /// PCSegmentedControl.
 ///
 /// - Conforms to:
+///   - PCrustable
 ///   - PCAnimatable
 ///   - PCBorderable
 ///   - PCShadowable

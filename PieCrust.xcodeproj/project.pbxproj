@@ -52,6 +52,21 @@
 		07DADFB72036DBEA002A6088 /* PCImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADFA72036DBE9002A6088 /* PCImageView.swift */; };
 		07DADFB82036DBEA002A6088 /* PCConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADFA82036DBE9002A6088 /* PCConfettiView.swift */; };
 		07DADFB92036DBEA002A6088 /* PCStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADFA92036DBE9002A6088 /* PCStackView.swift */; };
+		07E00C91204EA705008EFF75 /* PCColorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00C90204EA705008EFF75 /* PCColorable.swift */; };
+		07E00C93204EA74E008EFF75 /* PCFontable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00C92204EA74E008EFF75 /* PCFontable.swift */; };
+		07E00C96204EAD05008EFF75 /* PCrustable+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00C95204EAD05008EFF75 /* PCrustable+UINavigationController.swift */; };
+		07E00C98204EAD30008EFF75 /* PCrustable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00C97204EAD30008EFF75 /* PCrustable+UIViewController.swift */; };
+		07E00C9A204EAD54008EFF75 /* PCrustable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00C99204EAD54008EFF75 /* PCrustable+UIView.swift */; };
+		07E00C9C204EAD75008EFF75 /* PCrustable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00C9B204EAD75008EFF75 /* PCrustable+UIButton.swift */; };
+		07E00C9E204EAD98008EFF75 /* PCrustable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00C9D204EAD98008EFF75 /* PCrustable+UITextField.swift */; };
+		07E00CA0204EADFB008EFF75 /* PCrustable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00C9F204EADFB008EFF75 /* PCrustable+UISwitch.swift */; };
+		07E00CA2204EAE3D008EFF75 /* PCrustable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00CA1204EAE3D008EFF75 /* PCrustable+UISegmentedControl.swift */; };
+		07E00CA4204EAEBB008EFF75 /* PCrustable+UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00CA3204EAEBB008EFF75 /* PCrustable+UIDatePicker.swift */; };
+		07E00CA6204EAEE0008EFF75 /* PCrustable+UIVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00CA5204EAEE0008EFF75 /* PCrustable+UIVisualEffectView.swift */; };
+		07E00CA8204EAEF9008EFF75 /* PCrustable+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00CA7204EAEF9008EFF75 /* PCrustable+UIStackView.swift */; };
+		07E00CAA204EAF14008EFF75 /* PCrustable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00CA9204EAF14008EFF75 /* PCrustable+UIActivityIndicatorView.swift */; };
+		07E00CAC204EAF28008EFF75 /* PCrustable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00CAB204EAF28008EFF75 /* PCrustable+UILabel.swift */; };
+		07E00CAE204EAF43008EFF75 /* PCrustable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E00CAD204EAF43008EFF75 /* PCrustable+UIImageView.swift */; };
 		07E23DEC203D717400292303 /* PCAppVersionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E23DEB203D717400292303 /* PCAppVersionLabel.swift */; };
 		07E23DF0203D7D2F00292303 /* PCRoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E23DEF203D7D2F00292303 /* PCRoundedImageView.swift */; };
 		07E23DFE203D8A7F00292303 /* PCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E23DFD203D8A7F00292303 /* PCColor.swift */; };
@@ -122,6 +137,21 @@
 		07DADFA72036DBE9002A6088 /* PCImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCImageView.swift; sourceTree = "<group>"; };
 		07DADFA82036DBE9002A6088 /* PCConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCConfettiView.swift; sourceTree = "<group>"; };
 		07DADFA92036DBE9002A6088 /* PCStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCStackView.swift; sourceTree = "<group>"; };
+		07E00C90204EA705008EFF75 /* PCColorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCColorable.swift; sourceTree = "<group>"; };
+		07E00C92204EA74E008EFF75 /* PCFontable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCFontable.swift; sourceTree = "<group>"; };
+		07E00C95204EAD05008EFF75 /* PCrustable+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UINavigationController.swift"; sourceTree = "<group>"; };
+		07E00C97204EAD30008EFF75 /* PCrustable+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIViewController.swift"; sourceTree = "<group>"; };
+		07E00C99204EAD54008EFF75 /* PCrustable+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIView.swift"; sourceTree = "<group>"; };
+		07E00C9B204EAD75008EFF75 /* PCrustable+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIButton.swift"; sourceTree = "<group>"; };
+		07E00C9D204EAD98008EFF75 /* PCrustable+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UITextField.swift"; sourceTree = "<group>"; };
+		07E00C9F204EADFB008EFF75 /* PCrustable+UISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UISwitch.swift"; sourceTree = "<group>"; };
+		07E00CA1204EAE3D008EFF75 /* PCrustable+UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UISegmentedControl.swift"; sourceTree = "<group>"; };
+		07E00CA3204EAEBB008EFF75 /* PCrustable+UIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIDatePicker.swift"; sourceTree = "<group>"; };
+		07E00CA5204EAEE0008EFF75 /* PCrustable+UIVisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIVisualEffectView.swift"; sourceTree = "<group>"; };
+		07E00CA7204EAEF9008EFF75 /* PCrustable+UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIStackView.swift"; sourceTree = "<group>"; };
+		07E00CA9204EAF14008EFF75 /* PCrustable+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
+		07E00CAB204EAF28008EFF75 /* PCrustable+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UILabel.swift"; sourceTree = "<group>"; };
+		07E00CAD204EAF43008EFF75 /* PCrustable+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIImageView.swift"; sourceTree = "<group>"; };
 		07E23DEB203D717400292303 /* PCAppVersionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCAppVersionLabel.swift; sourceTree = "<group>"; };
 		07E23DEF203D7D2F00292303 /* PCRoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCRoundedImageView.swift; sourceTree = "<group>"; };
 		07E23DFD203D8A7F00292303 /* PCColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCColor.swift; sourceTree = "<group>"; };
@@ -203,9 +233,11 @@
 		0711C5B8202C6CA0008BF833 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				0791BA2820400D6800FCDC45 /* PCrustable.swift */,
+				07E00C94204EACDE008EFF75 /* PCrustable */,
 				07548289204078FA008BC811 /* Keyboard */,
 				0711C5B9202C6CA0008BF833 /* PCAlertable.swift */,
+				07E00C90204EA705008EFF75 /* PCColorable.swift */,
+				07E00C92204EA74E008EFF75 /* PCFontable.swift */,
 				0791BA262040076E00FCDC45 /* PCLayoutable.swift */,
 				07FD1DDD204BE0A90074FC6F /* PCLoadingable.swift */,
 				0711C5BA202C6CA0008BF833 /* PCAnimatable.swift */,
@@ -384,6 +416,27 @@
 				07DADFA42036DBE9002A6088 /* PCActivityIndicatorView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		07E00C94204EACDE008EFF75 /* PCrustable */ = {
+			isa = PBXGroup;
+			children = (
+				0791BA2820400D6800FCDC45 /* PCrustable.swift */,
+				07E00C95204EAD05008EFF75 /* PCrustable+UINavigationController.swift */,
+				07E00C97204EAD30008EFF75 /* PCrustable+UIViewController.swift */,
+				07E00C99204EAD54008EFF75 /* PCrustable+UIView.swift */,
+				07E00C9B204EAD75008EFF75 /* PCrustable+UIButton.swift */,
+				07E00C9D204EAD98008EFF75 /* PCrustable+UITextField.swift */,
+				07E00C9F204EADFB008EFF75 /* PCrustable+UISwitch.swift */,
+				07E00CA1204EAE3D008EFF75 /* PCrustable+UISegmentedControl.swift */,
+				07E00CA5204EAEE0008EFF75 /* PCrustable+UIVisualEffectView.swift */,
+				07E00CA3204EAEBB008EFF75 /* PCrustable+UIDatePicker.swift */,
+				07E00CA7204EAEF9008EFF75 /* PCrustable+UIStackView.swift */,
+				07E00CA9204EAF14008EFF75 /* PCrustable+UIActivityIndicatorView.swift */,
+				07E00CAB204EAF28008EFF75 /* PCrustable+UILabel.swift */,
+				07E00CAD204EAF43008EFF75 /* PCrustable+UIImageView.swift */,
+			);
+			path = PCrustable;
 			sourceTree = "<group>";
 		};
 		07E23DF1203D7D3600292303 /* ImageViews */ = {
@@ -653,35 +706,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E00CA6204EAEE0008EFF75 /* PCrustable+UIVisualEffectView.swift in Sources */,
 				0791BA31204033FB00FCDC45 /* PCPillLoadingButton.swift in Sources */,
 				07DADFB12036DBEA002A6088 /* PCGenericTableViewCell.swift in Sources */,
 				0711C5E0202C6CA0008BF833 /* PublicExtensions.swift in Sources */,
 				07DADFB72036DBEA002A6088 /* PCImageView.swift in Sources */,
 				0711C5D8202C6CA0008BF833 /* PCViewController.swift in Sources */,
 				07FD1DE0204BEA1C0074FC6F /* PCTextFieldType.swift in Sources */,
+				07E00C9E204EAD98008EFF75 /* PCrustable+UITextField.swift in Sources */,
 				07DADFAB2036DBE9002A6088 /* PCBarButtonItem.swift in Sources */,
 				0755B1E3203EDCEE0086C9EF /* PCPillTextField.swift in Sources */,
+				07E00CAA204EAF14008EFF75 /* PCrustable+UIActivityIndicatorView.swift in Sources */,
+				07E00CA4204EAEBB008EFF75 /* PCrustable+UIDatePicker.swift in Sources */,
 				07FD1DDE204BE0A90074FC6F /* PCLoadingable.swift in Sources */,
 				07DADFAE2036DBE9002A6088 /* PCSegmentedControl.swift in Sources */,
+				07E00CAC204EAF28008EFF75 /* PCrustable+UILabel.swift in Sources */,
 				07DADFB62036DBEA002A6088 /* PCView.swift in Sources */,
 				07E23E00203D8D0100292303 /* PCFont.swift in Sources */,
 				07DADFAF2036DBE9002A6088 /* PCTextField.swift in Sources */,
 				07DADFB32036DBEA002A6088 /* PCCollectionViewCell.swift in Sources */,
 				0755B1D7203EC7250086C9EF /* PCPillButton.swift in Sources */,
 				0711C5DB202C6CA0008BF833 /* PCAnimatable.swift in Sources */,
+				07E00C98204EAD30008EFF75 /* PCrustable+UIViewController.swift in Sources */,
 				07DADFB02036DBE9002A6088 /* PCTableViewCell.swift in Sources */,
 				07DADFB52036DBEA002A6088 /* PCActivityIndicatorView.swift in Sources */,
+				07E00C91204EA705008EFF75 /* PCColorable.swift in Sources */,
 				07E23DEC203D717400292303 /* PCAppVersionLabel.swift in Sources */,
 				07E23DF0203D7D2F00292303 /* PCRoundedImageView.swift in Sources */,
 				07E23DFE203D8A7F00292303 /* PCColor.swift in Sources */,
 				07DADFB92036DBEA002A6088 /* PCStackView.swift in Sources */,
+				07E00CAE204EAF43008EFF75 /* PCrustable+UIImageView.swift in Sources */,
 				0711C5DE202C6CA0008BF833 /* PCShadowable.swift in Sources */,
 				07DADFB82036DBEA002A6088 /* PCConfettiView.swift in Sources */,
 				0711C5DA202C6CA0008BF833 /* PCAlertable.swift in Sources */,
 				0711C5DF202C6CA0008BF833 /* InternalExtensions.swift in Sources */,
 				0711C5D9202C6CA0008BF833 /* PCWebViewController.swift in Sources */,
+				07E00CA0204EADFB008EFF75 /* PCrustable+UISwitch.swift in Sources */,
 				0791BA272040076E00FCDC45 /* PCLayoutable.swift in Sources */,
+				07E00CA8204EAEF9008EFF75 /* PCrustable+UIStackView.swift in Sources */,
 				0711C5D4202C6CA0008BF833 /* PCNavigationController.swift in Sources */,
+				07E00CA2204EAE3D008EFF75 /* PCrustable+UISegmentedControl.swift in Sources */,
 				07DADFAC2036DBE9002A6088 /* PCLoadingButton.swift in Sources */,
 				0795448D2047FA9800003711 /* PCDatePicker.swift in Sources */,
 				0754828C204078FA008BC811 /* PCKeyboardControllable.swift in Sources */,
@@ -692,14 +756,18 @@
 				0711C5D5202C6CA0008BF833 /* PCTabBarController.swift in Sources */,
 				0711C5DD202C6CA0008BF833 /* PCConfettiable.swift in Sources */,
 				0791BA2920400D6800FCDC45 /* PCrustable.swift in Sources */,
+				07E00C9C204EAD75008EFF75 /* PCrustable+UIButton.swift in Sources */,
 				07DADFAD2036DBE9002A6088 /* PCSwitch.swift in Sources */,
 				07DADFB22036DBEA002A6088 /* PCLabel.swift in Sources */,
 				0711C5D7202C6CA0008BF833 /* PCTableViewController.swift in Sources */,
+				07E00C93204EA74E008EFF75 /* PCFontable.swift in Sources */,
+				07E00C96204EAD05008EFF75 /* PCrustable+UINavigationController.swift in Sources */,
 				079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */,
 				0711C5DC202C6CA0008BF833 /* PCBorderable.swift in Sources */,
 				0776A9DD204928EB00B7B1BB /* PCConstants.swift in Sources */,
 				0755B1D5203EC2BD0086C9EF /* PCVisualEffectView.swift in Sources */,
 				079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */,
+				07E00C9A204EAD54008EFF75 /* PCrustable+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

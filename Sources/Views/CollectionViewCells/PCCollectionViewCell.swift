@@ -13,11 +13,12 @@ import SwifterSwift
 /// PCCollectionViewCell.
 ///
 /// - Conforms to:
+///   - PCrustable
 ///   - PCLayoutable
 ///   - PCAnimatable
 ///   - PCBorderable
 ///   - PCShadowable
-open class PCCollectionViewCell: UICollectionViewCell, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
+open class PCCollectionViewCell: UICollectionViewCell, PCrustable, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Initializes and returns a newly allocated view object with the specified frame rectangle.
 	///
