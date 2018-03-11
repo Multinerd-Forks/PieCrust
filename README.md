@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.rawgit.com/MobilionOSS/PieCrust/master/Assets/logo.svg" title="PieCrust">
+  <img src="https://cdn.rawgit.com/MobilionOSS/PieCrust/master/Assets/piecrust-logo.svg" title="PieCrust">
 </p>
 
 <p align="center">
@@ -62,7 +62,7 @@ Great! Look over these things first.
 - Be kind and helpful.
 
 ## Thanks
-Special thanks to [Bashar Ghadanfar](https://github.com/lionbytes) for suggesting the name **"PieCrust"** and helping develop the identity of the project.
+Special thanks to [Bashar Ghadanfar](https://github.com/lionbytes) for suggesting the name **"PieCrust"**, designing the logo, and developing the identity of the project.
 
 
 ## License
