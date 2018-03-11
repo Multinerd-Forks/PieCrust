@@ -316,7 +316,6 @@
 				0711C5B0202C6CA0008BF833 /* Controllers */,
 				07DADF922036DBE9002A6088 /* Controls */,
 				07DADF992036DBE9002A6088 /* Views */,
-				0711C5BE202C6CA0008BF833 /* Extensions */,
 				0711C5B8202C6CA0008BF833 /* Protocols */,
 				072AE05B2028506B00D8DDAD /* Assets */,
 				0701FE3A202830C90055AC19 /* PieCrust.h */,
@@ -454,6 +453,7 @@
 				0776A9DC204928EB00B7B1BB /* PCConstants.swift */,
 				07E23DFD203D8A7F00292303 /* PCColor.swift */,
 				07E23DFF203D8D0100292303 /* PCFont.swift */,
+				0711C5BE202C6CA0008BF833 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";

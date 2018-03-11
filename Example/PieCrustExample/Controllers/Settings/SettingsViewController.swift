@@ -14,9 +14,9 @@ class SettingsViewController: PCViewController {
         view = SettingsView()
     }
 
-    override var pcView: SettingsView {
-        return view as! SettingsView
-    }
+	var pcView: SettingsView {
+		return view as! SettingsView
+	}
 
     override func viewDidLoad() {
         super.viewDidLoad()

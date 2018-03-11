@@ -65,11 +65,6 @@ open class PCViewController: UIViewController, PCrustable, PCKeyboardObservable,
         return true
     }
 
-    /// The PCView that the controller manages.
-    open var pcView: PCView {
-        return view as! PCView
-    }
-
     /// Set tab bar item here.
     open func setTabBarItem() {}
 
@@ -82,16 +77,6 @@ open class PCViewController: UIViewController, PCrustable, PCKeyboardObservable,
     /// Set to true to end editing on tap.
     open var shouldEndEditingOnTap: Bool {
         return false
-    }
-
-    /// The nearest ancestor in the view controller hierarchy that is a PCNavigationController.
-    open var pcNavigationController: PCNavigationController? {
-        return navigationController as? PCNavigationController
-    }
-
-    /// The nearest ancestor in the view controller hierarchy that is a PCTabBarController.
-    open var pcTabBarController: PCTabBarController? {
-        return tabBarController as? PCTabBarController
     }
 
     /// Called when .UIKeyboardWillShow notification is prodcasted by system.

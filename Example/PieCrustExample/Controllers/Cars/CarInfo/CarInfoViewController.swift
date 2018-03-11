@@ -22,7 +22,7 @@ class CarInfoViewController: PCViewController {
 		view = CarInfoView()
 	}
 
-	override var pcView: CarInfoView {
+	var pcView: CarInfoView {
 		return view as! CarInfoView
 	}
 

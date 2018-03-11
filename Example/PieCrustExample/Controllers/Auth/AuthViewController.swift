@@ -14,7 +14,7 @@ class AuthViewController: PCViewController {
         view = AuthView()
     }
 
-    override var pcView: AuthView {
+    var pcView: AuthView {
         return view as! AuthView
     }
 

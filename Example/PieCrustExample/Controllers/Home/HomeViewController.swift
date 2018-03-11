@@ -14,7 +14,7 @@ class HomeViewController: PCViewController {
         view = HomeView()
     }
 
-	override var pcView: HomeView {
+	var pcView: HomeView {
 		return view as! HomeView
 	}
 
