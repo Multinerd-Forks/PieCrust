@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
     s.ios.framework  = "UIKit"
 
     s.dependency "SnapKit", "~> 4.0"
-    s.dependency "SwifterSwift/SwiftStdlib", "~> 4.1"
-    s.dependency "SwifterSwift/Foundation", "~> 4.1"
+    s.dependency "SwifterSwift/SwiftStdlib", "~> 4.2"
+    s.dependency "SwifterSwift/Foundation", "~> 4.2"
 end
