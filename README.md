@@ -21,7 +21,7 @@
 - Easy keyboard events handling.
 - Essential list of extensions for `SwiftStdlib`, `Foundation` and `UIKit` objects.
 - Generic table-view and collection-view controllers to make dealing with your models a joy!
-- [SnapKit](https://github.com/SnapKit/SnapKit), [SwifterSwift/SwiftStdlib](https://github.com/SwifterSwift/SwifterSwift) and [SwifterSwift/Foundation](https://github.com/SwifterSwift/SwifterSwift) included in the box, so you don't have to add that `import` statements everywhere. 
+- [SnapKit](https://github.com/SnapKit/SnapKit), [SwifterSwift/SwiftStdlib](https://github.com/SwifterSwift/SwifterSwift) and [SwifterSwift/Foundation](https://github.com/SwifterSwift/SwifterSwift) included in the box, so you don't have to add that `import` statements everywhere.
 
 ## Requirements
 - iOS 9.0+

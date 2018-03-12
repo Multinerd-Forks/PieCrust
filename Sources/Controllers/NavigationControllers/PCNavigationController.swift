@@ -1,5 +1,5 @@
 //
-//  PCTabBarController.swift
+//  PCNavigationController.swift
 //  PieCrust
 //
 //  Created by Omar Albeik on 5.02.2018.
@@ -10,10 +10,10 @@ import UIKit
 import SnapKit
 import SwifterSwift
 
-/// PCTabBarController.
-///
+/// PCNavigationController.
+/// 
 /// - Conforms to:
 ///   - PCrustable
 ///   - PCAlertable
 ///   - PCConfettiable
-open class PCTabBarController: UITabBarController, PCAlertable, PCConfettiable {}
+open class PCNavigationController: UINavigationController, PCrustable, PCAlertable, PCConfettiable {}

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 import SwifterSwift
 
 /// Confirm to PCrustable protocol to get extensions for various types of UIKit objects.

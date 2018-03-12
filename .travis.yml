@@ -12,6 +12,7 @@ before_install:
   - gem install cocoapods
   - gem install xcpretty
   - brew outdated xctool || brew upgrade xctool
+  - pod update
 
 script:
   - set -o pipefail

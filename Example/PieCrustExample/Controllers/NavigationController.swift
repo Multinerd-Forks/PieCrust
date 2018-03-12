@@ -8,4 +8,10 @@
 
 import PieCrust
 
-class NavigationController: PCNavigationController {}
+class NavigationController: PCNavigationController {
+
+	var pcTabBarController: TabBarController? {
+		return tabBarController as? TabBarController
+	}
+
+}

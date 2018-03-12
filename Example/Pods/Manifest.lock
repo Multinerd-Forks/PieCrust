@@ -1,5 +1,5 @@
 PODS:
-  - PieCrust (0.5):
+  - PieCrust (0.6):
     - SnapKit (~> 4.0)
     - SwifterSwift/Foundation (~> 4.1)
     - SwifterSwift/SwiftStdlib (~> 4.1)
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  PieCrust: c674d9180f98eae5aad25c2c220db94a71cb8dfa
+  PieCrust: 91b5b42422434a6ecb54eea44327c0438560556c
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwifterSwift: bfcae9d659dfd306d164f13f72cad09198f30723
 

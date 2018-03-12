@@ -78,16 +78,6 @@ open class PCCollectionViewController: UICollectionViewController, PCrustable, P
         return false
     }
 
-    /// The nearest ancestor in the view controller hierarchy that is a PCNavigationController.
-    open var pcNavigationController: PCNavigationController? {
-        return navigationController as? PCNavigationController
-    }
-
-    /// The nearest ancestor in the view controller hierarchy that is a PCTabBarController.
-    open var pcTabBarController: PCTabBarController? {
-        return tabBarController as? PCTabBarController
-    }
-
 	/// Called when .UIKeyboardWillShow notification is prodcasted by system.
 	///
 	/// - Parameter notification: .UIKeyboardWillShow notification.

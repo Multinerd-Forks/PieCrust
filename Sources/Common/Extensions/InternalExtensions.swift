@@ -11,7 +11,7 @@ import SwifterSwift
 
 internal extension Bundle {
 
-	internal static var PieCrustAssetsBundle: Bundle? {
+	static var PieCrustAssetsBundle: Bundle? {
 		let podBundle = Bundle(for: PCViewController.self)
 		guard let resourceBundleUrl = podBundle.url(forResource: "PieCrustAssets", withExtension: "bundle") else { return nil }
 		guard let resourceBundle = Bundle(url: resourceBundleUrl) else { return nil }
@@ -22,7 +22,7 @@ internal extension Bundle {
 
 internal extension UIScreen {
 
-	internal var isSmall: Bool {
+	var isSmall: Bool {
 		return bounds.width < 375
 	}
 
@@ -31,7 +31,7 @@ internal extension UIScreen {
 internal extension UIViewController {
 
 	@discardableResult
-	internal func alert(
+	func alert(
 		title: String? = nil,
 		message: String? = nil,
 		preferredStyle: UIAlertControllerStyle = .alert,

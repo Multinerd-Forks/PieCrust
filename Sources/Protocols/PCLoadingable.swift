@@ -8,8 +8,10 @@
 
 import Foundation
 
+/// Confirm to PCLoadingable protocol if your class has a loading state.
 public protocol PCLoadingable: class {
 
+    /// Whether your class is loading or not.
 	var isLoading: Bool { get set }
 
 }

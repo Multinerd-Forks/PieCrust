@@ -9,6 +9,11 @@
 // MARK: - UINavigationController
 public extension PCrustable where Self: UINavigationController {
 
+	/// The nearest ancestor in the view controller hierarchy that is a PCTabBarController.
+	public var pcTabBarController: PCTabBarController? {
+		return tabBarController as? PCTabBarController
+	}
+	
     /// Set navigationBar background and text colors
     ///
     /// - Parameters:
