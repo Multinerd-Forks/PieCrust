@@ -30,6 +30,8 @@
 		0767786E205653AB00134CD2 /* PCRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767786D205653AB00134CD2 /* PCRoundedView.swift */; };
 		07677870205654CD00134CD2 /* PCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767786F205654CD00134CD2 /* PCWebView.swift */; };
 		076778722056561500134CD2 /* PCrustable+UIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076778712056561500134CD2 /* PCrustable+UIWebView.swift */; };
+		07677874205658B500134CD2 /* PCTransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07677873205658B500134CD2 /* PCTransparentNavigationController.swift */; };
+		0767787820565A3700134CD2 /* SlideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767787720565A3700134CD2 /* SlideTransition.swift */; };
 		0776A9DD204928EB00B7B1BB /* PCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0776A9DC204928EB00B7B1BB /* PCConstants.swift */; };
 		0791BA272040076E00FCDC45 /* PCLayoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0791BA262040076E00FCDC45 /* PCLayoutable.swift */; };
 		0791BA2920400D6800FCDC45 /* PCrustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0791BA2820400D6800FCDC45 /* PCrustable.swift */; };
@@ -116,6 +118,8 @@
 		0767786D205653AB00134CD2 /* PCRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCRoundedView.swift; sourceTree = "<group>"; };
 		0767786F205654CD00134CD2 /* PCWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCWebView.swift; sourceTree = "<group>"; };
 		076778712056561500134CD2 /* PCrustable+UIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIWebView.swift"; sourceTree = "<group>"; };
+		07677873205658B500134CD2 /* PCTransparentNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTransparentNavigationController.swift; sourceTree = "<group>"; };
+		0767787720565A3700134CD2 /* SlideTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTransition.swift; sourceTree = "<group>"; };
 		0776A9DC204928EB00B7B1BB /* PCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCConstants.swift; sourceTree = "<group>"; };
 		0791BA262040076E00FCDC45 /* PCLayoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCLayoutable.swift; sourceTree = "<group>"; };
 		0791BA2820400D6800FCDC45 /* PCrustable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCrustable.swift; sourceTree = "<group>"; };
@@ -215,7 +219,7 @@
 		0711C5B0202C6CA0008BF833 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0711C5B1202C6CA0008BF833 /* PCNavigationController.swift */,
+				0767787620565A1A00134CD2 /* NavigationControllers */,
 				0711C5B2202C6CA0008BF833 /* PCTabBarController.swift */,
 				0711C5B6202C6CA0008BF833 /* PCViewController.swift */,
 				0711C5B3202C6CA0008BF833 /* TableViewController */,
@@ -291,6 +295,24 @@
 				0754828B204078FA008BC811 /* PCKeyboardObservable.swift */,
 			);
 			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		0767787520565A0D00134CD2 /* Transparent */ = {
+			isa = PBXGroup;
+			children = (
+				07677873205658B500134CD2 /* PCTransparentNavigationController.swift */,
+				0767787720565A3700134CD2 /* SlideTransition.swift */,
+			);
+			path = Transparent;
+			sourceTree = "<group>";
+		};
+		0767787620565A1A00134CD2 /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0711C5B1202C6CA0008BF833 /* PCNavigationController.swift */,
+				0767787520565A0D00134CD2 /* Transparent */,
+			);
+			path = NavigationControllers;
 			sourceTree = "<group>";
 		};
 		079508792036FF5D003EA142 /* Tests */ = {
@@ -746,6 +768,7 @@
 				0711C5DE202C6CA0008BF833 /* PCShadowable.swift in Sources */,
 				07DADFB82036DBEA002A6088 /* PCConfettiView.swift in Sources */,
 				0711C5DA202C6CA0008BF833 /* PCAlertable.swift in Sources */,
+				0767787820565A3700134CD2 /* SlideTransition.swift in Sources */,
 				0711C5DF202C6CA0008BF833 /* InternalExtensions.swift in Sources */,
 				07E00CA0204EADFB008EFF75 /* PCrustable+UISwitch.swift in Sources */,
 				0791BA272040076E00FCDC45 /* PCLayoutable.swift in Sources */,
@@ -762,6 +785,7 @@
 				0711C5D6202C6CA0008BF833 /* PCGenericTableController.swift in Sources */,
 				0711C5D5202C6CA0008BF833 /* PCTabBarController.swift in Sources */,
 				0711C5DD202C6CA0008BF833 /* PCConfettiable.swift in Sources */,
+				07677874205658B500134CD2 /* PCTransparentNavigationController.swift in Sources */,
 				0791BA2920400D6800FCDC45 /* PCrustable.swift in Sources */,
 				07E00C9C204EAD75008EFF75 /* PCrustable+UIButton.swift in Sources */,
 				07DADFAD2036DBE9002A6088 /* PCSwitch.swift in Sources */,
