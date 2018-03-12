@@ -21,7 +21,7 @@
 - Easy keyboard events handling.
 - Essential list of extensions for `SwiftStdlib`, `Foundation` and `UIKit` objects.
 - Generic table-view and collection-view controllers to make dealing with your models a joy!
-- [SnapKit](https://github.com/SnapKit/SnapKit), [SwifterSwift/SwiftStdlib](https://github.com/SwifterSwift/SwifterSwift) and [SwifterSwift/Foundation](https://github.com/SwifterSwift/SwifterSwift) included in the box, so you don't have to add that `import` statements everywhere.
+- [SnapKit](https://github.com/SnapKit/SnapKit), [SwifterSwift/SwiftStdlib](https://github.com/SwifterSwift/SwifterSwift) and [SwifterSwift/Foundation](https://github.com/SwifterSwift/SwifterSwift) included, so you don't have to add that `import` statements everywhere.
 
 ## Requirements
 - iOS 9.0+
@@ -43,14 +43,14 @@ github "MobilionOSS/PieCrust"
 ```
 
 ## Example Project
-[PieCrustExample](https://github.com/MobilionOSS/PieCrust/tree/master/Example) highlights PieCrust's main features and how to use them.
+[Example project](https://github.com/MobilionOSS/PieCrust/tree/master/Example) highlights PieCrust's main features and how to use them.
 To run the example project using [Cocoapods try](https://github.com/CocoaPods/cocoapods-try) in Terminal:
 ```bash
 pod try PieCrust
 ```
 
 ## Documentation
-Documentation is available at [mobilionoss.github.io/PieCrustDocs](https://mobilionoss.github.io/PieCrustDocs/).
+Detailed documentation is available [here](https://mobilionoss.github.io/PieCrustDocs/).
 
 ## Contributing
 Great! Look over these things first.
