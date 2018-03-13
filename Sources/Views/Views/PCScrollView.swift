@@ -19,7 +19,7 @@ import SwifterSwift
 ///   - PCAnimatable
 ///   - PCBorderable
 ///   - PCShadowable
-class PCScrollView: UIScrollView, PCrustable, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
+open class PCScrollView: UIScrollView, PCrustable, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
 
     /// Initializes and returns a newly allocated scroll-view object with the specified frame rectangle.
     ///
