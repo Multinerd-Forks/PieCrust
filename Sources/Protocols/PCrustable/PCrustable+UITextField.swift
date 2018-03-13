@@ -15,7 +15,7 @@ public extension PCrustable where Self: UITextField {
         return PCConstants.preferredHeight
     }
 
-    /// Create text field and set its properties in one line.
+    /// Creates and returns a new UITextField with setting its properties in one line.
     ///
     /// - Parameters:
     ///   - placeholder: The string that is displayed when there is no other text in the text field.

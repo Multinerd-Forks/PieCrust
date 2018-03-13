@@ -8,7 +8,7 @@
 
 public extension PCrustable where Self: UIStackView {
 
-    /// Create a StackView and set its properties on one line.
+    /// Creates and returns a new UIStackView with setting its properties in one line.
     ///
     /// - Parameters:
     ///   - arrangedSubviews: Initial arrangedSubviews array (default is []).

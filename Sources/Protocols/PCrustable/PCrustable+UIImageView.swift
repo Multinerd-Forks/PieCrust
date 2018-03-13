@@ -8,7 +8,7 @@
 
 public extension PCrustable where Self: UIImageView {
 
-    /// Create ImageView and set its properties in one line.
+    /// Creates and returns a new UIImageView with setting its properties in one line.
     ///
     /// - Parameters:
     ///   - image: image.
