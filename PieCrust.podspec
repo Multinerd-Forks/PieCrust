@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     s.homepage = "https://github.com/MobilionOSS/PieCrust"
     s.license = { :type => "MIT", :file => "LICENSE" }
     s.social_media_url = "http://twitter.com/omaralbeik"
-    s.screenshot = "https://cdn.rawgit.com/MobilionOSS/PieCrust/master/Assets/logo.svg"
+    s.screenshot = "https://cdn.rawgit.com/MobilionOSS/PieCrust/master/Assets/piecrust-logo.svg"
 
     s.authors = {
         "Mobilion" => "https://github.com/MobilionOSS",
