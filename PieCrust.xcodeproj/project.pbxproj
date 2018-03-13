@@ -38,6 +38,8 @@
 		0791BA31204033FB00FCDC45 /* PCPillLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0791BA30204033FB00FCDC45 /* PCPillLoadingButton.swift */; };
 		0795087D2036FF5D003EA142 /* PieCrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0701FE37202830C90055AC19 /* PieCrust.framework */; };
 		0795448D2047FA9800003711 /* PCDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795448C2047FA9800003711 /* PCDatePicker.swift */; };
+		079C10CD205805EA007884B7 /* PCScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C10CC205805EA007884B7 /* PCScrollView.swift */; };
+		079C10CF205806A7007884B7 /* PCrustable+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C10CE205806A7007884B7 /* PCrustable+UIScrollView.swift */; };
 		079F8F6C202DE4C100599D22 /* PCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */; };
 		079F8F6E202DE4E900599D22 /* PCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */; };
 		07DADFAA2036DBE9002A6088 /* PCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DADF942036DBE9002A6088 /* PCButton.swift */; };
@@ -127,6 +129,8 @@
 		079508782036FF5D003EA142 /* PieCrustTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PieCrustTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0795087C2036FF5D003EA142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0795448C2047FA9800003711 /* PCDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCDatePicker.swift; sourceTree = "<group>"; };
+		079C10CC205805EA007884B7 /* PCScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCScrollView.swift; sourceTree = "<group>"; };
+		079C10CE205806A7007884B7 /* PCrustable+UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIScrollView.swift"; sourceTree = "<group>"; };
 		079F8F6B202DE4C100599D22 /* PCCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewController.swift; sourceTree = "<group>"; };
 		079F8F6D202DE4E900599D22 /* PCGenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericCollectionViewController.swift; sourceTree = "<group>"; };
 		07DADF942036DBE9002A6088 /* PCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCButton.swift; sourceTree = "<group>"; };
@@ -440,6 +444,7 @@
 				07DADFA82036DBE9002A6088 /* PCConfettiView.swift */,
 				07DADFA92036DBE9002A6088 /* PCStackView.swift */,
 				07DADFA42036DBE9002A6088 /* PCActivityIndicatorView.swift */,
+				079C10CC205805EA007884B7 /* PCScrollView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 				07E00C95204EAD05008EFF75 /* PCrustable+UINavigationController.swift */,
 				07E00C97204EAD30008EFF75 /* PCrustable+UIViewController.swift */,
 				07E00C99204EAD54008EFF75 /* PCrustable+UIView.swift */,
+				079C10CE205806A7007884B7 /* PCrustable+UIScrollView.swift */,
 				076778712056561500134CD2 /* PCrustable+UIWebView.swift */,
 				07E00C9B204EAD75008EFF75 /* PCrustable+UIButton.swift */,
 				07E00C9D204EAD98008EFF75 /* PCrustable+UITextField.swift */,
@@ -746,9 +752,11 @@
 				0767786E205653AB00134CD2 /* PCRoundedView.swift in Sources */,
 				0755B1E3203EDCEE0086C9EF /* PCPillTextField.swift in Sources */,
 				07E00CAA204EAF14008EFF75 /* PCrustable+UIActivityIndicatorView.swift in Sources */,
+				079C10CF205806A7007884B7 /* PCrustable+UIScrollView.swift in Sources */,
 				07E00CA4204EAEBB008EFF75 /* PCrustable+UIDatePicker.swift in Sources */,
 				07FD1DDE204BE0A90074FC6F /* PCLoadingable.swift in Sources */,
 				07DADFAE2036DBE9002A6088 /* PCSegmentedControl.swift in Sources */,
+				079C10CD205805EA007884B7 /* PCScrollView.swift in Sources */,
 				07E00CAC204EAF28008EFF75 /* PCrustable+UILabel.swift in Sources */,
 				07DADFB62036DBEA002A6088 /* PCView.swift in Sources */,
 				07E23E00203D8D0100292303 /* PCFont.swift in Sources */,

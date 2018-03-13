@@ -15,7 +15,7 @@ public extension PCrustable where Self: UIView {
         return PCConstants.preferredPadding
     }
 
-    /// Create a PCView and set its properties in one line.
+    /// Creates and returns a new UIView with setting its properties in one line.
     ///
     /// - Parameters:
     ///   - backgroundColor: Background color of the view (default is PCColor.white).

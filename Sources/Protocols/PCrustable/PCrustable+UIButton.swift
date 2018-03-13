@@ -15,7 +15,7 @@ public extension PCrustable where Self: UIButton {
         return PCConstants.preferredHeight
     }
 
-    /// Creates and returns a new button with setting its properties in one line.
+    /// Creates and returns a new UIButton with setting its properties in one line.
     ///
     /// - Parameters:
     ///   - type: The button type.

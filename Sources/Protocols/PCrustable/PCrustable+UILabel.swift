@@ -8,7 +8,7 @@
 
 public extension PCrustable where Self: UILabel {
 
-    /// Create label and set its properties in one line.
+    /// Creates and returns a new UILabel with setting its properties in one line.
     ///
     /// - Parameters:
     ///   - text: Label's text.

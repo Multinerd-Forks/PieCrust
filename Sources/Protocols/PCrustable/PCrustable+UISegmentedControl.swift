@@ -9,7 +9,7 @@
 // MARK: - UISegmentedControl
 public extension PCrustable where Self: UISegmentedControl {
 
-    /// Create segmented control and set its segment titles in one line.
+    /// Creates and returns a new UISegmentedControl with setting its properties in one line.
     ///
     /// - Parameters:
     ///   - frame: The segmented control frame (default is .zero).

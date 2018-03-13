@@ -48,7 +48,7 @@ public extension Notification {
 	}
 
 	/// Estimated keyboard animation duration from a system notication.
-	public var estimatedKeyboardAnimationDuration: Double? {
+	public var estimatedKeyboardAnimationDuration: Double {
 		return keyboardAnimationDuration ?? 0.25
 	}
 

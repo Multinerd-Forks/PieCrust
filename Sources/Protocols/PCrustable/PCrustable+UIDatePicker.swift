@@ -8,7 +8,7 @@
 
 public extension PCrustable where Self: UIDatePicker {
 
-    /// Create a DatePicker ans set its properties in one line.
+    /// Creates and returns a new UIDatePicker with setting its properties in one line.
     ///
     /// - Parameters:
     ///   - datePickerMode: The mode of the date picker.

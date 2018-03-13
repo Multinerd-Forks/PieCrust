@@ -8,7 +8,7 @@
 
 public extension PCrustable where Self: UIActivityIndicatorView {
 
-    /// Create activity indicator view and set its properties in one line.
+    /// Creates and returns a new UIActivityIndicatorView with setting its properties in one line.
     ///
     /// - Parameters:
     ///   - activityIndicatorStyle: The basic appearance of the activity indicator (default is .white).

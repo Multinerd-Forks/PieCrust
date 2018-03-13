@@ -8,7 +8,7 @@
 
 public extension PCrustable where Self: UIVisualEffectView {
 
-    /// Create VisualEffectView and set its properties in one line.
+    /// Creates and returns a new UIVisualEffectView with setting its properties in one line.
     ///
     /// - Parameters:
     ///   - effect: The UIVisualEffect you provide for the view. This can be a UIBlurEffect or a UIVibrancyEffect.
