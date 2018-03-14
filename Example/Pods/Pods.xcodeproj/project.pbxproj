@@ -7,148 +7,148 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00C4D0F4D5518E69E701C1BD371DFACF /* PCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD349C6D9D7A3D3630BDC689FBD643B /* PCColor.swift */; };
-		013E68B11767CB2D5B3AAB5BDD2E0964 /* PCStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB81C6500BE576F91C1CC7A8FA04D /* PCStackView.swift */; };
+		00C4D0F4D5518E69E701C1BD371DFACF /* PCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931437E51FAE2B7845825575C94E29DE /* PCColor.swift */; };
+		013E68B11767CB2D5B3AAB5BDD2E0964 /* PCStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048435FA725F64FE6FFB48211F386B69 /* PCStackView.swift */; };
 		018990ED689E8F1C7ED7061D334A0174 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39376F8578772187C3B0946E4D0DAC33 /* DateExtensions.swift */; };
-		056C089D3A1EE433FDA6250FD7C520F3 /* PCActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34C54B13CD9A67C62049E17F49AB826 /* PCActivityIndicatorView.swift */; };
+		056C089D3A1EE433FDA6250FD7C520F3 /* PCActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E93A0563C39625F28ACB0EFE7FFB4DB /* PCActivityIndicatorView.swift */; };
 		06C6488B8779F8FC0A1AA920C887474E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4161DA29B964AE9C8EFE7D1B11112B /* Foundation.framework */; };
 		06E07B969D100B529188B4E44E27139B /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5805F907074B404519C8DE1F7B420F34 /* ConstraintPriorityTarget.swift */; };
-		09217B78BB3CDAF2BF7A16D03A548C20 /* PCPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F32CCFC6FA2CD369EF8B8EDE437579 /* PCPillButton.swift */; };
+		09217B78BB3CDAF2BF7A16D03A548C20 /* PCPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6572D90A823557DFE8D3BC69EA04BD /* PCPillButton.swift */; };
 		0956B45D64DC88671258374DB8EF4900 /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D22BA2A25F593A00382B8E2B96ACB0 /* UserDefaultsExtensions.swift */; };
-		0B7B99C5501B764F089F4A2A4942E458 /* InternalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6779F587420F0CAE2DBC45457177F515 /* InternalExtensions.swift */; };
+		0B7B99C5501B764F089F4A2A4942E458 /* InternalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFA58D0A106089B08A71F3989CAD248 /* InternalExtensions.swift */; };
 		0B7D679B2AF867DC37851C647A74FC09 /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995403466A27A434CE94D4AE95A8E3B0 /* OptionalExtensions.swift */; };
-		0BEE1031A9EBA638EFCD7706FB059713 /* PCPillLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E76C169EDC5978E138D8BAC9EAA042C /* PCPillLoadingButton.swift */; };
-		0D916C72CE1CAD13585DA696CD53C4E2 /* PCKeyboardObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004D54E1C6AF0A8B6CE966768860F4DE /* PCKeyboardObservable.swift */; };
+		0BEE1031A9EBA638EFCD7706FB059713 /* PCPillLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47456B0064937986260B90F2345A289 /* PCPillLoadingButton.swift */; };
+		0D916C72CE1CAD13585DA696CD53C4E2 /* PCKeyboardObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1072592040B01D43C34151BACA29350 /* PCKeyboardObservable.swift */; };
 		11CA0F34142F7BA98B11D6E3CC8AEBFA /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE59EFF35BD7F8023A72BAC470F3123 /* LayoutConstraintItem.swift */; };
 		12E8D91858E64BC24DC637CE4C57CD36 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB74B5F094BFED6D1B142E11683382 /* LayoutConstraint.swift */; };
-		139B2521DE10AF413BA7B4D6A33B6031 /* PCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CC959C77C242C3EF79E8CA4A9B0C4 /* PCTableViewController.swift */; };
-		151CEB283416C902D192A4AFFF5D5AEB /* PCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F68C5D80BDF576E45EFE64C9644972B /* PCCollectionViewController.swift */; };
-		15D97284C7ED3141AA3E3B41CF8D544F /* PCSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D54873740BF338A815DC616B1913E3 /* PCSwitch.swift */; };
-		17A2D424C6BFD6C47103AE89AD03AA55 /* PCrustable+UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18772FC468750112889511CFC47DED /* PCrustable+UIDatePicker.swift */; };
-		17C89FA98F5322EE252BB94188A773D5 /* PCBorderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FA0B9D772938284E22884BE8472476 /* PCBorderable.swift */; };
+		139B2521DE10AF413BA7B4D6A33B6031 /* PCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44AFCBCC263F4579B76DBA0B0EFE4EA /* PCTableViewController.swift */; };
+		151CEB283416C902D192A4AFFF5D5AEB /* PCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EB41790EADD3DF11E4999C1C7A677 /* PCCollectionViewController.swift */; };
+		15D97284C7ED3141AA3E3B41CF8D544F /* PCSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66695D3C5AA5C31A4D97B763F07C4490 /* PCSwitch.swift */; };
+		17A2D424C6BFD6C47103AE89AD03AA55 /* PCrustable+UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F03F53074310598AAAF4AE380FCB7 /* PCrustable+UIDatePicker.swift */; };
+		17C89FA98F5322EE252BB94188A773D5 /* PCBorderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF500E05C4B9BBD26B61370CC449A93 /* PCBorderable.swift */; };
 		1A3347FC49D5325923F3842BE75FFA40 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054FEC27BAD8A3ACD8F4B6F01C0C4891 /* ConstraintLayoutGuide.swift */; };
-		1BA48AE800AB8744E7E61977550A8A6B /* PCrustable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4923A7A28585DEA287A5AABEA1924E /* PCrustable+UILabel.swift */; };
-		1BF395B69E5BBD1F8FB8AD679330D6FD /* PCConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC4A8A8B8DA524EFD372951BFF14FA /* PCConfettiView.swift */; };
+		1BA48AE800AB8744E7E61977550A8A6B /* PCrustable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA520EFA0B4E2B8667EF7630B5A0ED9B /* PCrustable+UILabel.swift */; };
+		1BF395B69E5BBD1F8FB8AD679330D6FD /* PCConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438AC8919F704968C60229CB0920C7C /* PCConfettiView.swift */; };
 		1C7BE0BD9EDB67E9BC2C6BB63BC754CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4161DA29B964AE9C8EFE7D1B11112B /* Foundation.framework */; };
-		1E786FF2F023AF5A9B63DADD5217E30B /* PCrustable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD299905F5879E0680190C3146F2DAD9 /* PCrustable+UIView.swift */; };
-		1FE94CB484380D56BF098655411D5506 /* PCTransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B272B475545D0D4F7B7BC0436C8E105 /* PCTransparentNavigationController.swift */; };
-		20FB3DC303ADE907EEE462592CB3EED5 /* PCrustable+UIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E05AF853CC5B912B65BF26421B39ABC /* PCrustable+UIWebView.swift */; };
+		1E786FF2F023AF5A9B63DADD5217E30B /* PCrustable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766DC425A090964B2892F83DD4CB2C11 /* PCrustable+UIView.swift */; };
+		1FE94CB484380D56BF098655411D5506 /* PCTransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC9AA00A0110AF34B92174EC2426FB /* PCTransparentNavigationController.swift */; };
+		20FB3DC303ADE907EEE462592CB3EED5 /* PCrustable+UIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FD8F4DC51FAF0FBF093DDD840CEFAC /* PCrustable+UIWebView.swift */; };
 		22335D578BC61CA5AD0AF96DC5C406B8 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60AD47CE66D69AD1E10E2AEECF262AF /* Typealiases.swift */; };
 		22B50ABCB16C39072A148456CF21D5F2 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7D21BB9E4ECF12E9A61BF69E041E8 /* ConstraintRelatableTarget.swift */; };
-		253F7855C8B6B661DB3B5BAFE6631D7F /* PieCrust-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2C58D9B9098DFFA527F40DC37EE0C96 /* PieCrust-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		253F7855C8B6B661DB3B5BAFE6631D7F /* PieCrust-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5F334CDA14C7A44D26650D50DFBA4FF /* PieCrust-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2595D0AF3A4AE3112BC0D8F809409BAF /* SignedNumericExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBE75E0B2A24AF39CEC5408CF618889 /* SignedNumericExtensions.swift */; };
 		28A7E5ED725295BE2673631386B87A5B /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163857B9242D8C9EA6A5FA9304554D93 /* ConstraintView.swift */; };
 		2D80553851341553019BB24A3F2056F4 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15034DC95B48F3ED9C3BF9CD465E613 /* ConstraintMultiplierTarget.swift */; };
 		30361BEE829C363B8BF364D414A907E2 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974483E86BA0E3E2F4A9DEEE6684952C /* ConstraintPriority.swift */; };
-		3243AA99F15C09B22A1BAC3C9905F307 /* PCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42327956E30B3F572BF9620ACC3F2BA9 /* PCViewController.swift */; };
+		3243AA99F15C09B22A1BAC3C9905F307 /* PCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C703E8B5390FD4E0362F107530CBC /* PCViewController.swift */; };
 		34ACDFD0036D7408951CFB261729816B /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FEDCE70CB98B3B8E3EAA45E679CE13 /* Debugging.swift */; };
-		390CD0C5B1848D77F960A7DE1DFFCDE3 /* PCGenericTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB00553E4F86EE6B02C5D759E8BEFBF /* PCGenericTableController.swift */; };
-		39A16771015FCF08C3535DE1189D9B2B /* PCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D1731DD684AFE8A53D536B3E376FC /* PCCollectionViewCell.swift */; };
+		390CD0C5B1848D77F960A7DE1DFFCDE3 /* PCGenericTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDEBFC35C9E116C1BB02936F57F93 /* PCGenericTableController.swift */; };
+		39A16771015FCF08C3535DE1189D9B2B /* PCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418E80DF3150B5E973D4E7CE89930A0 /* PCCollectionViewCell.swift */; };
 		3C0EE7EB6124D849E21E5C16FCC8BDA2 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A09B63B7BFB3D96C683E18CF4E15A /* ConstraintRelation.swift */; };
 		3D9068F7C403603CAA1DC023621B6502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4161DA29B964AE9C8EFE7D1B11112B /* Foundation.framework */; };
-		3F670FED6156FA9C2CD91C7CFE1BB709 /* PCAlertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CB8C243ED8AD3EC22DDA65F969B94 /* PCAlertable.swift */; };
+		3F670FED6156FA9C2CD91C7CFE1BB709 /* PCAlertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39C55FC86BCB19C4C824DCD387DE78F /* PCAlertable.swift */; };
 		4053BBA333C705DA747C4ABF79A84E09 /* FloatingPointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09298898BBB643DFCDC3925BE9D873D4 /* FloatingPointExtensions.swift */; };
-		421DACE9AA14A211A0411B7D8099E225 /* PCRoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DBCBA1B86C470B885751B6256DEE2E /* PCRoundedImageView.swift */; };
+		421DACE9AA14A211A0411B7D8099E225 /* PCRoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F823432AF78B8BF1150BF3A0CD9A /* PCRoundedImageView.swift */; };
 		442247159B6896ECB129AE52FE5BFC77 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BE151B413E41D506D005F0C1630D /* ConstraintInsets.swift */; };
-		47FBA2CD9192E2AECF893869C318932E /* PCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D431CCB875783115693E31866C172B7 /* PCView.swift */; };
-		489115ADDFC6E3A58619762041AC063A /* PCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07D05F51BE2ABFA90805B0D939C850 /* PCLabel.swift */; };
-		48B5E618945589707271B10F925410D5 /* PCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0CAB497F943912DC3AA321D0CA6E4 /* PCNavigationController.swift */; };
-		4BBABFDE35A5B3F08B9F2378451E099C /* PCVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35A93FF0A723B2759D178899C514B80 /* PCVisualEffectView.swift */; };
+		47FBA2CD9192E2AECF893869C318932E /* PCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917AC784237E6365EBF169D833A73ACE /* PCView.swift */; };
+		489115ADDFC6E3A58619762041AC063A /* PCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B9EEA4012B22795836E1D670C91AB /* PCLabel.swift */; };
+		48B5E618945589707271B10F925410D5 /* PCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5FBC16E965AA7DE75D778B6FC529E /* PCNavigationController.swift */; };
+		4BBABFDE35A5B3F08B9F2378451E099C /* PCVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52264E83A9E3DB3707B606DF9F5DFF6C /* PCVisualEffectView.swift */; };
 		4BBBD0A23E289C4385F4602D4878DE00 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF9FE5F4BB5605576B6FAF56E448AE8 /* ConstraintConfig.swift */; };
 		4C4E7EFDE6E8C8D86FB1CBA0FF01E698 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A3136942C3B88CA7ED9FCB136E299D /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D04D9549FE4C20F2B00B647B967940D /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989BECB2E848CEA722A07C0296285DDB /* ConstraintConstantTarget.swift */; };
 		4F3E7E584F050165D9ABE65239140328 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0951539C395142083C82C4895ABE7D2 /* CollectionExtensions.swift */; };
-		50A3A7AEC4ACD7CEA3906F88D96E518E /* SlideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32956DD4942DFCE5D972FDD1AB37E11 /* SlideTransition.swift */; };
-		52CD4F9E0C6F389EF3AA38E49C57E385 /* PCScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4792D36484E517F10C0C3C6553996 /* PCScrollView.swift */; };
+		50A3A7AEC4ACD7CEA3906F88D96E518E /* SlideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA891FA8B6DDA914B352D0FE5DCDC3DE /* SlideTransition.swift */; };
+		52CD4F9E0C6F389EF3AA38E49C57E385 /* PCScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F459C632B45F6DE8F75265F13FDB4 /* PCScrollView.swift */; };
 		538C9606D1A8C7FED4530A8D65635D91 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E75F3E5E8D265C3AE05D8F1D79027 /* ConstraintMakerEditable.swift */; };
-		54D10C564A2CB86193772D46F27F28E2 /* PCFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBFB25DA80569BC8158AFCAF7ECF915 /* PCFont.swift */; };
-		56795C39B71B378561E08D74447C9E57 /* PCGenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763452E491987552ED0944B8B1B48084 /* PCGenericCollectionViewCell.swift */; };
-		56A74544BF47C25FB154B9DFCFAC155E /* PCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009DDB454B7A06D752A51C83A9AD1C84 /* PCTableViewCell.swift */; };
+		54D10C564A2CB86193772D46F27F28E2 /* PCFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9838F7FCE709672FBEA1E851471AE33C /* PCFont.swift */; };
+		56795C39B71B378561E08D74447C9E57 /* PCGenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4D78D333F78EFE9E75EB7772D4979 /* PCGenericCollectionViewCell.swift */; };
+		56A74544BF47C25FB154B9DFCFAC155E /* PCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9334902041870310FD45C8FD985ECE /* PCTableViewCell.swift */; };
 		5C83C9A80B2DB91E8FA63E1B36D00AF7 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C91EC1F9EA66F898876C61E22ADB3 /* ConstraintDSL.swift */; };
 		5D12E47DC33E92DDEC8205BB84AAB3A7 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354DF49904236A2ADBF9D43D01A3D9A /* ConstraintMakerFinalizable.swift */; };
-		5EE0164388E6016BB89D0E4498D3EC23 /* PCTextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CD823EA80E8820CCEFE52CF9FC9A4 /* PCTextFieldType.swift */; };
-		5FBBD5ADC69ADC0DBDA4349588668680 /* PCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5623DD902070C7C6AE336EFD0AB5A5 /* PCGenericCollectionViewController.swift */; };
+		5EE0164388E6016BB89D0E4498D3EC23 /* PCTextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791019A55E23C5BF8B84764EC22E6E1C /* PCTextFieldType.swift */; };
+		5FBBD5ADC69ADC0DBDA4349588668680 /* PCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF34FFAAAD13780CCC15D8EA47A4D025 /* PCGenericCollectionViewController.swift */; };
 		61EBE98D4D5DC4DB1A9C3A1EAC912286 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FA89C6960BA774255E9C0BE16080B1 /* UILayoutSupport+Extensions.swift */; };
-		62960E535C6113B11E75B5EBAB8696B7 /* PCDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FB6B4370A4E102F90E9F3A664EC071 /* PCDatePicker.swift */; };
-		64A3B3717E4A10ED87F831AEB473AF89 /* PCrustable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE199DC907954E9C4DCD189FA578BE62 /* PCrustable+UIButton.swift */; };
+		62960E535C6113B11E75B5EBAB8696B7 /* PCDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF609EAED7B068F25E3BFA6409D6B9DF /* PCDatePicker.swift */; };
+		64A3B3717E4A10ED87F831AEB473AF89 /* PCrustable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7B855FBE57768471D9B414236603A0 /* PCrustable+UIButton.swift */; };
 		64B283FDD20F3D1FAAF53364BCC18594 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714AAF80BD31F0721572D7ACCDCDCFEF /* ConstraintMakerRelatable.swift */; };
 		66420FA3331B62D487EA59B76E62499E /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073A7B79FA9ABCF6A0FC5EC505D6939 /* ConstraintLayoutGuideDSL.swift */; };
-		66C1ED4E2630282C604E3B78E3793B52 /* PCAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB53E5DD4C4EF22B1AE12211278D54 /* PCAnimatable.swift */; };
+		66C1ED4E2630282C604E3B78E3793B52 /* PCAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516F7B339DE66D0BCB151B6A948E0E1 /* PCAnimatable.swift */; };
 		69D96CEB9E0BA0FFC62456B055794A41 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72EF8A2569D6EBF7E1F7775B6E7FF4E /* ConstraintAttributes.swift */; };
-		6AC4B9A302F5FFD49C7BE0C319270230 /* PCTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D920732EE6DDCAF890EA8B5986CE7C1 /* PCTextView.swift */; };
-		6D471124A81BE9EF76C3098E8B6D0343 /* PCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AFD05CBC1140F138E7D0DB4859648 /* PCConstants.swift */; };
+		6AC4B9A302F5FFD49C7BE0C319270230 /* PCTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF2C8A1185DCFD9D7FDEC30F3C8F04 /* PCTextView.swift */; };
+		6D471124A81BE9EF76C3098E8B6D0343 /* PCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FA0EB80582C3CF7F4A076A1ED78EE /* PCConstants.swift */; };
 		707857A62E028C23C2329C2F9C9B1CBD /* StringProtocolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844050B93D86F8A9E80CEA408A2C439 /* StringProtocolExtensions.swift */; };
-		70D08ACB1AEFE2E0823D79470FF56BD8 /* PCLoadingable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E701805C4CE5D632EA4B5C5DF302BD /* PCLoadingable.swift */; };
-		74991F48FCD9D8E59CEC681B251E8FD1 /* PCrustable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3693FA7DC67BA194BA5DF7847666B15 /* PCrustable+UISwitch.swift */; };
+		70D08ACB1AEFE2E0823D79470FF56BD8 /* PCLoadingable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B6F5B9524E881428DA5D5F3FAD153C /* PCLoadingable.swift */; };
+		74991F48FCD9D8E59CEC681B251E8FD1 /* PCrustable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1BFA6B44EADB436EAC53BDB56A3128 /* PCrustable+UISwitch.swift */; };
 		75CB6ED25F0BC89044E49E9C91452856 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41A108A22B75D7BF0CC24D405EC589 /* DataExtensions.swift */; };
 		7667FC468FCABAF99883E8DB45B60DC6 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC135EA3FAA5EF0606316925E8786291 /* SwifterSwift.framework */; };
-		76CF69216B97EAA9B809ECEACF664432 /* PCConfettiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734D1001B17C95F329396153B0C6E70 /* PCConfettiable.swift */; };
-		78023C873820F1184675696B68642EF2 /* PCrustable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3664A9ECA71A032F6BC57872B20B73F /* PCrustable+UITextField.swift */; };
+		76CF69216B97EAA9B809ECEACF664432 /* PCConfettiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D2C78A47C93A17FAF06C19A25AF0D /* PCConfettiable.swift */; };
+		78023C873820F1184675696B68642EF2 /* PCrustable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7D265CDFA01B92E09CCF71FDA1F38 /* PCrustable+UITextField.swift */; };
 		7B7BA834A037F1354C6828A999D69230 /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A763F716D5398BF4B517BCF784BF535 /* NSAttributedStringExtensions.swift */; };
 		7D32396677A424A2D0CFB204CEEE2F24 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74531453F28874BC3A07BEF97DB469C /* ArrayExtensions.swift */; };
-		7F304529752BE9B9984E76716C06F6CD /* PCrustable+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA63B8DE52BCE57BAAE9BBF2E0436956 /* PCrustable+UINavigationController.swift */; };
+		7F304529752BE9B9984E76716C06F6CD /* PCrustable+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBCE5CD12E988613BB7294F0511A7B1 /* PCrustable+UINavigationController.swift */; };
 		7F32A0F2F6B720DD69DA5B0D8F569F72 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347723E6C9B37597D58AB2951B22F67C /* DoubleExtensions.swift */; };
 		80093F2C4FC29B300D216DF557696858 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87795EDCC8C7B8274B9FF807A1F17663 /* ConstraintInsetTarget.swift */; };
 		843989DDDE34C9FFCA4A6C1A50C7B6A7 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE80CEA607FA81AE8E4023A3F35D12D /* SnapKit-dummy.m */; };
 		85F794F414BEF202A6482A8937E1F776 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238C53438AE0316A993D8F09C02FBCE4 /* DictionaryExtensions.swift */; };
 		88489C24283CBA1AA656A69DDF6A4C26 /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83B9AA0DBBF1472E1A7D3EC37108474 /* LocaleExtensions.swift */; };
-		8C990E5E82C9E61A43D154F119235765 /* PublicExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3212F4AB0078ADAD182B7113635B6BEF /* PublicExtensions.swift */; };
+		8C990E5E82C9E61A43D154F119235765 /* PublicExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F16365C498466C5A72F51E0F91367 /* PublicExtensions.swift */; };
 		8E9764FD122F5F75E535D97364E8CA67 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A669CE877B5EA85E859B339B43768C8 /* IntExtensions.swift */; };
 		928A811A201271A19A63BF9F9C3568FD /* BoolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2287D8595F1504F97AF413EBA891273 /* BoolExtensions.swift */; };
-		94F0980268DC4C2C8098967EAFEE5258 /* PCrustable+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E02CC2AAA73257353C9E15EECFE8764 /* PCrustable+UIScrollView.swift */; };
+		94F0980268DC4C2C8098967EAFEE5258 /* PCrustable+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10491AF20DFF27AF5BC64BEBB77D9FEF /* PCrustable+UIScrollView.swift */; };
 		A10DF0E7C5971D4D98BCAA20BF4E0493 /* SwifterSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FBA84A952EB03D33C14267B5AA55469 /* SwifterSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2052DFD6F5BC2DE7C3AFD160C1D93CF /* CharacterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97E1172711C1A36C9C85EAC45069FA /* CharacterExtensions.swift */; };
 		A2F1FDC8D0768ACBCAF7EE4185012F05 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48944A86A6511E25F42536A4ADD829F /* CalendarExtensions.swift */; };
 		A62367BAE1828F53E043A4BB9341BA2E /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AB7BEB2B7B56274B95853079D2FB5E /* ConstraintLayoutSupport.swift */; };
-		A74C4FDFF098E161F0AEA3B80DE4E18B /* PCrustable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B91A6939230D740CC2CCA4FB5A074 /* PCrustable+UIActivityIndicatorView.swift */; };
-		AAAA951B792BC3D48D4F1B9A5ECDA989 /* PCAppVersionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD362D8E962370F38A7C18FAA3673EE4 /* PCAppVersionLabel.swift */; };
-		AB7AE64DE9099E357E994FEF4679D179 /* PCrustable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5CDDB0D26CD923CEAA3CB86BE4A11D /* PCrustable+UISegmentedControl.swift */; };
-		AC6BC6640229ADD19BBE9A24FC2A4BA5 /* PCBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1A690FC0B74D6705A52932708E9A4 /* PCBarButtonItem.swift */; };
-		AD03168734F17BBF9C5109C137A8D3F7 /* PCPillTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27143705D71C6368B5BD6BA99267081A /* PCPillTextField.swift */; };
+		A74C4FDFF098E161F0AEA3B80DE4E18B /* PCrustable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E466C14A8B2BFBFA2F1990C34808671 /* PCrustable+UIActivityIndicatorView.swift */; };
+		AAAA951B792BC3D48D4F1B9A5ECDA989 /* PCAppVersionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63741C84DD49339657D376811EC243 /* PCAppVersionLabel.swift */; };
+		AB7AE64DE9099E357E994FEF4679D179 /* PCrustable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF3453556FB41A5D5BC8D2A461BEBB /* PCrustable+UISegmentedControl.swift */; };
+		AC6BC6640229ADD19BBE9A24FC2A4BA5 /* PCBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325488F05F032037E949ADD33731ABAE /* PCBarButtonItem.swift */; };
+		AD03168734F17BBF9C5109C137A8D3F7 /* PCPillTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B1296F5DFBBADFC009C0B0107F23F /* PCPillTextField.swift */; };
 		AE36ACEA9024629817B530845E5E5E90 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D6311A1B795EAE4952BD84EF61B13 /* FileManagerExtensions.swift */; };
 		AF62160E174DF66C23FCF448D4293E79 /* URLRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A253D42793DC9CBF4F5982CCB2DDDC60 /* URLRequestExtensions.swift */; };
 		B1BC8BD8D6183BF0956892E3E5439879 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1874729868603A02A0E9205C326218 /* UIKit.framework */; };
-		B2A1B4A4FA69C76B59A897973E13E095 /* PCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EE63B4A8393874DF4FB82B12A7FC2A /* PCTextField.swift */; };
-		B2F545F658816AB85354B4A6F1A873F7 /* PCColorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED34E826DF56BF4A7E893D0EE36755C /* PCColorable.swift */; };
+		B2A1B4A4FA69C76B59A897973E13E095 /* PCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57B6266B21C322F4B794945132377E9 /* PCTextField.swift */; };
+		B2F545F658816AB85354B4A6F1A873F7 /* PCColorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629CE2B816DFFAF141EF95A8414E8F96 /* PCColorable.swift */; };
 		B32E9A5FD5B7609AF5A839F6AC25729A /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3599AE67617FE85BF4F668DAE1F993 /* ConstraintLayoutGuide+Extensions.swift */; };
 		B344DAE9DBDE473C1A39280FB8A622C1 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B743BC59E199BC6F37AC11608A02D /* ConstraintOffsetTarget.swift */; };
 		B36BD92C69B38B28EBA6B815B6088A70 /* NSPredicateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33DA83FDE5A1DA80A05640628AF094 /* NSPredicateExtensions.swift */; };
 		B3AAFE061FCC75603B3A5A1F70F7B719 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88C336A36BA1133E2DF4A3DC1EA3B52 /* ConstraintMakerExtendable.swift */; };
 		B4C7FD1ED4CB83995084E9CED2A0ED42 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0A213C7D8459A0FFA66603C6BA0C8 /* ConstraintMakerPriortizable.swift */; };
-		B64645A151614F66848C3F8A60E4EAD8 /* PCKeyboardControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C2A562CB47B5109CB1B3930781877 /* PCKeyboardControllable.swift */; };
+		B64645A151614F66848C3F8A60E4EAD8 /* PCKeyboardControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8927C489382EDA0D5252F2A57A7EF1 /* PCKeyboardControllable.swift */; };
 		B67B66DBA7166193F4801E74310192E0 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F912E637B903FA3C3D2D2382515FB54 /* ConstraintViewDSL.swift */; };
-		BD4C89BACFF4E6D77F1BFF6C5C568D5D /* PCGenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C45F43DE00CF0E26C5ECB86E3DC210 /* PCGenericTableViewCell.swift */; };
-		C0B34ADFD1660F9E40D8427B3ACDD34B /* PCrustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9737CEF5CD5C64115062AA03D4E7AC29 /* PCrustable.swift */; };
+		BD4C89BACFF4E6D77F1BFF6C5C568D5D /* PCGenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8A65985B7675799379BA94A6E616E /* PCGenericTableViewCell.swift */; };
+		C0B34ADFD1660F9E40D8427B3ACDD34B /* PCrustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25FDCF3D17E533F0D91EA5C0864AB2D /* PCrustable.swift */; };
 		C0F3F2E9F460172AD5258C23F4A445F2 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956B1F6C6A4A32838D8DEE3123632C2B /* SnapKit.framework */; };
-		C10313F98B3CA66F0D768916719645A4 /* PCrustable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEDA01DAC808EBDAA495290956C956 /* PCrustable+UIImageView.swift */; };
+		C10313F98B3CA66F0D768916719645A4 /* PCrustable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6062D66814664FA5D4C4F07581319F38 /* PCrustable+UIImageView.swift */; };
 		C3402E6C630F3D6566B5BF2D485A9904 /* FloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1240B81931CF0FB5897804C60BE09E66 /* FloatExtensions.swift */; };
-		C3E29E578136E66EFFABE8F159C5A67B /* PCImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F193C7C6301089EDA8A06E8B7EDB6E33 /* PCImageView.swift */; };
-		C648672BD75A0D28B9211208EF39552A /* PCLayoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4DE8AE4507B3851D86F23ADA8702B /* PCLayoutable.swift */; };
+		C3E29E578136E66EFFABE8F159C5A67B /* PCImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8D050E8D4CFB0C44C6A5C78A04E106 /* PCImageView.swift */; };
+		C648672BD75A0D28B9211208EF39552A /* PCLayoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06582D1BF67593BCC2D03889C30A6EE7 /* PCLayoutable.swift */; };
 		C92C7B0337D2937EFC185FE6AA3BE8C0 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613D22813C0DFCF23339C7CEBB6CA3F0 /* ConstraintView+Extensions.swift */; };
 		C97E21F561267D5F358BAFEEA7ED3117 /* SwifterSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B5BC47D41A7BA4B336ADC23A9BDC3F /* SwifterSwift-dummy.m */; };
-		CAD1D886F62E055B3D84150B711257B4 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 58D2280B171BAE0BED70FD14D829EB49 /* Images */; };
-		CB63F6F3A82157C7CA6A88A94A1C7BFD /* PCShadowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD7925786F8DBCE306CB6E2AA66A9B /* PCShadowable.swift */; };
-		CB6AC1368B32DD03188180D750FD049F /* PCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDEA716205D2005A509900E765B97E /* PCTabBarController.swift */; };
-		CD623D500985C3450FC673C14FE2287A /* PCrustable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0479045DB8E6481FECAE5887EED0150 /* PCrustable+UIViewController.swift */; };
+		CAD1D886F62E055B3D84150B711257B4 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 1E9FA5289FEA484AD439F09FE1CDA161 /* Images */; };
+		CB63F6F3A82157C7CA6A88A94A1C7BFD /* PCShadowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C28CE3560DFB5858CC78144983705C3 /* PCShadowable.swift */; };
+		CB6AC1368B32DD03188180D750FD049F /* PCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B65B4D260B19DF92BDF7C56993C24 /* PCTabBarController.swift */; };
+		CD623D500985C3450FC673C14FE2287A /* PCrustable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F6FA7B1ECFFE303DC726715A6B3DA /* PCrustable+UIViewController.swift */; };
 		D0764E41CA0F671F14B7E8F61F41C0C8 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD41CF5F6A72C850EA2185E4C33CFB2 /* ConstraintLayoutSupportDSL.swift */; };
 		D17CFFA9107D51BD586F549809403C7A /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A1E72B54F32DE35EE833EA4CD675D /* Constraint.swift */; };
-		D2802BE363976A549E64A692F88297B1 /* PCSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8872E9D36CF807BA502162FEAFA13 /* PCSegmentedControl.swift */; };
+		D2802BE363976A549E64A692F88297B1 /* PCSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636EC64BE1CE3F506E72A69B5BDAD0B /* PCSegmentedControl.swift */; };
 		D74E8AF4EAF8FC5284DDE328FDFCF977 /* SignedIntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32E15C02EB60BB04A127802D1311802 /* SignedIntegerExtensions.swift */; };
-		DCDA347D0981081BF491D421E8A2A7D2 /* PCrustable+UIVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588A89995C28FF237AB36ECBFDCCB557 /* PCrustable+UIVisualEffectView.swift */; };
-		E0BEF3D1EC94B6A19B2AE2EA84A233DD /* PCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76AF0621690884FE3278244FD2760 /* PCWebView.swift */; };
+		DCDA347D0981081BF491D421E8A2A7D2 /* PCrustable+UIVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C1B7AA487CBE44CB4E74CE47209E1 /* PCrustable+UIVisualEffectView.swift */; };
+		E0BEF3D1EC94B6A19B2AE2EA84A233DD /* PCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90C1701BAE8F6C6B711F08D1AF5FC0 /* PCWebView.swift */; };
 		E2D43E383F684A8DF8DF17B5494B9E87 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22B1346CCA30DC71C83AD4FE4EF723B /* ConstraintMaker.swift */; };
 		E45A662A5478D8D2E3644A62029549DE /* Pods-PieCrustExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3722F1017ABD042D55EE0D902A0EC62A /* Pods-PieCrustExample-dummy.m */; };
-		E5B2C43667BB243D5E35EE5990525C12 /* PCFontable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D546FF1BEB7F501FF0A0B27CB078676 /* PCFontable.swift */; };
+		E5B2C43667BB243D5E35EE5990525C12 /* PCFontable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064DBAFF2E492E23233AD07D294FD6F7 /* PCFontable.swift */; };
 		E867925D9DFDD2C93D994B5C32589748 /* PieCrustAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DEE38FCE2D23201BB99B2952D8DBDBD /* PieCrustAssets.bundle */; };
 		E87EEF5EF328BB4DCA8975B00927C964 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4161DA29B964AE9C8EFE7D1B11112B /* Foundation.framework */; };
-		E8AE6909EE67EEB3F712FC870927F598 /* PCLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DBB754B95BA767032213C9BE24E1B3 /* PCLoadingButton.swift */; };
+		E8AE6909EE67EEB3F712FC870927F598 /* PCLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53995ABFB981FEBD31C711A663EB1DA4 /* PCLoadingButton.swift */; };
 		E9DA06B2CB70C20984C6390B9D44B08D /* Pods-PieCrustExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF90FA416FFCBD78F9E7FE37D6846C43 /* Pods-PieCrustExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EED0AB21F7DCB25FCE8AF9D3C572FC82 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB28DA29481CA24FB07683ED4140BFF8 /* ConstraintDescription.swift */; };
-		F27FF883A8C70050070ADD5363394B0F /* PCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C98A8285FD62B0E589408C0B8C0380E /* PCButton.swift */; };
-		F2A268B816AFD41804BAD6011CE32A98 /* PieCrust-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92977E2CA442CFEC4C8AA0DF14496ED3 /* PieCrust-dummy.m */; };
-		F49486339DD10571D0888A6DF12C33F3 /* PCRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4416E4E9061F038FA2BCBD42E6BFB /* PCRoundedView.swift */; };
-		F613388358DE4D0ECEC1A09652290805 /* PCrustable+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CDADAA69395472990F7AAD164C4515 /* PCrustable+UIStackView.swift */; };
-		FA10CF6C37865F70D5851DF9B11AB9A7 /* PCrustable+UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8757BC1F6077CF5EBD37AB9F0D9374 /* PCrustable+UITextView.swift */; };
+		F27FF883A8C70050070ADD5363394B0F /* PCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F806F074389E8C7F1DAE9613DAC5AB /* PCButton.swift */; };
+		F2A268B816AFD41804BAD6011CE32A98 /* PieCrust-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF2322888CF208AA05FEBAB89FD183A /* PieCrust-dummy.m */; };
+		F49486339DD10571D0888A6DF12C33F3 /* PCRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527ADEA73DA84FD23040CC7C6836FC30 /* PCRoundedView.swift */; };
+		F613388358DE4D0ECEC1A09652290805 /* PCrustable+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA16D3515E1FB2DD1B35275E73959 /* PCrustable+UIStackView.swift */; };
+		FA10CF6C37865F70D5851DF9B11AB9A7 /* PCrustable+UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C34786B9F46A201D1E1F251AA05790 /* PCrustable+UITextView.swift */; };
 		FBC04E5247EC44E780FAA3EAFCDDAAEB /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD0EF71BECB5BBBD535CF99E914C79A /* URLExtensions.swift */; };
 		FE4210FCAE0AFA105F70E4B2F28ECB67 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D25BE2A605033B760F817619F13B63 /* StringExtensions.swift */; };
 		FEAEDA7B9540DD934CBAD730F2EAF8AA /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D8B826112D310BC94CEBD47E62ACDE /* ConstraintItem.swift */; };
@@ -200,284 +200,324 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		004D54E1C6AF0A8B6CE966768860F4DE /* PCKeyboardObservable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCKeyboardObservable.swift; sourceTree = "<group>"; };
-		009DDB454B7A06D752A51C83A9AD1C84 /* PCTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTableViewCell.swift; sourceTree = "<group>"; };
-		00F7175F9C99907A22C998CE7FCB75D3 /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.search.js; path = docs/js/jazzy.search.js; sourceTree = "<group>"; };
-		012A1F70481CC405C42E9E033E6F631F /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
+		007D60A6F81EBC7ACE7DC2B9186A0681 /* PCLoadingable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLoadingable.html; path = docs/Protocols/PCLoadingable.html; sourceTree = "<group>"; };
+		01C8AE2161FD416C173EBF0FD867EA1A /* Array.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Array.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Extensions/Array.html; sourceTree = "<group>"; };
+		02E474B6C5982CFBBA023E655D1465B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0312C4EF768BDE17D0F37360C1EDB0E9 /* PCCollectionViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCCollectionViewCell.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCCollectionViewCell.html; sourceTree = "<group>"; };
+		03B7D265CDFA01B92E09CCF71FDA1F38 /* PCrustable+UITextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UITextField.swift"; sourceTree = "<group>"; };
+		048435FA725F64FE6FFB48211F386B69 /* PCStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCStackView.swift; sourceTree = "<group>"; };
+		0492F979558D3F28179CD373BBA06734 /* PCTabBarController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTabBarController.html; path = docs/Classes/PCTabBarController.html; sourceTree = "<group>"; };
+		04CC9AA00A0110AF34B92174EC2426FB /* PCTransparentNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTransparentNavigationController.swift; sourceTree = "<group>"; };
+		05464C8DD6D86FD943E6606EE2118EF5 /* PCAlertable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCAlertable.html; path = docs/Protocols/PCAlertable.html; sourceTree = "<group>"; };
+		054A1142899814A15871F31289DE3319 /* PCCollectionViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCCollectionViewController.html; path = docs/Classes/PCCollectionViewController.html; sourceTree = "<group>"; };
 		054FEC27BAD8A3ACD8F4B6F01C0C4891 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		06B9A32D3441334C7EFFB80CEA3D9238 /* PCCollectionViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCCollectionViewCell.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCCollectionViewCell.html; sourceTree = "<group>"; };
+		05EBEA78374840BBC709BB582DE440C9 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/img/dash.png; sourceTree = "<group>"; };
+		064DBAFF2E492E23233AD07D294FD6F7 /* PCFontable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCFontable.swift; sourceTree = "<group>"; };
+		06582D1BF67593BCC2D03889C30A6EE7 /* PCLayoutable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCLayoutable.swift; sourceTree = "<group>"; };
+		07C8B20ED1728CA16D933311466FA6B8 /* PCPillTextField.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCPillTextField.html; path = docs/Classes/PCPillTextField.html; sourceTree = "<group>"; };
 		09298898BBB643DFCDC3925BE9D873D4 /* FloatingPointExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPointExtensions.swift; path = Sources/Extensions/SwiftStdlib/FloatingPointExtensions.swift; sourceTree = "<group>"; };
-		0AA8872E9D36CF807BA502162FEAFA13 /* PCSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCSegmentedControl.swift; sourceTree = "<group>"; };
+		0AB7984EE8033508DD5EA089828AB67B /* PCConfettiable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCConfettiable.html; path = docs/Protocols/PCConfettiable.html; sourceTree = "<group>"; };
+		0D4ABB120138FABEAFB6B90A4919DFC2 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
+		0F30ACEAE18F942EFB2F00F221073D54 /* PCRoundedImageView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCRoundedImageView.html; path = docs/Classes/PCRoundedImageView.html; sourceTree = "<group>"; };
 		0F912E637B903FA3C3D2D2382515FB54 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		0FB8F74D2DD661ACFF4078D87838E3DC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		0FEF5E51457BB993525BC578103EFD24 /* PCGenericCollectionViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericCollectionViewController.html; path = docs/Classes/PCGenericCollectionViewController.html; sourceTree = "<group>"; };
+		10491AF20DFF27AF5BC64BEBB77D9FEF /* PCrustable+UIScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIScrollView.swift"; sourceTree = "<group>"; };
+		10DA390471330A4CBDCB81AC3CECE332 /* PCGenericCollectionViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericCollectionViewCell.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCGenericCollectionViewCell.html; sourceTree = "<group>"; };
+		1162C728FF3B8CAFDBD46F624B93AC9F /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/Classes.html; sourceTree = "<group>"; };
 		1240B81931CF0FB5897804C60BE09E66 /* FloatExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatExtensions.swift; path = Sources/Extensions/SwiftStdlib/FloatExtensions.swift; sourceTree = "<group>"; };
-		1443866B1B0234B19E5730188863822C /* PCSegmentedControl.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCSegmentedControl.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCSegmentedControl.html; sourceTree = "<group>"; };
-		1561E829C1789CE9255FB7CF7E3AA0C2 /* PCGenericTableViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericTableViewCell.html; path = docs/Classes/PCGenericTableViewCell.html; sourceTree = "<group>"; };
+		12B7FAD74FFF7144EDCAE7F9DD7BBFB6 /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Enums.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Enums.html; sourceTree = "<group>"; };
+		139941035FEEF929C9F35AED18DFA1DC /* PCAppVersionLabel.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCAppVersionLabel.html; path = docs/Classes/PCAppVersionLabel.html; sourceTree = "<group>"; };
+		139F459C632B45F6DE8F75265F13FDB4 /* PCScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCScrollView.swift; sourceTree = "<group>"; };
+		14DDE7F3F7A9A86803F8513E7E4139E0 /* PCConstants.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCConstants.html; path = docs/Classes/PCConstants.html; sourceTree = "<group>"; };
+		1516F7B339DE66D0BCB151B6A948E0E1 /* PCAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCAnimatable.swift; sourceTree = "<group>"; };
+		1575EE78D6189041DB6AEA3911F6AF96 /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typeahead.jquery.js; path = docs/js/typeahead.jquery.js; sourceTree = "<group>"; };
 		163857B9242D8C9EA6A5FA9304554D93 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
-		17098DC2AEF56B880F13E7D1D39B3561 /* PCButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCButton.html; path = docs/Classes/PCButton.html; sourceTree = "<group>"; };
-		185A04075CB556EE0A33221D480051B5 /* Array.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Array.html; path = docs/Extensions/Array.html; sourceTree = "<group>"; };
-		18A7E139F2333762B6CF8F547289DF91 /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typeahead.jquery.js; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/js/typeahead.jquery.js; sourceTree = "<group>"; };
-		18FB777E942C798071E90703086CE6F6 /* PieCrust.tgz */ = {isa = PBXFileReference; includeInIndex = 1; name = PieCrust.tgz; path = docs/docsets/PieCrust.tgz; sourceTree = "<group>"; };
-		1A18772FC468750112889511CFC47DED /* PCrustable+UIDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIDatePicker.swift"; sourceTree = "<group>"; };
+		187FC880C8B0834F9EC1EF7F4190EFD2 /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Extensions.html; sourceTree = "<group>"; };
+		18FC12B9C67E25421CDEE3220E17EB27 /* PCConfettiable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCConfettiable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCConfettiable.html; sourceTree = "<group>"; };
+		19C1DECF83203630A7AA3EFD4C41772E /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
+		1A5931A78674A52E99C01DFEB1806296 /* PCImageView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCImageView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCImageView.html; sourceTree = "<group>"; };
 		1A669CE877B5EA85E859B339B43768C8 /* IntExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntExtensions.swift; path = Sources/Extensions/SwiftStdlib/IntExtensions.swift; sourceTree = "<group>"; };
 		1AEB74B5F094BFED6D1B142E11683382 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		1E0159A2B399A0DAA4941E312B993CA7 /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/Classes.html; sourceTree = "<group>"; };
+		1BB5D82BE700E8B65953A9A7883CC860 /* PCRoundedView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCRoundedView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCRoundedView.html; sourceTree = "<group>"; };
+		1C4FA0EB80582C3CF7F4A076A1ED78EE /* PCConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCConstants.swift; sourceTree = "<group>"; };
+		1E4E792431DF84BE8E416CDB85924618 /* PCSwitch.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCSwitch.html; path = docs/Classes/PCSwitch.html; sourceTree = "<group>"; };
+		1E63741C84DD49339657D376811EC243 /* PCAppVersionLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCAppVersionLabel.swift; sourceTree = "<group>"; };
+		1E9FA5289FEA484AD439F09FE1CDA161 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = Assets/PieCrustAssets.bundle/Images; sourceTree = "<group>"; };
+		1F10564ECAC1BD6EEB5194084C0C78B4 /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; name = undocumented.json; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/undocumented.json; sourceTree = "<group>"; };
+		1F7B855FBE57768471D9B414236603A0 /* PCrustable+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIButton.swift"; sourceTree = "<group>"; };
+		1F8927C489382EDA0D5252F2A57A7EF1 /* PCKeyboardControllable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCKeyboardControllable.swift; sourceTree = "<group>"; };
 		1F97E1172711C1A36C9C85EAC45069FA /* CharacterExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterExtensions.swift; path = Sources/Extensions/SwiftStdlib/CharacterExtensions.swift; sourceTree = "<group>"; };
 		1FBA84A952EB03D33C14267B5AA55469 /* SwifterSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwifterSwift-umbrella.h"; sourceTree = "<group>"; };
-		21BC4A8A8B8DA524EFD372951BFF14FA /* PCConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCConfettiView.swift; sourceTree = "<group>"; };
-		21FA0B9D772938284E22884BE8472476 /* PCBorderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCBorderable.swift; sourceTree = "<group>"; };
-		2251CBAA51F73626E9ED8EC7F6BC4032 /* PCTextField.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTextField.html; path = docs/Classes/PCTextField.html; sourceTree = "<group>"; };
-		227AD2DF0C24D15325FB2A8ED9631E2B /* PCNavigationController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCNavigationController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCNavigationController.html; sourceTree = "<group>"; };
-		22D729FDC1DCB80FD43AF45CD846D2DC /* PCTabBarController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTabBarController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCTabBarController.html; sourceTree = "<group>"; };
+		207546AF35368B277679CF5F6B7985CA /* PCKeyboardControllable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCKeyboardControllable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCKeyboardControllable.html; sourceTree = "<group>"; };
 		238C53438AE0316A993D8F09C02FBCE4 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryExtensions.swift; path = Sources/Extensions/SwiftStdlib/DictionaryExtensions.swift; sourceTree = "<group>"; };
-		2523BC2007EE9030809F277E24B5861B /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; name = docSet.dsidx; path = docs/docsets/PieCrust.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
+		23F806F074389E8C7F1DAE9613DAC5AB /* PCButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCButton.swift; sourceTree = "<group>"; };
+		2418E80DF3150B5E973D4E7CE89930A0 /* PCCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCCollectionViewCell.swift; sourceTree = "<group>"; };
+		24463A92BC9E6FC6CDE9AB00CB83B4A3 /* PCScrollView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCScrollView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCScrollView.html; sourceTree = "<group>"; };
 		26FA89C6960BA774255E9C0BE16080B1 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		27143705D71C6368B5BD6BA99267081A /* PCPillTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCPillTextField.swift; sourceTree = "<group>"; };
-		2734D1001B17C95F329396153B0C6E70 /* PCConfettiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCConfettiable.swift; sourceTree = "<group>"; };
-		27DC553C92835ADC8BF383610947AD70 /* PCBorderable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCBorderable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCBorderable.html; sourceTree = "<group>"; };
-		2B272B475545D0D4F7B7BC0436C8E105 /* PCTransparentNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTransparentNavigationController.swift; sourceTree = "<group>"; };
+		2806C3A8CAA8B1201F237F0E840AA79E /* TextType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TextType.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCTextField/TextType.html; sourceTree = "<group>"; };
+		29FFD0491191B850B296374ABDAF33D7 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
+		2A6381106F5BDC61151D5E78C4DA3EF0 /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lunr.min.js; path = docs/js/lunr.min.js; sourceTree = "<group>"; };
+		2B1EEEBB4086E53228A8B0C238577018 /* PCPillButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCPillButton.html; path = docs/Classes/PCPillButton.html; sourceTree = "<group>"; };
 		2B3599AE67617FE85BF4F668DAE1F993 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
-		2C19543930932A3389528336BE9D1410 /* PCGenericTableController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericTableController.html; path = docs/Classes/PCGenericTableController.html; sourceTree = "<group>"; };
-		2CF15DF07FB666100D15471AD2A175F2 /* PCCollectionViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCCollectionViewCell.html; path = docs/Classes/PCCollectionViewCell.html; sourceTree = "<group>"; };
+		2BF63AB5905C9024B0905393CAB1860D /* PCTableViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTableViewCell.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCTableViewCell.html; sourceTree = "<group>"; };
+		2CA7372CD3E6AC64FE1B4A92C00F3522 /* PCViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCViewController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCViewController.html; sourceTree = "<group>"; };
 		2D3F667CD6C3B21832019203783911A4 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
-		2D431CCB875783115693E31866C172B7 /* PCView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCView.swift; sourceTree = "<group>"; };
-		2F56E6CBA24E9DA2B2EFF56B3F67BCEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FFEDA01DAC808EBDAA495290956C956 /* PCrustable+UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIImageView.swift"; sourceTree = "<group>"; };
+		2DA4282A21246D60E2E7B688A3B94CB6 /* PCGenericTableController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericTableController.html; path = docs/Classes/PCGenericTableController.html; sourceTree = "<group>"; };
+		2F2F6FA7B1ECFFE303DC726715A6B3DA /* PCrustable+UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIViewController.swift"; sourceTree = "<group>"; };
 		3073A7B79FA9ABCF6A0FC5EC505D6939 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
-		3212F4AB0078ADAD182B7113635B6BEF /* PublicExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PublicExtensions.swift; sourceTree = "<group>"; };
-		333F4A80D735444124C5D18224238BFA /* PCCollectionViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCCollectionViewController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCCollectionViewController.html; sourceTree = "<group>"; };
+		30A9CC7388F2EB5E948DD3B1C8B54985 /* PCStackView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCStackView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCStackView.html; sourceTree = "<group>"; };
+		30BCCEA17A1058B2C88CD1D480A1A6E8 /* PCConstants.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCConstants.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCConstants.html; sourceTree = "<group>"; };
+		325488F05F032037E949ADD33731ABAE /* PCBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCBarButtonItem.swift; sourceTree = "<group>"; };
+		32EF2C8A1185DCFD9D7FDEC30F3C8F04 /* PCTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTextView.swift; sourceTree = "<group>"; };
+		33390A2313BE639FEF1865FACEDB17D2 /* PCViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCViewController.html; path = docs/Classes/PCViewController.html; sourceTree = "<group>"; };
+		3353757B47556C48865CE931C6A102DA /* PCGenericTableViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericTableViewCell.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCGenericTableViewCell.html; sourceTree = "<group>"; };
 		336649B38F6EA2F26B158FE160C1F4BB /* SwifterSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwifterSwift.xcconfig; sourceTree = "<group>"; };
 		33B5BC47D41A7BA4B336ADC23A9BDC3F /* SwifterSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwifterSwift-dummy.m"; sourceTree = "<group>"; };
 		33D7D21BB9E4ECF12E9A61BF69E041E8 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		347723E6C9B37597D58AB2951B22F67C /* DoubleExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoubleExtensions.swift; path = Sources/Extensions/SwiftStdlib/DoubleExtensions.swift; sourceTree = "<group>"; };
+		36D49FF80883F2A065D402FB94485D21 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
+		371B9EEA4012B22795836E1D670C91AB /* PCLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCLabel.swift; sourceTree = "<group>"; };
 		3722F1017ABD042D55EE0D902A0EC62A /* Pods-PieCrustExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PieCrustExample-dummy.m"; sourceTree = "<group>"; };
 		39376F8578772187C3B0946E4D0DAC33 /* DateExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateExtensions.swift; path = Sources/Extensions/Foundation/DateExtensions.swift; sourceTree = "<group>"; };
-		3A0AFD05CBC1140F138E7D0DB4859648 /* PCConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCConstants.swift; sourceTree = "<group>"; };
-		3B85614E7FC80FB40EE97DD2ADB7812E /* UICollectionView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UICollectionView.html; path = docs/Extensions/UICollectionView.html; sourceTree = "<group>"; };
-		3DD5868274A2D4BCFC34098D2ED13C20 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
-		3E116055CD87AA2D3F2A30E57C9770CB /* PCLabel.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLabel.html; path = docs/Classes/PCLabel.html; sourceTree = "<group>"; };
-		3E1CC959C77C242C3EF79E8CA4A9B0C4 /* PCTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTableViewController.swift; sourceTree = "<group>"; };
-		3E4772E4C0610B25D1965E883E426057 /* PCTabBarController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTabBarController.html; path = docs/Classes/PCTabBarController.html; sourceTree = "<group>"; };
-		3F68C5D80BDF576E45EFE64C9644972B /* PCCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCCollectionViewController.swift; sourceTree = "<group>"; };
+		3CFC8FB41141AF3702C68B29333BB768 /* PieCrust.tgz */ = {isa = PBXFileReference; includeInIndex = 1; name = PieCrust.tgz; path = docs/docsets/PieCrust.tgz; sourceTree = "<group>"; };
 		411C91EC1F9EA66F898876C61E22ADB3 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		422082251E22C6C14D27C39D929B4080 /* WebRequestType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WebRequestType.html; path = docs/Classes/PCWebViewController/WebRequestType.html; sourceTree = "<group>"; };
-		42327956E30B3F572BF9620ACC3F2BA9 /* PCViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCViewController.swift; sourceTree = "<group>"; };
-		4389D0AB454440AA2F9114D4B150C662 /* PCBarButtonItem.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCBarButtonItem.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCBarButtonItem.html; sourceTree = "<group>"; };
+		4192D24A8A94E1F6B09FBB6CC706B9E9 /* UIWindow.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIWindow.html; path = docs/Extensions/UIWindow.html; sourceTree = "<group>"; };
+		41D595A3A7FBC561D9635AF841B7B603 /* PCBarButtonItem.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCBarButtonItem.html; path = docs/Classes/PCBarButtonItem.html; sourceTree = "<group>"; };
+		42D7B7AB78D54C1E342D584828D0896B /* PieCrust.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PieCrust.xcconfig; sourceTree = "<group>"; };
 		44D22BA2A25F593A00382B8E2B96ACB0 /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDefaultsExtensions.swift; path = Sources/Extensions/Foundation/UserDefaultsExtensions.swift; sourceTree = "<group>"; };
-		47F94FDC3D15EFBAECCABCDB551E4453 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
+		45222022DAF2035FE027DD81D90C1625 /* PCGenericCollectionViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericCollectionViewCell.html; path = docs/Classes/PCGenericCollectionViewCell.html; sourceTree = "<group>"; };
+		453D2C78A47C93A17FAF06C19A25AF0D /* PCConfettiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCConfettiable.swift; sourceTree = "<group>"; };
 		4844050B93D86F8A9E80CEA408A2C439 /* StringProtocolExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringProtocolExtensions.swift; path = Sources/Extensions/SwiftStdlib/StringProtocolExtensions.swift; sourceTree = "<group>"; };
 		488A09B63B7BFB3D96C683E18CF4E15A /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		48F4792D36484E517F10C0C3C6553996 /* PCScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCScrollView.swift; sourceTree = "<group>"; };
-		4A32EE18955FB0460392A073EBEF2074 /* PCGenericTableViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericTableViewCell.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCGenericTableViewCell.html; sourceTree = "<group>"; };
+		48AB0D6D0EC2A9C5DF0DE8453B451286 /* PCrustable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCrustable.html; path = docs/Protocols/PCrustable.html; sourceTree = "<group>"; };
+		49B8A65985B7675799379BA94A6E616E /* PCGenericTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCGenericTableViewCell.swift; sourceTree = "<group>"; };
 		4A763F716D5398BF4B517BCF784BF535 /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSAttributedStringExtensions.swift; path = Sources/Extensions/Foundation/NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
-		4B8251400F0E96669C33A53FB73890FF /* PCTableViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTableViewCell.html; path = docs/Classes/PCTableViewCell.html; sourceTree = "<group>"; };
+		4BC2BCA9E73ABA003B2D1C6738A63215 /* Protocols.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Protocols.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols.html; sourceTree = "<group>"; };
 		4BE80CEA607FA81AE8E4023A3F35D12D /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
-		4CC06F79B1695B01FFB8FCAB8B41D9DA /* PCAnimatable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCAnimatable.html; path = docs/Protocols/PCAnimatable.html; sourceTree = "<group>"; };
-		4CD67EEFC6C744895ED9727E1587D690 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/img/carat.png; sourceTree = "<group>"; };
-		4D546FF1BEB7F501FF0A0B27CB078676 /* PCFontable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCFontable.swift; sourceTree = "<group>"; };
-		4D920732EE6DDCAF890EA8B5986CE7C1 /* PCTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTextView.swift; sourceTree = "<group>"; };
+		4DCAD8D676707AD12A75FCFEE9B27E8E /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
 		4DF9FE5F4BB5605576B6FAF56E448AE8 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		4E21CC0C5724DE1D131E983495D9B5F4 /* PCBarButtonItem.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCBarButtonItem.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCBarButtonItem.html; sourceTree = "<group>"; };
 		4F1D6311A1B795EAE4952BD84EF61B13 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileManagerExtensions.swift; path = Sources/Extensions/Foundation/FileManagerExtensions.swift; sourceTree = "<group>"; };
-		50BDEA716205D2005A509900E765B97E /* PCTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTabBarController.swift; sourceTree = "<group>"; };
-		5102497F42D05B5CA09FC4C3D8AB8398 /* PCView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCView.html; sourceTree = "<group>"; };
-		51AAB81C6500BE576F91C1CC7A8FA04D /* PCStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCStackView.swift; sourceTree = "<group>"; };
-		5480B5FFFC481F09394819843C6D27ED /* Array.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Array.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Extensions/Array.html; sourceTree = "<group>"; };
-		549319919F2C614B55BF95C28555715C /* PCStackView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCStackView.html; path = docs/Classes/PCStackView.html; sourceTree = "<group>"; };
-		54FD7925786F8DBCE306CB6E2AA66A9B /* PCShadowable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCShadowable.swift; sourceTree = "<group>"; };
+		4F60CA918C44AFC146B366EC52FD6665 /* PCShadowable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCShadowable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCShadowable.html; sourceTree = "<group>"; };
+		5037A4D5589E39BE966CDF1CBABA4E8B /* PCTabBarController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTabBarController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCTabBarController.html; sourceTree = "<group>"; };
+		51C1DA1DE21355D10CF07A1B1ED8B8BD /* PCActivityIndicatorView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCActivityIndicatorView.html; path = docs/Classes/PCActivityIndicatorView.html; sourceTree = "<group>"; };
+		51EA0028FFBA2BCA05DEA54917319B89 /* PCTransparentNavigationController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTransparentNavigationController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCTransparentNavigationController.html; sourceTree = "<group>"; };
+		52264E83A9E3DB3707B606DF9F5DFF6C /* PCVisualEffectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCVisualEffectView.swift; sourceTree = "<group>"; };
+		527ADEA73DA84FD23040CC7C6836FC30 /* PCRoundedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCRoundedView.swift; sourceTree = "<group>"; };
+		52FDA16D3515E1FB2DD1B35275E73959 /* PCrustable+UIStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIStackView.swift"; sourceTree = "<group>"; };
+		532272A20DB6781392BC326CF88AF67B /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
+		53995ABFB981FEBD31C711A663EB1DA4 /* PCLoadingButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCLoadingButton.swift; sourceTree = "<group>"; };
+		5473C71F6C169CB1679EE684CB517564 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		55FEDCE70CB98B3B8E3EAA45E679CE13 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
-		56FB6B4370A4E102F90E9F3A664EC071 /* PCDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCDatePicker.swift; sourceTree = "<group>"; };
 		5805F907074B404519C8DE1F7B420F34 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
-		588A89995C28FF237AB36ECBFDCCB557 /* PCrustable+UIVisualEffectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIVisualEffectView.swift"; sourceTree = "<group>"; };
-		58D2280B171BAE0BED70FD14D829EB49 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = Assets/PieCrustAssets.bundle/Images; sourceTree = "<group>"; };
+		5A38F478E7694A47016B84186CAC09FA /* PCBorderable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCBorderable.html; path = docs/Protocols/PCBorderable.html; sourceTree = "<group>"; };
+		5AF500E05C4B9BBD26B61370CC449A93 /* PCBorderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCBorderable.swift; sourceTree = "<group>"; };
+		5B1F16365C498466C5A72F51E0F91367 /* PublicExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PublicExtensions.swift; sourceTree = "<group>"; };
 		5B5B743BC59E199BC6F37AC11608A02D /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
-		5C7F55785B8715EE25B081C1B2621D85 /* PCNavigationController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCNavigationController.html; path = docs/Classes/PCNavigationController.html; sourceTree = "<group>"; };
-		5D16FE6A3059272F68F89E08564D6FE4 /* PCTableViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTableViewCell.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCTableViewCell.html; sourceTree = "<group>"; };
-		5E5CDDB0D26CD923CEAA3CB86BE4A11D /* PCrustable+UISegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UISegmentedControl.swift"; sourceTree = "<group>"; };
-		5F4923A7A28585DEA287A5AABEA1924E /* PCrustable+UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UILabel.swift"; sourceTree = "<group>"; };
-		605738CE12907EFA94A41ED0AB6997CA /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/badge.svg; sourceTree = "<group>"; };
+		5E6EC4A24A269707C181C094CA6D715B /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
+		5E93A0563C39625F28ACB0EFE7FFB4DB /* PCActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCActivityIndicatorView.swift; sourceTree = "<group>"; };
+		6062D66814664FA5D4C4F07581319F38 /* PCrustable+UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIImageView.swift"; sourceTree = "<group>"; };
 		613D22813C0DFCF23339C7CEBB6CA3F0 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		641528B99B7536C507445DE1D54AD8E3 /* PCLabel.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLabel.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCLabel.html; sourceTree = "<group>"; };
-		64B70744227F4E1739EB7ACFD78C8DA4 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/img/dash.png; sourceTree = "<group>"; };
-		64F635DC64DDCFA7A83F62E99D4966BD /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
-		653E3F6C84E12E79C0620C1171FEFB41 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
-		6779F587420F0CAE2DBC45457177F515 /* InternalExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InternalExtensions.swift; sourceTree = "<group>"; };
+		61FD8F4DC51FAF0FBF093DDD840CEFAC /* PCrustable+UIWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIWebView.swift"; sourceTree = "<group>"; };
+		629CE2B816DFFAF141EF95A8414E8F96 /* PCColorable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCColorable.swift; sourceTree = "<group>"; };
+		66695D3C5AA5C31A4D97B763F07C4490 /* PCSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCSwitch.swift; sourceTree = "<group>"; };
+		672A740A9EA44BFC4127B49C82833943 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/img/carat.png; sourceTree = "<group>"; };
+		68D6EF258339976C0D5D61BF1FB3B386 /* spinner.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = spinner.gif; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/img/spinner.gif; sourceTree = "<group>"; };
 		69F9F0E7E677138892ED5F67BD6D418B /* SwifterSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwifterSwift.modulemap; sourceTree = "<group>"; };
-		6D3A611F15F302119F5B35F5A776107C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6ADF8826D54A3AD94FF483CFDFA98C56 /* UIWindow.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIWindow.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Extensions/UIWindow.html; sourceTree = "<group>"; };
+		6C7EB41790EADD3DF11E4999C1C7A677 /* PCCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCCollectionViewController.swift; sourceTree = "<group>"; };
+		6CB720BAEE0E5487B5EF3782B56A178D /* PCPillLoadingButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCPillLoadingButton.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCPillLoadingButton.html; sourceTree = "<group>"; };
 		6D67AB8B0F15899BAE7461530CF04F1B /* Pods-PieCrustExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PieCrustExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		6D7812DF63CCCF697B8524C7404E919B /* PCActivityIndicatorView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCActivityIndicatorView.html; path = docs/Classes/PCActivityIndicatorView.html; sourceTree = "<group>"; };
 		6DEE38FCE2D23201BB99B2952D8DBDBD /* PieCrustAssets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PieCrustAssets.bundle; path = "PieCrust-PieCrustAssets.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E02CC2AAA73257353C9E15EECFE8764 /* PCrustable+UIScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIScrollView.swift"; sourceTree = "<group>"; };
+		6E276D44D658B78CB45B33B3A8267D7B /* PCButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCButton.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCButton.html; sourceTree = "<group>"; };
+		6E466C14A8B2BFBFA2F1990C34808671 /* PCrustable+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
+		6E4766E3BCE7EC406D0C103D5D488D62 /* PCNavigationController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCNavigationController.html; path = docs/Classes/PCNavigationController.html; sourceTree = "<group>"; };
+		6E9334902041870310FD45C8FD985ECE /* PCTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTableViewCell.swift; sourceTree = "<group>"; };
+		6EDDF0846C84F13F90A73872DADFBF8E /* PCConfettiView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCConfettiView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCConfettiView.html; sourceTree = "<group>"; };
+		6EFA58D0A106089B08A71F3989CAD248 /* InternalExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InternalExtensions.swift; sourceTree = "<group>"; };
+		6F0B9B2802BBF61BEE4089031BFA6B55 /* UICollectionView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UICollectionView.html; path = docs/Extensions/UICollectionView.html; sourceTree = "<group>"; };
 		6F4161DA29B964AE9C8EFE7D1B11112B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		70B7EABD375F532EA01F5A04C7AA6345 /* WebRequestType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WebRequestType.html; path = docs/Classes/PCWebViewController/WebRequestType.html; sourceTree = "<group>"; };
 		714AAF80BD31F0721572D7ACCDCDCFEF /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		7165204CE7728EC68BE03FC7F93DD395 /* Pods-PieCrustExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PieCrustExample-resources.sh"; sourceTree = "<group>"; };
-		71AD17DC0646A124C786C452A3C32DCE /* PieCrust-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PieCrust-prefix.pch"; sourceTree = "<group>"; };
-		71DBB754B95BA767032213C9BE24E1B3 /* PCLoadingButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCLoadingButton.swift; sourceTree = "<group>"; };
-		72F5AADA19435D34F97906AFBAC085C8 /* PCGenericCollectionViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericCollectionViewCell.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCGenericCollectionViewCell.html; sourceTree = "<group>"; };
-		7354D9693FAC02D40A24EE7A306D7EEE /* PCWebViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCWebViewController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCWebViewController.html; sourceTree = "<group>"; };
+		71AE7F7C6BEAFDA83BE9A0C9AD5B326E /* PCLoadingButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLoadingButton.html; path = docs/Classes/PCLoadingButton.html; sourceTree = "<group>"; };
 		7354DF49904236A2ADBF9D43D01A3D9A /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		742B05F4E19180FA77735AC4D006B776 /* UITableView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UITableView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Extensions/UITableView.html; sourceTree = "<group>"; };
 		74EDBD8A077E65F12D4E7540D2C3AA40 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		756B91A6939230D740CC2CCA4FB5A074 /* PCrustable+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
-		75DBCBA1B86C470B885751B6256DEE2E /* PCRoundedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCRoundedImageView.swift; sourceTree = "<group>"; };
-		763452E491987552ED0944B8B1B48084 /* PCGenericCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCGenericCollectionViewCell.swift; sourceTree = "<group>"; };
-		77F3BE600FFA13A9C6E7B0E34B8F73A3 /* PCTextField.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTextField.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCTextField.html; sourceTree = "<group>"; };
+		766DC425A090964B2892F83DD4CB2C11 /* PCrustable+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIView.swift"; sourceTree = "<group>"; };
+		76B574092C8E7C5DB6F6BA27377A8353 /* PCBorderable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCBorderable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCBorderable.html; sourceTree = "<group>"; };
+		771523002CCE51182C8FEDD823AC01E4 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/badge.svg; sourceTree = "<group>"; };
 		78D25BE2A605033B760F817619F13B63 /* StringExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = Sources/Extensions/SwiftStdlib/StringExtensions.swift; sourceTree = "<group>"; };
-		7979199CBFD5AE4E0F9EA70D23746AF3 /* TextType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TextType.html; path = docs/Classes/PCTextField/TextType.html; sourceTree = "<group>"; };
-		7B07D05F51BE2ABFA90805B0D939C850 /* PCLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCLabel.swift; sourceTree = "<group>"; };
-		7BC4416E4E9061F038FA2BCBD42E6BFB /* PCRoundedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCRoundedView.swift; sourceTree = "<group>"; };
-		7BFF335FE09BB8724A6F16F5BFA5A50F /* Notification.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Notification.html; path = docs/Extensions/Notification.html; sourceTree = "<group>"; };
+		791019A55E23C5BF8B84764EC22E6E1C /* PCTextFieldType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTextFieldType.swift; sourceTree = "<group>"; };
+		79561A1D2709E13F66FFAAE2D09760C8 /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.search.js; path = docs/js/jazzy.search.js; sourceTree = "<group>"; };
+		7A772CEB809F1D04764BAED6A1EE8501 /* PCWebViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCWebViewController.html; path = docs/Classes/PCWebViewController.html; sourceTree = "<group>"; };
+		7B3B0595ECE15B453B83D38C7936C1D3 /* PCLayoutable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLayoutable.html; path = docs/Protocols/PCLayoutable.html; sourceTree = "<group>"; };
+		7BD5FBC16E965AA7DE75D778B6FC529E /* PCNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCNavigationController.swift; sourceTree = "<group>"; };
+		7C28CE3560DFB5858CC78144983705C3 /* PCShadowable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCShadowable.swift; sourceTree = "<group>"; };
+		7CB5E8ACD73EA980D8483EFDF03C8203 /* PCColorable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCColorable.html; path = docs/Protocols/PCColorable.html; sourceTree = "<group>"; };
 		7CDEBD11474D6C11FD6916BFB677920B /* Pods-PieCrustExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PieCrustExample.debug.xcconfig"; sourceTree = "<group>"; };
-		7E05AF853CC5B912B65BF26421B39ABC /* PCrustable+UIWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIWebView.swift"; sourceTree = "<group>"; };
-		7E76C169EDC5978E138D8BAC9EAA042C /* PCPillLoadingButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCPillLoadingButton.swift; sourceTree = "<group>"; };
+		7E530FFA2073CA73AA0D367448544D7C /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/img/carat.png; sourceTree = "<group>"; };
 		7F6702DB97922BE67CA56EC7E2F777FA /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		7F6FB75703438C83D84EFA87EE4DC39C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		812C7175451A3E828CC530BA5CA519F9 /* UICollectionView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UICollectionView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Extensions/UICollectionView.html; sourceTree = "<group>"; };
-		81AB0E793AE8F2F2938E62C98E75A621 /* PCSwitch.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCSwitch.html; path = docs/Classes/PCSwitch.html; sourceTree = "<group>"; };
+		7F8D050E8D4CFB0C44C6A5C78A04E106 /* PCImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCImageView.swift; sourceTree = "<group>"; };
+		7FD5CBBA41C064629418DB26C05584A9 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/img/gh.png; sourceTree = "<group>"; };
+		802CFD2FF2856F777C70473A9EA2C9AE /* PCLabel.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLabel.html; path = docs/Classes/PCLabel.html; sourceTree = "<group>"; };
+		80AB12A2BA8C1703663B48D23FEE62EC /* PCLayoutable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLayoutable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCLayoutable.html; sourceTree = "<group>"; };
 		82FC56551A9530454378AB2CA319926F /* SwifterSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwifterSwift-prefix.pch"; sourceTree = "<group>"; };
 		837E75F3E5E8D265C3AE05D8F1D79027 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		846FE3D7002F10CF638066B113C0CA2A /* PCTextFieldType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTextFieldType.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Enums/PCTextFieldType.html; sourceTree = "<group>"; };
+		8476C769408B80790441EC8BAEB06DBF /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
+		863FF259A2BA48FE415623176886901B /* Protocols.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Protocols.html; path = docs/Protocols.html; sourceTree = "<group>"; };
+		86CB72A2EF26227B1DCF8C78C2443302 /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; name = docSet.dsidx; path = docs/docsets/PieCrust.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
 		87795EDCC8C7B8274B9FF807A1F17663 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
-		87D6CD33DD1FAB6393721C0878AF3216 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
-		87F43630674CEFC24FCAC2025B96A697 /* PCImageView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCImageView.html; path = docs/Classes/PCImageView.html; sourceTree = "<group>"; };
-		88109C990B0FC586C565F14174A87DAE /* UITableView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UITableView.html; path = docs/Extensions/UITableView.html; sourceTree = "<group>"; };
+		888F55B59D553C3EF0BB5BC115CC195A /* PCrustable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCrustable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCrustable.html; sourceTree = "<group>"; };
+		8AE800AE71B49A54DAFAF6CCF6F4818C /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typeahead.jquery.js; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/js/typeahead.jquery.js; sourceTree = "<group>"; };
+		8C82A4FA105C9FF63DC0E18AF78C5FE8 /* PCTextFieldType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTextFieldType.html; path = docs/Enums/PCTextFieldType.html; sourceTree = "<group>"; };
 		8CBE75E0B2A24AF39CEC5408CF618889 /* SignedNumericExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignedNumericExtensions.swift; path = Sources/Extensions/SwiftStdlib/SignedNumericExtensions.swift; sourceTree = "<group>"; };
-		8E4B85CB55B652E4FC76C782E526D6D4 /* PCSwitch.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCSwitch.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCSwitch.html; sourceTree = "<group>"; };
-		8ED34E826DF56BF4A7E893D0EE36755C /* PCColorable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCColorable.swift; sourceTree = "<group>"; };
-		8F55A555444C1B8CA33D546D4113020E /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/img/gh.png; sourceTree = "<group>"; };
+		8E0D19F7C58EEDEDF49C1F858DB25C53 /* ResourceBundle-PieCrustAssets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PieCrustAssets-Info.plist"; sourceTree = "<group>"; };
+		8E2C0A5EF75F7AE9C28B4214056240EE /* PCTextField.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTextField.html; path = docs/Classes/PCTextField.html; sourceTree = "<group>"; };
+		8EC852D38B2AE45C93DFA6304C1172B0 /* PCLabel.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLabel.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCLabel.html; sourceTree = "<group>"; };
+		8F68C92A6E4B97A69191FC89D602FC2E /* PCActivityIndicatorView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCActivityIndicatorView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCActivityIndicatorView.html; sourceTree = "<group>"; };
 		905039EB3C911E2C3DD7877AFA79255A /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90EB35D64DF9990680654B29D527155D /* PCTableViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTableViewController.html; path = docs/Classes/PCTableViewController.html; sourceTree = "<group>"; };
-		9118C608D58741F87086CC6410CEB5CC /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
-		91D6FA462367B06DDB506413940F8A74 /* UITableView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UITableView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Extensions/UITableView.html; sourceTree = "<group>"; };
-		92977E2CA442CFEC4C8AA0DF14496ED3 /* PieCrust-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PieCrust-dummy.m"; sourceTree = "<group>"; };
+		917AC784237E6365EBF169D833A73ACE /* PCView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCView.swift; sourceTree = "<group>"; };
+		930B41EE359F1C7DDACE3BEAAB044F86 /* PCSwitch.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCSwitch.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCSwitch.html; sourceTree = "<group>"; };
 		93140C106DDE4F2BC723475BD3F45E16 /* Pods-PieCrustExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PieCrustExample.release.xcconfig"; sourceTree = "<group>"; };
-		936AB3864FE7AC7BF79E99D4F0DF6AAB /* PCConfettiView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCConfettiView.html; path = docs/Classes/PCConfettiView.html; sourceTree = "<group>"; };
+		931437E51FAE2B7845825575C94E29DE /* PCColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCColor.swift; sourceTree = "<group>"; };
+		9383E53008B10DF16F283EF7845A5B8A /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes.html; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93BEF4448EBBE28D937E47804D9847E8 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
 		956B1F6C6A4A32838D8DEE3123632C2B /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A3136942C3B88CA7ED9FCB136E299D /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		9696C4A48759A1F1193F9318F10631FD /* PCBorderable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCBorderable.html; path = docs/Protocols/PCBorderable.html; sourceTree = "<group>"; };
-		9737CEF5CD5C64115062AA03D4E7AC29 /* PCrustable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCrustable.swift; sourceTree = "<group>"; };
+		95DBEDF29CAFF0EB1F46E8E769510DA8 /* PCSegmentedControl.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCSegmentedControl.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCSegmentedControl.html; sourceTree = "<group>"; };
+		9636EC64BE1CE3F506E72A69B5BDAD0B /* PCSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCSegmentedControl.swift; sourceTree = "<group>"; };
+		96B3EF82BBB1BC79E08D29EBF6C37BF2 /* Array.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Array.html; path = docs/Extensions/Array.html; sourceTree = "<group>"; };
 		974483E86BA0E3E2F4A9DEEE6684952C /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
-		97DDB461A68F9BF13CA0C20043810519 /* Protocols.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Protocols.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols.html; sourceTree = "<group>"; };
-		986265F2CD5C5E8C1D3CE40B6C16E5BE /* PCConfettiable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCConfettiable.html; path = docs/Protocols/PCConfettiable.html; sourceTree = "<group>"; };
+		9778AF8172C31317532FD5F08C586B81 /* PCPillButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCPillButton.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCPillButton.html; sourceTree = "<group>"; };
+		9838F7FCE709672FBEA1E851471AE33C /* PCFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCFont.swift; sourceTree = "<group>"; };
+		98542FA24504726D7024427BFAD0E6E3 /* PCStackView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCStackView.html; path = docs/Classes/PCStackView.html; sourceTree = "<group>"; };
 		989BECB2E848CEA722A07C0296285DDB /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
-		98C13BC901E980FB969CAFF418EFB6E5 /* PCAlertable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCAlertable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCAlertable.html; sourceTree = "<group>"; };
+		98AC19ECB27E4F22EF7425147B1168C0 /* PCTableViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTableViewController.html; path = docs/Classes/PCTableViewController.html; sourceTree = "<group>"; };
 		995403466A27A434CE94D4AE95A8E3B0 /* OptionalExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalExtensions.swift; path = Sources/Extensions/SwiftStdlib/OptionalExtensions.swift; sourceTree = "<group>"; };
-		99CDADAA69395472990F7AAD164C4515 /* PCrustable+UIStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIStackView.swift"; sourceTree = "<group>"; };
+		9958341DE9BFA0965A50C496ACE692F0 /* PCWebView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCWebView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCWebView.html; sourceTree = "<group>"; };
+		9996FAF502463F8CF4A13DC9223B961F /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Enums.html; path = docs/Enums.html; sourceTree = "<group>"; };
 		9A41A108A22B75D7BF0CC24D405EC589 /* DataExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataExtensions.swift; path = Sources/Extensions/Foundation/DataExtensions.swift; sourceTree = "<group>"; };
-		9A8757BC1F6077CF5EBD37AB9F0D9374 /* PCrustable+UITextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UITextView.swift"; sourceTree = "<group>"; };
-		9AC6F38F389A0478045847332600EDB3 /* PCImageView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCImageView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCImageView.html; sourceTree = "<group>"; };
+		9B29A2472151A641DE1214E5BBF522A0 /* PCTextField.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTextField.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCTextField.html; sourceTree = "<group>"; };
 		9B2BE203170ACD34A5A4CFAF51723066 /* Pods-PieCrustExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PieCrustExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9B9A6B6A84CC19C0727D6822F31D000A /* PCLoadingButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLoadingButton.html; path = docs/Classes/PCLoadingButton.html; sourceTree = "<group>"; };
-		9BB76AF0621690884FE3278244FD2760 /* PCWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCWebView.swift; sourceTree = "<group>"; };
-		9C98A8285FD62B0E589408C0B8C0380E /* PCButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCButton.swift; sourceTree = "<group>"; };
-		9D8A87F742F1EE874F631B70FD9C3698 /* ResourceBundle-PieCrustAssets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PieCrustAssets-Info.plist"; sourceTree = "<group>"; };
-		9DF301D6D1C05F00FA4EA50F8AA621A6 /* PCGenericCollectionViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericCollectionViewController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCGenericCollectionViewController.html; sourceTree = "<group>"; };
-		9E3CB8C243ED8AD3EC22DDA65F969B94 /* PCAlertable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCAlertable.swift; sourceTree = "<group>"; };
+		9B7EA4502D5717FD9A6165AFBE115BC9 /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
+		9C83486D8086802FF099B9FD6F3BBBD8 /* PCGenericTableViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericTableViewCell.html; path = docs/Classes/PCGenericTableViewCell.html; sourceTree = "<group>"; };
+		9DBCE5CD12E988613BB7294F0511A7B1 /* PCrustable+UINavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UINavigationController.swift"; sourceTree = "<group>"; };
+		9E7765D66C56230F805F35EEC4C957A2 /* PCTransparentNavigationController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTransparentNavigationController.html; path = docs/Classes/PCTransparentNavigationController.html; sourceTree = "<group>"; };
+		9EC295621804D832003776AAB575FE1F /* PCLoadingable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLoadingable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCLoadingable.html; sourceTree = "<group>"; };
 		9F8409B8F5244291D91A69ACE01C4ABE /* Pods-PieCrustExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PieCrustExample-frameworks.sh"; sourceTree = "<group>"; };
-		A05748584413AEAE3423920CE3EF27EC /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
+		A1430BBFFAD884F1E9E36CB09D85954F /* PCTableViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTableViewController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCTableViewController.html; sourceTree = "<group>"; };
 		A15034DC95B48F3ED9C3BF9CD465E613 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		A162915AB6699154EDC57E178A529586 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
+		A19A89CEE9745C49D9A5B6E45B370B56 /* PCAppVersionLabel.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCAppVersionLabel.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCAppVersionLabel.html; sourceTree = "<group>"; };
 		A1AA4DA8253EC69557063F76AE956194 /* PieCrust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PieCrust.framework; path = PieCrust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2045F88E03666897ADDFD2E094A2C97 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
 		A253D42793DC9CBF4F5982CCB2DDDC60 /* URLRequestExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequestExtensions.swift; path = Sources/Extensions/Foundation/URLRequestExtensions.swift; sourceTree = "<group>"; };
-		A317C670950D5F4FF63833EA2473661D /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lunr.min.js; path = docs/js/lunr.min.js; sourceTree = "<group>"; };
-		A34C54B13CD9A67C62049E17F49AB826 /* PCActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCActivityIndicatorView.swift; sourceTree = "<group>"; };
-		A3664A9ECA71A032F6BC57872B20B73F /* PCrustable+UITextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UITextField.swift"; sourceTree = "<group>"; };
-		A6AEC29F5C5CED2FE704BC3CC4477A72 /* PCWebViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCWebViewController.html; path = docs/Classes/PCWebViewController.html; sourceTree = "<group>"; };
-		A6D11D0C44986D97D34D246BDB9FFC4B /* spinner.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = spinner.gif; path = docs/img/spinner.gif; sourceTree = "<group>"; };
-		AA63B8DE52BCE57BAAE9BBF2E0436956 /* PCrustable+UINavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UINavigationController.swift"; sourceTree = "<group>"; };
-		AA9AB10A9EDBDEC15A78499DFBE68412 /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; name = undocumented.json; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/undocumented.json; sourceTree = "<group>"; };
+		A2EAB6164E9CB088F112A4345B27C91F /* PCGenericCollectionViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericCollectionViewController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCGenericCollectionViewController.html; sourceTree = "<group>"; };
+		A44AFCBCC263F4579B76DBA0B0EFE4EA /* PCTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTableViewController.swift; sourceTree = "<group>"; };
+		A46209E49AFF2C15FD10F113CF856741 /* PieCrust.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PieCrust.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A51FBC747DCC25EDC9222AE344F0979E /* spinner.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = spinner.gif; path = docs/img/spinner.gif; sourceTree = "<group>"; };
+		A5BBD001070C230EB37EF70B81763B53 /* Notification.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Notification.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Extensions/Notification.html; sourceTree = "<group>"; };
+		A5E51ADB839F1DCCEF024835063B1928 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
+		A9CA0FC5B17DE078BABCDF17525DC39C /* PCKeyboardObservable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCKeyboardObservable.html; path = docs/Protocols/PCKeyboardObservable.html; sourceTree = "<group>"; };
+		A9D78A72FC71DD00C024C18B91F5D27B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		AA520EFA0B4E2B8667EF7630B5A0ED9B /* PCrustable+UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UILabel.swift"; sourceTree = "<group>"; };
+		AAE4E8EB73D5AA21E6732BC50A47266C /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
 		AB28DA29481CA24FB07683ED4140BFF8 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
-		ABFB53E5DD4C4EF22B1AE12211278D54 /* PCAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCAnimatable.swift; sourceTree = "<group>"; };
-		AD362D8E962370F38A7C18FAA3673EE4 /* PCAppVersionLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCAppVersionLabel.swift; sourceTree = "<group>"; };
-		AD5623DD902070C7C6AE336EFD0AB5A5 /* PCGenericCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCGenericCollectionViewController.swift; sourceTree = "<group>"; };
-		AD6E0B2A8D16931F023ADCD590AE6643 /* Protocols.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Protocols.html; path = docs/Protocols.html; sourceTree = "<group>"; };
-		AF1CD823EA80E8820CCEFE52CF9FC9A4 /* PCTextFieldType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTextFieldType.swift; sourceTree = "<group>"; };
-		AFC0978EA5FB1462254AA75205012654 /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.search.js; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/js/jazzy.search.js; sourceTree = "<group>"; };
+		AB90C1701BAE8F6C6B711F08D1AF5FC0 /* PCWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCWebView.swift; sourceTree = "<group>"; };
+		AECA95240993194628FDC95E472637FA /* UITableView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UITableView.html; path = docs/Extensions/UITableView.html; sourceTree = "<group>"; };
+		AEE4D78D333F78EFE9E75EB7772D4979 /* PCGenericCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCGenericCollectionViewCell.swift; sourceTree = "<group>"; };
+		AFE7C2CA0816AC08D022773CDA0E9615 /* PCColorable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCColorable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCColorable.html; sourceTree = "<group>"; };
 		AFF3558432844755909771C172093F29 /* Pods-PieCrustExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PieCrustExample.modulemap"; sourceTree = "<group>"; };
-		B05D27BA3D71156FCEBDBB424E41170C /* PCAnimatable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCAnimatable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCAnimatable.html; sourceTree = "<group>"; };
-		B09238310E98CD6D134884219F61555F /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
 		B0AC9A912C32EF3B19468DD927F2D85F /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		B173BE151B413E41D506D005F0C1630D /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		B22B1346CCA30DC71C83AD4FE4EF723B /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		B267B532D92CD36BF737A97E5DC5477A /* PCViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCViewController.html; path = docs/Classes/PCViewController.html; sourceTree = "<group>"; };
-		B32956DD4942DFCE5D972FDD1AB37E11 /* SlideTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlideTransition.swift; sourceTree = "<group>"; };
 		B32E15C02EB60BB04A127802D1311802 /* SignedIntegerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignedIntegerExtensions.swift; path = Sources/Extensions/SwiftStdlib/SignedIntegerExtensions.swift; sourceTree = "<group>"; };
 		B3AB7BEB2B7B56274B95853079D2FB5E /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		B3B945A3B15ABC1863CCB3FD45C44321 /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.search.js; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/js/jazzy.search.js; sourceTree = "<group>"; };
 		B48944A86A6511E25F42536A4ADD829F /* CalendarExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarExtensions.swift; path = Sources/Extensions/Foundation/CalendarExtensions.swift; sourceTree = "<group>"; };
-		B4EA2E5FF07FC2A8F7781D3D013A70DB /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
 		B83B9AA0DBBF1472E1A7D3EC37108474 /* LocaleExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocaleExtensions.swift; path = Sources/Extensions/Foundation/LocaleExtensions.swift; sourceTree = "<group>"; };
-		B85A688B5F0A2FE23D8A8F785454E292 /* PCGenericCollectionViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericCollectionViewCell.html; path = docs/Classes/PCGenericCollectionViewCell.html; sourceTree = "<group>"; };
-		B8C45F43DE00CF0E26C5ECB86E3DC210 /* PCGenericTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCGenericTableViewCell.swift; sourceTree = "<group>"; };
-		B8EE63B4A8393874DF4FB82B12A7FC2A /* PCTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTextField.swift; sourceTree = "<group>"; };
-		B9A077D8C414E7BED832E18F2B32B44C /* spinner.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = spinner.gif; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/img/spinner.gif; sourceTree = "<group>"; };
+		B91B9EC2E18392D19B968065B656868D /* PCTableViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTableViewCell.html; path = docs/Classes/PCTableViewCell.html; sourceTree = "<group>"; };
 		B9B0A213C7D8459A0FFA66603C6BA0C8 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
-		BA62021406F914EA34275D97EAB7CE16 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
-		BB0FAF68BA6CCC5FD566778B10184F2B /* TextType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TextType.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCTextField/TextType.html; sourceTree = "<group>"; };
+		BA9F03F53074310598AAAF4AE380FCB7 /* PCrustable+UIDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIDatePicker.swift"; sourceTree = "<group>"; };
 		BBE59EFF35BD7F8023A72BAC470F3123 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
-		BD299905F5879E0680190C3146F2DAD9 /* PCrustable+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIView.swift"; sourceTree = "<group>"; };
-		BD4737A57773E9F489FB47289FAA71AD /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes.html; sourceTree = "<group>"; };
-		BD764D404806296A3FBE67258D2F70D0 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/img/carat.png; sourceTree = "<group>"; };
+		BC873497D5D2CEFAD1B5695E7C8DB657 /* PCButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCButton.html; path = docs/Classes/PCButton.html; sourceTree = "<group>"; };
 		BE33DA83FDE5A1DA80A05640628AF094 /* NSPredicateExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSPredicateExtensions.swift; path = Sources/Extensions/Foundation/NSPredicateExtensions.swift; sourceTree = "<group>"; };
-		C1D4DE8AE4507B3851D86F23ADA8702B /* PCLayoutable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCLayoutable.swift; sourceTree = "<group>"; };
-		C2C58D9B9098DFFA527F40DC37EE0C96 /* PieCrust-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PieCrust-umbrella.h"; sourceTree = "<group>"; };
-		C35170BFED6142B48206619B703C83BB /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typeahead.jquery.js; path = docs/js/typeahead.jquery.js; sourceTree = "<group>"; };
-		C580741068D6F0A75F777BA4D9E926F8 /* PCLoadingButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLoadingButton.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCLoadingButton.html; sourceTree = "<group>"; };
+		BF860201EA8E94311E73EACABC797D26 /* PCPillTextField.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCPillTextField.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCPillTextField.html; sourceTree = "<group>"; };
+		BFEAAF4921D7CAB403E09CA61A8B12AB /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/Extensions.html; sourceTree = "<group>"; };
+		C1072592040B01D43C34151BACA29350 /* PCKeyboardObservable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCKeyboardObservable.swift; sourceTree = "<group>"; };
+		C1E26037F00EBA6D4701719838EEF857 /* PCAnimatable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCAnimatable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCAnimatable.html; sourceTree = "<group>"; };
+		C39C55FC86BCB19C4C824DCD387DE78F /* PCAlertable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCAlertable.swift; sourceTree = "<group>"; };
+		C3CD3351E0D4EFE65EFD06A85B1C0C46 /* PCView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCView.html; path = docs/Classes/PCView.html; sourceTree = "<group>"; };
+		C430433410EDDC6460AC1178C7D67682 /* PCGenericTableController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericTableController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCGenericTableController.html; sourceTree = "<group>"; };
+		C583AD0C0E152483491538E81F616D99 /* PCWebViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCWebViewController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCWebViewController.html; sourceTree = "<group>"; };
+		C5F334CDA14C7A44D26650D50DFBA4FF /* PieCrust-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PieCrust-umbrella.h"; sourceTree = "<group>"; };
 		C60AD47CE66D69AD1E10E2AEECF262AF /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		C6C34786B9F46A201D1E1F251AA05790 /* PCrustable+UITextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UITextView.swift"; sourceTree = "<group>"; };
 		C88C336A36BA1133E2DF4A3DC1EA3B52 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		CBDE7CAF685CFF78B5980335C75FC2AE /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/Extensions.html; sourceTree = "<group>"; };
-		CC002D6197F29E72382F39D2B49D755D /* Notification.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Notification.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Extensions/Notification.html; sourceTree = "<group>"; };
+		C95B1296F5DFBBADFC009C0B0107F23F /* PCPillTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCPillTextField.swift; sourceTree = "<group>"; };
+		C9B2EEC00F2103AB6BDCE40658DFCAC9 /* PCScrollView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCScrollView.html; path = docs/Classes/PCScrollView.html; sourceTree = "<group>"; };
+		C9B6F5B9524E881428DA5D5F3FAD153C /* PCLoadingable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCLoadingable.swift; sourceTree = "<group>"; };
+		CA601B1883D5294CEA839214B5E3B956 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
 		CC135EA3FAA5EF0606316925E8786291 /* SwifterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwifterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD41CF5F6A72C850EA2185E4C33CFB2 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		CE7054CB8EF262496BD5ECBE1B3A015D /* PCCollectionViewCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCCollectionViewCell.html; path = docs/Classes/PCCollectionViewCell.html; sourceTree = "<group>"; };
+		CEFCDEBFC35C9E116C1BB02936F57F93 /* PCGenericTableController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCGenericTableController.swift; sourceTree = "<group>"; };
 		CF90FA416FFCBD78F9E7FE37D6846C43 /* Pods-PieCrustExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PieCrustExample-umbrella.h"; sourceTree = "<group>"; };
-		D0479045DB8E6481FECAE5887EED0150 /* PCrustable+UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIViewController.swift"; sourceTree = "<group>"; };
+		CFF2322888CF208AA05FEBAB89FD183A /* PieCrust-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PieCrust-dummy.m"; sourceTree = "<group>"; };
+		D0662F1C819F3442982A2D0F60F23FC6 /* Notification.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Notification.html; path = docs/Extensions/Notification.html; sourceTree = "<group>"; };
 		D0951539C395142083C82C4895ABE7D2 /* CollectionExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionExtensions.swift; path = Sources/Extensions/SwiftStdlib/CollectionExtensions.swift; sourceTree = "<group>"; };
-		D0F32CCFC6FA2CD369EF8B8EDE437579 /* PCPillButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCPillButton.swift; sourceTree = "<group>"; };
-		D271DD8B6AD7DBAE252E7D35A0BD8B71 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = docs/docsets/PieCrust.docset/Contents/Info.plist; sourceTree = "<group>"; };
-		D2F50F4C4B72BC8827780064DD6F938B /* PCViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCViewController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCViewController.html; sourceTree = "<group>"; };
-		D3FE824BD225EFFD493DDACDD10081FC /* PCBarButtonItem.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCBarButtonItem.html; path = docs/Classes/PCBarButtonItem.html; sourceTree = "<group>"; };
-		D663CEBA1B2D24D6FC2808EE78507F79 /* PCCollectionViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCCollectionViewController.html; path = docs/Classes/PCCollectionViewController.html; sourceTree = "<group>"; };
+		D16983F859F11DA4EF0B5CD16D48B962 /* PCShadowable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCShadowable.html; path = docs/Protocols/PCShadowable.html; sourceTree = "<group>"; };
+		D1A0BA3C5A10FFB337D4413EEE8B196C /* PCAlertable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCAlertable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCAlertable.html; sourceTree = "<group>"; };
+		D1BDE6FEDB83D27230C9CF15ADF90D3C /* PCKeyboardObservable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCKeyboardObservable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCKeyboardObservable.html; sourceTree = "<group>"; };
+		D25FDCF3D17E533F0D91EA5C0864AB2D /* PCrustable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCrustable.swift; sourceTree = "<group>"; };
+		D30776956B47E054B5EA760C3B003F67 /* PCNavigationController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCNavigationController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCNavigationController.html; sourceTree = "<group>"; };
+		D35C1B7AA487CBE44CB4E74CE47209E1 /* PCrustable+UIVisualEffectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIVisualEffectView.swift"; sourceTree = "<group>"; };
+		D438AC8919F704968C60229CB0920C7C /* PCConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCConfettiView.swift; sourceTree = "<group>"; };
+		D57B6266B21C322F4B794945132377E9 /* PCTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTextField.swift; sourceTree = "<group>"; };
+		D68CBEC7F00C03609A5B8B1C879AD5BB /* PCCollectionViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCCollectionViewController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCCollectionViewController.html; sourceTree = "<group>"; };
 		D72EF8A2569D6EBF7E1F7775B6E7FF4E /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
-		D89BC5C9795FDCF7661FA689ABB461D4 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
-		D92F586AAA1F67BD8C5A90136C4A6874 /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lunr.min.js; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/js/lunr.min.js; sourceTree = "<group>"; };
+		D73A342EC8DEE67F1464463B7F1EDDA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = docs/docsets/PieCrust.docset/Contents/Info.plist; sourceTree = "<group>"; };
+		D83BCE80C8FA860FA796E5DC5E2F6BCE /* PCAnimatable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCAnimatable.html; path = docs/Protocols/PCAnimatable.html; sourceTree = "<group>"; };
+		DA7C703E8B5390FD4E0362F107530CBC /* PCViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCViewController.swift; sourceTree = "<group>"; };
+		DBFF3453556FB41A5D5BC8D2A461BEBB /* PCrustable+UISegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UISegmentedControl.swift"; sourceTree = "<group>"; };
 		DC1874729868603A02A0E9205C326218 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		DE199DC907954E9C4DCD189FA578BE62 /* PCrustable+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UIButton.swift"; sourceTree = "<group>"; };
-		DE43A1216778AC4A9D9C2C3BCD0DCADB /* PCConfettiable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCConfettiable.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Protocols/PCConfettiable.html; sourceTree = "<group>"; };
-		DFC0CAB497F943912DC3AA321D0CA6E4 /* PCNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCNavigationController.swift; sourceTree = "<group>"; };
-		E0165027FED9FFAA6C9735B83A83A716 /* PCView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCView.html; path = docs/Classes/PCView.html; sourceTree = "<group>"; };
-		E1E701805C4CE5D632EA4B5C5DF302BD /* PCLoadingable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCLoadingable.swift; sourceTree = "<group>"; };
+		DD943CF1E94B05D921DCD345C0DD0485 /* PCView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCView.html; sourceTree = "<group>"; };
+		DED0531B79C5706550C0CA09BB165AF9 /* PCRoundedImageView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCRoundedImageView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCRoundedImageView.html; sourceTree = "<group>"; };
+		DF34FFAAAD13780CCC15D8EA47A4D025 /* PCGenericCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCGenericCollectionViewController.swift; sourceTree = "<group>"; };
+		DF4F664960E697BE736A2C872213B17E /* WebRequestType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WebRequestType.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCWebViewController/WebRequestType.html; sourceTree = "<group>"; };
+		DF609EAED7B068F25E3BFA6409D6B9DF /* PCDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCDatePicker.swift; sourceTree = "<group>"; };
+		E07B2A88A395E2E8A27C26CAA828D296 /* PCKeyboardControllable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCKeyboardControllable.html; path = docs/Protocols/PCKeyboardControllable.html; sourceTree = "<group>"; };
+		E10D93D7BC05A1B636EE9FE6E47FB5B5 /* PCSegmentedControl.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCSegmentedControl.html; path = docs/Classes/PCSegmentedControl.html; sourceTree = "<group>"; };
+		E154278FC3751497AF1F0970CC1F0D69 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
+		E17677885E6D8C89EBB60BEAE8AF4052 /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lunr.min.js; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/js/lunr.min.js; sourceTree = "<group>"; };
 		E2287D8595F1504F97AF413EBA891273 /* BoolExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoolExtensions.swift; path = Sources/Extensions/SwiftStdlib/BoolExtensions.swift; sourceTree = "<group>"; };
-		E35274F596078A645A7E88BA97EB140B /* PCAlertable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCAlertable.html; path = docs/Protocols/PCAlertable.html; sourceTree = "<group>"; };
-		E35A93FF0A723B2759D178899C514B80 /* PCVisualEffectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCVisualEffectView.swift; sourceTree = "<group>"; };
+		E238A86581022C9D855E02CD1DFFD26A /* PCPillLoadingButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCPillLoadingButton.html; path = docs/Classes/PCPillLoadingButton.html; sourceTree = "<group>"; };
+		E47456B0064937986260B90F2345A289 /* PCPillLoadingButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCPillLoadingButton.swift; sourceTree = "<group>"; };
+		E4CFE71E594BD04240491E76683D7845 /* PieCrust-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PieCrust-prefix.pch"; sourceTree = "<group>"; };
 		E4D8B826112D310BC94CEBD47E62ACDE /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		E50693AB22BF0C6DB7EE503BF00D81FF /* PieCrust.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PieCrust.xcconfig; sourceTree = "<group>"; };
-		E5B157AF55618DC599E74CA9D3DB754D /* PCGenericTableController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericTableController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCGenericTableController.html; sourceTree = "<group>"; };
-		E6617B2820DCCDD54CCCE8615D7C2064 /* PCSegmentedControl.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCSegmentedControl.html; path = docs/Classes/PCSegmentedControl.html; sourceTree = "<group>"; };
-		E9D54873740BF338A815DC616B1913E3 /* PCSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCSwitch.swift; sourceTree = "<group>"; };
-		EAD349C6D9D7A3D3630BDC689FBD643B /* PCColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCColor.swift; sourceTree = "<group>"; };
-		EC7C2A562CB47B5109CB1B3930781877 /* PCKeyboardControllable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCKeyboardControllable.swift; sourceTree = "<group>"; };
-		ECAD713C82C920BFDFDEF0B3819CC130 /* PCActivityIndicatorView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCActivityIndicatorView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCActivityIndicatorView.html; sourceTree = "<group>"; };
-		EDBFB25DA80569BC8158AFCAF7ECF915 /* PCFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCFont.swift; sourceTree = "<group>"; };
-		EEC1A690FC0B74D6705A52932708E9A4 /* PCBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCBarButtonItem.swift; sourceTree = "<group>"; };
-		F08DC48195DD05F480B056D79B26DEFF /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Extensions.html; sourceTree = "<group>"; };
-		F0AD9DCEF24FAA1B01562B5EED2E7701 /* PieCrust.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PieCrust.modulemap; sourceTree = "<group>"; };
-		F0B23FC5FCF875B9F4EDF29151BD5240 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
-		F193C7C6301089EDA8A06E8B7EDB6E33 /* PCImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCImageView.swift; sourceTree = "<group>"; };
+		E5B52ED5C32931C2641CF9D8CA6895FE /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
+		E85D662B1EB847E09FE254406FCE0BEB /* PCImageView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCImageView.html; path = docs/Classes/PCImageView.html; sourceTree = "<group>"; };
+		E92B65B4D260B19DF92BDF7C56993C24 /* PCTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCTabBarController.swift; sourceTree = "<group>"; };
+		EB6572D90A823557DFE8D3BC69EA04BD /* PCPillButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCPillButton.swift; sourceTree = "<group>"; };
+		EBF70E4D619AC5068EF348007AF003C9 /* PCWebView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCWebView.html; path = docs/Classes/PCWebView.html; sourceTree = "<group>"; };
 		F1E5E96BB3208DCA4A115F27660720C4 /* SwifterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwifterSwift.framework; path = SwifterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3660D8035D876CF587A0EB3DE63AB56 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
-		F3693FA7DC67BA194BA5DF7847666B15 /* PCrustable+UISwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UISwitch.swift"; sourceTree = "<group>"; };
-		F413DB9078C497B2C6B3ED73D044C621 /* PCStackView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCStackView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCStackView.html; sourceTree = "<group>"; };
-		F6CCB1BB70328BD60B056A77B754EC21 /* PieCrust.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PieCrust.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F22312FBC7FC23BF2C41005616AC40F5 /* PCConfettiView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCConfettiView.html; path = docs/Classes/PCConfettiView.html; sourceTree = "<group>"; };
+		F40A168774A4039DC96655A6A6460E60 /* PCGenericCollectionViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCGenericCollectionViewController.html; path = docs/Classes/PCGenericCollectionViewController.html; sourceTree = "<group>"; };
+		F4F611AD07748105AC2B8E1C2768A792 /* PCRoundedView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCRoundedView.html; path = docs/Classes/PCRoundedView.html; sourceTree = "<group>"; };
+		F61CAA315E0A3B1244DD10E2CF185123 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
 		F74531453F28874BC3A07BEF97DB469C /* ArrayExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtensions.swift; path = Sources/Extensions/SwiftStdlib/ArrayExtensions.swift; sourceTree = "<group>"; };
-		F9876A044B610E424C08777A8D576534 /* PCButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCButton.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCButton.html; sourceTree = "<group>"; };
-		FA3D1731DD684AFE8A53D536B3E376FC /* PCCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCCollectionViewCell.swift; sourceTree = "<group>"; };
+		F78A5699F42835149D149EF2493230B9 /* PCLoadingButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCLoadingButton.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCLoadingButton.html; sourceTree = "<group>"; };
+		F7C8AF84A01BDD1B113953D6A9BAB451 /* PieCrust.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PieCrust.modulemap; sourceTree = "<group>"; };
+		FA27F823432AF78B8BF1150BF3A0CD9A /* PCRoundedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCRoundedImageView.swift; sourceTree = "<group>"; };
 		FA6A1E72B54F32DE35EE833EA4CD675D /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		FA891FA8B6DDA914B352D0FE5DCDC3DE /* SlideTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlideTransition.swift; sourceTree = "<group>"; };
 		FAC619E9C4B22CF464E937C5C4C327C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD0EF71BECB5BBBD535CF99E914C79A /* URLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLExtensions.swift; path = Sources/Extensions/Foundation/URLExtensions.swift; sourceTree = "<group>"; };
-		FB6A40FF58676735BB2B7903AD24E692 /* WebRequestType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WebRequestType.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCWebViewController/WebRequestType.html; sourceTree = "<group>"; };
-		FC0DE893C30F4C976AE0D676E0D2B8A8 /* PCConfettiView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCConfettiView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCConfettiView.html; sourceTree = "<group>"; };
-		FD0C992532D66E408189EEBFBF0CFB53 /* PCTableViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PCTableViewController.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Classes/PCTableViewController.html; sourceTree = "<group>"; };
+		FD226E6E8714D5CFA236C01C41D8AADE /* TextType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TextType.html; path = docs/Classes/PCTextField/TextType.html; sourceTree = "<group>"; };
 		FDDAFC9EDAECDEC52436C50A288C5990 /* Pods_PieCrustExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PieCrustExample.framework; path = "Pods-PieCrustExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEB00553E4F86EE6B02C5D759E8BEFBF /* PCGenericTableController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCGenericTableController.swift; sourceTree = "<group>"; };
+		FF1BFA6B44EADB436EAC53BDB56A3128 /* PCrustable+UISwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PCrustable+UISwitch.swift"; sourceTree = "<group>"; };
+		FF5731F016E329AE926138BA7A745ED6 /* UICollectionView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UICollectionView.html; path = docs/docsets/PieCrust.docset/Contents/Resources/Documents/Extensions/UICollectionView.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -526,137 +566,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		015BEE0E9E278E6C3A40DBE35BAAB23B /* Pod */ = {
+		008B4446CFB6E5300F2DC355DC0276C6 /* Transparent */ = {
 			isa = PBXGroup;
 			children = (
-				5480B5FFFC481F09394819843C6D27ED /* Array.html */,
-				185A04075CB556EE0A33221D480051B5 /* Array.html */,
-				47F94FDC3D15EFBAECCABCDB551E4453 /* badge.svg */,
-				605738CE12907EFA94A41ED0AB6997CA /* badge.svg */,
-				4CD67EEFC6C744895ED9727E1587D690 /* carat.png */,
-				BD764D404806296A3FBE67258D2F70D0 /* carat.png */,
-				BD4737A57773E9F489FB47289FAA71AD /* Classes.html */,
-				1E0159A2B399A0DAA4941E312B993CA7 /* Classes.html */,
-				F0B23FC5FCF875B9F4EDF29151BD5240 /* dash.png */,
-				64B70744227F4E1739EB7ACFD78C8DA4 /* dash.png */,
-				2523BC2007EE9030809F277E24B5861B /* docSet.dsidx */,
-				CBDE7CAF685CFF78B5980335C75FC2AE /* Extensions.html */,
-				F08DC48195DD05F480B056D79B26DEFF /* Extensions.html */,
-				B4EA2E5FF07FC2A8F7781D3D013A70DB /* gh.png */,
-				8F55A555444C1B8CA33D546D4113020E /* gh.png */,
-				012A1F70481CC405C42E9E033E6F631F /* highlight.css */,
-				64F635DC64DDCFA7A83F62E99D4966BD /* highlight.css */,
-				B09238310E98CD6D134884219F61555F /* index.html */,
-				BA62021406F914EA34275D97EAB7CE16 /* index.html */,
-				D271DD8B6AD7DBAE252E7D35A0BD8B71 /* Info.plist */,
-				653E3F6C84E12E79C0620C1171FEFB41 /* jazzy.css */,
-				93BEF4448EBBE28D937E47804D9847E8 /* jazzy.css */,
-				87D6CD33DD1FAB6393721C0878AF3216 /* jazzy.js */,
-				D89BC5C9795FDCF7661FA689ABB461D4 /* jazzy.js */,
-				00F7175F9C99907A22C998CE7FCB75D3 /* jazzy.search.js */,
-				AFC0978EA5FB1462254AA75205012654 /* jazzy.search.js */,
-				A05748584413AEAE3423920CE3EF27EC /* jquery.min.js */,
-				3DD5868274A2D4BCFC34098D2ED13C20 /* jquery.min.js */,
-				6D3A611F15F302119F5B35F5A776107C /* LICENSE */,
-				D92F586AAA1F67BD8C5A90136C4A6874 /* lunr.min.js */,
-				A317C670950D5F4FF63833EA2473661D /* lunr.min.js */,
-				CC002D6197F29E72382F39D2B49D755D /* Notification.html */,
-				7BFF335FE09BB8724A6F16F5BFA5A50F /* Notification.html */,
-				ECAD713C82C920BFDFDEF0B3819CC130 /* PCActivityIndicatorView.html */,
-				6D7812DF63CCCF697B8524C7404E919B /* PCActivityIndicatorView.html */,
-				E35274F596078A645A7E88BA97EB140B /* PCAlertable.html */,
-				98C13BC901E980FB969CAFF418EFB6E5 /* PCAlertable.html */,
-				B05D27BA3D71156FCEBDBB424E41170C /* PCAnimatable.html */,
-				4CC06F79B1695B01FFB8FCAB8B41D9DA /* PCAnimatable.html */,
-				4389D0AB454440AA2F9114D4B150C662 /* PCBarButtonItem.html */,
-				D3FE824BD225EFFD493DDACDD10081FC /* PCBarButtonItem.html */,
-				9696C4A48759A1F1193F9318F10631FD /* PCBorderable.html */,
-				27DC553C92835ADC8BF383610947AD70 /* PCBorderable.html */,
-				F9876A044B610E424C08777A8D576534 /* PCButton.html */,
-				17098DC2AEF56B880F13E7D1D39B3561 /* PCButton.html */,
-				2CF15DF07FB666100D15471AD2A175F2 /* PCCollectionViewCell.html */,
-				06B9A32D3441334C7EFFB80CEA3D9238 /* PCCollectionViewCell.html */,
-				D663CEBA1B2D24D6FC2808EE78507F79 /* PCCollectionViewController.html */,
-				333F4A80D735444124C5D18224238BFA /* PCCollectionViewController.html */,
-				986265F2CD5C5E8C1D3CE40B6C16E5BE /* PCConfettiable.html */,
-				DE43A1216778AC4A9D9C2C3BCD0DCADB /* PCConfettiable.html */,
-				FC0DE893C30F4C976AE0D676E0D2B8A8 /* PCConfettiView.html */,
-				936AB3864FE7AC7BF79E99D4F0DF6AAB /* PCConfettiView.html */,
-				B85A688B5F0A2FE23D8A8F785454E292 /* PCGenericCollectionViewCell.html */,
-				72F5AADA19435D34F97906AFBAC085C8 /* PCGenericCollectionViewCell.html */,
-				0FEF5E51457BB993525BC578103EFD24 /* PCGenericCollectionViewController.html */,
-				9DF301D6D1C05F00FA4EA50F8AA621A6 /* PCGenericCollectionViewController.html */,
-				E5B157AF55618DC599E74CA9D3DB754D /* PCGenericTableController.html */,
-				2C19543930932A3389528336BE9D1410 /* PCGenericTableController.html */,
-				4A32EE18955FB0460392A073EBEF2074 /* PCGenericTableViewCell.html */,
-				1561E829C1789CE9255FB7CF7E3AA0C2 /* PCGenericTableViewCell.html */,
-				87F43630674CEFC24FCAC2025B96A697 /* PCImageView.html */,
-				9AC6F38F389A0478045847332600EDB3 /* PCImageView.html */,
-				641528B99B7536C507445DE1D54AD8E3 /* PCLabel.html */,
-				3E116055CD87AA2D3F2A30E57C9770CB /* PCLabel.html */,
-				9B9A6B6A84CC19C0727D6822F31D000A /* PCLoadingButton.html */,
-				C580741068D6F0A75F777BA4D9E926F8 /* PCLoadingButton.html */,
-				227AD2DF0C24D15325FB2A8ED9631E2B /* PCNavigationController.html */,
-				5C7F55785B8715EE25B081C1B2621D85 /* PCNavigationController.html */,
-				E6617B2820DCCDD54CCCE8615D7C2064 /* PCSegmentedControl.html */,
-				1443866B1B0234B19E5730188863822C /* PCSegmentedControl.html */,
-				F413DB9078C497B2C6B3ED73D044C621 /* PCStackView.html */,
-				549319919F2C614B55BF95C28555715C /* PCStackView.html */,
-				81AB0E793AE8F2F2938E62C98E75A621 /* PCSwitch.html */,
-				8E4B85CB55B652E4FC76C782E526D6D4 /* PCSwitch.html */,
-				22D729FDC1DCB80FD43AF45CD846D2DC /* PCTabBarController.html */,
-				3E4772E4C0610B25D1965E883E426057 /* PCTabBarController.html */,
-				5D16FE6A3059272F68F89E08564D6FE4 /* PCTableViewCell.html */,
-				4B8251400F0E96669C33A53FB73890FF /* PCTableViewCell.html */,
-				90EB35D64DF9990680654B29D527155D /* PCTableViewController.html */,
-				FD0C992532D66E408189EEBFBF0CFB53 /* PCTableViewController.html */,
-				2251CBAA51F73626E9ED8EC7F6BC4032 /* PCTextField.html */,
-				77F3BE600FFA13A9C6E7B0E34B8F73A3 /* PCTextField.html */,
-				5102497F42D05B5CA09FC4C3D8AB8398 /* PCView.html */,
-				E0165027FED9FFAA6C9735B83A83A716 /* PCView.html */,
-				B267B532D92CD36BF737A97E5DC5477A /* PCViewController.html */,
-				D2F50F4C4B72BC8827780064DD6F938B /* PCViewController.html */,
-				7354D9693FAC02D40A24EE7A306D7EEE /* PCWebViewController.html */,
-				A6AEC29F5C5CED2FE704BC3CC4477A72 /* PCWebViewController.html */,
-				F6CCB1BB70328BD60B056A77B754EC21 /* PieCrust.podspec */,
-				18FB777E942C798071E90703086CE6F6 /* PieCrust.tgz */,
-				AD6E0B2A8D16931F023ADCD590AE6643 /* Protocols.html */,
-				97DDB461A68F9BF13CA0C20043810519 /* Protocols.html */,
-				0FB8F74D2DD661ACFF4078D87838E3DC /* README.md */,
-				F3660D8035D876CF587A0EB3DE63AB56 /* search.json */,
-				A2045F88E03666897ADDFD2E094A2C97 /* search.json */,
-				B9A077D8C414E7BED832E18F2B32B44C /* spinner.gif */,
-				A6D11D0C44986D97D34D246BDB9FFC4B /* spinner.gif */,
-				BB0FAF68BA6CCC5FD566778B10184F2B /* TextType.html */,
-				7979199CBFD5AE4E0F9EA70D23746AF3 /* TextType.html */,
-				18A7E139F2333762B6CF8F547289DF91 /* typeahead.jquery.js */,
-				C35170BFED6142B48206619B703C83BB /* typeahead.jquery.js */,
-				812C7175451A3E828CC530BA5CA519F9 /* UICollectionView.html */,
-				3B85614E7FC80FB40EE97DD2ADB7812E /* UICollectionView.html */,
-				88109C990B0FC586C565F14174A87DAE /* UITableView.html */,
-				91D6FA462367B06DDB506413940F8A74 /* UITableView.html */,
-				9118C608D58741F87086CC6410CEB5CC /* undocumented.json */,
-				AA9AB10A9EDBDEC15A78499DFBE68412 /* undocumented.json */,
-				422082251E22C6C14D27C39D929B4080 /* WebRequestType.html */,
-				FB6A40FF58676735BB2B7903AD24E692 /* WebRequestType.html */,
+				04CC9AA00A0110AF34B92174EC2426FB /* PCTransparentNavigationController.swift */,
+				FA891FA8B6DDA914B352D0FE5DCDC3DE /* SlideTransition.swift */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		06C7484BCFECC716B9908CC7CA34155D /* PieCrust */ = {
-			isa = PBXGroup;
-			children = (
-				6A71931AA416E180AA559D6E81DB80F4 /* Common */,
-				301687151C437AF68DC4FFA4CE171ABE /* Controllers */,
-				96564D5C308B71E11BDFA24330F48FD4 /* Controls */,
-				015BEE0E9E278E6C3A40DBE35BAAB23B /* Pod */,
-				3ED46E1DCD1C3E309425A079D31B2421 /* Protocols */,
-				3C4AE8BB08E7184F7D7F4254D92D2966 /* Resources */,
-				77B1DA523DBD7EB069D16D5BD5E087A8 /* Support Files */,
-				D41A8E95F78FD0E582894856140BC915 /* Views */,
-			);
-			name = PieCrust;
-			path = ../..;
+			name = Transparent;
+			path = Transparent;
 			sourceTree = "<group>";
 		};
 		0A8B744AD8FD2E937FF8A844C9939BAE /* Support Files */ = {
@@ -685,26 +602,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		12A4AE021DA1AA3CB93C7F6DD1CD0B5C /* NavigationControllers */ = {
-			isa = PBXGroup;
-			children = (
-				DFC0CAB497F943912DC3AA321D0CA6E4 /* PCNavigationController.swift */,
-				E7FD7DA4924E194BF300978FDC556C56 /* Transparent */,
-			);
-			name = NavigationControllers;
-			path = NavigationControllers;
-			sourceTree = "<group>";
-		};
-		18702A369970DB4CEB00B9577892A0C1 /* CollectionViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				FA3D1731DD684AFE8A53D536B3E376FC /* PCCollectionViewCell.swift */,
-				763452E491987552ED0944B8B1B48084 /* PCGenericCollectionViewCell.swift */,
-			);
-			name = CollectionViewCells;
-			path = CollectionViewCells;
-			sourceTree = "<group>";
-		};
 		1D7B20D53429FB4E9DB1FA57AB845BC8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -719,14 +616,47 @@
 			path = "../Target Support Files/SwifterSwift";
 			sourceTree = "<group>";
 		};
-		2C33A8E83BBCB55C62D635D7133D2C8E /* Keyboard */ = {
+		237E47B42A9CD60A36EE951461447594 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				EC7C2A562CB47B5109CB1B3930781877 /* PCKeyboardControllable.swift */,
-				004D54E1C6AF0A8B6CE966768860F4DE /* PCKeyboardObservable.swift */,
+				DF609EAED7B068F25E3BFA6409D6B9DF /* PCDatePicker.swift */,
+				9636EC64BE1CE3F506E72A69B5BDAD0B /* PCSegmentedControl.swift */,
+				66695D3C5AA5C31A4D97B763F07C4490 /* PCSwitch.swift */,
+				792F903B6774DC210E7713DDE8B2506C /* Buttons */,
+				FBD7210B8AE07637686408465C6F380E /* TextFields */,
 			);
-			name = Keyboard;
-			path = Keyboard;
+			name = Controls;
+			path = Sources/Controls;
+			sourceTree = "<group>";
+		};
+		23BA33DB70485F8F3D67DD65F5060787 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E93A0563C39625F28ACB0EFE7FFB4DB /* PCActivityIndicatorView.swift */,
+				D438AC8919F704968C60229CB0920C7C /* PCConfettiView.swift */,
+				527ADEA73DA84FD23040CC7C6836FC30 /* PCRoundedView.swift */,
+				139F459C632B45F6DE8F75265F13FDB4 /* PCScrollView.swift */,
+				048435FA725F64FE6FFB48211F386B69 /* PCStackView.swift */,
+				32EF2C8A1185DCFD9D7FDEC30F3C8F04 /* PCTextView.swift */,
+				917AC784237E6365EBF169D833A73ACE /* PCView.swift */,
+				52264E83A9E3DB3707B606DF9F5DFF6C /* PCVisualEffectView.swift */,
+				AB90C1701BAE8F6C6B711F08D1AF5FC0 /* PCWebView.swift */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D2C662AC42CC1E8621F703276B33A22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D6E3031810A5247DFCF78843F473C3D /* CollectionViewCells */,
+				B4369FA420F2A7D29BE4B12354E0C866 /* ImageViews */,
+				DDF307BE121D810BE7F6E47CE1AD57EF /* Labels */,
+				FD98D1D906DAA96D20C2EA6383BFC996 /* TableViewCells */,
+				23BA33DB70485F8F3D67DD65F5060787 /* Views */,
+			);
+			name = Views;
+			path = Sources/Views;
 			sourceTree = "<group>";
 		};
 		2D5DF6EDD8B02BF14E55DE5120AB3730 /* Frameworks */ = {
@@ -737,56 +667,6 @@
 				EC629890DF8B79820CFF88B6D0F359B0 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		301687151C437AF68DC4FFA4CE171ABE /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				50BDEA716205D2005A509900E765B97E /* PCTabBarController.swift */,
-				42327956E30B3F572BF9620ACC3F2BA9 /* PCViewController.swift */,
-				48169E5AEF26C2824067CE36182C1839 /* CollectionViewController */,
-				12A4AE021DA1AA3CB93C7F6DD1CD0B5C /* NavigationControllers */,
-				6199D24A0061CE8B4EEC76443EBEE8A3 /* TableViewController */,
-			);
-			name = Controllers;
-			path = Sources/Controllers;
-			sourceTree = "<group>";
-		};
-		3C4AE8BB08E7184F7D7F4254D92D2966 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				58D2280B171BAE0BED70FD14D829EB49 /* Images */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		3E2FE3AAFB189F28470B97FF5E4EE1E5 /* Labels */ = {
-			isa = PBXGroup;
-			children = (
-				AD362D8E962370F38A7C18FAA3673EE4 /* PCAppVersionLabel.swift */,
-				7B07D05F51BE2ABFA90805B0D939C850 /* PCLabel.swift */,
-			);
-			name = Labels;
-			path = Labels;
-			sourceTree = "<group>";
-		};
-		3ED46E1DCD1C3E309425A079D31B2421 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				9E3CB8C243ED8AD3EC22DDA65F969B94 /* PCAlertable.swift */,
-				ABFB53E5DD4C4EF22B1AE12211278D54 /* PCAnimatable.swift */,
-				21FA0B9D772938284E22884BE8472476 /* PCBorderable.swift */,
-				8ED34E826DF56BF4A7E893D0EE36755C /* PCColorable.swift */,
-				2734D1001B17C95F329396153B0C6E70 /* PCConfettiable.swift */,
-				4D546FF1BEB7F501FF0A0B27CB078676 /* PCFontable.swift */,
-				C1D4DE8AE4507B3851D86F23ADA8702B /* PCLayoutable.swift */,
-				E1E701805C4CE5D632EA4B5C5DF302BD /* PCLoadingable.swift */,
-				54FD7925786F8DBCE306CB6E2AA66A9B /* PCShadowable.swift */,
-				2C33A8E83BBCB55C62D635D7133D2C8E /* Keyboard */,
-				83F4DDD6F6925FB7A19C3A5638B60B22 /* PCrustable */,
-			);
-			name = Protocols;
-			path = Sources/Protocols;
 			sourceTree = "<group>";
 		};
 		3F9A001340984E3BE857D52C50808A00 /* SwifterSwift */ = {
@@ -800,78 +680,202 @@
 			path = SwifterSwift;
 			sourceTree = "<group>";
 		};
-		48169E5AEF26C2824067CE36182C1839 /* CollectionViewController */ = {
+		5309B9843F73F3D15CC543F11B6F1B91 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3F68C5D80BDF576E45EFE64C9644972B /* PCCollectionViewController.swift */,
-				AD5623DD902070C7C6AE336EFD0AB5A5 /* PCGenericCollectionViewController.swift */,
-			);
-			name = CollectionViewController;
-			path = CollectionViewController;
-			sourceTree = "<group>";
-		};
-		6199D24A0061CE8B4EEC76443EBEE8A3 /* TableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				FEB00553E4F86EE6B02C5D759E8BEFBF /* PCGenericTableController.swift */,
-				3E1CC959C77C242C3EF79E8CA4A9B0C4 /* PCTableViewController.swift */,
-			);
-			name = TableViewController;
-			path = TableViewController;
-			sourceTree = "<group>";
-		};
-		64A7BC3A86F1272ADE8D886A928244FB /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				6779F587420F0CAE2DBC45457177F515 /* InternalExtensions.swift */,
-				3212F4AB0078ADAD182B7113635B6BEF /* PublicExtensions.swift */,
-			);
-			name = Extensions;
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		6A71931AA416E180AA559D6E81DB80F4 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				EAD349C6D9D7A3D3630BDC689FBD643B /* PCColor.swift */,
-				3A0AFD05CBC1140F138E7D0DB4859648 /* PCConstants.swift */,
-				EDBFB25DA80569BC8158AFCAF7ECF915 /* PCFont.swift */,
-				64A7BC3A86F1272ADE8D886A928244FB /* Extensions */,
-			);
-			name = Common;
-			path = Sources/Common;
-			sourceTree = "<group>";
-		};
-		713EEF7A24CD6E029E6F494935A09F0D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A34C54B13CD9A67C62049E17F49AB826 /* PCActivityIndicatorView.swift */,
-				21BC4A8A8B8DA524EFD372951BFF14FA /* PCConfettiView.swift */,
-				7BC4416E4E9061F038FA2BCBD42E6BFB /* PCRoundedView.swift */,
-				48F4792D36484E517F10C0C3C6553996 /* PCScrollView.swift */,
-				51AAB81C6500BE576F91C1CC7A8FA04D /* PCStackView.swift */,
-				4D920732EE6DDCAF890EA8B5986CE7C1 /* PCTextView.swift */,
-				2D431CCB875783115693E31866C172B7 /* PCView.swift */,
-				E35A93FF0A723B2759D178899C514B80 /* PCVisualEffectView.swift */,
-				9BB76AF0621690884FE3278244FD2760 /* PCWebView.swift */,
-			);
-			name = Views;
-			path = Views;
-			sourceTree = "<group>";
-		};
-		77B1DA523DBD7EB069D16D5BD5E087A8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2F56E6CBA24E9DA2B2EFF56B3F67BCEC /* Info.plist */,
-				F0AD9DCEF24FAA1B01562B5EED2E7701 /* PieCrust.modulemap */,
-				E50693AB22BF0C6DB7EE503BF00D81FF /* PieCrust.xcconfig */,
-				92977E2CA442CFEC4C8AA0DF14496ED3 /* PieCrust-dummy.m */,
-				71AD17DC0646A124C786C452A3C32DCE /* PieCrust-prefix.pch */,
-				C2C58D9B9098DFFA527F40DC37EE0C96 /* PieCrust-umbrella.h */,
-				9D8A87F742F1EE874F631B70FD9C3698 /* ResourceBundle-PieCrustAssets-Info.plist */,
+				02E474B6C5982CFBBA023E655D1465B9 /* Info.plist */,
+				F7C8AF84A01BDD1B113953D6A9BAB451 /* PieCrust.modulemap */,
+				42D7B7AB78D54C1E342D584828D0896B /* PieCrust.xcconfig */,
+				CFF2322888CF208AA05FEBAB89FD183A /* PieCrust-dummy.m */,
+				E4CFE71E594BD04240491E76683D7845 /* PieCrust-prefix.pch */,
+				C5F334CDA14C7A44D26650D50DFBA4FF /* PieCrust-umbrella.h */,
+				8E0D19F7C58EEDEDF49C1F858DB25C53 /* ResourceBundle-PieCrustAssets-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/PieCrust";
+			sourceTree = "<group>";
+		};
+		5BD0D754119CF7533B37EE93049A4799 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				01C8AE2161FD416C173EBF0FD867EA1A /* Array.html */,
+				96B3EF82BBB1BC79E08D29EBF6C37BF2 /* Array.html */,
+				19C1DECF83203630A7AA3EFD4C41772E /* badge.svg */,
+				771523002CCE51182C8FEDD823AC01E4 /* badge.svg */,
+				672A740A9EA44BFC4127B49C82833943 /* carat.png */,
+				7E530FFA2073CA73AA0D367448544D7C /* carat.png */,
+				1162C728FF3B8CAFDBD46F624B93AC9F /* Classes.html */,
+				9383E53008B10DF16F283EF7845A5B8A /* Classes.html */,
+				05EBEA78374840BBC709BB582DE440C9 /* dash.png */,
+				CA601B1883D5294CEA839214B5E3B956 /* dash.png */,
+				86CB72A2EF26227B1DCF8C78C2443302 /* docSet.dsidx */,
+				12B7FAD74FFF7144EDCAE7F9DD7BBFB6 /* Enums.html */,
+				9996FAF502463F8CF4A13DC9223B961F /* Enums.html */,
+				187FC880C8B0834F9EC1EF7F4190EFD2 /* Extensions.html */,
+				BFEAAF4921D7CAB403E09CA61A8B12AB /* Extensions.html */,
+				F61CAA315E0A3B1244DD10E2CF185123 /* gh.png */,
+				7FD5CBBA41C064629418DB26C05584A9 /* gh.png */,
+				5E6EC4A24A269707C181C094CA6D715B /* highlight.css */,
+				AAE4E8EB73D5AA21E6732BC50A47266C /* highlight.css */,
+				E5B52ED5C32931C2641CF9D8CA6895FE /* index.html */,
+				E154278FC3751497AF1F0970CC1F0D69 /* index.html */,
+				D73A342EC8DEE67F1464463B7F1EDDA3 /* Info.plist */,
+				532272A20DB6781392BC326CF88AF67B /* jazzy.css */,
+				29FFD0491191B850B296374ABDAF33D7 /* jazzy.css */,
+				A162915AB6699154EDC57E178A529586 /* jazzy.js */,
+				4DCAD8D676707AD12A75FCFEE9B27E8E /* jazzy.js */,
+				79561A1D2709E13F66FFAAE2D09760C8 /* jazzy.search.js */,
+				B3B945A3B15ABC1863CCB3FD45C44321 /* jazzy.search.js */,
+				36D49FF80883F2A065D402FB94485D21 /* jquery.min.js */,
+				8476C769408B80790441EC8BAEB06DBF /* jquery.min.js */,
+				5473C71F6C169CB1679EE684CB517564 /* LICENSE */,
+				E17677885E6D8C89EBB60BEAE8AF4052 /* lunr.min.js */,
+				2A6381106F5BDC61151D5E78C4DA3EF0 /* lunr.min.js */,
+				D0662F1C819F3442982A2D0F60F23FC6 /* Notification.html */,
+				A5BBD001070C230EB37EF70B81763B53 /* Notification.html */,
+				51C1DA1DE21355D10CF07A1B1ED8B8BD /* PCActivityIndicatorView.html */,
+				8F68C92A6E4B97A69191FC89D602FC2E /* PCActivityIndicatorView.html */,
+				05464C8DD6D86FD943E6606EE2118EF5 /* PCAlertable.html */,
+				D1A0BA3C5A10FFB337D4413EEE8B196C /* PCAlertable.html */,
+				C1E26037F00EBA6D4701719838EEF857 /* PCAnimatable.html */,
+				D83BCE80C8FA860FA796E5DC5E2F6BCE /* PCAnimatable.html */,
+				139941035FEEF929C9F35AED18DFA1DC /* PCAppVersionLabel.html */,
+				A19A89CEE9745C49D9A5B6E45B370B56 /* PCAppVersionLabel.html */,
+				4E21CC0C5724DE1D131E983495D9B5F4 /* PCBarButtonItem.html */,
+				41D595A3A7FBC561D9635AF841B7B603 /* PCBarButtonItem.html */,
+				5A38F478E7694A47016B84186CAC09FA /* PCBorderable.html */,
+				76B574092C8E7C5DB6F6BA27377A8353 /* PCBorderable.html */,
+				BC873497D5D2CEFAD1B5695E7C8DB657 /* PCButton.html */,
+				6E276D44D658B78CB45B33B3A8267D7B /* PCButton.html */,
+				0312C4EF768BDE17D0F37360C1EDB0E9 /* PCCollectionViewCell.html */,
+				CE7054CB8EF262496BD5ECBE1B3A015D /* PCCollectionViewCell.html */,
+				054A1142899814A15871F31289DE3319 /* PCCollectionViewController.html */,
+				D68CBEC7F00C03609A5B8B1C879AD5BB /* PCCollectionViewController.html */,
+				AFE7C2CA0816AC08D022773CDA0E9615 /* PCColorable.html */,
+				7CB5E8ACD73EA980D8483EFDF03C8203 /* PCColorable.html */,
+				0AB7984EE8033508DD5EA089828AB67B /* PCConfettiable.html */,
+				18FC12B9C67E25421CDEE3220E17EB27 /* PCConfettiable.html */,
+				6EDDF0846C84F13F90A73872DADFBF8E /* PCConfettiView.html */,
+				F22312FBC7FC23BF2C41005616AC40F5 /* PCConfettiView.html */,
+				14DDE7F3F7A9A86803F8513E7E4139E0 /* PCConstants.html */,
+				30BCCEA17A1058B2C88CD1D480A1A6E8 /* PCConstants.html */,
+				45222022DAF2035FE027DD81D90C1625 /* PCGenericCollectionViewCell.html */,
+				10DA390471330A4CBDCB81AC3CECE332 /* PCGenericCollectionViewCell.html */,
+				A2EAB6164E9CB088F112A4345B27C91F /* PCGenericCollectionViewController.html */,
+				F40A168774A4039DC96655A6A6460E60 /* PCGenericCollectionViewController.html */,
+				C430433410EDDC6460AC1178C7D67682 /* PCGenericTableController.html */,
+				2DA4282A21246D60E2E7B688A3B94CB6 /* PCGenericTableController.html */,
+				3353757B47556C48865CE931C6A102DA /* PCGenericTableViewCell.html */,
+				9C83486D8086802FF099B9FD6F3BBBD8 /* PCGenericTableViewCell.html */,
+				E85D662B1EB847E09FE254406FCE0BEB /* PCImageView.html */,
+				1A5931A78674A52E99C01DFEB1806296 /* PCImageView.html */,
+				E07B2A88A395E2E8A27C26CAA828D296 /* PCKeyboardControllable.html */,
+				207546AF35368B277679CF5F6B7985CA /* PCKeyboardControllable.html */,
+				A9CA0FC5B17DE078BABCDF17525DC39C /* PCKeyboardObservable.html */,
+				D1BDE6FEDB83D27230C9CF15ADF90D3C /* PCKeyboardObservable.html */,
+				802CFD2FF2856F777C70473A9EA2C9AE /* PCLabel.html */,
+				8EC852D38B2AE45C93DFA6304C1172B0 /* PCLabel.html */,
+				7B3B0595ECE15B453B83D38C7936C1D3 /* PCLayoutable.html */,
+				80AB12A2BA8C1703663B48D23FEE62EC /* PCLayoutable.html */,
+				9EC295621804D832003776AAB575FE1F /* PCLoadingable.html */,
+				007D60A6F81EBC7ACE7DC2B9186A0681 /* PCLoadingable.html */,
+				F78A5699F42835149D149EF2493230B9 /* PCLoadingButton.html */,
+				71AE7F7C6BEAFDA83BE9A0C9AD5B326E /* PCLoadingButton.html */,
+				6E4766E3BCE7EC406D0C103D5D488D62 /* PCNavigationController.html */,
+				D30776956B47E054B5EA760C3B003F67 /* PCNavigationController.html */,
+				2B1EEEBB4086E53228A8B0C238577018 /* PCPillButton.html */,
+				9778AF8172C31317532FD5F08C586B81 /* PCPillButton.html */,
+				E238A86581022C9D855E02CD1DFFD26A /* PCPillLoadingButton.html */,
+				6CB720BAEE0E5487B5EF3782B56A178D /* PCPillLoadingButton.html */,
+				BF860201EA8E94311E73EACABC797D26 /* PCPillTextField.html */,
+				07C8B20ED1728CA16D933311466FA6B8 /* PCPillTextField.html */,
+				0F30ACEAE18F942EFB2F00F221073D54 /* PCRoundedImageView.html */,
+				DED0531B79C5706550C0CA09BB165AF9 /* PCRoundedImageView.html */,
+				F4F611AD07748105AC2B8E1C2768A792 /* PCRoundedView.html */,
+				1BB5D82BE700E8B65953A9A7883CC860 /* PCRoundedView.html */,
+				48AB0D6D0EC2A9C5DF0DE8453B451286 /* PCrustable.html */,
+				888F55B59D553C3EF0BB5BC115CC195A /* PCrustable.html */,
+				C9B2EEC00F2103AB6BDCE40658DFCAC9 /* PCScrollView.html */,
+				24463A92BC9E6FC6CDE9AB00CB83B4A3 /* PCScrollView.html */,
+				E10D93D7BC05A1B636EE9FE6E47FB5B5 /* PCSegmentedControl.html */,
+				95DBEDF29CAFF0EB1F46E8E769510DA8 /* PCSegmentedControl.html */,
+				4F60CA918C44AFC146B366EC52FD6665 /* PCShadowable.html */,
+				D16983F859F11DA4EF0B5CD16D48B962 /* PCShadowable.html */,
+				30A9CC7388F2EB5E948DD3B1C8B54985 /* PCStackView.html */,
+				98542FA24504726D7024427BFAD0E6E3 /* PCStackView.html */,
+				930B41EE359F1C7DDACE3BEAAB044F86 /* PCSwitch.html */,
+				1E4E792431DF84BE8E416CDB85924618 /* PCSwitch.html */,
+				0492F979558D3F28179CD373BBA06734 /* PCTabBarController.html */,
+				5037A4D5589E39BE966CDF1CBABA4E8B /* PCTabBarController.html */,
+				B91B9EC2E18392D19B968065B656868D /* PCTableViewCell.html */,
+				2BF63AB5905C9024B0905393CAB1860D /* PCTableViewCell.html */,
+				A1430BBFFAD884F1E9E36CB09D85954F /* PCTableViewController.html */,
+				98AC19ECB27E4F22EF7425147B1168C0 /* PCTableViewController.html */,
+				9B29A2472151A641DE1214E5BBF522A0 /* PCTextField.html */,
+				8E2C0A5EF75F7AE9C28B4214056240EE /* PCTextField.html */,
+				8C82A4FA105C9FF63DC0E18AF78C5FE8 /* PCTextFieldType.html */,
+				846FE3D7002F10CF638066B113C0CA2A /* PCTextFieldType.html */,
+				9E7765D66C56230F805F35EEC4C957A2 /* PCTransparentNavigationController.html */,
+				51EA0028FFBA2BCA05DEA54917319B89 /* PCTransparentNavigationController.html */,
+				C3CD3351E0D4EFE65EFD06A85B1C0C46 /* PCView.html */,
+				DD943CF1E94B05D921DCD345C0DD0485 /* PCView.html */,
+				33390A2313BE639FEF1865FACEDB17D2 /* PCViewController.html */,
+				2CA7372CD3E6AC64FE1B4A92C00F3522 /* PCViewController.html */,
+				EBF70E4D619AC5068EF348007AF003C9 /* PCWebView.html */,
+				9958341DE9BFA0965A50C496ACE692F0 /* PCWebView.html */,
+				7A772CEB809F1D04764BAED6A1EE8501 /* PCWebViewController.html */,
+				C583AD0C0E152483491538E81F616D99 /* PCWebViewController.html */,
+				A46209E49AFF2C15FD10F113CF856741 /* PieCrust.podspec */,
+				3CFC8FB41141AF3702C68B29333BB768 /* PieCrust.tgz */,
+				863FF259A2BA48FE415623176886901B /* Protocols.html */,
+				4BC2BCA9E73ABA003B2D1C6738A63215 /* Protocols.html */,
+				A9D78A72FC71DD00C024C18B91F5D27B /* README.md */,
+				0D4ABB120138FABEAFB6B90A4919DFC2 /* search.json */,
+				A5E51ADB839F1DCCEF024835063B1928 /* search.json */,
+				68D6EF258339976C0D5D61BF1FB3B386 /* spinner.gif */,
+				A51FBC747DCC25EDC9222AE344F0979E /* spinner.gif */,
+				2806C3A8CAA8B1201F237F0E840AA79E /* TextType.html */,
+				FD226E6E8714D5CFA236C01C41D8AADE /* TextType.html */,
+				1575EE78D6189041DB6AEA3911F6AF96 /* typeahead.jquery.js */,
+				8AE800AE71B49A54DAFAF6CCF6F4818C /* typeahead.jquery.js */,
+				FF5731F016E329AE926138BA7A745ED6 /* UICollectionView.html */,
+				6F0B9B2802BBF61BEE4089031BFA6B55 /* UICollectionView.html */,
+				742B05F4E19180FA77735AC4D006B776 /* UITableView.html */,
+				AECA95240993194628FDC95E472637FA /* UITableView.html */,
+				6ADF8826D54A3AD94FF483CFDFA98C56 /* UIWindow.html */,
+				4192D24A8A94E1F6B09FBB6CC706B9E9 /* UIWindow.html */,
+				1F10564ECAC1BD6EEB5194084C0C78B4 /* undocumented.json */,
+				9B7EA4502D5717FD9A6165AFBE115BC9 /* undocumented.json */,
+				DF4F664960E697BE736A2C872213B17E /* WebRequestType.html */,
+				70B7EABD375F532EA01F5A04C7AA6345 /* WebRequestType.html */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		642BEA855E900BEAD54103A2F4D7438E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E92B65B4D260B19DF92BDF7C56993C24 /* PCTabBarController.swift */,
+				DA7C703E8B5390FD4E0362F107530CBC /* PCViewController.swift */,
+				91292EF04F8ACB87C2223BF3E28FBD9D /* CollectionViewController */,
+				93C9ED76883D9361167BF724401B2942 /* NavigationControllers */,
+				E5844D8079D7EFE767E6EE040E58735A /* TableViewController */,
+			);
+			name = Controllers;
+			path = Sources/Controllers;
+			sourceTree = "<group>";
+		};
+		792F903B6774DC210E7713DDE8B2506C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				325488F05F032037E949ADD33731ABAE /* PCBarButtonItem.swift */,
+				23F806F074389E8C7F1DAE9613DAC5AB /* PCButton.swift */,
+				53995ABFB981FEBD31C711A663EB1DA4 /* PCLoadingButton.swift */,
+				EB6572D90A823557DFE8D3BC69EA04BD /* PCPillButton.swift */,
+				E47456B0064937986260B90F2345A289 /* PCPillLoadingButton.swift */,
+			);
+			name = Buttons;
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -884,31 +888,6 @@
 				0A9C1E2CF2BBD88BA90ED584362470D4 /* Products */,
 				D0BBFF76137BD879A1712A8E537ECEC2 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		83F4DDD6F6925FB7A19C3A5638B60B22 /* PCrustable */ = {
-			isa = PBXGroup;
-			children = (
-				9737CEF5CD5C64115062AA03D4E7AC29 /* PCrustable.swift */,
-				756B91A6939230D740CC2CCA4FB5A074 /* PCrustable+UIActivityIndicatorView.swift */,
-				DE199DC907954E9C4DCD189FA578BE62 /* PCrustable+UIButton.swift */,
-				1A18772FC468750112889511CFC47DED /* PCrustable+UIDatePicker.swift */,
-				2FFEDA01DAC808EBDAA495290956C956 /* PCrustable+UIImageView.swift */,
-				5F4923A7A28585DEA287A5AABEA1924E /* PCrustable+UILabel.swift */,
-				AA63B8DE52BCE57BAAE9BBF2E0436956 /* PCrustable+UINavigationController.swift */,
-				6E02CC2AAA73257353C9E15EECFE8764 /* PCrustable+UIScrollView.swift */,
-				5E5CDDB0D26CD923CEAA3CB86BE4A11D /* PCrustable+UISegmentedControl.swift */,
-				99CDADAA69395472990F7AAD164C4515 /* PCrustable+UIStackView.swift */,
-				F3693FA7DC67BA194BA5DF7847666B15 /* PCrustable+UISwitch.swift */,
-				A3664A9ECA71A032F6BC57872B20B73F /* PCrustable+UITextField.swift */,
-				9A8757BC1F6077CF5EBD37AB9F0D9374 /* PCrustable+UITextView.swift */,
-				BD299905F5879E0680190C3146F2DAD9 /* PCrustable+UIView.swift */,
-				D0479045DB8E6481FECAE5887EED0150 /* PCrustable+UIViewController.swift */,
-				588A89995C28FF237AB36ECBFDCCB557 /* PCrustable+UIVisualEffectView.swift */,
-				7E05AF853CC5B912B65BF26421B39ABC /* PCrustable+UIWebView.swift */,
-			);
-			name = PCrustable;
-			path = PCrustable;
 			sourceTree = "<group>";
 		};
 		8550C39F65F8C721F25147B24172C05E /* Pods-PieCrustExample */ = {
@@ -929,14 +908,37 @@
 			path = "Target Support Files/Pods-PieCrustExample";
 			sourceTree = "<group>";
 		};
-		863EEFB4A0CB3A7149FA9E4189D4D9EB /* TableViewCells */ = {
+		874F657464E19C881F3368F3E196F8D7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B8C45F43DE00CF0E26C5ECB86E3DC210 /* PCGenericTableViewCell.swift */,
-				009DDB454B7A06D752A51C83A9AD1C84 /* PCTableViewCell.swift */,
+				1E9FA5289FEA484AD439F09FE1CDA161 /* Images */,
 			);
-			name = TableViewCells;
-			path = TableViewCells;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8A8A9065F16DFD165F5C7539B31109F2 /* PCrustable */ = {
+			isa = PBXGroup;
+			children = (
+				D25FDCF3D17E533F0D91EA5C0864AB2D /* PCrustable.swift */,
+				6E466C14A8B2BFBFA2F1990C34808671 /* PCrustable+UIActivityIndicatorView.swift */,
+				1F7B855FBE57768471D9B414236603A0 /* PCrustable+UIButton.swift */,
+				BA9F03F53074310598AAAF4AE380FCB7 /* PCrustable+UIDatePicker.swift */,
+				6062D66814664FA5D4C4F07581319F38 /* PCrustable+UIImageView.swift */,
+				AA520EFA0B4E2B8667EF7630B5A0ED9B /* PCrustable+UILabel.swift */,
+				9DBCE5CD12E988613BB7294F0511A7B1 /* PCrustable+UINavigationController.swift */,
+				10491AF20DFF27AF5BC64BEBB77D9FEF /* PCrustable+UIScrollView.swift */,
+				DBFF3453556FB41A5D5BC8D2A461BEBB /* PCrustable+UISegmentedControl.swift */,
+				52FDA16D3515E1FB2DD1B35275E73959 /* PCrustable+UIStackView.swift */,
+				FF1BFA6B44EADB436EAC53BDB56A3128 /* PCrustable+UISwitch.swift */,
+				03B7D265CDFA01B92E09CCF71FDA1F38 /* PCrustable+UITextField.swift */,
+				C6C34786B9F46A201D1E1F251AA05790 /* PCrustable+UITextView.swift */,
+				766DC425A090964B2892F83DD4CB2C11 /* PCrustable+UIView.swift */,
+				2F2F6FA7B1ECFFE303DC726715A6B3DA /* PCrustable+UIViewController.swift */,
+				D35C1B7AA487CBE44CB4E74CE47209E1 /* PCrustable+UIVisualEffectView.swift */,
+				61FD8F4DC51FAF0FBF093DDD840CEFAC /* PCrustable+UIWebView.swift */,
+			);
+			name = PCrustable;
+			path = PCrustable;
 			sourceTree = "<group>";
 		};
 		8FC72421F02CA3EEA4D48F3A8A0E48A9 /* Foundation */ = {
@@ -956,30 +958,40 @@
 			name = Foundation;
 			sourceTree = "<group>";
 		};
-		953E52C4F73CF246ABF6B052C2009B3D /* Buttons */ = {
+		91292EF04F8ACB87C2223BF3E28FBD9D /* CollectionViewController */ = {
 			isa = PBXGroup;
 			children = (
-				EEC1A690FC0B74D6705A52932708E9A4 /* PCBarButtonItem.swift */,
-				9C98A8285FD62B0E589408C0B8C0380E /* PCButton.swift */,
-				71DBB754B95BA767032213C9BE24E1B3 /* PCLoadingButton.swift */,
-				D0F32CCFC6FA2CD369EF8B8EDE437579 /* PCPillButton.swift */,
-				7E76C169EDC5978E138D8BAC9EAA042C /* PCPillLoadingButton.swift */,
+				6C7EB41790EADD3DF11E4999C1C7A677 /* PCCollectionViewController.swift */,
+				DF34FFAAAD13780CCC15D8EA47A4D025 /* PCGenericCollectionViewController.swift */,
 			);
-			name = Buttons;
-			path = Buttons;
+			name = CollectionViewController;
+			path = CollectionViewController;
 			sourceTree = "<group>";
 		};
-		96564D5C308B71E11BDFA24330F48FD4 /* Controls */ = {
+		927669F619916146406299920A2D4109 /* PieCrust */ = {
 			isa = PBXGroup;
 			children = (
-				56FB6B4370A4E102F90E9F3A664EC071 /* PCDatePicker.swift */,
-				0AA8872E9D36CF807BA502162FEAFA13 /* PCSegmentedControl.swift */,
-				E9D54873740BF338A815DC616B1913E3 /* PCSwitch.swift */,
-				953E52C4F73CF246ABF6B052C2009B3D /* Buttons */,
-				C4A51EE4AD0D7475F5476F0687623F96 /* TextFields */,
+				E0CC108D1D8FD60DE86B31C9F4F6AF95 /* Common */,
+				642BEA855E900BEAD54103A2F4D7438E /* Controllers */,
+				237E47B42A9CD60A36EE951461447594 /* Controls */,
+				5BD0D754119CF7533B37EE93049A4799 /* Pod */,
+				F40C0325E135A050E7A6A4397066708D /* Protocols */,
+				874F657464E19C881F3368F3E196F8D7 /* Resources */,
+				5309B9843F73F3D15CC543F11B6F1B91 /* Support Files */,
+				2D2C662AC42CC1E8621F703276B33A22 /* Views */,
 			);
-			name = Controls;
-			path = Sources/Controls;
+			name = PieCrust;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		93C9ED76883D9361167BF724401B2942 /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BD5FBC16E965AA7DE75D778B6FC529E /* PCNavigationController.swift */,
+				008B4446CFB6E5300F2DC355DC0276C6 /* Transparent */,
+			);
+			name = NavigationControllers;
+			path = NavigationControllers;
 			sourceTree = "<group>";
 		};
 		965C1805CFEAE7AE9301A68DBBACD902 /* Pods */ = {
@@ -1010,6 +1022,26 @@
 				4844050B93D86F8A9E80CEA408A2C439 /* StringProtocolExtensions.swift */,
 			);
 			name = SwiftStdlib;
+			sourceTree = "<group>";
+		};
+		9D6E3031810A5247DFCF78843F473C3D /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2418E80DF3150B5E973D4E7CE89930A0 /* PCCollectionViewCell.swift */,
+				AEE4D78D333F78EFE9E75EB7772D4979 /* PCGenericCollectionViewCell.swift */,
+			);
+			name = CollectionViewCells;
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		A76391AEA3DF053C66CA24DA6F27F664 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6EFA58D0A106089B08A71F3989CAD248 /* InternalExtensions.swift */,
+				5B1F16365C498466C5A72F51E0F91367 /* PublicExtensions.swift */,
+			);
+			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AC4BB1776836EC726D244F585CA74F79 /* SnapKit */ = {
@@ -1055,21 +1087,20 @@
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
-		C4A51EE4AD0D7475F5476F0687623F96 /* TextFields */ = {
+		B4369FA420F2A7D29BE4B12354E0C866 /* ImageViews */ = {
 			isa = PBXGroup;
 			children = (
-				27143705D71C6368B5BD6BA99267081A /* PCPillTextField.swift */,
-				B8EE63B4A8393874DF4FB82B12A7FC2A /* PCTextField.swift */,
-				AF1CD823EA80E8820CCEFE52CF9FC9A4 /* PCTextFieldType.swift */,
+				7F8D050E8D4CFB0C44C6A5C78A04E106 /* PCImageView.swift */,
+				FA27F823432AF78B8BF1150BF3A0CD9A /* PCRoundedImageView.swift */,
 			);
-			name = TextFields;
-			path = TextFields;
+			name = ImageViews;
+			path = ImageViews;
 			sourceTree = "<group>";
 		};
 		C99FB62015D38310D983CA3C3D8EEA3F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				06C7484BCFECC716B9908CC7CA34155D /* PieCrust */,
+				927669F619916146406299920A2D4109 /* PieCrust */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -1082,37 +1113,46 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D41A8E95F78FD0E582894856140BC915 /* Views */ = {
+		DDF307BE121D810BE7F6E47CE1AD57EF /* Labels */ = {
 			isa = PBXGroup;
 			children = (
-				18702A369970DB4CEB00B9577892A0C1 /* CollectionViewCells */,
-				E5750D88C273B2188A6BBDD47188D169 /* ImageViews */,
-				3E2FE3AAFB189F28470B97FF5E4EE1E5 /* Labels */,
-				863EEFB4A0CB3A7149FA9E4189D4D9EB /* TableViewCells */,
-				713EEF7A24CD6E029E6F494935A09F0D /* Views */,
+				1E63741C84DD49339657D376811EC243 /* PCAppVersionLabel.swift */,
+				371B9EEA4012B22795836E1D670C91AB /* PCLabel.swift */,
 			);
-			name = Views;
-			path = Sources/Views;
+			name = Labels;
+			path = Labels;
 			sourceTree = "<group>";
 		};
-		E5750D88C273B2188A6BBDD47188D169 /* ImageViews */ = {
+		E0CC108D1D8FD60DE86B31C9F4F6AF95 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F193C7C6301089EDA8A06E8B7EDB6E33 /* PCImageView.swift */,
-				75DBCBA1B86C470B885751B6256DEE2E /* PCRoundedImageView.swift */,
+				931437E51FAE2B7845825575C94E29DE /* PCColor.swift */,
+				1C4FA0EB80582C3CF7F4A076A1ED78EE /* PCConstants.swift */,
+				9838F7FCE709672FBEA1E851471AE33C /* PCFont.swift */,
+				A76391AEA3DF053C66CA24DA6F27F664 /* Extensions */,
 			);
-			name = ImageViews;
-			path = ImageViews;
+			name = Common;
+			path = Sources/Common;
 			sourceTree = "<group>";
 		};
-		E7FD7DA4924E194BF300978FDC556C56 /* Transparent */ = {
+		E5844D8079D7EFE767E6EE040E58735A /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2B272B475545D0D4F7B7BC0436C8E105 /* PCTransparentNavigationController.swift */,
-				B32956DD4942DFCE5D972FDD1AB37E11 /* SlideTransition.swift */,
+				CEFCDEBFC35C9E116C1BB02936F57F93 /* PCGenericTableController.swift */,
+				A44AFCBCC263F4579B76DBA0B0EFE4EA /* PCTableViewController.swift */,
 			);
-			name = Transparent;
-			path = Transparent;
+			name = TableViewController;
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		EBB6265CBFDAEDF8A740AA035441A771 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1F8927C489382EDA0D5252F2A57A7EF1 /* PCKeyboardControllable.swift */,
+				C1072592040B01D43C34151BACA29350 /* PCKeyboardObservable.swift */,
+			);
+			name = Keyboard;
+			path = Keyboard;
 			sourceTree = "<group>";
 		};
 		EC629890DF8B79820CFF88B6D0F359B0 /* iOS */ = {
@@ -1122,6 +1162,46 @@
 				DC1874729868603A02A0E9205C326218 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		F40C0325E135A050E7A6A4397066708D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C39C55FC86BCB19C4C824DCD387DE78F /* PCAlertable.swift */,
+				1516F7B339DE66D0BCB151B6A948E0E1 /* PCAnimatable.swift */,
+				5AF500E05C4B9BBD26B61370CC449A93 /* PCBorderable.swift */,
+				629CE2B816DFFAF141EF95A8414E8F96 /* PCColorable.swift */,
+				453D2C78A47C93A17FAF06C19A25AF0D /* PCConfettiable.swift */,
+				064DBAFF2E492E23233AD07D294FD6F7 /* PCFontable.swift */,
+				06582D1BF67593BCC2D03889C30A6EE7 /* PCLayoutable.swift */,
+				C9B6F5B9524E881428DA5D5F3FAD153C /* PCLoadingable.swift */,
+				7C28CE3560DFB5858CC78144983705C3 /* PCShadowable.swift */,
+				EBB6265CBFDAEDF8A740AA035441A771 /* Keyboard */,
+				8A8A9065F16DFD165F5C7539B31109F2 /* PCrustable */,
+			);
+			name = Protocols;
+			path = Sources/Protocols;
+			sourceTree = "<group>";
+		};
+		FBD7210B8AE07637686408465C6F380E /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				C95B1296F5DFBBADFC009C0B0107F23F /* PCPillTextField.swift */,
+				D57B6266B21C322F4B794945132377E9 /* PCTextField.swift */,
+				791019A55E23C5BF8B84764EC22E6E1C /* PCTextFieldType.swift */,
+			);
+			name = TextFields;
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		FD98D1D906DAA96D20C2EA6383BFC996 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				49B8A65985B7675799379BA94A6E616E /* PCGenericTableViewCell.swift */,
+				6E9334902041870310FD45C8FD985ECE /* PCTableViewCell.swift */,
+			);
+			name = TableViewCells;
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1515,7 +1595,7 @@
 /* Begin XCBuildConfiguration section */
 		257FBFF85D373B664D8B89A1AF06DD6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E50693AB22BF0C6DB7EE503BF00D81FF /* PieCrust.xcconfig */;
+			baseConfigurationReference = 42D7B7AB78D54C1E342D584828D0896B /* PieCrust.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PieCrust";
@@ -1589,7 +1669,7 @@
 		};
 		44E702EE9BE8D0333E931166E5DCC9F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E50693AB22BF0C6DB7EE503BF00D81FF /* PieCrust.xcconfig */;
+			baseConfigurationReference = 42D7B7AB78D54C1E342D584828D0896B /* PieCrust.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1683,7 +1763,7 @@
 		};
 		69D2279B5BEB0078E3CA4CD6772A28C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E50693AB22BF0C6DB7EE503BF00D81FF /* PieCrust.xcconfig */;
+			baseConfigurationReference = 42D7B7AB78D54C1E342D584828D0896B /* PieCrust.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1780,7 +1860,7 @@
 		};
 		AEDD9516116AFCE5777569162E36DB6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E50693AB22BF0C6DB7EE503BF00D81FF /* PieCrust.xcconfig */;
+			baseConfigurationReference = 42D7B7AB78D54C1E342D584828D0896B /* PieCrust.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PieCrust";

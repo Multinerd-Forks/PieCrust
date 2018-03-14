@@ -31,8 +31,7 @@ class AuthView: PCView {
     }()
 
     private lazy var stackView: PCStackView = {
-        let views: [UIView] = [emailTextField, passwordTextField, loginButton]
-        return views.stacked(axis: .vertical, alignment: .fill, distribution: .fill, spacing: 8.0)
+        return PCStackView(arrangedSubviews: [emailTextField, passwordTextField, loginButton], axis: .vertical, spacing: 8.0)
     }()
 
     private lazy var versionLabel: PCAppVersionLabel = {
