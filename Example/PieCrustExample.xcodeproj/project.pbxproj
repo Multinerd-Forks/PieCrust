@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		079556A020591A8C000E1DE1 /* AddCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795569F20591A8C000E1DE1 /* AddCarView.swift */; };
+		079556A220591A97000E1DE1 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079556A120591A97000E1DE1 /* AddCarViewController.swift */; };
 		079F8F64202DDD8B00599D22 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F5B202DDD8B00599D22 /* HomeViewController.swift */; };
 		079F8F65202DDD8B00599D22 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F5C202DDD8B00599D22 /* HomeView.swift */; };
 		079F8F66202DDD8B00599D22 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F8F5D202DDD8B00599D22 /* NavigationController.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0795569F20591A8C000E1DE1 /* AddCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarView.swift; sourceTree = "<group>"; };
+		079556A120591A97000E1DE1 /* AddCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
 		079F8F5B202DDD8B00599D22 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		079F8F5C202DDD8B00599D22 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		079F8F5D202DDD8B00599D22 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0795569E20591A79000E1DE1 /* AddCar */ = {
+			isa = PBXGroup;
+			children = (
+				0795569F20591A8C000E1DE1 /* AddCarView.swift */,
+				079556A120591A97000E1DE1 /* AddCarViewController.swift */,
+			);
+			path = AddCar;
+			sourceTree = "<group>";
+		};
 		079F8F52202DDD3E00599D22 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +120,7 @@
 		079F8F61202DDD8B00599D22 /* Cars */ = {
 			isa = PBXGroup;
 			children = (
+				0795569E20591A79000E1DE1 /* AddCar */,
 				079F8F63202DDD8B00599D22 /* CarTableViewCell.swift */,
 				079F8F62202DDD8B00599D22 /* CarsTableViewController.swift */,
 				079F8F5E202DDD8B00599D22 /* CarInfo */,
@@ -317,6 +331,8 @@
 				07DABFCD203C0AFF00AEE848 /* SettingsViewController.swift in Sources */,
 				07DABFD2203C117900AEE848 /* AuthView.swift in Sources */,
 				079F8F64202DDD8B00599D22 /* HomeViewController.swift in Sources */,
+				079556A220591A97000E1DE1 /* AddCarViewController.swift in Sources */,
+				079556A020591A8C000E1DE1 /* AddCarView.swift in Sources */,
 				07DABFD0203C108500AEE848 /* AuthViewController.swift in Sources */,
 				07DABFCA203C02ED00AEE848 /* TabBarController.swift in Sources */,
 				07E23DF3203D7DF100292303 /* SettingsView.swift in Sources */,

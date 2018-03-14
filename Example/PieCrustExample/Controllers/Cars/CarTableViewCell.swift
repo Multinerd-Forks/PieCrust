@@ -31,7 +31,7 @@ class CarTableViewCell: PCGenericTableViewCell<Car> {
 	}()
 
 	lazy var labelsStackView: UIStackView = {
-        return [modelLabel, yearLabel].stacked(axis: .vertical)
+        return PCStackView(arrangedSubviews: [modelLabel, yearLabel], axis: .vertical)
 	}()
 
 	var preferredPadding: CGFloat {
