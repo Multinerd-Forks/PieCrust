@@ -11,10 +11,10 @@ public extension PCrustable where Self: UIActivityIndicatorView {
     /// Creates and returns a new UIActivityIndicatorView with setting its properties in one line.
     ///
     /// - Parameters:
-    ///   - activityIndicatorStyle: The basic appearance of the activity indicator (default is .white).
-    ///   - hidesWhenStopped: A Boolean value that controls whether the receiver is hidden when the animation is stopped (default is true).
+    ///   - activityIndicatorStyle: The basic appearance of the activity indicator _(default is .white)_.
+    ///   - hidesWhenStopped: A Boolean value that controls whether the receiver is hidden when the animation is stopped _(default is true)_.
     ///   - color: The color of the activity indicator.
-    ///   - alpha: Activity indicator's alpha (default is 1.0).
+    ///   - alpha: Activity indicator's alpha _(default is 1.0)_.
     public init(
         activityIndicatorStyle: UIActivityIndicatorViewStyle = .white,
         hidesWhenStopped: Bool = true,

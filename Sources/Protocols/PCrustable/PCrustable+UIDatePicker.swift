@@ -12,16 +12,16 @@ public extension PCrustable where Self: UIDatePicker {
     ///
     /// - Parameters:
     ///   - datePickerMode: The mode of the date picker.
-    ///   - date: Initial date of the picker (default is nil).
-    ///   - minimumDate: The minimum date that a date picker can show (default is nil).
-    ///   - maximumDate: The maximum date that a date picker can show (default is nil).
-    ///   - minuteInterval: The interval at which the date picker should display minutes (default is 1).
-    ///   - countDownDuration: The value displayed by the date picker when the mode property is set to countDownTimer (default is 0.0)
-    ///   - textColor: Text color of the date picker (default is nil).
-    ///   - isEnabled: The enabled state to use when drawing the date picker (default is true).
-    ///   - backgroundColor: Background color of the date picker (default is PCColor.white).
-    ///   - tintColor: Text color of the date picker (default is nil).
-    ///   - alpha: Alpha of the date picker (default is 1.0).
+    ///   - date: Initial date of the picker _(default is nil)_.
+    ///   - minimumDate: The minimum date that a date picker can show _(default is nil)_.
+    ///   - maximumDate: The maximum date that a date picker can show _(default is nil)_.
+    ///   - minuteInterval: The interval at which the date picker should display minutes _(default is 1)_.
+    ///   - countDownDuration: The value displayed by the date picker when the mode property is set to countDownTimer _(default is 0.0)_.
+    ///   - textColor: Text color of the date picker _(default is nil)_.
+    ///   - isEnabled: The enabled state to use when drawing the date picker _(default is true)_.
+    ///   - backgroundColor: Background color of the date picker _(default is PCColor.white)_.
+    ///   - tintColor: Text color of the date picker _(default is nil)_.
+    ///   - alpha: Alpha of the date picker _(default is 1.0)_.
     public init(
         datePickerMode: UIDatePickerMode,
         date: Date? = nil,

@@ -9,8 +9,8 @@
 // MARK: - UIView
 public extension PCrustable where Self: UIView {
 
-    /// Preferred padding for autolayout (default is 20.0).
-    /// Override this value by setting `preferredPadding` in `PCConstants` to change it app-wide, or just here to set it for this view only.
+    /// Preferred padding for autolayout _(default is 20.0)_.
+    /// Override this value by setting _preferredPadding_ in `PCConstants` to change it app-wide, or just here to set it for this view only.
     public var preferredPadding: CGFloat {
         return PCConstants.preferredPadding
     }
@@ -18,9 +18,9 @@ public extension PCrustable where Self: UIView {
     /// Creates and returns a new UIView with setting its properties in one line.
     ///
     /// - Parameters:
-    ///   - backgroundColor: Background color of the view (default is PCColor.white).
-    ///   - tintColor: Text color of the view (default is nil).
-    ///   - alpha: Alpha of the view (default is 1.0).
+    ///   - backgroundColor: Background color of the view _(default is PCColor.white)_.
+    ///   - tintColor: Text color of the view _(default is nil)_.
+    ///   - alpha: Alpha of the view _(default is 1.0)_.
     public init(
         backgroundColor: UIColor? = PCColor.white,
         tintColor: UIColor? = nil,

@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import SwifterSwift
 
-/// Generic PCCollectionViewController.
+/// Generic `PCCollectionViewController`.
 open class PCGenericCollectionViewController<T: PCGenericCollectionViewCell<U>, U>: PCCollectionViewController {
 
     /// Returns a newly initialized view controller with the nib file in the specified bundle and a given items array.

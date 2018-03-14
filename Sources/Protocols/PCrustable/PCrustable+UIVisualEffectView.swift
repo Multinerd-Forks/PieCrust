@@ -12,7 +12,7 @@ public extension PCrustable where Self: UIVisualEffectView {
     ///
     /// - Parameters:
     ///   - effect: The UIVisualEffect you provide for the view. This can be a UIBlurEffect or a UIVibrancyEffect.
-    ///   - alpha: Alpha of the visual view (default is 1.0).
+    ///   - alpha: Alpha of the visual view _(default is 1.0)_.
     public init(effect: UIVisualEffect?, alpha: CGFloat = 1.0) {
         self.init(effect: effect)
 

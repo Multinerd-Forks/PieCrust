@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import SwifterSwift
 
-/// PCPillButton.
+/// Pill `PCButton`.
 open class PCPillButton: PCButton {
 
     /// The bounds rectangle, which describes the view’s location and size in its own coordinate system.

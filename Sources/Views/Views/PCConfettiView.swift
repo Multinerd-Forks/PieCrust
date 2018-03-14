@@ -24,7 +24,7 @@ open class PCConfettiView: PCView {
 		UIColor(red: 0.58, green: 0.39, blue: 0.55, alpha: 1.0)
 	]
 
-	/// Confetti intensity (default is 0.5).
+	/// Confetti intensity _(default is 0.5)_.
 	public var intensity: Float = 0.5
 
 	/// Set this to start or stop confetti.
@@ -38,10 +38,10 @@ open class PCConfettiView: PCView {
     ///
     /// - Parameters:
     ///   - colors: confetti colors array.
-    ///   - intensity: confetti emitter intensity (default is 0.5).
-    ///   - backgroundColor: Background color of the confetti view (default is PCColor.clear).
-    ///   - tintColor: Text color of the confetti view (default is nil).
-    ///   - alpha: Alpha of the confetti view (default is 1.0).
+    ///   - intensity: confetti emitter intensity _(default is 0.5)_.
+    ///   - backgroundColor: Background color of the confetti view _(default is PCColor.clear)_.
+    ///   - tintColor: Text color of the confetti view _(default is nil)_.
+    ///   - alpha: Alpha of the confetti view _(default is 1.0)_.
 	public convenience init(
         colors: [UIColor] = [],
         intensity: Float = 0.5,

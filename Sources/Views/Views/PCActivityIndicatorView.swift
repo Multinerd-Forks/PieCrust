@@ -13,8 +13,8 @@ import SwifterSwift
 /// PCActivityIndicatorView.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCActivityIndicatorView: UIActivityIndicatorView, PCrustable, PCAnimatable, PCBorderable, PCShadowable {}

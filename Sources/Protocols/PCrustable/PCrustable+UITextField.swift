@@ -9,8 +9,8 @@
 // MARK: - UITextField
 public extension PCrustable where Self: UITextField {
 
-    /// Preferred height for autolayout (default is 40.0 for small screens and 48.0 for other screen sizes).
-    /// Override this value by setting `preferredHeight` in `PCConstants` to change it app-wide, or just here to set it for this text field only.
+    /// Preferred height for autolayout _(default is 40.0 for iPhone SE screen sizes and 48.0 for others)_.
+    /// Override this value by setting _preferredHeight_ in `PCConstants` to change it app-wide, or just here to set it for this text field only.
     public var preferredHeight: CGFloat {
         return PCConstants.preferredHeight
     }
@@ -19,21 +19,21 @@ public extension PCrustable where Self: UITextField {
     ///
     /// - Parameters:
     ///   - placeholder: The string that is displayed when there is no other text in the text field.
-    ///   - text: The text displayed by the text field (default is nil)
-    ///   - attributedPlaceholder: The styled string that is displayed when there is no other text in the text field (default is nil).
-    ///   - attributedText: The styled text displayed by the text field (default is nil).
-    ///   - textAlignment: The technique to use for aligning the text (default is .natural).
-    ///   - textType: The text field's text type (default is .generic).
-    ///   - clearsOnBeginEditing: A Boolean value indicating whether the text field removes old text when editing begins (default is false).
-    ///   - textColor: The color of the text (default is PCColor.black).
-    ///   - font: The font of the text (default is system font).
-    ///   - minimumFontSize: The size of the smallest permissible font with which to draw the text field’s text (default is nil).
-    ///   - borderStyle: The type of border drawn around the text field (default is .none).
-    ///   - keyboardAppearance: The appearance style of the keyboard that is associated with the text object (default is .default).
-    ///   - isEnabled: The enabled state to use when drawing the text field (default is true).
-    ///   - backgroundColor: The text field's background color (default is PCColor.white).
-    ///   - tintColor: The tint color of the text field (default is nil).
-    ///   - alpha: Text field's alpha (default is 1.0).
+    ///   - text: The text displayed by the text field _(default is nil)_
+    ///   - attributedPlaceholder: The styled string that is displayed when there is no other text in the text field _(default is nil)_.
+    ///   - attributedText: The styled text displayed by the text field _(default is nil)_.
+    ///   - textAlignment: The technique to use for aligning the text _(default is .natural)_.
+    ///   - textType: The text field's text type _(default is .generic)_.
+    ///   - clearsOnBeginEditing: A Boolean value indicating whether the text field removes old text when editing begins _(default is false)_.
+    ///   - textColor: The color of the text _(default is PCColor.black)_.
+    ///   - font: The font of the text _(default is system font)_.
+    ///   - minimumFontSize: The size of the smallest permissible font with which to draw the text field’s text _(default is nil)_.
+    ///   - borderStyle: The type of border drawn around the text field _(default is .none)_.
+    ///   - keyboardAppearance: The appearance style of the keyboard that is associated with the text object _(default is .default)_.
+    ///   - isEnabled: The enabled state to use when drawing the text field _(default is true)_.
+    ///   - backgroundColor: The text field's background color _(default is PCColor.white)_.
+    ///   - tintColor: The tint color of the text field _(default is nil)_.
+    ///   - alpha: Text field's alpha _(default is 1.0)_.
     public init(
         placeholder: String?,
         text: String? = nil,
@@ -130,7 +130,7 @@ public extension PCrustable where Self: UITextField {
         return text?.trimmed ?? ""
     }
 
-    /// Text field text as email address (if applicable).
+    /// Text field text as email address _(if applicable)_.
     public var emailAddress: String? {
         guard trimmedText.isEmail else { return nil }
         return trimmedText

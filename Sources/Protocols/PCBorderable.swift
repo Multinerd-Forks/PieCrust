@@ -66,9 +66,9 @@ public extension PCBorderable where Self: UIView {
     /// Set border properties for a view.
     ///
     /// - Parameters:
-    ///   - width: View border width (default is nil).
-    ///   - color: View border color (default is nil).
-    ///   - radius: View corner radius (default is nil).
+    ///   - width: View border width _(default is nil)_.
+    ///   - color: View border color _(default is nil)_.
+    ///   - radius: View corner radius _(default is nil)_.
     public func setBorder(width: CGFloat? = nil, color: UIColor? = nil, radius: CGFloat? = nil) {
         if let borderWidth = width {
             self.borderWidth = borderWidth

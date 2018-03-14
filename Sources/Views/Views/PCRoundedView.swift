@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Rounded version of PCView.
+/// Rounded `PCView`.
 open class PCRoundedView: PCView {
 
     /// The bounds rectangle, which describes the view’s location and size in its own coordinate system.

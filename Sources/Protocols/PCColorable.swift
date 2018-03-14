@@ -44,8 +44,8 @@ public extension PCColorable where Self: UIColor {
     ///   - red: red component.
     ///   - green: green component.
     ///   - blue: blue component.
-    ///   - transparency: optional transparency value (default is 1).
-    public init?(red: Int, green: Int, blue: Int, transparency: CGFloat = 1) {
+    ///   - transparency: optional transparency value _(default is 1.0)_.
+    public init?(red: Int, green: Int, blue: Int, transparency: CGFloat = 1.0) {
         guard red >= 0 && red <= 255 else { return nil }
         guard green >= 0 && green <= 255 else { return nil }
         guard blue >= 0 && blue <= 255 else { return nil }
@@ -61,8 +61,8 @@ public extension PCColorable where Self: UIColor {
     ///
     /// - Parameters:
     ///   - hex: hex Int (example: 0xDECEB5).
-    ///   - transparency: optional transparency value (default is 1).
-    public init?(hex: Int, transparency: CGFloat = 1) {
+    ///   - transparency: optional transparency value _(default is 1.0)_.
+    public init?(hex: Int, transparency: CGFloat = 1.0) {
         var trans = transparency
         if trans < 0 { trans = 0 }
         if trans > 1 { trans = 1 }
@@ -77,8 +77,8 @@ public extension PCColorable where Self: UIColor {
     ///
     /// - Parameters:
     ///   - hexString: hexadecimal string (examples: EDE7F6, 0xEDE7F6, #EDE7F6, #0ff, 0xF0F, ..).
-    ///   - transparency: optional transparency value (default is 1).
-    public init?(hexString: String, transparency: CGFloat = 1) {
+    ///   - transparency: optional transparency value _(default is 1.0)_.
+    public init?(hexString: String, transparency: CGFloat = 1.0) {
         var string = ""
         if hexString.lowercased().hasPrefix("0x") {
             string =  hexString.replacingOccurrences(of: "0x", with: "")

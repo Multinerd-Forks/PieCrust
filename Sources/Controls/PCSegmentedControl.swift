@@ -13,8 +13,8 @@ import SwifterSwift
 /// PCSegmentedControl.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCSegmentedControl: UISegmentedControl, PCrustable, PCAnimatable, PCBorderable, PCShadowable {}

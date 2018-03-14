@@ -16,9 +16,9 @@ class CarsTableViewController: PCGenericTableController<CarTableViewCell, Car> {
         }
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
         items = Car.cars
     }
 
@@ -32,7 +32,7 @@ class CarsTableViewController: PCGenericTableController<CarTableViewCell, Car> {
     }
 
 	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		return Car.makes[section]
+		return Car.cars[section].first?.make
 	}
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -43,7 +43,9 @@ class CarsTableViewController: PCGenericTableController<CarTableViewCell, Car> {
 	}
 
     @objc private func didTapAddButton() {
-
+        let addCarVC = AddCarViewController()
+        addCarVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(addCarVC, animated: true)
     }
 
 }

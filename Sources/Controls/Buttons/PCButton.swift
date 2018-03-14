@@ -13,11 +13,11 @@ import SwifterSwift
 /// PCButton.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCLayoutable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCLayoutable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCButton: UIButton, PCrustable, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
 
     /// Initializes and returns a newly allocated view object with the specified frame rectangle.

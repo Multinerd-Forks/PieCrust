@@ -13,9 +13,9 @@ import SwifterSwift
 /// PCTableViewController.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCKeyboardObservable
-///   - PCAlertable
+///   - `PCrustable`
+///   - `PCKeyboardObservable`
+///   - `PCAlertable`
 open class PCTableViewController: UITableViewController, PCrustable, PCKeyboardObservable, PCAlertable {
 
     /// Initializes a table-view controller to manage a table view of a given style.

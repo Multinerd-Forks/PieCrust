@@ -12,5 +12,5 @@ import SwifterSwift
 /// PCFont.
 ///
 /// - Conforms to:
-///   - PCFontable
+///   - `PCFontable`
 open class PCFont: UIFont, PCFontable {}

@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import SwifterSwift
 
-/// PCAppVersionLabel.
+/// A `PCLabel` with client app version.
 open class PCAppVersionLabel: PCLabel {
 
     /// Client app Version
@@ -25,7 +25,7 @@ open class PCAppVersionLabel: PCLabel {
     /// Create label and set its properties in one line.
     ///
     /// - Parameters:
-    ///   - hasVPrefeix: weither the string has the "v" prefix (default is true).
+    ///   - hasVPrefeix: weither the string has the "v" prefix _(default is true)_.
     public convenience init(hasVPrefeix: Bool) {
         self.init()
 

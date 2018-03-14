@@ -9,8 +9,8 @@
 // MARK: - UIButton
 public extension PCrustable where Self: UIButton {
 
-    /// Preferred height for autolayout (default is 40.0 for small screens and 48.0 for other screen sizes).
-    /// Override this value by setting `preferredHeight` in `PCConstants` to change it app-wide, or just here to set it for this button only.
+    /// Preferred height for autolayout _(default is 40.0 for small screens and 48.0 for other screen sizes)_.
+    /// Override this value by setting _preferredHeight_ in `PCConstants` to change it app-wide, or just here to set it for this button only.
     public var preferredHeight: CGFloat {
         return PCConstants.preferredHeight
     }
@@ -19,14 +19,14 @@ public extension PCrustable where Self: UIButton {
     ///
     /// - Parameters:
     ///   - type: The button type.
-    ///   - title: The button title for normal state (default is nil).
-    ///   - titleFont: The button title label's font (default is nil).
-    ///   - image: The button image for normal state (defaul is nil).
-    ///   - contentEdgeInsets: The button's content edge insets (defaul is top: 0.0, left: 20.0, bottom: 0.0, right: 20.0).
-    ///   - isEnabled: The enabled state to use when drawing the button (default is true).
-    ///   - backgroundColor: The button background color (defaul is PCColor.white).
-    ///   - tintColor: The button tint color (defaul is nil).
-    ///   - alpha: The button's alpha (default is 1.0).
+    ///   - title: The button title for normal state _(default is nil)_.
+    ///   - titleFont: The button title label's font _(default is nil)_.
+    ///   - image: The button image for normal state _(defaul is nil)_.
+    ///   - contentEdgeInsets: The button's content edge insets _(defaul is top: 0.0, left: 20.0, bottom: 0.0, right: 20.0)_.
+    ///   - isEnabled: The enabled state to use when drawing the button _(default is true)_.
+    ///   - backgroundColor: The button background color _(defaul is PCColor.white)_.
+    ///   - tintColor: The button tint color _(defaul is nil)_.
+    ///   - alpha: The button's alpha _(default is 1.0)_.
     public init(
         type: UIButtonType,
         title: String? = nil,
@@ -63,15 +63,15 @@ extension PCrustable where Self: PCLoadingButton {
     /// Create button and set its properties in one line.
     ///
     /// - Parameters:
-    ///   - type: The button type (default is .custom).
+    ///   - type: The button type _(default is .custom)_.
     ///   - title: The button title for normal state.
-    ///   - image: The button image for normal state (defaul is nil).
-    ///   - contentEdgeInsets: The button's content edge insets (defaul is top: 0.0, left: 40.0, bottom: 0.0, right: 40.0).
-    ///   - isEnabled: The enabled state to use when drawing the button (default is true).
-    ///   - backgroundColor: The button background color (defaul is PCColor.white).
-    ///   - tintColor: The button tint color (defaul is nil).
-    ///   - activityIndicatorTintColor: The button's activitiy indicator's tint color (defaul is nil).
-    ///   - alpha: The button's alpha (default is 1.0).
+    ///   - image: The button image for normal state _(defaul is nil)_.
+    ///   - contentEdgeInsets: The button's content edge insets _(defaul is top: 0.0, left: 40.0, bottom: 0.0, right: 40.0)_.
+    ///   - isEnabled: The enabled state to use when drawing the button _(default is true)_.
+    ///   - backgroundColor: The button background color _(defaul is PCColor.white)_.
+    ///   - tintColor: The button tint color _(defaul is nil)_.
+    ///   - activityIndicatorTintColor: The button's activitiy indicator's tint color _(defaul is nil)_.
+    ///   - alpha: The button's alpha _(default is 1.0)_.
     public init(
         type: UIButtonType = .custom,
         title: String?,

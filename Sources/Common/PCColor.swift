@@ -12,5 +12,5 @@ import SwifterSwift
 /// PCColor.
 ///
 /// - Conforms to:
-///   - PCColorable
+///   - `PCColorable`
 open class PCColor: UIColor, PCColorable {}

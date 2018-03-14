@@ -12,16 +12,16 @@ public extension PCrustable where Self: UILabel {
     ///
     /// - Parameters:
     ///   - text: Label's text.
-    ///   - attributedText: Label's attributed text (default is nil).
-    ///   - textAlignment: The technique to use for aligning the text (default is .natural).
-    ///   - numberOfLines: The maximum number of lines to use for rendering text (default is 1).
-    ///   - textColor: The color of the text (defaul is PCColor.black).
-    ///   - font: label font (defaul is system font).
-    ///   - minimumScaleFactor: The minimum scale factor supported for the label’s text (default is 1).
-    ///   - lineBreakMode: The technique to use for wrapping and truncating the label’s text (default is .byTruncatingTail).
-    ///   - backgroundColor: The label's background color (default is PCColor.white).
-    ///   - tintColor: Text color of the view (default is nil).
-    ///   - alpha: Label's alpha (default is 1.0).
+    ///   - attributedText: Label's attributed text _(default is nil)_.
+    ///   - textAlignment: The technique to use for aligning the text _(default is .natural)_.
+    ///   - numberOfLines: The maximum number of lines to use for rendering text _(default is 1)_.
+    ///   - textColor: The color of the text _(defaul is PCColor.black)_.
+    ///   - font: label font _(defaul is system font)_.
+    ///   - minimumScaleFactor: The minimum scale factor supported for the label’s text _(default is 1.0)_.
+    ///   - lineBreakMode: The technique to use for wrapping and truncating the label’s text _(default is .byTruncatingTail)_.
+    ///   - backgroundColor: The label's background color _(default is PCColor.white)_.
+    ///   - tintColor: Text color of the view _(default is nil)_.
+    ///   - alpha: Label's alpha _(default is 1.0)_.
     public init(
         text: String?,
         attributedText: NSAttributedString? = nil,

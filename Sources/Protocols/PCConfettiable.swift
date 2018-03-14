@@ -25,8 +25,8 @@ public extension PCConfettiable where Self: UIViewController {
 	/// Show confetti.
 	///
 	/// - Parameters:
-	///   - duration: confetti duration in seconds (default is 2).
-	///   - delay: confetti delay in seconds (default is 0).
+	///   - duration: confetti duration in seconds _(default is 2.0)_.
+	///   - delay: confetti delay in seconds _(default is 0.0)_.
 	func showConfetti(duration: TimeInterval = 2.0, delay: TimeInterval = 0) {
 		let confettiView = PCConfettiView(frame: view.bounds)
 		confettiView.layer.zPosition = 100

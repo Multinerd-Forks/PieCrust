@@ -13,8 +13,8 @@ import SwifterSwift
 /// PCVisualEffectView.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCVisualEffectView: UIVisualEffectView, PCrustable, PCAnimatable, PCBorderable, PCShadowable {}

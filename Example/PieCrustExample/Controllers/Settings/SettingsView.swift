@@ -31,7 +31,7 @@ class SettingsView: PCView {
     }()
 
     lazy var stackView: PCStackView = {
-        return [nameLabel, emailLabel].stacked(axis: .vertical, spacing: 2)
+        return PCStackView(arrangedSubviews: [nameLabel, emailLabel], axis: .vertical, spacing: 2.0)
     }()
 
     private lazy var versionLabel: PCAppVersionLabel = {

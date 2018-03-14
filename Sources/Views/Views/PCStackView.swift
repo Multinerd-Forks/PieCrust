@@ -13,8 +13,8 @@ import SwifterSwift
 /// PCStackView.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCStackView: UIStackView, PCrustable, PCAnimatable, PCBorderable, PCShadowable {}

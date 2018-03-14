@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import SwifterSwift
 
-/// Generic PCCollectionViewCell.
+/// Generic `PCCollectionViewCell`.
 open class PCGenericCollectionViewCell<T>: PCCollectionViewCell {
 
 	/// Generic item, override this to set your UI.

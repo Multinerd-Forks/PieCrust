@@ -28,17 +28,17 @@ public extension PCrustable where Self: UIViewController {
         navigationItem.titleView = logoImageView
     }
 
-	/// The nearest ancestor in the view controller hierarchy that is a PCNavigationController.
+	/// The nearest ancestor in the view controller hierarchy that is a `PCNavigationController`.
 	public var pcNavigationController: PCNavigationController? {
 		return navigationController as? PCNavigationController
 	}
 
-	/// The nearest ancestor in the view controller hierarchy that is a PCTabBarController.
+	/// The nearest ancestor in the view controller hierarchy that is a `PCTabBarController`.
 	public var pcTabBarController: PCTabBarController? {
 		return tabBarController as? PCTabBarController
 	}
 
-	/// The PCView that the controller manages.
+	/// The `PCView` that the controller manages.
 	public var pcView: PCView {
 		return view as! PCView
 	}
