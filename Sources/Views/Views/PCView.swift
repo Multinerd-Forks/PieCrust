@@ -13,12 +13,12 @@ import SwifterSwift
 /// PCView.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCLayoutable
-///   - PCKeyboardControllable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCLayoutable`
+///   - `PCKeyboardControllable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCView: UIView, PCrustable, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Initializes and returns a newly allocated view object with the specified frame rectangle.

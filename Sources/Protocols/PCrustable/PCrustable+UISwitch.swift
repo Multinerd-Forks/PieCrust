@@ -11,7 +11,7 @@ public extension PCrustable where Self: UISwitch {
 
     /// Toggle Switch.
     ///
-    /// - Parameter animated: set true to animate the change (default is true).
+    /// - Parameter animated: set true to animate the change _(default is true)_.
     public func toggle(animated: Bool = true) {
         setOn(!isOn, animated: animated)
     }

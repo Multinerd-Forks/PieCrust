@@ -11,6 +11,7 @@ import SnapKit
 import AVFoundation
 import SwifterSwift
 
+/// Transparent `PCNavigationController`.
 open class PCTransparentNavigationController: PCNavigationController {
 
     fileprivate var player: AVPlayer?
@@ -22,6 +23,7 @@ open class PCTransparentNavigationController: PCNavigationController {
         }
     }
 
+    /// Optional background video URL.
     public var backgroundVideoUrl: URL? {
         didSet {
             guard let url = backgroundVideoUrl else { return }
@@ -46,6 +48,7 @@ open class PCTransparentNavigationController: PCNavigationController {
         }
     }
 
+    /// Optional dim color above video.
     public var vidoeDimColor: UIColor? {
         didSet {
             guard let videoLayer = playerLayer else { return }
@@ -62,6 +65,7 @@ open class PCTransparentNavigationController: PCNavigationController {
         return PCImageView(image: nil, contentMode: .scaleAspectFill)
     }()
 
+    /// Called after the controller's view is loaded into memory.
     override open func viewDidLoad() {
         super.viewDidLoad()
 
@@ -71,12 +75,18 @@ open class PCTransparentNavigationController: PCNavigationController {
         delegate = self
     }
 
+    /// Notifies the view controller that its view was added to a view hierarchy.
+    ///
+    /// - Parameter animated: If true, the view was added to the window using an animation.
     override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         player?.play()
     }
 
+    /// Notifies the view controller that its view was removed from a view hierarchy.
+    ///
+    /// - Parameter animated: If true, the disappearance of the view was animated.
     override open func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
 

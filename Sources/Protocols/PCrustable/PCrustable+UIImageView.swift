@@ -13,9 +13,9 @@ public extension PCrustable where Self: UIImageView {
     /// - Parameters:
     ///   - image: image.
     ///   - contentMode: contentMode.
-    ///   - backgroundColor: background color (default is PCColor.white).
-    ///   - tintColor: Text color of the view (default is nil).
-    ///   - alpha: alpha (default is 1.0).
+    ///   - backgroundColor: background color _(default is PCColor.white)_.
+    ///   - tintColor: Text color of the view _(default is nil)_.
+    ///   - alpha: alpha _(default is 1.0)_.
     public init(
         image: UIImage?,
         contentMode: UIViewContentMode,

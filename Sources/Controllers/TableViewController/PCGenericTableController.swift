@@ -10,13 +10,13 @@ import UIKit
 import SnapKit
 import SwifterSwift
 
-/// Generic PCTableController.
+/// Generic `PCTableController`.
 open class PCGenericTableController<T: PCGenericTableViewCell<U>, U>: PCTableViewController {
     
     /// Initializes a table-view controller to manage a table view of a given style and set its items.
     ///
     /// - Parameters:
-    ///   - style: A constant that specifies the style of table view that the controller object is to manage (default is .grouped)
+    ///   - style: A constant that specifies the style of table view that the controller object is to manage _(default is .grouped)_.
     ///   - items: Generic items array of arrays, where each internal array represents a section.
     public convenience init(style: UITableViewStyle = .grouped, items: [[U]]) {
         self.init(style: style)

@@ -12,12 +12,12 @@ public extension PCrustable where Self: UISegmentedControl {
     /// Creates and returns a new UISegmentedControl with setting its properties in one line.
     ///
     /// - Parameters:
-    ///   - frame: The segmented control frame (default is .zero).
+    ///   - frame: The segmented control frame _(default is .zero)_.
     ///   - segmentTitles: segmented control segment titles.
-    ///   - isEnabled: The enabled state to use when drawing the segmented control (default is true).
-    ///   - backgroundColor: The text field's background color (default is PCColor.white).
-    ///   - tintColor: The tint color of the text field (default is nil).
-    ///   - alpha: Alpha of the segmented control (default is 1.0).
+    ///   - isEnabled: The enabled state to use when drawing the segmented control _(default is true)_.
+    ///   - backgroundColor: The text field's background color _(default is PCColor.white)_.
+    ///   - tintColor: The tint color of the text field _(default is nil)_.
+    ///   - alpha: Alpha of the segmented control _(default is 1.0)_.
     public init(
         frame: CGRect = .zero,
         segmentTitles: [String],
@@ -41,12 +41,12 @@ public extension PCrustable where Self: UISegmentedControl {
     /// Create segmented control and set its segment images in one line.
     ///
     /// - Parameters:
-    ///   - frame: segmented control frame (default is .zero).
+    ///   - frame: segmented control frame _(default is .zero)_.
     ///   - segmentImages: segmented control segment images.
-    ///   - isEnabled: The enabled state to use when drawing the segmented control (default is true).
-    ///   - backgroundColor: The text field's background color (default is PCColor.white).
-    ///   - tintColor: The tint color of the text field (default is nil).
-    ///   - alpha: Alpha of the segmented control (default is 1.0).
+    ///   - isEnabled: The enabled state to use when drawing the segmented control _(default is true)_.
+    ///   - backgroundColor: The text field's background color _(default is PCColor.white)_.
+    ///   - tintColor: The tint color of the text field _(default is nil)_.
+    ///   - alpha: Alpha of the segmented control _(default is 1.0)_.
     public init(
         frame: CGRect = .zero,
         segmentImages: [UIImage],
@@ -67,8 +67,8 @@ public extension PCrustable where Self: UISegmentedControl {
         self.alpha = alpha
     }
 
-    /// Preferred height for autolayout (default is 40.0 for small screens and 48.0 for other screen sizes).
-    /// Override this value by setting `preferredHeight` in `PCConstants` to change it app-wide, or just here to set it for this segmented control only.
+    /// Preferred height for autolayout _(default is 40.0 for iPhone SE screen sizes and 48.0 for others)_.
+    /// Override this value by setting _preferredHeight_ in `PCConstants` to change it app-wide, or just here to set it for this segmented control only.
     public var preferredHeight: CGFloat {
         return PCConstants.preferredHeight
     }

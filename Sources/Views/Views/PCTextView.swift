@@ -11,8 +11,8 @@ import UIKit
 /// PCTextView.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCTextView: UITextView, PCrustable, PCAnimatable, PCBorderable, PCShadowable {}

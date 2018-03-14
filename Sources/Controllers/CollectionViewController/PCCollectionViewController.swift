@@ -13,9 +13,9 @@ import SwifterSwift
 /// PCCollectionViewController.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCKeyboardObservable
-///   - PCAlertable
+///   - `PCrustable`
+///   - `PCKeyboardObservable`
+///   - `PCAlertable`
 open class PCCollectionViewController: UICollectionViewController, PCrustable, PCKeyboardObservable, PCAlertable {
 
 	/// Returns a newly initialized view controller with the nib file in the specified bundle.

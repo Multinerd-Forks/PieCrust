@@ -61,11 +61,11 @@ public extension PCAlertable where Self: UIViewController {
 	/// - Parameters:
 	///   - title: alert title.
 	///   - message: alert message.
-	///   - preferredStyle: alert preferred style (default is .alert).
-	///   - tintColor: alert tint color (default is nil).
-	///   - actions: alert actions array (default is []).
-	///   - animated: set to true to animate alert presentation (defalt is true).
-	///   - completion: optional completion handler is called after the alert is presented (default is nil).
+	///   - preferredStyle: alert preferred style _(default is .alert)_.
+	///   - tintColor: alert tint color _(default is nil)_.
+	///   - actions: alert actions array _(default is empty)_.
+	///   - animated: set to true to animate alert presentation _(defalt is true)_.
+	///   - completion: optional completion handler is called after the alert is presented _(default is nil)_.
 	/// - Returns: presented alert.
 	public func presentAlert(title: String?,
 							 message: String?,
@@ -97,11 +97,11 @@ public extension PCAlertable where Self: UIViewController {
 	/// - Parameters:
 	///   - title: alert title.
 	///   - error: error.
-	///   - preferredStyle: alert preferred style (default is .alert).
-	///   - tintColor: alert tint color (default is nil).
-	///   - actions: alert actions array (default is []).
-	///   - animated: set to true to animate alert presentation (defalt is true).
-	///   - completion: optional completion handler is called after the alert is presented (default is nil).
+	///   - preferredStyle: alert preferred style _(default is .alert)_.
+	///   - tintColor: alert tint color _(default is nil)_.
+	///   - actions: alert actions array _(default is empty)_.
+	///   - animated: set to true to animate alert presentation _(defalt is true)_.
+	///   - completion: optional completion handler is called after the alert is presented _(default is nil)_.
 	/// - Returns: presented alert.
 	public func presentAlert(title: String?,
 							 error: Error,

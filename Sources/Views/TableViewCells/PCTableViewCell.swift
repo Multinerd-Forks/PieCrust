@@ -13,11 +13,11 @@ import SwifterSwift
 /// PCTableViewCell.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCLayoutable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCLayoutable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCTableViewCell: UITableViewCell, PCrustable, PCLayoutable, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Initializes a table cell with a style and a reuse identifier and returns it to the caller.

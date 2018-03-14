@@ -13,7 +13,7 @@ import SwifterSwift
 /// PCNavigationController.
 /// 
 /// - Conforms to:
-///   - PCrustable
-///   - PCAlertable
-///   - PCConfettiable
+///   - `PCrustable`
+///   - `PCAlertable`
+///   - `PCConfettiable`
 open class PCNavigationController: UINavigationController, PCrustable, PCAlertable, PCConfettiable {}

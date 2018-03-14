@@ -13,8 +13,8 @@ import SwifterSwift
 /// PCSwitch.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCSwitch: UISwitch, PCrustable, PCAnimatable, PCBorderable, PCShadowable {}

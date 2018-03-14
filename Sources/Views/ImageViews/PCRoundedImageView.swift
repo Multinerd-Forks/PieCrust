@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import SwifterSwift
 
-/// PCRoundedImageView
+/// Rounded `PCImageView`.
 open class PCRoundedImageView: PCImageView {
 
     /// The bounds rectangle, which describes the view’s location and size in its own coordinate system.

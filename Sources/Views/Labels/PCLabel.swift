@@ -13,8 +13,8 @@ import SwifterSwift
 /// PCLabel.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCLabel: UILabel, PCrustable, PCAnimatable, PCBorderable, PCShadowable {}

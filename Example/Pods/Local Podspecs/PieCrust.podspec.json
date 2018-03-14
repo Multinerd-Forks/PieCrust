@@ -1,6 +1,6 @@
 {
   "name": "PieCrust",
-  "version": "0.6",
+  "version": "0.7",
   "summary": "PieCrust is a protocol oriented abstraction layer we use to create iOS apps quickly and efficiently.",
   "description": "PieCrust is a protocol oriented abstraction layer built on top of UIKit with handy classes, protocols, extensions, syntactic sugar and more, to create iOS apps quickly and efficiently.",
   "homepage": "https://github.com/MobilionOSS/PieCrust",
@@ -9,7 +9,7 @@
     "file": "LICENSE"
   },
   "social_media_url": "http://twitter.com/omaralbeik",
-  "screenshots": "https://cdn.rawgit.com/MobilionOSS/PieCrust/master/Assets/logo.svg",
+  "screenshots": "https://cdn.rawgit.com/MobilionOSS/PieCrust/master/Assets/piecrust-logo.svg",
   "authors": {
     "Mobilion": "https://github.com/MobilionOSS",
     "Omar Albeik": "https://twitter.com/omaralbeik"
@@ -17,7 +17,7 @@
   "module_name": "PieCrust",
   "source": {
     "git": "https://github.com/MobilionOSS/PieCrust.git",
-    "tag": "0.6"
+    "tag": "0.7"
   },
   "source_files": "Sources/**/*.swift",
   "documentation_url": "https://mobilionoss.github.io/PieCrustDocs/",
@@ -37,10 +37,10 @@
       "~> 4.0"
     ],
     "SwifterSwift/SwiftStdlib": [
-      "~> 4.1"
+      "~> 4.2"
     ],
     "SwifterSwift/Foundation": [
-      "~> 4.1"
+      "~> 4.2"
     ]
   }
 }

@@ -13,10 +13,10 @@ import SwifterSwift
 /// PCViewController.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCKeyboardObservable
-///   - PCAlertable
-///   - PCConfettiable
+///   - `PCrustable`
+///   - `PCKeyboardObservable`
+///   - `PCAlertable`
+///   - `PCConfettiable`
 open class PCViewController: UIViewController, PCrustable, PCKeyboardObservable, PCAlertable, PCConfettiable {
 
     /// Returns a newly initialized view controller with the nib file in the specified bundle.

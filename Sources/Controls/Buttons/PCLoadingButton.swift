@@ -10,10 +10,10 @@ import UIKit
 import SnapKit
 import SwifterSwift
 
-/// PCLoadingButton.
+/// Loading `PCButton`.
 ///
 /// - Conforms to:
-///   - PCLoadingable
+///   - `PCLoadingable`
 open class PCLoadingButton: PCButton, PCLoadingable {
 
 	/// Loading activity indicator view.

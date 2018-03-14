@@ -11,8 +11,8 @@ import UIKit
 /// PCDatePicker
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCDatePicker: UIDatePicker, PCrustable, PCAnimatable, PCBorderable, PCShadowable {}

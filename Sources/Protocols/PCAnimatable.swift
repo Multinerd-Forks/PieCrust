@@ -58,9 +58,9 @@ public extension PCAnimatable where Self: UIView {
 	/// Fade in view.
 	///
 	/// - Parameters:
-	///   - duration: animation duration in seconds (default is 1 second).
-	///   - delay: animation delay in seconds (default is 0 second).
-	///   - completion: optional completion handler to run with animation finishes (default is nil)
+	///   - duration: animation duration in seconds _(default is 1.0 second)_.
+	///   - delay: animation delay in seconds _(default is 0.0 second)_.
+	///   - completion: optional completion handler to run with animation finishes _(default is nil)_.
 	public func fadeIn(withDuration duration: TimeInterval = 1.0,
 					   delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
 
@@ -72,9 +72,9 @@ public extension PCAnimatable where Self: UIView {
 	/// Fade out view.
 	///
 	/// - Parameters:
-	///   - duration: animation duration in seconds (default is 1 second).
-	///   - delay: animation delay in seconds (default is 0 second).
-	///   - completion: optional completion handler to run with animation finishes (default is nil)
+	///   - duration: animation duration in seconds _(default is 1.0 second)_.
+	///   - delay: animation delay in seconds _(default is 0.0 second)_.
+	///   - completion: optional completion handler to run with animation finishes _(default is nil)_.
 	public func fadeOut(withDuration duration: TimeInterval = 1.0,
 						delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
 
@@ -86,10 +86,10 @@ public extension PCAnimatable where Self: UIView {
 	/// Pop in view.
 	///
 	/// - Parameters:
-	///   - duration: animation duration in seconds (default is 1 second).
-	///   - delay: animation delay in seconds (default is 0 second).
-	///   - completion: optional completion handler to run with animation finishes (default is nil)
-	public func popIn(withDuration duration: TimeInterval = 0.2,
+	///   - duration: animation duration in seconds _(default is 0.25 second)_.
+	///   - delay: animation delay in seconds _(default is 0.0 second)_.
+	///   - completion: optional completion handler to run with animation finishes _(default is nil)_.
+	public func popIn(withDuration duration: TimeInterval = 0.25,
 					  delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
 
 		UIView.animate(withDuration: duration, delay: delay, options: [], animations: {
@@ -100,10 +100,10 @@ public extension PCAnimatable where Self: UIView {
 	/// Pop out view.
 	///
 	/// - Parameters:
-	///   - duration: animation duration in seconds (default is 1 second).
-	///   - delay: animation delay in seconds (default is 0 second).
-	///   - completion: optional completion handler to run with animation finishes (default is nil)
-	public func popOut(withDuration duration: TimeInterval = 0.2,
+	///   - duration: animation duration in seconds _(default is 0.25 second)_.
+	///   - delay: animation delay in seconds _(default is 0.0 second)_.
+	///   - completion: optional completion handler to run with animation finishes _(default is nil)_.
+	public func popOut(withDuration duration: TimeInterval = 0.25,
 					   delay: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
 
 		UIView.animate(withDuration: duration, delay: delay, options: [], animations: {
@@ -114,9 +114,9 @@ public extension PCAnimatable where Self: UIView {
 	/// Shake view.
 	///
 	/// - Parameters:
-	///   - duration: animation duration in seconds (default is 1 second).
-	///   - delay: animation delay in seconds (default is 0 second).
-	///   - completion: optional completion handler to run with animation finishes (default is nil).
+	///   - duration: animation duration in seconds _(default is 1.0 second)_.
+	///   - delay: animation delay in seconds _(default is 0.0 second)_.
+	///   - completion: optional completion handler to run with animation finishes _(default is nil)_.
 	public func shake(withDuration duration: TimeInterval = 1.0,
 					  delay: TimeInterval = 0.0, completion: (() -> Void)? = nil) {
 

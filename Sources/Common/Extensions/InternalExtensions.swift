@@ -9,8 +9,10 @@
 import UIKit
 import SwifterSwift
 
+// MARK: - Internal Bundle extensions
 internal extension Bundle {
 
+    /// Returns PieCrust assets bundle.
 	static var PieCrustAssetsBundle: Bundle? {
 		let podBundle = Bundle(for: PCViewController.self)
 		guard let resourceBundleUrl = podBundle.url(forResource: "PieCrustAssets", withExtension: "bundle") else { return nil }
@@ -20,16 +22,28 @@ internal extension Bundle {
 
 }
 
+// MARK: - Internal UIScreen extensions
 internal extension UIScreen {
 
+    /// Check if screen is small.
 	var isSmall: Bool {
 		return bounds.width < 375
 	}
 
 }
 
+// MARK: - Internal UIViewController extensions
 internal extension UIViewController {
 
+    /// Creates an alert.
+    ///
+    /// - Parameters:
+    ///   - title: alert title.
+    ///   - message: alert message.
+    ///   - preferredStyle: alert preferred style _(default is .alert)_.
+    ///   - actions: alert actions array _(default is empty)_.
+    ///   - animated: wether presentation is animated or not _(default is true)_.
+    /// - Returns: UIAlertController instance.
 	@discardableResult
 	func alert(
 		title: String? = nil,

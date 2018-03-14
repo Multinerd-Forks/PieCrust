@@ -13,12 +13,12 @@ import SwifterSwift
 /// PCImageView.
 ///
 /// - Conforms to:
-///   - PCrustable
-///   - PCLayoutable
-///   - PCKeyboardControllable
-///   - PCAnimatable
-///   - PCBorderable
-///   - PCShadowable
+///   - `PCrustable`
+///   - `PCLayoutable`
+///   - `PCKeyboardControllable`
+///   - `PCAnimatable`
+///   - `PCBorderable`
+///   - `PCShadowable`
 open class PCImageView: UIImageView, PCrustable, PCLayoutable, PCKeyboardControllable, PCAnimatable, PCBorderable, PCShadowable {
 
 	/// Returns an image view initialized with the specified image.
