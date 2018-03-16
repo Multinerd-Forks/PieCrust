@@ -84,6 +84,17 @@
 		07FD1DE0204BEA1C0074FC6F /* PCTextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD1DDF204BEA1C0074FC6F /* PCTextFieldType.swift */; };
 		10BECFC5A4C6CA13C783D623 /* Pods_PieCrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A24FF575DD603DF0641541 /* Pods_PieCrust.framework */; };
 		9CABBA96D3664D76A93E5EEF /* Pods_PieCrustTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB90DEA029ADF1603D9AA19 /* Pods_PieCrustTests.framework */; };
+		9D48C253205A5A8E006AD24C /* PCButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C252205A5A8E006AD24C /* PCButtonTests.swift */; };
+		9D7A62B8205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62B7205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift */; };
+		9D7A62BB205BF01100DBDDD2 /* PCCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62BA205BF01100DBDDD2 /* PCCollectionViewCellTests.swift */; };
+		9D7A62BE205BF1CE00DBDDD2 /* PCRoundedViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62BD205BF1CE00DBDDD2 /* PCRoundedViewTests.swift */; };
+		9D7A62C0205BF26B00DBDDD2 /* PCScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62BF205BF26B00DBDDD2 /* PCScrollViewTests.swift */; };
+		9D7A62C2205BF58600DBDDD2 /* PCLoadingButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62C1205BF58600DBDDD2 /* PCLoadingButtonTests.swift */; };
+		9D7A62C4205BFCF500DBDDD2 /* PCDatePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62C3205BFCF500DBDDD2 /* PCDatePickerTests.swift */; };
+		9D7A62C6205C0B2D00DBDDD2 /* PCWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62C5205C0B2D00DBDDD2 /* PCWebViewTests.swift */; };
+		9DBE2589205A6FBA001E9305 /* PCPillTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE2588205A6FBA001E9305 /* PCPillTextFieldTests.swift */; };
+		9DBE258E205A914C001E9305 /* PCImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE258D205A914C001E9305 /* PCImageViewTests.swift */; };
+		9DBE2590205A95FB001E9305 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBE258F205A95FB001E9305 /* assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +189,17 @@
 		12A24FF575DD603DF0641541 /* Pods_PieCrust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PieCrust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CBBC1DC7D2FD0A302F9602 /* Pods-PieCrust.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrust.release.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust.release.xcconfig"; sourceTree = "<group>"; };
 		3E29A3584D79B23F9A56D03F /* Pods-PieCrust.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrust.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust.debug.xcconfig"; sourceTree = "<group>"; };
+		9D48C252205A5A8E006AD24C /* PCButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCButtonTests.swift; sourceTree = "<group>"; };
+		9D7A62B7205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCRoundedImageViewTests.swift; sourceTree = "<group>"; };
+		9D7A62BA205BF01100DBDDD2 /* PCCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewCellTests.swift; sourceTree = "<group>"; };
+		9D7A62BD205BF1CE00DBDDD2 /* PCRoundedViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCRoundedViewTests.swift; sourceTree = "<group>"; };
+		9D7A62BF205BF26B00DBDDD2 /* PCScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCScrollViewTests.swift; sourceTree = "<group>"; };
+		9D7A62C1205BF58600DBDDD2 /* PCLoadingButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCLoadingButtonTests.swift; sourceTree = "<group>"; };
+		9D7A62C3205BFCF500DBDDD2 /* PCDatePickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCDatePickerTests.swift; sourceTree = "<group>"; };
+		9D7A62C5205C0B2D00DBDDD2 /* PCWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCWebViewTests.swift; sourceTree = "<group>"; };
+		9DBE2588205A6FBA001E9305 /* PCPillTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillTextFieldTests.swift; sourceTree = "<group>"; };
+		9DBE258D205A914C001E9305 /* PCImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCImageViewTests.swift; sourceTree = "<group>"; };
+		9DBE258F205A95FB001E9305 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		BBB90DEA029ADF1603D9AA19 /* Pods_PieCrustTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PieCrustTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBE8D9167CE34F1DC69FF1A /* Pods-PieCrustTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrustTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrustTests/Pods-PieCrustTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2F4630D8073FA1DEE419AC4 /* Pods-PieCrustTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrustTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrustTests/Pods-PieCrustTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -291,6 +313,9 @@
 		074EDDD82037422000343889 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9D7A62BC205BF1C100DBDDD2 /* Views */,
+				9D7A62B9205BEFEB00DBDDD2 /* CollectionViewCells */,
+				9D7A62B4205BEAC800DBDDD2 /* ImageViews */,
 				074EDDD72037421600343889 /* Labels */,
 			);
 			path = Views;
@@ -353,6 +378,7 @@
 				072AE05B2028506B00D8DDAD /* Assets */,
 				0701FE3A202830C90055AC19 /* PieCrust.h */,
 				0701FE3B202830C90055AC19 /* Info.plist */,
+				9DBE258F205A95FB001E9305 /* assets.xcassets */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -360,7 +386,9 @@
 		07B5706D203AECCF002960D4 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				9D48C251205A5A66006AD24C /* Buttons */,
 				07EE019D203A9BD500B26C25 /* TextFields */,
+				9D7A62C3205BFCF500DBDDD2 /* PCDatePickerTests.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -502,6 +530,7 @@
 			isa = PBXGroup;
 			children = (
 				07EE019E203A9C1500B26C25 /* PCTextFieldTests.swift */,
+				9DBE2588205A6FBA001E9305 /* PCPillTextFieldTests.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -524,6 +553,42 @@
 				CBBE8D9167CE34F1DC69FF1A /* Pods-PieCrustTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D48C251205A5A66006AD24C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				9D48C252205A5A8E006AD24C /* PCButtonTests.swift */,
+				9D7A62C1205BF58600DBDDD2 /* PCLoadingButtonTests.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		9D7A62B4205BEAC800DBDDD2 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				9DBE258D205A914C001E9305 /* PCImageViewTests.swift */,
+				9D7A62B7205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		9D7A62B9205BEFEB00DBDDD2 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9D7A62BA205BF01100DBDDD2 /* PCCollectionViewCellTests.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		9D7A62BC205BF1C100DBDDD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D7A62BD205BF1CE00DBDDD2 /* PCRoundedViewTests.swift */,
+				9D7A62BF205BF26B00DBDDD2 /* PCScrollViewTests.swift */,
+				9D7A62C5205C0B2D00DBDDD2 /* PCWebViewTests.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,6 +691,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DBE2590205A95FB001E9305 /* assets.xcassets in Resources */,
 				072AE05D2028506B00D8DDAD /* PieCrustAssets.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -823,8 +889,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7A62C6205C0B2D00DBDDD2 /* PCWebViewTests.swift in Sources */,
+				9DBE258E205A914C001E9305 /* PCImageViewTests.swift in Sources */,
+				9D7A62BB205BF01100DBDDD2 /* PCCollectionViewCellTests.swift in Sources */,
 				07EE01A0203A9C3300B26C25 /* PCTextFieldTests.swift in Sources */,
+				9D7A62C4205BFCF500DBDDD2 /* PCDatePickerTests.swift in Sources */,
+				9D7A62BE205BF1CE00DBDDD2 /* PCRoundedViewTests.swift in Sources */,
+				9D7A62C2205BF58600DBDDD2 /* PCLoadingButtonTests.swift in Sources */,
+				9DBE2589205A6FBA001E9305 /* PCPillTextFieldTests.swift in Sources */,
+				9D7A62B8205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift in Sources */,
 				074EDDD62037309D00343889 /* PCLabelTests.swift in Sources */,
+				9D7A62C0205BF26B00DBDDD2 /* PCScrollViewTests.swift in Sources */,
+				9D48C253205A5A8E006AD24C /* PCButtonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
