@@ -20,4 +20,35 @@ class PCScrollViewTests: XCTestCase {
         XCTAssertEqual(pcScrollViewWithCustomFrame.frame, frame)
     }
 
+    func testConvenienceInit() {
+        let scrollView = PCScrollView()
+        XCTAssertTrue(scrollView.isScrollEnabled)
+        XCTAssertFalse(scrollView.isDirectionalLockEnabled)
+        XCTAssertFalse(scrollView.isPagingEnabled)
+        XCTAssertTrue(scrollView.scrollsToTop)
+        XCTAssertTrue(scrollView.bounces)
+        XCTAssertFalse(scrollView.alwaysBounceVertical)
+        XCTAssertFalse(scrollView.alwaysBounceHorizontal)
+        XCTAssertEqual(scrollView.minimumZoomScale, 1.0)
+        XCTAssertEqual(scrollView.maximumZoomScale, 1.0)
+        XCTAssertTrue(scrollView.bouncesZoom)
+        XCTAssertEqual(scrollView.keyboardDismissMode, .none)
+        XCTAssertEqual(scrollView.backgroundColor, PCColor.white)
+        XCTAssertEqual(scrollView.tintColor, UIScrollView().tintColor)
+        XCTAssertEqual(scrollView.alpha, 1.0)
+
+        let customScroll = PCScrollView(isScrollEnabled: false, isDirectionalLockEnabled: true, isPagingEnabled: true, scrollsToTop: false, bounces: false, alwaysBounceVertical: true, alwaysBounceHorizontal: true, minimumZoomScale: 2.0, maximumZoomScale: 2.0, bouncesZoom: false, keyboardDismissMode: .onDrag, backgroundColor: PCColor.green, tintColor: PCColor.blue, alpha: 0.5)
+
+        XCTAssertFalse(customScroll.isScrollEnabled)
+        XCTAssertTrue(customScroll.isDirectionalLockEnabled)
+        XCTAssertTrue(customScroll.isPagingEnabled)
+        XCTAssertFalse(customScroll.scrollsToTop)
+        XCTAssertFalse(customScroll.bounces)
+        XCTAssertTrue(customScroll.alwaysBounceVertical)
+        XCTAssertTrue(customScroll.alwaysBounceHorizontal)
+        XCTAssertEqual(customScroll.minimumZoomScale, 2.0)
+        XCTAssertEqual(customScroll.maximumZoomScale, 2.0)
+        XCTAssertFalse(customScroll.bouncesZoom)
+
+    }
 }

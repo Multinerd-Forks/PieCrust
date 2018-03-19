@@ -85,6 +85,15 @@
 		10BECFC5A4C6CA13C783D623 /* Pods_PieCrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A24FF575DD603DF0641541 /* Pods_PieCrust.framework */; };
 		9CABBA96D3664D76A93E5EEF /* Pods_PieCrustTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB90DEA029ADF1603D9AA19 /* Pods_PieCrustTests.framework */; };
 		9D486ABA205F923D0096E97D /* PCViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486AB9205F923D0096E97D /* PCViewTests.swift */; };
+		9D486ABC205FA1EF0096E97D /* PCPillLoadingButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486ABB205FA1EF0096E97D /* PCPillLoadingButtonTests.swift */; };
+		9D486ABE205FA55C0096E97D /* PCBarButtonItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486ABD205FA55C0096E97D /* PCBarButtonItemTests.swift */; };
+		9D486AC2205FCEBD0096E97D /* PCPillButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486AC1205FCEBD0096E97D /* PCPillButtonTests.swift */; };
+		9D486AC4205FD17B0096E97D /* PCSegmentedControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486AC3205FD17B0096E97D /* PCSegmentedControlTests.swift */; };
+		9D486AC8205FE8340096E97D /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBE258F205A95FB001E9305 /* assets.xcassets */; };
+		9D486ACC205FF5570096E97D /* PCNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486ACB205FF5570096E97D /* PCNavigationControllerTests.swift */; };
+		9D486ACF205FFBAD0096E97D /* PCTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486ACE205FFBAD0096E97D /* PCTableViewCellTests.swift */; };
+		9D486AD1206000EA0096E97D /* PCGenericTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486AD0206000EA0096E97D /* PCGenericTableViewCellTests.swift */; };
+		9D486AD3206005A50096E97D /* PCTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486AD2206005A50096E97D /* PCTextViewTests.swift */; };
 		9D48C253205A5A8E006AD24C /* PCButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C252205A5A8E006AD24C /* PCButtonTests.swift */; };
 		9D7A62B8205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62B7205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift */; };
 		9D7A62BB205BF01100DBDDD2 /* PCCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62BA205BF01100DBDDD2 /* PCCollectionViewCellTests.swift */; };
@@ -191,6 +200,14 @@
 		25CBBC1DC7D2FD0A302F9602 /* Pods-PieCrust.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrust.release.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust.release.xcconfig"; sourceTree = "<group>"; };
 		3E29A3584D79B23F9A56D03F /* Pods-PieCrust.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PieCrust.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PieCrust/Pods-PieCrust.debug.xcconfig"; sourceTree = "<group>"; };
 		9D486AB9205F923D0096E97D /* PCViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCViewTests.swift; sourceTree = "<group>"; };
+		9D486ABB205FA1EF0096E97D /* PCPillLoadingButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillLoadingButtonTests.swift; sourceTree = "<group>"; };
+		9D486ABD205FA55C0096E97D /* PCBarButtonItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCBarButtonItemTests.swift; sourceTree = "<group>"; };
+		9D486AC1205FCEBD0096E97D /* PCPillButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillButtonTests.swift; sourceTree = "<group>"; };
+		9D486AC3205FD17B0096E97D /* PCSegmentedControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCSegmentedControlTests.swift; sourceTree = "<group>"; };
+		9D486ACB205FF5570096E97D /* PCNavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCNavigationControllerTests.swift; sourceTree = "<group>"; };
+		9D486ACE205FFBAD0096E97D /* PCTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTableViewCellTests.swift; sourceTree = "<group>"; };
+		9D486AD0206000EA0096E97D /* PCGenericTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericTableViewCellTests.swift; sourceTree = "<group>"; };
+		9D486AD2206005A50096E97D /* PCTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTextViewTests.swift; sourceTree = "<group>"; };
 		9D48C252205A5A8E006AD24C /* PCButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCButtonTests.swift; sourceTree = "<group>"; };
 		9D7A62B7205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCRoundedImageViewTests.swift; sourceTree = "<group>"; };
 		9D7A62BA205BF01100DBDDD2 /* PCCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewCellTests.swift; sourceTree = "<group>"; };
@@ -315,6 +332,7 @@
 		074EDDD82037422000343889 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9D486ACD205FFB940096E97D /* TableViewCells */,
 				9D7A62BC205BF1C100DBDDD2 /* Views */,
 				9D7A62B9205BEFEB00DBDDD2 /* CollectionViewCells */,
 				9D7A62B4205BEAC800DBDDD2 /* ImageViews */,
@@ -353,6 +371,7 @@
 		079508792036FF5D003EA142 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				9D486AC9205FF52C0096E97D /* Controllers */,
 				07B5706D203AECCF002960D4 /* Controls */,
 				0795087C2036FF5D003EA142 /* Info.plist */,
 				074EDDD82037422000343889 /* Views */,
@@ -391,6 +410,7 @@
 				9D48C251205A5A66006AD24C /* Buttons */,
 				07EE019D203A9BD500B26C25 /* TextFields */,
 				9D7A62C3205BFCF500DBDDD2 /* PCDatePickerTests.swift */,
+				9D486AC3205FD17B0096E97D /* PCSegmentedControlTests.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -557,11 +577,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9D486AC9205FF52C0096E97D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D486ACA205FF5360096E97D /* NavigationControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9D486ACA205FF5360096E97D /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D486ACB205FF5570096E97D /* PCNavigationControllerTests.swift */,
+			);
+			path = NavigationControllers;
+			sourceTree = "<group>";
+		};
+		9D486ACD205FFB940096E97D /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9D486ACE205FFBAD0096E97D /* PCTableViewCellTests.swift */,
+				9D486AD0206000EA0096E97D /* PCGenericTableViewCellTests.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		9D48C251205A5A66006AD24C /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
 				9D48C252205A5A8E006AD24C /* PCButtonTests.swift */,
 				9D7A62C1205BF58600DBDDD2 /* PCLoadingButtonTests.swift */,
+				9D486ABB205FA1EF0096E97D /* PCPillLoadingButtonTests.swift */,
+				9D486ABD205FA55C0096E97D /* PCBarButtonItemTests.swift */,
+				9D486AC1205FCEBD0096E97D /* PCPillButtonTests.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -590,6 +638,7 @@
 				9D7A62BF205BF26B00DBDDD2 /* PCScrollViewTests.swift */,
 				9D7A62C5205C0B2D00DBDDD2 /* PCWebViewTests.swift */,
 				9D486AB9205F923D0096E97D /* PCViewTests.swift */,
+				9D486AD2206005A50096E97D /* PCTextViewTests.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -704,6 +753,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D486AC8205FE8340096E97D /* assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,16 +958,24 @@
 			files = (
 				9D7A62C6205C0B2D00DBDDD2 /* PCWebViewTests.swift in Sources */,
 				9DBE258E205A914C001E9305 /* PCImageViewTests.swift in Sources */,
+				9D486ABC205FA1EF0096E97D /* PCPillLoadingButtonTests.swift in Sources */,
 				9D7A62BB205BF01100DBDDD2 /* PCCollectionViewCellTests.swift in Sources */,
 				07EE01A0203A9C3300B26C25 /* PCTextFieldTests.swift in Sources */,
+				9D486AC2205FCEBD0096E97D /* PCPillButtonTests.swift in Sources */,
+				9D486AD1206000EA0096E97D /* PCGenericTableViewCellTests.swift in Sources */,
 				9D7A62C4205BFCF500DBDDD2 /* PCDatePickerTests.swift in Sources */,
+				9D486ACF205FFBAD0096E97D /* PCTableViewCellTests.swift in Sources */,
 				9D7A62BE205BF1CE00DBDDD2 /* PCRoundedViewTests.swift in Sources */,
+				9D486ACC205FF5570096E97D /* PCNavigationControllerTests.swift in Sources */,
 				9D7A62C2205BF58600DBDDD2 /* PCLoadingButtonTests.swift in Sources */,
 				9DBE2589205A6FBA001E9305 /* PCPillTextFieldTests.swift in Sources */,
+				9D486AC4205FD17B0096E97D /* PCSegmentedControlTests.swift in Sources */,
 				9D7A62B8205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift in Sources */,
 				9D486ABA205F923D0096E97D /* PCViewTests.swift in Sources */,
 				074EDDD62037309D00343889 /* PCLabelTests.swift in Sources */,
 				9D7A62C0205BF26B00DBDDD2 /* PCScrollViewTests.swift in Sources */,
+				9D486AD3206005A50096E97D /* PCTextViewTests.swift in Sources */,
+				9D486ABE205FA55C0096E97D /* PCBarButtonItemTests.swift in Sources */,
 				9D48C253205A5A8E006AD24C /* PCButtonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
