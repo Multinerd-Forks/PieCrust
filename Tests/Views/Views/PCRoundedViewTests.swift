@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import PieCrust
+
 class PCRoundedViewTests: XCTestCase {
     
     func testBounds() {
@@ -15,10 +16,8 @@ class PCRoundedViewTests: XCTestCase {
         XCTAssertEqual(pcRoundedView.layer.cornerRadius, 0)
 
         pcRoundedView.bounds = CGRect(x: 0, y: 0, width: 100, height: 50)
-
         XCTAssertEqual(pcRoundedView.layer.cornerRadius, 25)
         XCTAssertEqual(pcRoundedView.clipsToBounds, true)
-
     }
     
 }

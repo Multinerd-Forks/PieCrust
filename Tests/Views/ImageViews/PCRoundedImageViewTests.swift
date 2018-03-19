@@ -19,11 +19,9 @@ class PCRoundedImageViewTests: XCTestCase {
 
         XCTAssertEqual(pcimageView.layer.cornerRadius, 25)
         XCTAssertEqual(pcimageView.clipsToBounds, true)
-
     }
 
     func testImage() {
-
         let pcimageView = PCRoundedImageView(image: UIImage(named: "piecrust.png"))
         XCTAssertEqual(pcimageView.image, UIImage(named: "piecrust.png"))
         XCTAssertEqual(pcimageView.layer.cornerRadius, 0)
@@ -32,7 +30,6 @@ class PCRoundedImageViewTests: XCTestCase {
 
         XCTAssertEqual(pcimageView.layer.cornerRadius, 25)
         XCTAssertEqual(pcimageView.clipsToBounds, true)
-
     }
 
 }

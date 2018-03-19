@@ -27,8 +27,8 @@ class PCButtonTests: XCTestCase {
         let customButton = CustomButton()
         XCTAssertEqual(customButton.preferredHeight, 10.0)
     }
-    func  testConvenienceInit() {
 
+    func  testConvenienceInit() {
         let buttonWithDefaultArgs = PCButton(type: UIButtonType.system, title: "hello world")
         XCTAssertNotNil(buttonWithDefaultArgs.currentTitle)
         XCTAssertEqual(buttonWithDefaultArgs.currentTitle, "hello world")
@@ -37,7 +37,7 @@ class PCButtonTests: XCTestCase {
         XCTAssertEqual(buttonWithDefaultArgs.backgroundColor, PCColor.white)
         XCTAssertEqual(buttonWithDefaultArgs.tintColor, UIButton().tintColor)
 
-        var insets = UIEdgeInsets(top: 0.0, left: 20.0, bottom: 0.0, right: 20.0)
+        let insets = UIEdgeInsets(top: 0.0, left: 20.0, bottom: 0.0, right: 20.0)
         XCTAssertEqual(buttonWithDefaultArgs.contentEdgeInsets, insets)
 
         let font = PCFont.systemFont(ofSize: 50, weight: .bold)
@@ -50,7 +50,6 @@ class PCButtonTests: XCTestCase {
 
         let buttonWithCustomTintColor = PCButton(tintColor: color)
         XCTAssertEqual(buttonWithCustomTintColor.tintColor, color)
-
     }
     
 }

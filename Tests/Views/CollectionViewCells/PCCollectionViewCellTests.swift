@@ -13,26 +13,28 @@ class CustomPCCollectionViewCell: PCCollectionViewCell {
 
     var didCallSetViews = false
     var didCallLayoutViews = false
+
     override func setViews() {
         super.setViews()
         didCallSetViews = true
     }
+
     override func layoutViews() {
         super.layoutViews()
         didCallLayoutViews = true
     }
+
 }
 
 class PCCollectionViewCellTests: XCTestCase {
-    
 
     func testSetViews() {
-
         let pcCollectionViewCell = PCCollectionViewCell()
         XCTAssertEqual(pcCollectionViewCell.backgroundColor, PCColor.white)
 
-        let pcCollectionViewCellWithCustomFrame  = PCCollectionViewCell(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
-        XCTAssertEqual(pcCollectionViewCellWithCustomFrame.frame, CGRect(x: 0, y: 0, width: 100, height: 20))
+        let frame = CGRect(x: 0, y: 0, width: 100, height: 20)
+        let pcCollectionViewCellWithCustomFrame  = PCCollectionViewCell(frame: frame)
+        XCTAssertEqual(pcCollectionViewCellWithCustomFrame.frame, frame)
     }
 
     func testInitWithCoder() {

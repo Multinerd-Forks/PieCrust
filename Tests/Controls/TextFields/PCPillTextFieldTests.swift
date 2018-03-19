@@ -17,7 +17,6 @@ class PCPillTextFieldTests: XCTestCase {
 
         pillTextField.bounds = CGRect(x: 0, y: 0, width: 100, height: 50)
         XCTAssertEqual(pillTextField.cornerRadius, 25)
-
     }
 
 }

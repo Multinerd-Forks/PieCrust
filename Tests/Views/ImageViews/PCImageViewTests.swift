@@ -7,25 +7,27 @@
 //
 
 import XCTest
-@testable  import PieCrust
+@testable import PieCrust
 
 class CustomPcImageView: PCImageView {
 
     var didCallSetViews = false
     var didCallLayoutViews = false
+
     override func setViews() {
         super.setViews()
         didCallSetViews = true
     }
+
     override func layoutViews() {
         super.layoutViews()
         didCallLayoutViews = true
     }
 }
+
 class PCImageViewTests: XCTestCase {
     
     func testConvenienceInit() {
-
         let testImageView = PCImageView()
         XCTAssertNil(testImageView.image)
         XCTAssertNil(testImageView.highlightedImage)
@@ -33,13 +35,6 @@ class PCImageViewTests: XCTestCase {
         let highlightedImageView: PCImageView = PCImageView( image: UIImage(named: "piecrust.png"), highlightedImage: UIImage(named: "piecrust.png"))
         XCTAssertEqual(highlightedImageView.image, UIImage(named: "piecrust.png"))
         XCTAssertEqual(highlightedImageView.highlightedImage, UIImage(named: "piecrust.png") )
-
-    }
-
-    func testSetViews() {
-
-        let imageView: PCImageView = PCImageView()
-        XCTAssertEqual(imageView.backgroundColor, PCColor.white)
     }
 
     func testInitWithCoder() {
@@ -50,6 +45,11 @@ class PCImageViewTests: XCTestCase {
         let customPcImageView = CustomPcImageView(coder: coder)
         XCTAssertEqual(customPcImageView?.didCallSetViews, true)
         XCTAssertEqual(customPcImageView?.didCallLayoutViews, true)
+    }
+
+    func testSetViews() {
+        let imageView: PCImageView = PCImageView()
+        XCTAssertEqual(imageView.backgroundColor, PCColor.white)
     }
 
 }

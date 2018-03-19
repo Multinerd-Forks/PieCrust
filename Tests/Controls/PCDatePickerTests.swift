@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import PieCrust
+
 class PCDatePickerTests: XCTestCase {
     
     func testConvenienceInit() {
@@ -27,6 +28,6 @@ class PCDatePickerTests: XCTestCase {
 
         // FIXME: - Fix https://github.com/MobilionOSS/PieCrust/issues/36
         // XCTAssertEqual(pcDatepickerWithSomeValues.date, testDate)
-
     }
+
 }
