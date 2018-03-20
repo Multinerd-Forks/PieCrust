@@ -12,22 +12,23 @@ import XCTest
 class PCDatePickerTests: XCTestCase {
     
     func testConvenienceInit() {
-        let pcDatePicker = PCDatePicker()
-        XCTAssertNil(pcDatePicker.minimumDate)
-        XCTAssertNil(pcDatePicker.maximumDate)
-        XCTAssertEqual(pcDatePicker.countDownDuration, 0.0)
+        let datePicker = PCDatePicker()
+        XCTAssertNil(datePicker.minimumDate)
+        XCTAssertNil(datePicker.maximumDate)
+        XCTAssertEqual(datePicker.countDownDuration, 0.0)
 
-        let testDate = Date()
+        let date = Date()
 
-        let pcDatepickerWithSomeValues = PCDatePicker(datePickerMode: .date, date: testDate, textColor:
-            PCColor.green, tintColor: PCColor.blue, alpha: 0.5)
-        XCTAssertEqual(pcDatepickerWithSomeValues.tintColor, PCColor.blue)
-        XCTAssertEqual(pcDatepickerWithSomeValues.datePickerMode, .date)
-        XCTAssertEqual(pcDatepickerWithSomeValues.alpha, 0.5)
-        XCTAssertEqual(pcDatepickerWithSomeValues.textColor, PCColor.green)
+        let datepickerWithArgs = PCDatePicker(datePickerMode: .date, date: date, textColor: .green, tintColor: .red)
+        XCTAssertEqual(datepickerWithArgs.datePickerMode, .date)
+        XCTAssertEqual(datepickerWithArgs.date, date)
 
-        // FIXME: - Fix https://github.com/MobilionOSS/PieCrust/issues/36
-        // XCTAssertEqual(pcDatepickerWithSomeValues.date, testDate)
+        XCTAssertEqual(datepickerWithArgs.textColor, .green)
+        XCTAssertEqual(datepickerWithArgs.tintColor, .red)
+
+        let countDownDatePicker = PCDatePicker(datePickerMode: .countDownTimer, minuteInterval: 2, countDownDuration: 120.0)
+        XCTAssertEqual(countDownDatePicker.datePickerMode, .countDownTimer)
+        XCTAssertEqual(countDownDatePicker.countDownDuration, 120.0)
     }
 
 }

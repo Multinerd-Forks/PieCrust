@@ -38,17 +38,24 @@ public extension PCrustable where Self: UIDatePicker {
         self.init()
 
         self.datePickerMode = datePickerMode
-        self.minimumDate = minimumDate
-        self.maximumDate = maximumDate
+
         if let aDate = date {
             self.date = aDate
         }
-        self.countDownDuration = countDownDuration
+        self.minimumDate = minimumDate
+        self.maximumDate = maximumDate
+
+        self.minuteInterval = minuteInterval
+
+        if datePickerMode == .countDownTimer {
+            self.countDownDuration = countDownDuration
+        }
+
         if let color = textColor {
             self.textColor = color
         }
-        self.isEnabled = isEnabled
 
+        self.isEnabled = isEnabled
         self.backgroundColor = backgroundColor
         if let color = tintColor {
             self.tintColor = color

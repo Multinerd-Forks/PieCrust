@@ -12,11 +12,11 @@ import XCTest
 class PCPillTextFieldTests: XCTestCase {
     
     func testBounds() {
-        let pillTextField = PCPillTextField()
-        XCTAssertEqual(pillTextField.cornerRadius, 0)
+        let textField = PCPillTextField()
+        XCTAssertEqual(textField.cornerRadius, 0)
 
-        pillTextField.bounds = CGRect(x: 0, y: 0, width: 100, height: 50)
-        XCTAssertEqual(pillTextField.cornerRadius, 25)
+        textField.bounds = CGRect(x: 0, y: 0, width: 100, height: 50)
+        XCTAssertEqual(textField.cornerRadius, 25)
     }
 
 }

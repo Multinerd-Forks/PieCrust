@@ -12,12 +12,12 @@ import XCTest
 class PCRoundedViewTests: XCTestCase {
     
     func testBounds() {
-        let pcRoundedView = PCRoundedView()
-        XCTAssertEqual(pcRoundedView.layer.cornerRadius, 0)
+        let view = PCRoundedView()
+        XCTAssertEqual(view.layer.cornerRadius, 0)
 
-        pcRoundedView.bounds = CGRect(x: 0, y: 0, width: 100, height: 50)
-        XCTAssertEqual(pcRoundedView.layer.cornerRadius, 25)
-        XCTAssertEqual(pcRoundedView.clipsToBounds, true)
+        view.bounds = CGRect(x: 0, y: 0, width: 100, height: 50)
+        XCTAssertEqual(view.layer.cornerRadius, 25)
+        XCTAssertEqual(view.clipsToBounds, true)
     }
     
 }

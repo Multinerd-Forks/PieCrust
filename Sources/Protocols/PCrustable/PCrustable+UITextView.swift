@@ -52,13 +52,11 @@ public extension PCrustable where Self: UITextView {
         self.allowsEditingTextAttributes = allowsEditingTextAttributes
         self.textAlignment = textAlignment
         self.textContainerInset = textContainerInset
-
         self.backgroundColor = backgroundColor
 
         if let color = tintColor {
             self.tintColor = color
         }
-
         self.alpha = alpha
     }
     
