@@ -11,9 +11,9 @@ import XCTest
 
 private class CustomTextField: PCTextField {
 
-	var preferredHeight: CGFloat {
-		return 10.0
-	}
+    var preferredHeight: CGFloat {
+        return 10.0
+    }
 
 }
 
@@ -56,14 +56,14 @@ class PCTextFieldTests: XCTestCase {
         XCTAssertNotNil(customTextField)
     }
 
-	func testPreferredHeight() {
-		let textField = PCTextField()
-		let height: CGFloat = UIScreen.main.isSmall ? 40.0 : 48.0
-		XCTAssertEqual(textField.preferredHeight, height)
+    func testPreferredHeight() {
+        let textField = PCTextField()
+        let height: CGFloat = UIScreen.main.isSmall ? 40.0 : 48.0
+        XCTAssertEqual(textField.preferredHeight, height)
 
-		let customTextField = CustomTextField()
-		XCTAssertEqual(customTextField.preferredHeight, 10.0)
-	}
+        let customTextField = CustomTextField()
+        XCTAssertEqual(customTextField.preferredHeight, 10.0)
+    }
 
     func testIsEmpty() {
         let textField = PCTextField()
@@ -119,13 +119,13 @@ class PCTextFieldTests: XCTestCase {
         XCTAssertEqual(textField.autocorrectionType, .no)
         XCTAssertEqual(textField.autocapitalizationType, .none)
 
-		textField.setTextType(.url)
+        textField.setTextType(.url)
         XCTAssertFalse(textField.isSecureTextEntry)
         XCTAssertEqual(textField.keyboardType, .URL)
         XCTAssertEqual(textField.autocorrectionType, .no)
         XCTAssertEqual(textField.autocapitalizationType, .none)
 
-		textField.setTextType(.phoneNumber)
+        textField.setTextType(.phoneNumber)
         XCTAssertFalse(textField.isSecureTextEntry)
         if #available(iOS 10.0, *) {
             XCTAssertEqual(textField.keyboardType, .asciiCapableNumberPad)
@@ -133,17 +133,17 @@ class PCTextFieldTests: XCTestCase {
             XCTAssertEqual(textField.keyboardType, .numberPad)
         }
 
-		textField.setTextType(.decimal)
+        textField.setTextType(.decimal)
         XCTAssertFalse(textField.isSecureTextEntry)
         XCTAssertEqual(textField.keyboardType, .decimalPad)
 
-		textField.setTextType(.password)
+        textField.setTextType(.password)
         XCTAssert(textField.isSecureTextEntry)
         XCTAssertEqual(textField.keyboardType, .asciiCapable)
         XCTAssertEqual(textField.autocorrectionType, .no)
         XCTAssertEqual(textField.autocapitalizationType, .none)
 
-		textField.setTextType(.generic)
+        textField.setTextType(.generic)
         XCTAssertFalse(textField.isSecureTextEntry)
         XCTAssertEqual(textField.keyboardType, .asciiCapable)
         XCTAssertEqual(textField.autocorrectionType, .default)

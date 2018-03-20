@@ -9,17 +9,19 @@
 import XCTest
 @testable import PieCrust
 
-class CustomPcView: PCView {
+private class CustomPcView: PCView {
 
     var didCallSetViews = false
     var didCallLayoutViews = false
 
     override func setViews() {
         super.setViews()
+
         didCallSetViews = true
     }
     override func layoutViews() {
         super.layoutViews()
+
         didCallLayoutViews = true
     }
 
@@ -27,17 +29,18 @@ class CustomPcView: PCView {
 
 class PCViewTests: XCTestCase {
     
-   func testConvenienceInit() {
-    let frame = CGRect(x: 0, y: 0, width: 100, height: 50)
-    let view = PCView(frame: frame)
-    XCTAssertEqual(view.frame, frame)
-    XCTAssertEqual(view.backgroundColor, .white)
-   }
+    func testConvenienceInit() {
+        let frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+        let view = PCView(frame: frame)
+
+        XCTAssertEqual(view.frame, frame)
+        XCTAssertEqual(view.backgroundColor, .white)
+    }
 
     func testInitWithCoder() {
         let coder = NSKeyedUnarchiver(forReadingWith: Data())
-        let webView = PCView(coder: coder)
-        XCTAssertNotNil(webView)
+        let view = PCView(coder: coder)
+        XCTAssertNotNil(view)
 
         let customView = CustomPcView(coder: coder)
         XCTAssertNotNil(customView)

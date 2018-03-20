@@ -9,18 +9,20 @@
 import XCTest
 @testable import PieCrust
 
-class CustomPcImageView: PCImageView {
+private class CustomPcImageView: PCImageView {
 
     var didCallSetViews = false
     var didCallLayoutViews = false
 
     override func setViews() {
         super.setViews()
+
         didCallSetViews = true
     }
 
     override func layoutViews() {
         super.layoutViews()
+        
         didCallLayoutViews = true
     }
 }
@@ -28,9 +30,9 @@ class CustomPcImageView: PCImageView {
 class PCImageViewTests: XCTestCase {
     
     func testConvenienceInit() {
-        let testImageView = PCImageView()
-        XCTAssertNil(testImageView.image)
-        XCTAssertNil(testImageView.highlightedImage)
+        let imageView = PCImageView()
+        XCTAssertNil(imageView.image)
+        XCTAssertNil(imageView.highlightedImage)
 
         let highlightedImageView: PCImageView = PCImageView( image: UIImage(named: "piecrust.png"), highlightedImage: UIImage(named: "piecrust.png"))
         XCTAssertEqual(highlightedImageView.image, UIImage(named: "piecrust.png"))
@@ -42,9 +44,10 @@ class PCImageViewTests: XCTestCase {
         let pcImageView = PCImageView(coder: coder)
         XCTAssertNotNil(pcImageView)
 
-        let customPcImageView = CustomPcImageView(coder: coder)
-        XCTAssertEqual(customPcImageView?.didCallSetViews, true)
-        XCTAssertEqual(customPcImageView?.didCallLayoutViews, true)
+        let customImageView = CustomPcImageView(coder: coder)
+        XCTAssertNotNil(customImageView)
+        XCTAssert(customImageView!.didCallSetViews)
+        XCTAssert(customImageView!.didCallLayoutViews)
     }
 
     func testSetViews() {

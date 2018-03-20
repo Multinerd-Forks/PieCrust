@@ -13,6 +13,7 @@ class PCGenericTableViewCellTests: XCTestCase {
 
     func testGenericItem() {
         let cell = PCGenericTableViewCell<[Int]>()
+        
         let items = [0, 1, 2, 3]
         cell.item = items
         XCTAssertEqual(cell.item, items)

@@ -12,10 +12,10 @@ import XCTest
 class PCPillLoadingButtonTests: XCTestCase {
     
     func testBounds() {
-        let loadingButton = PCPillLoadingButton()
-        XCTAssertEqual(loadingButton.cornerRadius, 0)
+        let button = PCPillLoadingButton()
+        XCTAssertEqual(button.cornerRadius, 0)
 
-        loadingButton.bounds = CGRect(x: 0, y: 0, width: 100, height: 50)
-        XCTAssertEqual(loadingButton.cornerRadius, 25)
+        button.bounds = CGRect(x: 0, y: 0, width: 100, height: 50)
+        XCTAssertEqual(button.cornerRadius, 25)
     }
 }

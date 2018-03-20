@@ -20,23 +20,23 @@ private class CustomSegment: PCSegmentedControl {
 class PCSegmentedControlTests: XCTestCase {
     
     func testTextConvenienceInit() {
-        let segment = PCSegmentedControl()
-        XCTAssertEqual(segment.frame, .zero)
-        XCTAssertTrue(segment.isEnabled)
-        XCTAssertNil(segment.backgroundColor)
-        XCTAssertEqual(segment.alpha, 1.0)
+        let segmentedControl = PCSegmentedControl()
+        XCTAssertEqual(segmentedControl.frame, .zero)
+        XCTAssertTrue(segmentedControl.isEnabled)
+        XCTAssertNil(segmentedControl.backgroundColor)
+        XCTAssertEqual(segmentedControl.alpha, 1.0)
 
         let titles = ["hello", "world"]
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
 
-        let customSegment = PCSegmentedControl(frame: frame, segmentTitles: titles, isEnabled: false, backgroundColor: PCColor.green, tintColor: PCColor.blue, alpha: 0.5)
+        let customSegment = PCSegmentedControl(frame: frame, segmentTitles: titles, isEnabled: false,
+                                               backgroundColor: PCColor.green, tintColor: PCColor.blue, alpha: 0.5)
 
         XCTAssertEqual(customSegment.tintColor, .blue)
         XCTAssertEqual(customSegment.alpha, 0.5)
         XCTAssertEqual(customSegment.segmentTitles, titles)
         XCTAssertEqual(customSegment.backgroundColor, PCColor.green)
         XCTAssertEqual(customSegment.isEnabled, false)
-
     }
 
     func testImageConvenienceInit() {
@@ -44,21 +44,21 @@ class PCSegmentedControlTests: XCTestCase {
         let imageList = [UIImage(named: "piecrust.png", in: bundle, compatibleWith: nil)!, UIImage(named: "piecrust.png", in: bundle, compatibleWith: nil)!]
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
 
-        let customSegmentWithImages = PCSegmentedControl(frame: frame, segmentImages: imageList, isEnabled: false, backgroundColor: PCColor.green, tintColor: PCColor.blue, alpha: 0.5)
+        let segmentedControl = PCSegmentedControl(frame: frame, segmentImages: imageList, isEnabled: false,
+                                                  backgroundColor: PCColor.green, tintColor: PCColor.blue, alpha: 0.5)
 
-        XCTAssertEqual(customSegmentWithImages.tintColor, .blue)
-        XCTAssertEqual(customSegmentWithImages.alpha, 0.5)
-        XCTAssertEqual(customSegmentWithImages.segmentImages, imageList)
-        XCTAssertEqual(customSegmentWithImages.backgroundColor, PCColor.green)
-        XCTAssertEqual(customSegmentWithImages.isEnabled, false)
-
+        XCTAssertEqual(segmentedControl.tintColor, .blue)
+        XCTAssertEqual(segmentedControl.alpha, 0.5)
+        XCTAssertEqual(segmentedControl.segmentImages, imageList)
+        XCTAssertEqual(segmentedControl.backgroundColor, PCColor.green)
+        XCTAssertEqual(segmentedControl.isEnabled, false)
     }
 
     func testPreferredHeight() {
-        let segment = PCSegmentedControl()
+        let segmentedControl = PCSegmentedControl()
 
         let height: CGFloat = UIScreen.main.isSmall ? 40.0 : 48.0
-        XCTAssertEqual(segment.preferredHeight, height)
+        XCTAssertEqual(segmentedControl.preferredHeight, height)
 
         let customSegment = CustomSegment()
         XCTAssertEqual(customSegment.preferredHeight, 10.0)

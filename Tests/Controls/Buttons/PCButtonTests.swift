@@ -20,9 +20,9 @@ private class CustomButton: PCButton {
 class PCButtonTests: XCTestCase {
 
     func testPreferredHeight() {
-        let pcButton = PCButton()
+        let button = PCButton()
         let height: CGFloat = UIScreen.main.isSmall ? 40.0 : 48.0
-        XCTAssertEqual(pcButton.preferredHeight, height)
+        XCTAssertEqual(button.preferredHeight, height)
 
         let customButton = CustomButton()
         XCTAssertEqual(customButton.preferredHeight, 10.0)

@@ -11,8 +11,17 @@ import XCTest
 
 class PCBarButtonItemTests: XCTestCase {
 
-    func testsColorAndFont() {
+    func testsFont() {
+        let button = PCBarButtonItem()
 
+        button.badgeFontColor = .green
+        button.badgeFontSize = 20
+        XCTAssertEqual(button.badgeFontColor, .green)
+        XCTAssertEqual(button.badgeFontSize, 20)
+        XCTAssertEqual(button.badgeLabel.layer.cornerRadius, 12)
+    }
+
+    func testColor() {
         let button = PCBarButtonItem()
 
         button.badgeLabel.text = "hello world"
@@ -22,14 +31,7 @@ class PCBarButtonItemTests: XCTestCase {
         XCTAssertEqual(button.badgeFontColor, .white)
 
         button.badgeBackgroundColor = .green
-        button.badgeFontColor = .green
-        button.badgeFontSize = 20
-
         XCTAssertEqual(button.badgeBackgroundColor, .green)
-        XCTAssertEqual(button.badgeFontColor, .green)
-        XCTAssertEqual(button.badgeFontSize, 20)
-        XCTAssertEqual(button.badgeLabel.layer.cornerRadius, 12)
-
     }
 
     func testsBadgeText() {

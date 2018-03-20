@@ -13,6 +13,7 @@ class PCVisualEffectViewTests: XCTestCase {
 
     func testConvenienceInit() {
         let effectView = PCVisualEffectView(effect: UIBlurEffect(style: .light), alpha: 0.5)
+        
         XCTAssert(effectView.effect != nil)
         XCTAssertEqual(effectView.alpha, 0.5)
 

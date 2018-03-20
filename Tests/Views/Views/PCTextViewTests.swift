@@ -12,10 +12,12 @@ import XCTest
 class PCTextViewTests: XCTestCase {
 
     func testConvenienceInit() {
-        let textView = PCTextView(text: "Hello world")
-        XCTAssertEqual(textView.text, "Hello world")
-        XCTAssertEqual(textView.attributedText, UITextView().attributedText)
-        XCTAssertEqual(textView.font, UITextView().font)
+        let helloWorld = "Hello World!"
+        let textView = PCTextView(text: helloWorld)
+
+        XCTAssertEqual(textView.text, helloWorld)
+
+        XCTAssertEqual(textView.attributedText.string, helloWorld)
         XCTAssertEqual(textView.textColor, PCColor.black)
         XCTAssertTrue(textView.isEditable)
         XCTAssertFalse(textView.allowsEditingTextAttributes)
@@ -26,12 +28,23 @@ class PCTextViewTests: XCTestCase {
         XCTAssertEqual(textView.alpha, 1.0)
 
         let insets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-        let attrString = NSAttributedString(string: "Hello word")
+        let attrString = NSAttributedString(string: helloWorld)
 
-        let customTextView = PCTextView(text: "hello world", attributedText: attrString, font: UIFont.boldSystemFont(ofSize: 10), textColor: .red, isEditable: false, allowsEditingTextAttributes: true, textAlignment: .left, textContainerInset: insets, backgroundColor: PCColor.green, tintColor: PCColor.blue, alpha: 0.5)
+        let customTextView = PCTextView(
+            text: helloWorld,
+            attributedText: attrString,
+            font: UIFont.boldSystemFont(ofSize: 10),
+            textColor: .red,
+            isEditable: false,
+            allowsEditingTextAttributes: true,
+            textAlignment: .left,
+            textContainerInset: insets,
+            backgroundColor: PCColor.green,
+            tintColor: PCColor.blue,
+            alpha: 0.5)
 
-        XCTAssertEqual(customTextView.text, "hello world")
-        XCTAssertEqual(customTextView.attributedText, attrString)
+        XCTAssertEqual(customTextView.text, helloWorld)
+        XCTAssertEqual(customTextView.attributedText.string, helloWorld)
         XCTAssertEqual(customTextView.font, UIFont.boldSystemFont(ofSize: 10))
         XCTAssertEqual(customTextView.textColor, .red)
         XCTAssertFalse(customTextView.isEditable)

@@ -12,17 +12,19 @@ import XCTest
 class PCActivityIndicatorViewTests: XCTestCase {
     
     func testConvenienceInit() {
-        let indicator = PCActivityIndicatorView()
-        XCTAssertEqual(indicator.activityIndicatorViewStyle, UIActivityIndicatorViewStyle.white)
-        XCTAssertTrue(indicator.hidesWhenStopped)
-        XCTAssertEqual(indicator.color, UIActivityIndicatorView().color)
-        XCTAssertEqual(indicator.alpha, 1.0)
+        let indicatorView = PCActivityIndicatorView()
+        XCTAssertEqual(indicatorView.activityIndicatorViewStyle, UIActivityIndicatorViewStyle.white)
+        XCTAssertTrue(indicatorView.hidesWhenStopped)
+        XCTAssertEqual(indicatorView.color, UIActivityIndicatorView().color)
+        XCTAssertEqual(indicatorView.alpha, 1.0)
 
-        let customIndicator = PCActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge, hidesWhenStopped: false, color: PCColor.red, alpha: 0.5)
-        XCTAssertEqual(customIndicator.activityIndicatorViewStyle, UIActivityIndicatorViewStyle.whiteLarge)
-        XCTAssertFalse(customIndicator.hidesWhenStopped)
-        XCTAssertEqual(customIndicator.color, PCColor.red)
-        XCTAssertEqual(customIndicator.alpha, 0.5)
+        let customIndicatorView = PCActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge, hidesWhenStopped: false,
+                                                          color: PCColor.red, alpha: 0.5)
+        
+        XCTAssertEqual(customIndicatorView.activityIndicatorViewStyle, UIActivityIndicatorViewStyle.whiteLarge)
+        XCTAssertFalse(customIndicatorView.hidesWhenStopped)
+        XCTAssertEqual(customIndicatorView.color, PCColor.red)
+        XCTAssertEqual(customIndicatorView.alpha, 0.5)
     }
     
 }
