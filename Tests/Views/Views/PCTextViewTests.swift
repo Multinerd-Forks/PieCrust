@@ -11,9 +11,9 @@ import XCTest
 
 class PCTextViewTests: XCTestCase {
 
-    func textConvenienceInit() {
-        let textView = PCTextView()
-        XCTAssertNil(textView.text)
+    func testConvenienceInit() {
+        let textView = PCTextView(text: "Hello world")
+        XCTAssertEqual(textView.text, "Hello world")
         XCTAssertEqual(textView.attributedText, UITextView().attributedText)
         XCTAssertEqual(textView.font, UITextView().font)
         XCTAssertEqual(textView.textColor, PCColor.black)
@@ -26,9 +26,9 @@ class PCTextViewTests: XCTestCase {
         XCTAssertEqual(textView.alpha, 1.0)
 
         let insets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-        let attrString = NSAttributedString(string: "Hello.")
+        let attrString = NSAttributedString(string: "Hello word")
 
-        let customTextView = PCTextView(text: "hello world", attributedText: attrString, font: UIFont.boldSystemFont(ofSize: 10), textColor: .red, isEditable: false, allowsEditingTextAttributes: true, textAlignment: .left, textContainerInset: insets, backgroundColor: .green, tintColor: .green, alpha: 0.5)
+        let customTextView = PCTextView(text: "hello world", attributedText: attrString, font: UIFont.boldSystemFont(ofSize: 10), textColor: .red, isEditable: false, allowsEditingTextAttributes: true, textAlignment: .left, textContainerInset: insets, backgroundColor: PCColor.green, tintColor: PCColor.blue, alpha: 0.5)
 
         XCTAssertEqual(customTextView.text, "hello world")
         XCTAssertEqual(customTextView.attributedText, attrString)
@@ -38,8 +38,8 @@ class PCTextViewTests: XCTestCase {
         XCTAssertTrue(customTextView.allowsEditingTextAttributes)
         XCTAssertEqual(customTextView.textAlignment, .left)
         XCTAssertEqual(customTextView.textContainerInset, insets)
-        XCTAssertEqual(customTextView.backgroundColor, .green)
-        XCTAssertEqual(customTextView.tintColor, .green)
+        XCTAssertEqual(customTextView.backgroundColor, PCColor.green)
+        XCTAssertEqual(customTextView.tintColor, PCColor.blue)
         XCTAssertEqual(customTextView.alpha, 0.5)
     }
 

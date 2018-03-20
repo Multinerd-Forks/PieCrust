@@ -21,7 +21,7 @@ class PCScrollViewTests: XCTestCase {
     }
 
     func testConvenienceInit() {
-        let scrollView = PCScrollView()
+        let scrollView = PCScrollView(alpha: 1.0)
         XCTAssertTrue(scrollView.isScrollEnabled)
         XCTAssertFalse(scrollView.isDirectionalLockEnabled)
         XCTAssertFalse(scrollView.isPagingEnabled)

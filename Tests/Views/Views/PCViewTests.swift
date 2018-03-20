@@ -13,12 +13,6 @@ class CustomPcView: PCView {
 
     var didCallSetViews = false
     var didCallLayoutViews = false
-    var didCallhandleKeyboardWillShow = false
-    var didCallhandleKeyboardDidShow = false
-    var didCallhandleKeyboardWillHide = false
-    var didCallhandleKeyboardDidHide = false
-    var didCallhandleKeyboardWillChangeFrame = false
-    var didCallhandleKeyboardDidChangeFrame = false
 
     override func setViews() {
         super.setViews()
@@ -37,6 +31,7 @@ class PCViewTests: XCTestCase {
     let frame = CGRect(x: 0, y: 0, width: 100, height: 50)
     let view = PCView(frame: frame)
     XCTAssertEqual(view.frame, frame)
+    XCTAssertEqual(view.backgroundColor, .white)
    }
 
     func testInitWithCoder() {

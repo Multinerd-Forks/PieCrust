@@ -13,12 +13,12 @@ class PCNavigationControllerTests: XCTestCase {
     
     func testSetNavigationBarColors() {
 
-        let navigationBar = PCNavigationController()
-        navigationBar.setNavigaitonBarColors(background: PCColor.blue, tint: PCColor.green)
+        let naviBar = PCNavigationController()
+        naviBar.setNavigaitonBarColors(background: PCColor.blue, tint: PCColor.green)
 
-        XCTAssertEqual(navigationBar.navigationBar.backgroundColor, PCColor.blue)
-        XCTAssertEqual(navigationBar.navigationBar.barTintColor, PCColor.blue)
-        XCTAssertEqual(navigationBar.navigationBar.tintColor, PCColor.green)
+        XCTAssertEqual(naviBar.navigationBar.backgroundColor, PCColor.blue)
+        XCTAssertEqual(naviBar.navigationBar.barTintColor, PCColor.blue)
+        XCTAssertEqual(naviBar.navigationBar.tintColor, PCColor.green)
 
     }
 
