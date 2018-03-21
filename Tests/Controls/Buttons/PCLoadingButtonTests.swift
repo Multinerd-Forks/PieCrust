@@ -9,24 +9,45 @@
 import XCTest
 @testable import PieCrust
 
+private class CustomPCLoadingButton: PCLoadingButton {
+
+    var didCallSetViews = false
+    override func setViews() {
+        super.setViews()
+        didCallSetViews = true
+    }
+}
+
 class PCLoadingButtonTests: XCTestCase {
     
     func  testConvenienceInit() {
-        let button: PCLoadingButton = PCLoadingButton()
-        XCTAssertEqual(button.contentEdgeInsets, UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0))
-        XCTAssertTrue(button.isEnabled)
-        XCTAssertNil(button.currentTitle)
-        XCTAssertNil(button.backgroundColor)
-        XCTAssertEqual(button.alpha, 1.0)
+        let insets = UIEdgeInsets(top: 0.0, left: 20.0, bottom: 0.0, right: 20.0)
+        let font = PCFont.systemFont(ofSize: 50, weight: .bold)
 
-        let testColor = UIColor.red
-        let pcLoadingButtonWithColor: PCLoadingButton = PCLoadingButton(backgroundColor: testColor, tintColor: testColor, alpha: 0.3)
-        XCTAssertEqual(pcLoadingButtonWithColor.backgroundColor, testColor)
-        XCTAssertEqual(pcLoadingButtonWithColor.tintColor, testColor)
+        let button = PCLoadingButton(
+            type: .system,
+            title: "hello",
+            titleFont: font,
+            image: UIImage(named: "piecrust.png"),
+            contentEdgeInsets: insets,
+            isEnabled: true,
+            backgroundColor: .red,
+            tintColor: .red,
+            activityIndicatorTintColor: .red,
+            alpha: 0.5)
+
+        XCTAssertEqual(button.buttonType, .system)
+        XCTAssertEqual(button.currentTitle, "hello")
+        XCTAssertEqual(button.tintColor, .red)
+        XCTAssertEqual(button.contentEdgeInsets, insets)
+        XCTAssert(button.isEnabled)
+        XCTAssertEqual(button.activityIndicator.color, .red)
+        XCTAssertEqual(button.alpha, 0.5)
+        XCTAssertEqual(button.backgroundColor, .red)
     }
 
     func testIsLoading() {
-        let button = PCLoadingButton()
+        let button = CustomPCLoadingButton()
         XCTAssertFalse(button.isLoading)
         XCTAssertFalse(button.activityIndicator.isAnimating)
         XCTAssert(button.isEnabled)
@@ -41,5 +62,5 @@ class PCLoadingButtonTests: XCTestCase {
         XCTAssertFalse(button.activityIndicator.isAnimating)
         XCTAssert(button.isEnabled)
     }
-    
+
 }

@@ -37,6 +37,7 @@ class PCSegmentedControlTests: XCTestCase {
         XCTAssertEqual(customSegment.segmentTitles, titles)
         XCTAssertEqual(customSegment.backgroundColor, PCColor.green)
         XCTAssertEqual(customSegment.isEnabled, false)
+        XCTAssertEqual(customSegment.frame, frame)
     }
 
     func testImageConvenienceInit() {

@@ -1,5 +1,5 @@
 //
-//  PCGenericTableController.swift
+//  PCGenericTableViewController.swift
 //  PieCrust
 //
 //  Created by Omar Albeik on 6.02.2018.
@@ -10,8 +10,8 @@ import UIKit
 import SnapKit
 import SwifterSwift
 
-/// Generic `PCTableController`.
-open class PCGenericTableController<T: PCGenericTableViewCell<U>, U>: PCTableViewController {
+/// Generic `PCTableViewController`.
+open class PCGenericTableViewController<T: PCGenericTableViewCell<U>, U>: PCTableViewController {
     
     /// Initializes a table-view controller to manage a table view of a given style and set its items.
     ///

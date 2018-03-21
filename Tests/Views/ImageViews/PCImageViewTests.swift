@@ -51,7 +51,8 @@ class PCImageViewTests: XCTestCase {
     }
 
     func testSetViews() {
-        let imageView: PCImageView = PCImageView()
+        let imageView = PCImageView()
+        
         XCTAssertEqual(imageView.backgroundColor, PCColor.white)
     }
 
