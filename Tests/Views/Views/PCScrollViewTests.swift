@@ -9,6 +9,25 @@
 import XCTest
 @testable import PieCrust
 
+private class CustomPCScrollView: PCScrollView {
+
+    var didCallSetViews = false
+    var didCallLayoutViews = false
+
+    override func setViews() {
+        super.setViews()
+
+        didCallSetViews = true
+    }
+
+    override func layoutViews() {
+        super.layoutViews()
+
+        didCallLayoutViews = true
+    }
+
+}
+
 class PCScrollViewTests: XCTestCase {
 
     func testSetView() {
@@ -64,5 +83,15 @@ class PCScrollViewTests: XCTestCase {
         XCTAssertEqual(customScrollView.maximumZoomScale, 2.0)
         XCTAssertFalse(customScrollView.bouncesZoom)
 
+    }
+
+    func testInitWithCoder() {
+        let coder = NSKeyedUnarchiver(forReadingWith: Data())
+        let scrollView = PCScrollView(coder: coder)
+        XCTAssertNotNil(scrollView)
+
+        let customScrollView = CustomPCScrollView(coder: coder)
+        XCTAssertEqual(customScrollView?.didCallSetViews, true)
+        XCTAssertEqual(customScrollView?.didCallLayoutViews, true)
     }
 }

@@ -105,7 +105,9 @@
 		9D486AD1206000EA0096E97D /* PCGenericTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486AD0206000EA0096E97D /* PCGenericTableViewCellTests.swift */; };
 		9D486AD3206005A50096E97D /* PCTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486AD2206005A50096E97D /* PCTextViewTests.swift */; };
 		9D48C253205A5A8E006AD24C /* PCButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C252205A5A8E006AD24C /* PCButtonTests.swift */; };
+		9D54DB3C2063D7F000E43227 /* PCConfettiViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54DB3B2063D7F000E43227 /* PCConfettiViewTests.swift */; };
 		9D6732A420623442009054BD /* PCGenericTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6732A320623442009054BD /* PCGenericTableViewControllerTests.swift */; };
+		9D6D8C362063F3000063C001 /* PCAppVersionLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D8C352063F3000063C001 /* PCAppVersionLabelTests.swift */; };
 		9D7A62B8205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62B7205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift */; };
 		9D7A62BB205BF01100DBDDD2 /* PCCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62BA205BF01100DBDDD2 /* PCCollectionViewCellTests.swift */; };
 		9D7A62BE205BF1CE00DBDDD2 /* PCRoundedViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A62BD205BF1CE00DBDDD2 /* PCRoundedViewTests.swift */; };
@@ -230,7 +232,9 @@
 		9D486AD0206000EA0096E97D /* PCGenericTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericTableViewCellTests.swift; sourceTree = "<group>"; };
 		9D486AD2206005A50096E97D /* PCTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTextViewTests.swift; sourceTree = "<group>"; };
 		9D48C252205A5A8E006AD24C /* PCButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCButtonTests.swift; sourceTree = "<group>"; };
+		9D54DB3B2063D7F000E43227 /* PCConfettiViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCConfettiViewTests.swift; sourceTree = "<group>"; };
 		9D6732A320623442009054BD /* PCGenericTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCGenericTableViewControllerTests.swift; sourceTree = "<group>"; };
+		9D6D8C352063F3000063C001 /* PCAppVersionLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCAppVersionLabelTests.swift; sourceTree = "<group>"; };
 		9D7A62B7205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCRoundedImageViewTests.swift; sourceTree = "<group>"; };
 		9D7A62BA205BF01100DBDDD2 /* PCCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewCellTests.swift; sourceTree = "<group>"; };
 		9D7A62BD205BF1CE00DBDDD2 /* PCRoundedViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCRoundedViewTests.swift; sourceTree = "<group>"; };
@@ -347,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				074EDDD52037309D00343889 /* PCLabelTests.swift */,
+				9D6D8C352063F3000063C001 /* PCAppVersionLabelTests.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -712,6 +717,7 @@
 				9D3F5B4E2060E38200ADCF64 /* PCVisualEffectViewTests.swift */,
 				9D3F5B502060E8FE00ADCF64 /* PCActivityIndicatorViewTests.swift */,
 				9D3F5B522060EF3400ADCF64 /* PCStackViewTests.swift */,
+				9D54DB3B2063D7F000E43227 /* PCConfettiViewTests.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1031,6 +1037,7 @@
 			files = (
 				9D7A62C6205C0B2D00DBDDD2 /* PCWebViewTests.swift in Sources */,
 				9D6732A420623442009054BD /* PCGenericTableViewControllerTests.swift in Sources */,
+				9D6D8C362063F3000063C001 /* PCAppVersionLabelTests.swift in Sources */,
 				9DBE258E205A914C001E9305 /* PCImageViewTests.swift in Sources */,
 				9D486ABC205FA1EF0096E97D /* PCPillLoadingButtonTests.swift in Sources */,
 				9D3F5B59206133F500ADCF64 /* PCTransparentNavigationControllerTests.swift in Sources */,
@@ -1052,6 +1059,7 @@
 				9D7A62B8205BEC6200DBDDD2 /* PCRoundedImageViewTests.swift in Sources */,
 				9D486ABA205F923D0096E97D /* PCViewTests.swift in Sources */,
 				074EDDD62037309D00343889 /* PCLabelTests.swift in Sources */,
+				9D54DB3C2063D7F000E43227 /* PCConfettiViewTests.swift in Sources */,
 				9D7A62C0205BF26B00DBDDD2 /* PCScrollViewTests.swift in Sources */,
 				9D4343A52062A182002A1AFB /* PublicExtensionsTests.swift in Sources */,
 				9D486AD3206005A50096E97D /* PCTextViewTests.swift in Sources */,
