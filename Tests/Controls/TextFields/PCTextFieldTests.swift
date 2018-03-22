@@ -43,8 +43,22 @@ class PCTextFieldTests: XCTestCase {
         let textFieldWithCustomFont = PCTextField(placeholder: "hello world!", font: font)
         XCTAssertEqual(textFieldWithCustomFont.font, font)
 
-        let textFieldWithMinFontSize = PCTextField(placeholder: "hello world!", minimumFontSize: 10)
+        let textFieldWithMinFontSize = PCTextField(placeholder: "hello world!", minimumFontSize: 10, tintColor: .red)
         XCTAssertEqual(textFieldWithMinFontSize.minimumFontSize, 10)
+        XCTAssertEqual(textFieldWithMinFontSize.tintColor, .red)
+    }
+
+    func testsetPlaceHolderTextColor() {
+        let pcTextField = PCTextField()
+
+        pcTextField.setPlaceHolderTextColor(.red)
+        XCTAssertNil(pcTextField.attributedPlaceholder)
+
+        pcTextField.placeholder = "hello world"
+        pcTextField.setPlaceHolderTextColor(.red)
+
+        let holder = NSAttributedString(string: pcTextField.placeholder!, attributes: [.foregroundColor: PCColor.red])
+        XCTAssertEqual(pcTextField.attributedPlaceholder, holder)
     }
 
     func testInitWithCoder() {
@@ -85,6 +99,7 @@ class PCTextFieldTests: XCTestCase {
 
         textField.text = nil
         XCTAssertEqual(textField.trimmedText, "")
+
     }
 
     func testEmailAddress() {

@@ -49,10 +49,10 @@ open class PCTransparentNavigationController: PCNavigationController {
     }
 
     /// Optional dim color above video.
-    public var vidoeDimColor: UIColor? {
+    public var videoDimColor: UIColor? {
         didSet {
             guard let videoLayer = playerLayer else { return }
-            guard let color = vidoeDimColor else { return }
+            guard let color = videoDimColor else { return }
 
             let dimColorLayer = CALayer()
             dimColorLayer.frame = view.layer.frame

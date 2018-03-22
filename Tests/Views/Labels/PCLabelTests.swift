@@ -38,9 +38,10 @@ class PCLabelTests: XCTestCase {
 		XCTAssert(labelWithMinScale.adjustsFontSizeToFitWidth)
 		XCTAssertEqual(labelWithMinScale.minimumScaleFactor, 0.5)
 
-		let labelWithWrongMinScale = PCLabel(text: "hello world!", minimumScaleFactor: 10.5)
+        let labelWithWrongMinScale = PCLabel(text: "hello world!", minimumScaleFactor: 10.5, tintColor: PCColor.red)
 		XCTAssertFalse(labelWithWrongMinScale.adjustsFontSizeToFitWidth)
 		XCTAssertEqual(labelWithWrongMinScale.minimumScaleFactor, 0.0)
+        XCTAssertEqual(labelWithWrongMinScale.tintColor, PCColor.red)
 	}
 
 	func testInitWithCoder() {
