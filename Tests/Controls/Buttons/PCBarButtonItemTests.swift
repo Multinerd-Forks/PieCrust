@@ -12,18 +12,22 @@ import XCTest
 private class CustomPCBarButtonItem: PCBarButtonItem {
 
     var didCallAction = false
+
     @objc
     func testFunc() {
         didCallAction = true
     }
+
 }
+
 class PCBarButtonItemTests: XCTestCase {
 
+    let helloWorld = "hello world!"
+
     func testConvenienceInit() {
+        let button = CustomPCBarButtonItem(button: UIButton(), badgeText: helloWorld, target: nil, action: #selector(CustomPCBarButtonItem.testFunc))
 
-        let button = CustomPCBarButtonItem(button: UIButton(), badgeText: "hello world", target: nil, action: #selector(CustomPCBarButtonItem.testFunc))
-
-        XCTAssertEqual(button.badgeText, "hello world")
+        XCTAssertEqual(button.badgeText, helloWorld)
         XCTAssertNil(button.target)
         button.testFunc()
         XCTAssert(button.didCallAction)
@@ -42,8 +46,8 @@ class PCBarButtonItemTests: XCTestCase {
     func testColor() {
         let button = PCBarButtonItem()
 
-        button.badgeLabel.text = "hello world"
-        XCTAssertEqual(button.badgeLabel.text, "hello world")
+        button.badgeLabel.text = helloWorld
+        XCTAssertEqual(button.badgeLabel.text, helloWorld)
 
         XCTAssertEqual(button.badgeBackgroundColor, .red)
         XCTAssertEqual(button.badgeFontColor, .white)
@@ -56,10 +60,10 @@ class PCBarButtonItemTests: XCTestCase {
         let button = PCBarButtonItem()
         XCTAssertNil(button.badgeLabel.text)
 
-        button.badgeText = "hello world"
+        button.badgeText = helloWorld
         XCTAssertFalse(button.badgeText!.isEmpty)
         
-        XCTAssertEqual(button.badgeLabel.text, " hello world ")
+        XCTAssertEqual(button.badgeLabel.text, " \(helloWorld) ")
         XCTAssertEqual(button.badgeLabel.isHidden, false)
 
         let frame = button.badgeButton?.frame
@@ -76,6 +80,7 @@ class PCBarButtonItemTests: XCTestCase {
 
     func testaddTargetForAction() {
         let button = CustomPCBarButtonItem()
+
         button.addTargetForAction(self, action: #selector(CustomPCBarButtonItem.testFunc))
         button.testFunc()
         XCTAssert(button.didCallAction)

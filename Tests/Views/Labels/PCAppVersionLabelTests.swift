@@ -30,4 +30,5 @@ class PCAppVersionLabelTests: XCTestCase {
         let versionLabel = PCAppVersionLabel(coder: coder)
         XCTAssertNotNil(versionLabel)
     }
+    
 }

@@ -10,10 +10,6 @@ import XCTest
 @testable import PieCrust
 
 class PCConfettiViewTests: XCTestCase {
-    
-    func testConvenienceInit() {
-
-    }
 
     func testBounds() {
         let confettiView = PCConfettiView()
@@ -30,4 +26,5 @@ class PCConfettiViewTests: XCTestCase {
         XCTAssertEqual(confettView.intensity, 0.5)
         XCTAssertEqual(confettView.alpha, 1.0)
     }
+    
 }

@@ -26,14 +26,9 @@ class SlideTransitionTests: XCTestCase {
         XCTAssertEqual(transition.transitionFrames.toView.end, slideTransitionPop.toView.end)
     }
 
-    func testAnimateTransition() {
-        let transition = SlideTransition(transitionOperation: UINavigationControllerOperation.push)
-    }
-
     func testTransitionDuration() {
         let transition = SlideTransition(transitionOperation: UINavigationControllerOperation.push)
         XCTAssertEqual(transition.transitionDuration(using: UIViewControllerContextTransitioning?.none), 0.35)
-
     }
     
 }

@@ -19,10 +19,13 @@ private class CustomTextField: PCTextField {
 
 class PCTextFieldTests: XCTestCase {
 
+    let helloWorld = "hello world!"
+    let emailAddress = "john@appleseed.com"
+
     func testConvenienceInit() {
-        let textFieldWithDefaultArgs = PCTextField(placeholder: "hello world")
+        let textFieldWithDefaultArgs = PCTextField(placeholder: helloWorld)
         XCTAssertNotNil(textFieldWithDefaultArgs.placeholder)
-        XCTAssertEqual(textFieldWithDefaultArgs.placeholder!, "hello world")
+        XCTAssertEqual(textFieldWithDefaultArgs.placeholder!, helloWorld)
         XCTAssert(textFieldWithDefaultArgs.text!.isEmpty)
         XCTAssertEqual(textFieldWithDefaultArgs.textAlignment, .natural)
         XCTAssertFalse(textFieldWithDefaultArgs.clearsOnBeginEditing)
@@ -34,16 +37,16 @@ class PCTextFieldTests: XCTestCase {
         XCTAssert(textFieldWithDefaultArgs.isEnabled)
         XCTAssertEqual(textFieldWithDefaultArgs.alpha, 1.0)
 
-        let attributedString = NSAttributedString(string: "hello world!")
+        let attributedString = NSAttributedString(string: helloWorld)
         let attributedTextFieldWithDefaultArgs = PCTextField(placeholder: "", attributedPlaceholder: attributedString, attributedText: attributedString)
         XCTAssertEqual(attributedTextFieldWithDefaultArgs.attributedPlaceholder!.string, attributedString.string)
         XCTAssertEqual(attributedTextFieldWithDefaultArgs.attributedText!.string, attributedString.string)
 
         let font = PCFont.systemFont(ofSize: 50, weight: .bold)
-        let textFieldWithCustomFont = PCTextField(placeholder: "hello world!", font: font)
+        let textFieldWithCustomFont = PCTextField(placeholder: helloWorld, font: font)
         XCTAssertEqual(textFieldWithCustomFont.font, font)
 
-        let textFieldWithMinFontSize = PCTextField(placeholder: "hello world!", minimumFontSize: 10, tintColor: .red)
+        let textFieldWithMinFontSize = PCTextField(placeholder: helloWorld, minimumFontSize: 10, tintColor: .red)
         XCTAssertEqual(textFieldWithMinFontSize.minimumFontSize, 10)
         XCTAssertEqual(textFieldWithMinFontSize.tintColor, .red)
     }
@@ -54,7 +57,7 @@ class PCTextFieldTests: XCTestCase {
         pcTextField.setPlaceHolderTextColor(.red)
         XCTAssertNil(pcTextField.attributedPlaceholder)
 
-        pcTextField.placeholder = "hello world"
+        pcTextField.placeholder = helloWorld
         pcTextField.setPlaceHolderTextColor(.red)
 
         let holder = NSAttributedString(string: pcTextField.placeholder!, attributes: [.foregroundColor: PCColor.red])
@@ -83,7 +86,7 @@ class PCTextFieldTests: XCTestCase {
         let textField = PCTextField()
         XCTAssert(textField.isEmpty)
 
-        textField.text = "hello world!"
+        textField.text = helloWorld
         XCTAssertFalse(textField.isEmpty)
 
         textField.text = nil
@@ -95,7 +98,7 @@ class PCTextFieldTests: XCTestCase {
         XCTAssertEqual(textField.trimmedText, "")
 
         textField.text = "  hello world! \n \n"
-        XCTAssertEqual(textField.trimmedText, "hello world!")
+        XCTAssertEqual(textField.trimmedText, helloWorld)
 
         textField.text = nil
         XCTAssertEqual(textField.trimmedText, "")
@@ -106,27 +109,27 @@ class PCTextFieldTests: XCTestCase {
         let textField = PCTextField()
         XCTAssertNil(textField.emailAddress)
 
-        textField.text = "hello world!"
+        textField.text = helloWorld
         XCTAssertNil(textField.emailAddress)
 
-        textField.text = "john@appleseed.com"
+        textField.text = emailAddress
         XCTAssertNotNil(textField.emailAddress)
-        XCTAssertEqual(textField.text!, "john@appleseed.com")
+        XCTAssertEqual(textField.text!, emailAddress)
     }
 
     func testHasValidEmail() {
         let textField = PCTextField()
         XCTAssertFalse(textField.hasValidEmail)
 
-        textField.text = "hello world!"
+        textField.text = helloWorld
         XCTAssertFalse(textField.hasValidEmail)
 
-        textField.text = "john@appleseed.com"
+        textField.text = emailAddress
         XCTAssert(textField.hasValidEmail)
     }
 
     func testTextType() {
-        let textField = PCTextField(placeholder: "hello world!")
+        let textField = PCTextField(placeholder: helloWorld)
 
         textField.setTextType(.emailAddress)
         XCTAssertFalse(textField.isSecureTextEntry)

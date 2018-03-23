@@ -36,14 +36,25 @@ private class CustomPCViewController: PCViewController {
 
 }
 
-enum PieError: Error {
-    case invalid
-    case whooaa
-    case pieError
+private enum TestError: LocalizedError {
+    case someError
+
+    var errorDescription: String? {
+        return "this is some error"
+    }
+    
+    var localizedDescription: String {
+        return "this is some error"
+    }
+
 }
 
 class PCViewControllerTests: XCTestCase {
-    
+
+    let alertTitle = "Alert"
+    let alertMessage = "Hey there, I'm an alert :)"
+    let alertOption = "Got it!"
+
     func testConvenienceInit() {
         let viewController = CustomPCViewController()
 
@@ -115,28 +126,38 @@ class PCViewControllerTests: XCTestCase {
     func testAlertInit() {
         let viewController = PCViewController()
 
-        viewController.presentAlert(title: "alert", message: "test", preferredStyle: .actionSheet, tintColor: .red, animated: true, completion: nil)
+        let alert = viewController.presentAlert(title: alertTitle, message: alertMessage, preferredStyle: .actionSheet, tintColor: .red)
+        XCTAssertNotNil(alert.title)
+        XCTAssertEqual(alert.title!, alertTitle)
+
+        XCTAssertNotNil(alert.message)
+        XCTAssertEqual(alert.message!, alertMessage)
+
+        XCTAssertEqual(alert.preferredStyle, .actionSheet)
+        XCTAssertEqual(alert.view.tintColor, UIColor.red)
 
     }
 
     func testAlertInitWithCompletion() {
         let viewController = PCViewController()
-        let alertAction = UIAlertAction(title: "test", style: .cancel)
+        let alertAction = UIAlertAction(title: alertOption, style: .cancel)
 
-        viewController.presentAlert(
-            title: "alert",
-            error: PieError.whooaa,
+        let alert = viewController.presentAlert(
+            title: alertTitle,
+            error: TestError.someError,
             preferredStyle: .actionSheet,
             tintColor: .red,
-            actions: [alertAction],
-            animated: true,
-            completion: {
-                print("Success")
-            })
+            actions: [alertAction])
+
+        XCTAssertNotNil(alert.title)
+        XCTAssertEqual(alert.title!, alertTitle)
+
+        XCTAssertNotNil(alert.message!)
+        XCTAssertEqual(alert.message!, TestError.someError.localizedDescription)
+
+        XCTAssertEqual(alert.preferredStyle, .actionSheet)
+        XCTAssertEqual(alert.view.tintColor, UIColor.red)
+        XCTAssertEqual(alert.actions, [alertAction])
     }
 
-    func testShowConfetti() {
-        let viewController = PCViewController()
-        viewController.showConfetti(duration: 1.0, delay: 0.3)
-    }
 }

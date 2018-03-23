@@ -67,5 +67,4 @@ class PCTableViewControllerTests: XCTestCase {
         XCTAssert(tableView.didCallSetNavigationItem)
     }
     
-    
 }

@@ -42,12 +42,12 @@ class PCSegmentedControlTests: XCTestCase {
 
     func testImageConvenienceInit() {
         let bundle = Bundle.init(for: PCSegmentedControlTests.self)
-        let imageList = [UIImage(named: "piecrust.png", in: bundle, compatibleWith: nil)!, UIImage(named: "piecrust.png", in: bundle, compatibleWith: nil)!]
+        let imageList = [UIImage](repeatElement(UIImage(named: "piecrust.png", in: bundle, compatibleWith: nil)!, count: 2))
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
 
         let segmentedControl = PCSegmentedControl(frame: frame, segmentImages: imageList, isEnabled: false,
                                                   backgroundColor: PCColor.green, tintColor: PCColor.blue, alpha: 0.5)
-
+        
         XCTAssertEqual(segmentedControl.tintColor, .blue)
         XCTAssertEqual(segmentedControl.alpha, 0.5)
         XCTAssertEqual(segmentedControl.segmentImages, imageList)

@@ -11,12 +11,14 @@ import AVFoundation
 @testable import PieCrust
 
 class PCTransparentNavigationControllerTests: XCTestCase {
+
+    let image = UIImage(named: "piecrust.png")
     
     func testBackgroundImage() {
         let navigationController = PCTransparentNavigationController()
         XCTAssertNil(navigationController.backgroundImage)
-        navigationController.backgroundImage = UIImage(named: "piecrust.png")
-        XCTAssertEqual(navigationController.backgroundImage, UIImage(named: "piecrust.png"))
+        navigationController.backgroundImage = image
+        XCTAssertEqual(navigationController.backgroundImage, image)
     }
 
     func testBackgroundVideoUrl() {

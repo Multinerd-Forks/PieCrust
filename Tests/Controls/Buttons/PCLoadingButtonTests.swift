@@ -12,13 +12,17 @@ import XCTest
 private class CustomPCLoadingButton: PCLoadingButton {
 
     var didCallSetViews = false
+    
     override func setViews() {
         super.setViews()
         didCallSetViews = true
     }
+
 }
 
 class PCLoadingButtonTests: XCTestCase {
+
+    let helloWorld = "hello world!"
     
     func  testConvenienceInit() {
         let insets = UIEdgeInsets(top: 0.0, left: 20.0, bottom: 0.0, right: 20.0)
@@ -26,7 +30,7 @@ class PCLoadingButtonTests: XCTestCase {
 
         let button = PCLoadingButton(
             type: .system,
-            title: "hello",
+            title: helloWorld,
             titleFont: font,
             image: UIImage(named: "piecrust.png"),
             contentEdgeInsets: insets,
@@ -37,7 +41,7 @@ class PCLoadingButtonTests: XCTestCase {
             alpha: 0.5)
 
         XCTAssertEqual(button.buttonType, .system)
-        XCTAssertEqual(button.currentTitle, "hello")
+        XCTAssertEqual(button.currentTitle, helloWorld)
         XCTAssertEqual(button.tintColor, .red)
         XCTAssertEqual(button.contentEdgeInsets, insets)
         XCTAssert(button.isEnabled)

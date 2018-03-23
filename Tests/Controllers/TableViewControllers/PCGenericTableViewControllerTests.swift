@@ -17,19 +17,4 @@ class PCGenericTableViewControllerTests: XCTestCase {
         XCTAssertEqual(genericTableView.items.item(at: 0)?.item(at: 4), array[4])
     }
 
-    func testInitWithCoder() {
-        let coder = NSKeyedUnarchiver(forReadingWith: Data())
-        let genericTableView = PCGenericTableViewController<PCGenericTableViewCell<Int>, Int>(coder: coder)
-    }
-
-//    func testInitWithNibName() {
-//
-//        let genericTableView = PCGenericTableViewController<PCGenericTableViewCell<Int>, Int>(
-//            nibName: "test", bundle: nil)
-//
-//        XCTAssert((genericTableView.nibName != nil))
-//        XCTAssertNil(genericTableView.nibBundle)
-//
-//    }
-
 }

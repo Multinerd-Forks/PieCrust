@@ -10,19 +10,4 @@ import XCTest
 import UIKit
 import SwifterSwift
 
-class PublicExtensionsTests: XCTestCase {
-
-    func testSwitchRootViewController() {
-        let window = UIWindow()
-        let viewController = UIViewController()
-        window.switchRootViewController(viewController, animated: true, duration: 0.6, options: .transitionCurlDown) {
-            print("hello world")
-        }
-
-    }
-
-    func testKeyboardSize() {
-        let notification = Notification(name: Notification.Name(rawValue: "notify"))
-    }
-
-}
+class PublicExtensionsTests: XCTestCase {}

@@ -25,6 +25,7 @@ private class CustomPCCollectionViewController: PCCollectionViewController {
         super.setNavigationItem()
         didCallSetNavigationItem = true
     }
+
     override func setGestureRecognizers() {
         super.setGestureRecognizers()
         didCallSetGestureRecognizers = true

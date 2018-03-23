@@ -32,6 +32,8 @@ private class CustomButton: PCButton {
 
 class PCButtonTests: XCTestCase {
 
+    let helloWorld = "hello world!"
+
     func testPreferredHeight() {
         let button = PCButton()
         let height: CGFloat = UIScreen.main.isSmall ? 40.0 : 48.0
@@ -42,9 +44,9 @@ class PCButtonTests: XCTestCase {
     }
 
     func  testConvenienceInit() {
-        let buttonWithDefaultArgs = PCButton(type: UIButtonType.system, title: "hello world")
+        let buttonWithDefaultArgs = PCButton(type: UIButtonType.system, title: helloWorld)
         XCTAssertNotNil(buttonWithDefaultArgs.currentTitle)
-        XCTAssertEqual(buttonWithDefaultArgs.currentTitle, "hello world")
+        XCTAssertEqual(buttonWithDefaultArgs.currentTitle, helloWorld)
         XCTAssertTrue(buttonWithDefaultArgs.isEnabled)
         XCTAssertEqual(buttonWithDefaultArgs.alpha, 1.0)
         XCTAssertEqual(buttonWithDefaultArgs.backgroundColor, PCColor.white)
@@ -54,22 +56,22 @@ class PCButtonTests: XCTestCase {
         XCTAssertEqual(buttonWithDefaultArgs.contentEdgeInsets, insets)
 
         let font = PCFont.systemFont(ofSize: 50, weight: .bold)
-        let buttonWithCustomFont = PCButton(type: UIButtonType.custom, title: "hello world", titleFont: font)
+        let buttonWithCustomFont = PCButton(type: UIButtonType.custom, title: helloWorld, titleFont: font)
         XCTAssertEqual(buttonWithCustomFont.titleLabel?.font, font)
 
         let buttonWithCustomBackgroundColor = PCButton(backgroundColor: .red)
         XCTAssertEqual(buttonWithCustomBackgroundColor.backgroundColor, .red)
 
         let buttonWithCustomTintColor = PCButton(
-                                    type: UIButtonType.system,
-                                    title: "hello",
-                                    titleFont: font,
-                                    image: UIImage(named: "piecrust.png"),
-                                    contentEdgeInsets: insets,
-                                    isEnabled: true,
-                                    backgroundColor: .red,
-                                    tintColor: .red,
-                                    alpha: 0.5 )
+            type: UIButtonType.system,
+            title: "hello",
+            titleFont: font,
+            image: UIImage(named: "piecrust.png"),
+            contentEdgeInsets: insets,
+            isEnabled: true,
+            backgroundColor: .red,
+            tintColor: .red,
+            alpha: 0.5)
 
         XCTAssertEqual(buttonWithCustomTintColor.tintColor, .red)
     }
