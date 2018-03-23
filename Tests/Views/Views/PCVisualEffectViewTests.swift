@@ -16,6 +16,6 @@ class PCVisualEffectViewTests: XCTestCase {
         
         XCTAssert(effectView.effect != nil)
         XCTAssertEqual(effectView.alpha, 0.5)
-
     }
+    
 }

@@ -8,6 +8,8 @@
 
 import UIKit
 
+// swiftlint:disable large_tuple
+
 /// Conform to PCColorable protocol to add convenience initializers for color objects.
 public protocol PCColorable {
 
@@ -33,6 +35,17 @@ public protocol PCColorable {
     ///   - hexString: hexadecimal string (examples: EDE7F6, 0xEDE7F6, #EDE7F6, #0ff, 0xF0F, ..).
     ///   - transparency: optional transparency value.
     init?(hexString: String, transparency: CGFloat)
+
+    /// RGB components for a Color (between 0 and 255).
+    ///
+    ///        UIColor.red.rgbComponents.red -> 255
+    ///        NSColor.green.rgbComponents.green -> 255
+    ///        UIColor.blue.rgbComponents.blue -> 255
+    ///
+    var rgbComponents: (red: Int, green: Int, blue: Int) { get }
+
+    /// Alpha of Color.
+    var alpha: CGFloat { get }
 
 }
 
@@ -106,4 +119,31 @@ public extension PCColorable where Self: UIColor {
         self.init(red: red, green: green, blue: blue, transparency: trans)
     }
 
+    /// RGB components for a Color (between 0 and 255).
+    ///
+    ///        PCColor.red.rgbComponents.red -> 255
+    ///        PCColor.green.rgbComponents.green -> 255
+    ///        PCColor.blue.rgbComponents.blue -> 255
+    ///
+    public var rgbComponents: (red: Int, green: Int, blue: Int) {
+        var components: [CGFloat] {
+            let c = cgColor.components!
+            if c.count == 4 {
+                return c
+            }
+            return [c[0], c[0], c[0], c[1]]
+        }
+        let r = components[0]
+        let g = components[1]
+        let b = components[2]
+        return (red: Int(r * 255.0), green: Int(g * 255.0), blue: Int(b * 255.0))
+    }
+
+    /// Alpha of Color.
+    public var alpha: CGFloat {
+        return cgColor.alpha
+    }
+
 }
+
+// swiftlint:enbale large_tuple

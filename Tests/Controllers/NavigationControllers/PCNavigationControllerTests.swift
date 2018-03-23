@@ -20,4 +20,12 @@ class PCNavigationControllerTests: XCTestCase {
         XCTAssertEqual(navBar.navigationBar.tintColor, PCColor.green)
     }
 
+    func testPcTabBarController() {
+            let navBar = PCNavigationController()
+            XCTAssertNil(navBar.navigationBar.backgroundColor)
+
+            let tabBarController = navBar.pcTabBarController
+            XCTAssertEqual(navBar.pcTabBarController, tabBarController)
+    }
+
 }

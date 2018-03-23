@@ -25,18 +25,21 @@ private class CustomPcImageView: PCImageView {
         
         didCallLayoutViews = true
     }
+    
 }
 
 class PCImageViewTests: XCTestCase {
+
+    let image = UIImage(named: "piecrust.png")
     
     func testConvenienceInit() {
         let imageView = PCImageView()
         XCTAssertNil(imageView.image)
         XCTAssertNil(imageView.highlightedImage)
 
-        let highlightedImageView: PCImageView = PCImageView( image: UIImage(named: "piecrust.png"), highlightedImage: UIImage(named: "piecrust.png"))
-        XCTAssertEqual(highlightedImageView.image, UIImage(named: "piecrust.png"))
-        XCTAssertEqual(highlightedImageView.highlightedImage, UIImage(named: "piecrust.png") )
+        let highlightedImageView: PCImageView = PCImageView( image: image, highlightedImage: image)
+        XCTAssertEqual(highlightedImageView.image, image)
+        XCTAssertEqual(highlightedImageView.highlightedImage, image)
     }
 
     func testInitWithCoder() {
@@ -51,7 +54,8 @@ class PCImageViewTests: XCTestCase {
     }
 
     func testSetViews() {
-        let imageView: PCImageView = PCImageView()
+        let imageView = PCImageView()
+        
         XCTAssertEqual(imageView.backgroundColor, PCColor.white)
     }
 
