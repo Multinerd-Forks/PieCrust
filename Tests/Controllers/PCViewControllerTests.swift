@@ -36,6 +36,12 @@ private class CustomPCViewController: PCViewController {
 
 }
 
+enum PieError: Error {
+    case invalid
+    case whooaa
+    case pieError
+}
+
 class PCViewControllerTests: XCTestCase {
     
     func testConvenienceInit() {
@@ -104,5 +110,33 @@ class PCViewControllerTests: XCTestCase {
 
         let navController = viewController.pcNavigationController
         XCTAssertEqual(viewController.pcNavigationController, navController)
+    }
+
+    func testAlertInit() {
+        let viewController = PCViewController()
+
+        viewController.presentAlert(title: "alert", message: "test", preferredStyle: .actionSheet, tintColor: .red, animated: true, completion: nil)
+
+    }
+
+    func testAlertInitWithCompletion() {
+        let viewController = PCViewController()
+        let alertAction = UIAlertAction(title: "test", style: .cancel)
+
+        viewController.presentAlert(
+            title: "alert",
+            error: PieError.whooaa,
+            preferredStyle: .actionSheet,
+            tintColor: .red,
+            actions: [alertAction],
+            animated: true,
+            completion: {
+                print("Success")
+            })
+    }
+
+    func testShowConfetti() {
+        let viewController = PCViewController()
+        viewController.showConfetti(duration: 1.0, delay: 0.3)
     }
 }

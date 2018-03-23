@@ -97,5 +97,26 @@ class PCButtonTests: XCTestCase {
         XCTAssert(button!.didCallLayoutViews)
 
     }
+
+    func testSetShadow() {
+        let button = PCButton()
+        let offset = CGSize(width: 1.0, height: 1.0)
+        button.setShadow(color: .red, offset: offset, opacity: 0.5, radius: 1.0)
+
+        XCTAssertEqual(button.shadowColor, .red)
+        XCTAssertEqual(button.shadowOffset, offset)
+        XCTAssertEqual(button.shadowRadius, 1.0)
+        XCTAssertEqual(button.shadowOpacity, 0.5)
+
+    }
+
+    func testFadeIn() {
+        let button = PCButton()
+        button.fadeIn(withDuration: 1.0, delay: 0.2, completion: nil)
+        button.fadeOut(withDuration: 1.0, delay: 0.2, completion: nil)
+        button.popIn(withDuration: 1.0, delay: 0.2, completion: nil)
+        button.popOut(withDuration: 1.0, delay: 0.2, completion: nil)
+        button.shake(withDuration: 1.0, delay: 0.2, completion: nil)
+    }
     
 }

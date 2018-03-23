@@ -48,5 +48,30 @@ class PCViewTests: XCTestCase {
         XCTAssertEqual(customView!.didCallSetViews, true)
         XCTAssertEqual(customView!.didCallLayoutViews, true)
     }
+
+    func testShadow() {
+        let view = PCView()
+        XCTAssertEqual(view.borderWidth, view.layer.borderWidth)
+        view.borderWidth = 1.0
+    }
+
+    func testBorder() {
+        let view = PCView()
+        let color = UIColor(cgColor: view.layer.borderColor!)
+        XCTAssertEqual(view.borderColor, color)
+        view.borderColor = .red
+
+        view.setBorder(width: 1.0, color: .green, radius: 3.0)
+        XCTAssertEqual(view.borderWidth, 1.0)
+        XCTAssertEqual(view.borderColor, .green)
+        XCTAssertEqual(view.cornerRadius, 3.0)
+    }
+
+    func testCornerRadius() {
+        let view = PCView()
+
+        XCTAssertEqual(view.cornerRadius, view.layer.cornerRadius)
+        view.cornerRadius = 1.0
+    }
     
 }
