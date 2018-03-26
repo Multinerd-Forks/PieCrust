@@ -20,7 +20,6 @@ private class CustomPCViewController: PCViewController {
     }
 
     override func setTabBarItem() {
-        super.setTabBarItem()
         didCallSetTabBarItem = true
     }
 
@@ -30,8 +29,30 @@ private class CustomPCViewController: PCViewController {
     }
 
     override func setGestureRecognizers() {
-        super.setGestureRecognizers()
         didCallSetGestureRecognizers = true
+    }
+
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        setNavigationItem()
+    }
+
+    @objc func hidedKeyboard() {
+        self.view.endEditing(true)
+    }
+
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+
+        let tap = UITapGestureRecognizer(target: self, action: #selector(hidedKeyboard))
+        self.view.addGestureRecognizer(tap)
+        setGestureRecognizers()
+        becomeFirstResponder()
+    }
+
+    override var shouldEndEditingOnTap: Bool {
+        return true
     }
 
 }
@@ -58,7 +79,7 @@ class PCViewControllerTests: XCTestCase {
     func testConvenienceInit() {
         let viewController = CustomPCViewController()
 
-        XCTAssertFalse(viewController.shouldEndEditingOnTap)
+        XCTAssert(viewController.shouldEndEditingOnTap)
         XCTAssert(viewController.canBecomeFirstResponder)
     }
 
@@ -158,6 +179,24 @@ class PCViewControllerTests: XCTestCase {
         XCTAssertEqual(alert.preferredStyle, .actionSheet)
         XCTAssertEqual(alert.view.tintColor, UIColor.red)
         XCTAssertEqual(alert.actions, [alertAction])
+    }
+
+    func testviewDidAppear() {
+        let viewController = CustomPCViewController()
+        viewController.viewWillAppear(false)
+        XCTAssert(viewController.didCallSetNavigationItem)
+
+        let fistGestureCount = viewController.view.gestureRecognizers?.count
+        viewController.viewDidLoad()
+        XCTAssertNotEqual(viewController.view.gestureRecognizers?.count, fistGestureCount)
+
+    }
+
+    func testShowConfetti() {
+        let viewController = CustomPCViewController()
+
+        viewController.showConfetti()
+
     }
 
 }
