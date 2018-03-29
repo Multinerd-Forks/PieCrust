@@ -9,6 +9,15 @@
 import XCTest
 @testable import PieCrust
 
+private  class CustomPCConfettiView: PCConfettiView {
+
+    var didCallSetViews = false
+
+    override open func setViews() {
+        didCallSetViews = true
+    }
+
+}
 class PCConfettiViewTests: XCTestCase {
 
     func testBounds() {
@@ -17,6 +26,7 @@ class PCConfettiViewTests: XCTestCase {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 50)
         confettiView.bounds = frame
         XCTAssertEqual(confettiView.bounds, frame)
+
     }
 
     func testIsActive() {

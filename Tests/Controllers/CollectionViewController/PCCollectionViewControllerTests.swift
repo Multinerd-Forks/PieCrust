@@ -31,6 +31,29 @@ private class CustomPCCollectionViewController: PCCollectionViewController {
         didCallSetGestureRecognizers = true
     }
 
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        setNavigationItem()
+    }
+
+    @objc func hidedKeyboard() {
+        self.view.endEditing(true)
+    }
+    
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+
+        let tap = UITapGestureRecognizer(target: self, action: #selector(hidedKeyboard))
+        self.view.addGestureRecognizer(tap)
+        setGestureRecognizers()
+        becomeFirstResponder()
+    }
+
+    override var shouldEndEditingOnTap: Bool {
+        return true
+    }
+
 }
 
 class PCCollectionViewControllerTests: XCTestCase {
@@ -38,7 +61,7 @@ class PCCollectionViewControllerTests: XCTestCase {
     func testInitWithCoder() {
         let coder = NSKeyedUnarchiver(forReadingWith: Data())
         let collectionView = CustomPCCollectionViewController(coder: coder)
-        XCTAssertFalse((collectionView?.shouldEndEditingOnTap)!)
+        XCTAssert((collectionView?.shouldEndEditingOnTap)!)
         XCTAssertTrue((collectionView?.canBecomeFirstResponder)!)
         XCTAssertEqual(collectionView?.didCallSetTabBarItem, true)
     }
@@ -51,7 +74,7 @@ class PCCollectionViewControllerTests: XCTestCase {
     }
 
     func testSetGestureRecognizers() {
-         let collectionView = CustomPCCollectionViewController(nibName: nil, bundle: nil)
+        let collectionView = CustomPCCollectionViewController(nibName: nil, bundle: nil)
 
         collectionView.setGestureRecognizers()
         XCTAssert(collectionView.didCallSetGestureRecognizers)
@@ -61,6 +84,13 @@ class PCCollectionViewControllerTests: XCTestCase {
          let collectionView = CustomPCCollectionViewController(nibName: nil, bundle: nil)
 
         collectionView.setNavigationItem()
+        XCTAssert(collectionView.didCallSetNavigationItem)
+    }
+
+    func testViewWillAppear() {
+        let collectionView = CustomPCCollectionViewController(nibName: nil, bundle: nil)
+
+        collectionView.viewWillAppear(false)
         XCTAssert(collectionView.didCallSetNavigationItem)
     }
     

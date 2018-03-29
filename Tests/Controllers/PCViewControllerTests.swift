@@ -181,7 +181,7 @@ class PCViewControllerTests: XCTestCase {
         XCTAssertEqual(alert.actions, [alertAction])
     }
 
-    func testviewDidAppear() {
+    func testViewDidAppear() {
         let viewController = CustomPCViewController()
         viewController.viewWillAppear(false)
         XCTAssert(viewController.didCallSetNavigationItem)
@@ -189,14 +189,6 @@ class PCViewControllerTests: XCTestCase {
         let fistGestureCount = viewController.view.gestureRecognizers?.count
         viewController.viewDidLoad()
         XCTAssertNotEqual(viewController.view.gestureRecognizers?.count, fistGestureCount)
-
-    }
-
-    func testShowConfetti() {
-        let viewController = CustomPCViewController()
-
-        viewController.showConfetti()
-
     }
 
 }

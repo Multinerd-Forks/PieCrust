@@ -42,6 +42,9 @@ open class PCConfettiView: PCView {
     ///   - backgroundColor: Background color of the confetti view _(default is PCColor.clear)_.
     ///   - tintColor: Text color of the confetti view _(default is nil)_.
     ///   - alpha: Alpha of the confetti view _(default is 1.0)_.
+
+     // FIXME: initalizer crash when i use parameters in initalizer 
+
 	public convenience init(
         colors: [UIColor] = [],
         intensity: Float = 0.5,
