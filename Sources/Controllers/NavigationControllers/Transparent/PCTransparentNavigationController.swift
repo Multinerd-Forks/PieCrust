@@ -17,6 +17,7 @@ open class PCTransparentNavigationController: PCNavigationController {
     fileprivate var player: AVPlayer?
     fileprivate var playerLayer: AVPlayerLayer?
 
+    /// Background image.
     public var backgroundImage: UIImage? {
         didSet {
             backgroundImageView.image = backgroundImage

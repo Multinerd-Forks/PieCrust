@@ -16,4 +16,4 @@ import SwifterSwift
 ///   - `PCrustable`
 ///   - `PCAlertable`
 ///   - `PCConfettiable`
-open class PCTabBarController: UITabBarController, PCAlertable, PCConfettiable {}
+open class PCTabBarController: UITabBarController, PCrustable, PCAlertable, PCConfettiable {}

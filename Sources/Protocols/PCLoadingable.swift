@@ -13,5 +13,5 @@ public protocol PCLoadingable: class {
 
     /// Whether your class is loading or not.
 	var isLoading: Bool { get set }
-
+    
 }

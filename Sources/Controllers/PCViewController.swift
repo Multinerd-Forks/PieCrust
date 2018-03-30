@@ -112,7 +112,7 @@ open class PCViewController: UIViewController, PCrustable, PCKeyboardObservable,
 }
 
 // MARK: - Private methods.
-fileprivate extension PCViewController {
+private extension PCViewController {
 
     @objc func hideKeyboard() {
         view.endEditing(true)

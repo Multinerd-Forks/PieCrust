@@ -9,7 +9,7 @@
 import XCTest
 @testable import PieCrust
 
-private class CustomPCTableView: PCTableViewController {
+private class TestTableView: PCTableViewController {
 
     var didCallSetTabBarItem = false
     var didCallSetNavigationItem = false
@@ -35,33 +35,33 @@ class PCTableViewControllerTests: XCTestCase {
     
     func testInitWithCoder() {
         let coder = NSKeyedUnarchiver(forReadingWith: Data())
-        let tableView = CustomPCTableView(coder: coder)
+        let tableView = TestTableView(coder: coder)
         XCTAssertFalse((tableView?.shouldEndEditingOnTap)!)
         XCTAssertTrue((tableView?.canBecomeFirstResponder)!)
         XCTAssertEqual(tableView?.didCallSetTabBarItem, true)
     }
 
     func testNibNameInit() {
-        let tableView = CustomPCTableView(nibName: nil, bundle: nil)
+        let tableView = TestTableView(nibName: nil, bundle: nil)
         XCTAssert(tableView.didCallSetTabBarItem)
     }
 
     func testSetTabBarItem() {
-        let tableView = CustomPCTableView(style: UITableViewStyle.grouped)
+        let tableView = TestTableView(style: UITableViewStyle.grouped)
 
         tableView.setTabBarItem()
         XCTAssert(tableView.didCallSetTabBarItem)
     }
 
     func testSetGestureRecognizers() {
-        let tableView = CustomPCTableView(style: UITableViewStyle.grouped)
+        let tableView = TestTableView(style: UITableViewStyle.grouped)
 
         tableView.setGestureRecognizers()
         XCTAssert(tableView.didCallSetGestureRecognizers)
     }
 
     func testSetNavigationItem() {
-        let tableView = CustomPCTableView(style: UITableViewStyle.grouped)
+        let tableView = TestTableView(style: UITableViewStyle.grouped)
 
         tableView.setNavigationItem()
         XCTAssert(tableView.didCallSetNavigationItem)
