@@ -9,7 +9,7 @@
 import XCTest
 @testable import PieCrust
 
-private  class CustomPCConfettiView: PCConfettiView {
+private  class TestConfettiView: PCConfettiView {
 
     var didCallSetViews = false
 

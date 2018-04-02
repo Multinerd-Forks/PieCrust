@@ -9,7 +9,7 @@
 import XCTest
 @testable import PieCrust
 
-// swiftlint:disable function_body_length
+// swiftlint:disable function_body_length , identifier_name
 
 class PCColorTests: XCTestCase {
 
@@ -173,4 +173,4 @@ class PCColorTests: XCTestCase {
     
 }
 
-// swiftlint:enable function_body_length
+// swiftlint:enable function_body_length , identifier_name

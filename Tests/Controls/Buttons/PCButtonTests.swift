@@ -9,7 +9,7 @@
 import XCTest
 @testable import PieCrust
 
-private class CustomButton: PCButton {
+private class TestButton: PCButton {
 
     var didCallSetViews = false
     var didCallLayoutViews = false
@@ -39,7 +39,7 @@ class PCButtonTests: XCTestCase {
         let height: CGFloat = UIScreen.main.isSmall ? 40.0 : 48.0
         XCTAssertEqual(button.preferredHeight, height)
 
-        let customButton = CustomButton()
+        let customButton = TestButton()
         XCTAssertEqual(customButton.preferredHeight, 10.0)
     }
 
@@ -77,7 +77,7 @@ class PCButtonTests: XCTestCase {
     }
 
     func testSetViews() {
-        let button = CustomButton()
+        let button = TestButton()
 
         button.setViews()
         XCTAssert(button.didCallSetViews)
@@ -85,7 +85,7 @@ class PCButtonTests: XCTestCase {
     }
 
     func testLayoutViews() {
-        let button = CustomButton()
+        let button = TestButton()
 
         button.layoutViews()
         XCTAssert(button.didCallLayoutViews)
@@ -93,7 +93,7 @@ class PCButtonTests: XCTestCase {
 
     func testInitWithCoder() {
         let coder = NSKeyedUnarchiver(forReadingWith: Data())
-        let button = CustomButton(coder: coder)
+        let button = TestButton(coder: coder)
 
         XCTAssert(button!.didCallSetViews)
         XCTAssert(button!.didCallLayoutViews)

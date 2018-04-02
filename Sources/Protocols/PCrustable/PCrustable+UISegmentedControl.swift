@@ -77,7 +77,7 @@ public extension PCrustable where Self: UISegmentedControl {
     public var segmentTitles: [String] {
         get {
             let range = 0..<numberOfSegments
-            return range.flatMap { titleForSegment(at: $0) }
+            return range.compactMap { titleForSegment(at: $0) }
         }
         set {
             removeAllSegments()
@@ -91,7 +91,7 @@ public extension PCrustable where Self: UISegmentedControl {
     public var segmentImages: [UIImage] {
         get {
             let range = 0..<numberOfSegments
-            return range.flatMap { imageForSegment(at: $0) }
+            return range.compactMap { imageForSegment(at: $0) }
         }
         set {
             removeAllSegments()

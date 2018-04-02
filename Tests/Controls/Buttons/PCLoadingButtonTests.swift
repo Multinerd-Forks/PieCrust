@@ -9,7 +9,7 @@
 import XCTest
 @testable import PieCrust
 
-private class CustomPCLoadingButton: PCLoadingButton {
+private class TestLoadingButton: PCLoadingButton {
 
     var didCallSetViews = false
     
@@ -51,7 +51,7 @@ class PCLoadingButtonTests: XCTestCase {
     }
 
     func testIsLoading() {
-        let button = CustomPCLoadingButton()
+        let button = TestLoadingButton()
         XCTAssertFalse(button.isLoading)
         XCTAssertFalse(button.activityIndicator.isAnimating)
         XCTAssert(button.isEnabled)

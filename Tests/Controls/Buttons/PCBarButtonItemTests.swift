@@ -9,7 +9,7 @@
 import XCTest
 @testable import PieCrust
 
-private class CustomPCBarButtonItem: PCBarButtonItem {
+private class TestBarButtonItem: PCBarButtonItem {
 
     var didCallAction = false
 
@@ -25,7 +25,7 @@ class PCBarButtonItemTests: XCTestCase {
     let helloWorld = "hello world!"
 
     func testConvenienceInit() {
-        let button = CustomPCBarButtonItem(button: UIButton(), badgeText: helloWorld, target: nil, action: #selector(CustomPCBarButtonItem.testFunc))
+        let button = TestBarButtonItem(button: UIButton(), badgeText: helloWorld, target: nil, action: #selector(TestBarButtonItem.testFunc))
 
         XCTAssertEqual(button.badgeText, helloWorld)
         XCTAssertNil(button.target)
@@ -71,7 +71,7 @@ class PCBarButtonItemTests: XCTestCase {
     }
 
     func testBadgeFontSize() {
-        let button = CustomPCBarButtonItem()
+        let button = TestBarButtonItem()
 
         XCTAssertEqual(button.badgeFontSize, UIFont.smallSystemFontSize)
         XCTAssertEqual(button.badgeLabel.font, .systemFont(ofSize: UIFont.smallSystemFontSize))
@@ -79,9 +79,9 @@ class PCBarButtonItemTests: XCTestCase {
     }
 
     func testaddTargetForAction() {
-        let button = CustomPCBarButtonItem()
+        let button = TestBarButtonItem()
 
-        button.addTargetForAction(self, action: #selector(CustomPCBarButtonItem.testFunc))
+        button.addTargetForAction(self, action: #selector(TestBarButtonItem.testFunc))
         button.testFunc()
         XCTAssert(button.didCallAction)
     }

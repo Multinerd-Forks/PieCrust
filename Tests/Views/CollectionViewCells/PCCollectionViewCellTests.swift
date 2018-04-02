@@ -9,7 +9,7 @@
 import XCTest
 @testable import PieCrust
 
-private class CustomPCCollectionViewCell: PCCollectionViewCell {
+private class TestCollectionViewCell: PCCollectionViewCell {
 
     var didCallSetViews = false
     var didCallLayoutViews = false
@@ -34,7 +34,7 @@ class PCCollectionViewCellTests: XCTestCase {
         let collectionViewCell = PCCollectionViewCell()
         XCTAssertEqual(collectionViewCell.backgroundColor, PCColor.white)
 
-        let customCollecitonViewCell = CustomPCCollectionViewCell()
+        let customCollecitonViewCell = TestCollectionViewCell()
         XCTAssert(customCollecitonViewCell.didCallSetViews)
         XCTAssert(customCollecitonViewCell.didCallLayoutViews)
     }
@@ -44,7 +44,7 @@ class PCCollectionViewCellTests: XCTestCase {
         let pcCollectionViewCell = PCCollectionViewCell(coder: coder)
         XCTAssertNotNil(pcCollectionViewCell)
 
-        let customCollectionViewCell = CustomPCCollectionViewCell(coder: coder)
+        let customCollectionViewCell = TestCollectionViewCell(coder: coder)
         XCTAssertNotNil(customCollectionViewCell)
         XCTAssert(customCollectionViewCell!.didCallSetViews)
         XCTAssert(customCollectionViewCell!.didCallLayoutViews)

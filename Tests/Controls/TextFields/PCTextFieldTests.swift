@@ -9,7 +9,7 @@
 import XCTest
 @testable import PieCrust
 
-private class CustomTextField: PCTextField {
+private class TestTextField: PCTextField {
 
     var preferredHeight: CGFloat {
         return 10.0
@@ -69,7 +69,7 @@ class PCTextFieldTests: XCTestCase {
         let textField = PCTextField(coder: coder)
         XCTAssertNotNil(textField)
 
-        let customTextField = CustomTextField(coder: coder)
+        let customTextField = TestTextField(coder: coder)
         XCTAssertNotNil(customTextField)
     }
 
@@ -78,7 +78,7 @@ class PCTextFieldTests: XCTestCase {
         let height: CGFloat = UIScreen.main.isSmall ? 40.0 : 48.0
         XCTAssertEqual(textField.preferredHeight, height)
 
-        let customTextField = CustomTextField()
+        let customTextField = TestTextField()
         XCTAssertEqual(customTextField.preferredHeight, 10.0)
     }
 
