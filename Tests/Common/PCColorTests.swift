@@ -9,6 +9,8 @@
 import XCTest
 @testable import PieCrust
 
+// swiftlint:disable function_body_length , identifier_name
+
 class PCColorTests: XCTestCase {
 
     func testInit() {
@@ -56,6 +58,22 @@ class PCColorTests: XCTestCase {
         let color4 = PCColor(hex: 0xFFF, transparency: 1)
         XCTAssertEqual(color3, color4)
 
+        let color5 = PCColor(hex: 0xFFFFFF)
+        XCTAssertNotNil(color5)
+        XCTAssertEqual(color5!.rgbComponents.red, 255)
+        XCTAssertEqual(color5!.rgbComponents.green, 255)
+        XCTAssertEqual(color5!.rgbComponents.blue, 255)
+
+        let color6 = PCColor(hex: 0)
+        XCTAssertNotNil(color6)
+        XCTAssertEqual(color6!.rgbComponents.red, 0)
+        XCTAssertEqual(color6!.rgbComponents.green, 0)
+        XCTAssertEqual(color6!.rgbComponents.blue, 0)
+
+        let color7 = PCColor(white: 1, alpha: 1)
+        XCTAssertEqual(color7.rgbComponents.red, 255)
+        XCTAssertEqual(color7.rgbComponents.green, 255)
+        XCTAssertEqual(color7.rgbComponents.blue, 255)
     }
 
     func testFailableInit() {
@@ -154,3 +172,5 @@ class PCColorTests: XCTestCase {
     }
     
 }
+
+// swiftlint:enable function_body_length , identifier_name

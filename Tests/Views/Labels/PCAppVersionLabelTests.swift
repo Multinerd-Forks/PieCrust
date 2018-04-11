@@ -9,6 +9,13 @@
 import XCTest
 @testable import PieCrust
 
+private class CustomAppVersionLabel: PCAppVersionLabel {
+
+    override var version: String? {
+        guard let appVersion = Bundle(for: type(of: self )).infoDictionary?["CFBundleShortVersionString"] as? String else { return nil }
+        return hasVPrefeix ? "v\(appVersion)" : appVersion
+    }
+}
 class PCAppVersionLabelTests: XCTestCase {
     
     func testConvenienceInit() {
@@ -20,15 +27,23 @@ class PCAppVersionLabelTests: XCTestCase {
         XCTAssertEqual(versionLabel.frame, frame)
         XCTAssertNil(versionLabel.version)
 
-        let versionLabelWithPrefix = PCAppVersionLabel(hasVPrefeix: false)
-        XCTAssertFalse(versionLabelWithPrefix.hasVPrefeix)
-
     }
 
     func testInitWithCoder() {
         let coder = NSKeyedUnarchiver(forReadingWith: Data())
         let versionLabel = PCAppVersionLabel(coder: coder)
         XCTAssertNotNil(versionLabel)
+    }
+
+    func testVersion() {
+
+        let versionLabelWithPrefix = CustomAppVersionLabel(hasVPrefeix: false)
+        XCTAssertFalse(versionLabelWithPrefix.hasVPrefeix)
+
+        let appVersion = Bundle(for: type(of: self )).infoDictionary?["CFBundleShortVersionString"] as! String
+        XCTAssertEqual(versionLabelWithPrefix.version, appVersion)
+        versionLabelWithPrefix.hasVPrefeix = true
+        XCTAssertEqual(versionLabelWithPrefix.version, "v\(appVersion)")
     }
     
 }

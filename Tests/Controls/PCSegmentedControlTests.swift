@@ -9,7 +9,7 @@
 import XCTest
 @testable import PieCrust
 
-private class CustomSegment: PCSegmentedControl {
+private class TestSegment: PCSegmentedControl {
 
     var preferredHeight: CGFloat {
         return 10.0
@@ -61,7 +61,7 @@ class PCSegmentedControlTests: XCTestCase {
         let height: CGFloat = UIScreen.main.isSmall ? 40.0 : 48.0
         XCTAssertEqual(segmentedControl.preferredHeight, height)
 
-        let customSegment = CustomSegment()
+        let customSegment = TestSegment()
         XCTAssertEqual(customSegment.preferredHeight, 10.0)
     }
     

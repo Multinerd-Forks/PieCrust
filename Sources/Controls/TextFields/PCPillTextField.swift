@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import SwifterSwift
 
-/// PCPillTextField.
+/// Pill `PCTextField`.
 open class PCPillTextField: PCTextField {
 
     /// The bounds rectangle, which describes the view’s location and size in its own coordinate system.

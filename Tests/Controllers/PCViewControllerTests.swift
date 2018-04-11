@@ -9,11 +9,18 @@
 import XCTest
 @testable import PieCrust
 
-private class CustomPCViewController: PCViewController {
+private class TestViewController: PCViewController {
 
     var didCallSetTabBarItem = false
     var didCallSetNavigationItem = false
     var didCallSetGestureRecognizers = false
+
+    var keyboardWillShowNotification: Notification?
+    var keyboardDidShowNotification: Notification?
+    var keyboardWillChangeFrameNotification: Notification?
+    var keyboardDidChangeFrameNotification: Notification?
+    var keyboardWillHideNotification: Notification?
+    var keyboardDidHideNotification: Notification?
 
     override func loadView() {
         view = PCView()
@@ -21,17 +28,70 @@ private class CustomPCViewController: PCViewController {
 
     override func setTabBarItem() {
         super.setTabBarItem()
+
         didCallSetTabBarItem = true
     }
 
     override func setNavigationItem() {
         super.setNavigationItem()
+
         didCallSetNavigationItem = true
     }
 
     override func setGestureRecognizers() {
         super.setGestureRecognizers()
+
         didCallSetGestureRecognizers = true
+    }
+
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+
+        registerForKeyboardEvents()
+    }
+
+    override var shouldEndEditingOnTap: Bool {
+        return true
+    }
+
+    override func keyboardWillShow(_ notification: Notification) {
+        super.keyboardWillShow(notification)
+
+        keyboardWillShowNotification = notification
+    }
+
+    override func keyboardDidShow(_ notification: Notification) {
+        super.keyboardDidShow(notification)
+
+        keyboardDidShowNotification = notification
+    }
+
+    override func keyboardWillChangeFrame(_ notification: Notification) {
+        super.keyboardWillChangeFrame(notification)
+
+        keyboardWillChangeFrameNotification = notification
+    }
+
+    override func keyboardDidChangeFrame(_ notification: Notification) {
+        super.keyboardDidChangeFrame(notification)
+
+        keyboardDidChangeFrameNotification = notification
+    }
+
+    override func keyboardWillHide(_ notification: Notification) {
+        super.keyboardWillHide(notification)
+
+        keyboardWillHideNotification = notification
+    }
+
+    override func keyboardDidHide(_ notification: Notification) {
+        super.keyboardDidHide(notification)
+
+        keyboardDidHideNotification = notification
+    }
+
+    deinit {
+        unregisterFromKeyboardEvents()
     }
 
 }
@@ -56,42 +116,42 @@ class PCViewControllerTests: XCTestCase {
     let alertOption = "Got it!"
 
     func testConvenienceInit() {
-        let viewController = CustomPCViewController()
+        let viewController = TestViewController()
 
-        XCTAssertFalse(viewController.shouldEndEditingOnTap)
-        XCTAssert(viewController.canBecomeFirstResponder)
+        XCTAssert(viewController.shouldEndEditingOnTap)
     }
 
     func testSetTabBarItem() {
-        let viewController = CustomPCViewController()
+        let viewController = TestViewController()
 
-        viewController.setTabBarItem()
         XCTAssert(viewController.didCallSetTabBarItem)
     }
 
     func testSetNavigationItem() {
-        let viewController = CustomPCViewController()
+        let viewController = TestViewController()
 
-        viewController.setNavigationItem()
+        XCTAssertFalse(viewController.didCallSetNavigationItem)
+        viewController.viewWillAppear(false)
         XCTAssert(viewController.didCallSetNavigationItem)
     }
 
     func testSetGestureRecognizers() {
-        let viewController = CustomPCViewController()
+        let viewController = TestViewController()
 
-        viewController.setGestureRecognizers()
+        XCTAssertFalse(viewController.didCallSetGestureRecognizers)
+        viewController.viewDidLoad()
         XCTAssert(viewController.didCallSetGestureRecognizers)
     }
 
     func testInitWithCoder() {
         let coder = NSKeyedUnarchiver(forReadingWith: Data())
-        let viewController = CustomPCViewController(coder: coder)
-        XCTAssertNotNil(viewController)
+        let viewController = TestViewController(coder: coder)
 
+        XCTAssertNotNil(viewController)
     }
 
     func testSetNavigationItemLogo() {
-        let viewController = CustomPCViewController()
+        let viewController = TestViewController()
         let bundle = Bundle.init(for: PCSegmentedControlTests.self)
         let image = UIImage(named: "piecrust.png", in: bundle, compatibleWith: nil)!
         let logoView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100.0, height: 30.0))
@@ -112,7 +172,7 @@ class PCViewControllerTests: XCTestCase {
     }
 
     func testPcView() {
-        let viewController = CustomPCViewController()
+        let viewController = TestViewController()
         XCTAssert(viewController.pcView.isKind(of: PCView.self))
     }
 
@@ -158,6 +218,53 @@ class PCViewControllerTests: XCTestCase {
         XCTAssertEqual(alert.preferredStyle, .actionSheet)
         XCTAssertEqual(alert.view.tintColor, UIColor.red)
         XCTAssertEqual(alert.actions, [alertAction])
+    }
+
+    func testKeyboardMethods() {
+        let viewController = TestViewController()
+        viewController.viewDidLoad()
+
+        let keyboardWillShowNotification = Notification(name: .UIKeyboardWillShow, object: nil)
+
+        XCTAssertNil(viewController.keyboardWillShowNotification)
+        NotificationCenter.default.post(keyboardWillShowNotification)
+        XCTAssertNotNil(viewController.keyboardWillShowNotification)
+        XCTAssertEqual(viewController.keyboardWillShowNotification, keyboardWillShowNotification)
+
+        let keyboardDidShowNotification = Notification(name: .UIKeyboardDidShow, object: nil)
+
+        XCTAssertNil(viewController.keyboardDidShowNotification)
+        NotificationCenter.default.post(keyboardDidShowNotification)
+        XCTAssertNotNil(viewController.keyboardDidShowNotification)
+        XCTAssertEqual(viewController.keyboardDidShowNotification, keyboardDidShowNotification)
+
+        let keyboardWillChangeFrameNotification = Notification(name: .UIKeyboardWillChangeFrame, object: nil)
+
+        XCTAssertNil(viewController.keyboardWillChangeFrameNotification)
+        NotificationCenter.default.post(keyboardWillChangeFrameNotification)
+        XCTAssertNotNil(viewController.keyboardWillChangeFrameNotification)
+        XCTAssertEqual(viewController.keyboardWillChangeFrameNotification, keyboardWillChangeFrameNotification)
+
+        let keyboardDidChangeFrameNotification = Notification(name: .UIKeyboardDidChangeFrame, object: nil)
+
+        XCTAssertNil(viewController.keyboardDidChangeFrameNotification)
+        NotificationCenter.default.post(keyboardDidChangeFrameNotification)
+        XCTAssertNotNil(viewController.keyboardDidChangeFrameNotification)
+        XCTAssertEqual(viewController.keyboardDidChangeFrameNotification, keyboardDidChangeFrameNotification)
+
+        let keyboardWillHideNotification = Notification(name: .UIKeyboardWillHide, object: nil)
+
+        XCTAssertNil(viewController.keyboardWillHideNotification)
+        NotificationCenter.default.post(keyboardWillHideNotification)
+        XCTAssertNotNil(viewController.keyboardWillHideNotification)
+        XCTAssertEqual(viewController.keyboardWillHideNotification, keyboardWillHideNotification)
+
+        let keyboardDidHideNotification = Notification(name: .UIKeyboardDidHide, object: nil)
+
+        XCTAssertNil(viewController.keyboardDidHideNotification)
+        NotificationCenter.default.post(keyboardDidHideNotification)
+        XCTAssertNotNil(viewController.keyboardDidHideNotification)
+        XCTAssertEqual(viewController.keyboardDidHideNotification, keyboardDidHideNotification)
     }
 
 }

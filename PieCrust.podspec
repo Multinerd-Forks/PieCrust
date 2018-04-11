@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = "PieCrust"
-    s.version = "0.7"
+    s.version = "0.8"
     s.summary = "PieCrust is a protocol oriented abstraction layer we use to create iOS apps quickly and efficiently."
     s.description = <<-DESC
     PieCrust is a protocol oriented abstraction layer built on top of UIKit with handy classes, protocols, extensions, syntactic sugar and more, to create iOS apps quickly and efficiently.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
     s.source = { :git => "https://github.com/MobilionOSS/PieCrust.git", :tag => s.version }
     s.source_files = "Sources/**/*.swift"
     s.documentation_url = "https://mobilionoss.github.io/PieCrustDocs/"
-    s.swift_version = "4.0"
+    s.swift_version = "4.1"
     s.requires_arc = true
 
     s.ios.resource_bundle = { "PieCrustAssets" => "Assets/PieCrustAssets.bundle/Images" }
@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
     s.ios.framework  = "UIKit"
 
     s.dependency "SnapKit", "~> 4.0"
-    s.dependency "SwifterSwift/SwiftStdlib", "~> 4.2"
-    s.dependency "SwifterSwift/Foundation", "~> 4.2"
+    s.dependency "SwifterSwift/SwiftStdlib", "~> 4.3"
+    s.dependency "SwifterSwift/Foundation", "~> 4.3"
 end

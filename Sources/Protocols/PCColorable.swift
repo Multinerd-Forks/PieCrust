@@ -8,7 +8,7 @@
 
 import UIKit
 
-// swiftlint:disable large_tuple
+// swiftlint:disable large_tuple , identifier_name
 
 /// Conform to PCColorable protocol to add convenience initializers for color objects.
 public protocol PCColorable {
@@ -146,4 +146,4 @@ public extension PCColorable where Self: UIColor {
 
 }
 
-// swiftlint:enbale large_tuple
+// swiftlint:enbale large_tuple , identifier_name

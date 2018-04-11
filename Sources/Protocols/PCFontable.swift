@@ -8,4 +8,5 @@
 
 import UIKit
 
+/// Conform to PCFontable protocol to add convenience initializers for font objects.
 public protocol PCFontable {}
