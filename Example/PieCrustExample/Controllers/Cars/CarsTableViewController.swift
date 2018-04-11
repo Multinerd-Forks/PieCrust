@@ -8,7 +8,7 @@
 
 import PieCrust
 
-class CarsTableViewController: PCGenericTableController<CarTableViewCell, Car> {
+class CarsTableViewController: PCGenericTableViewController<CarTableViewCell, Car> {
 
     override var items: [[Car]] {
         didSet {
