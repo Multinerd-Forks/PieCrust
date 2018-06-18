@@ -1,6 +1,0 @@
-framework module PieCrust {
-  umbrella header "PieCrust-umbrella.h"
-
-  export *
-  module * { export * }
-}

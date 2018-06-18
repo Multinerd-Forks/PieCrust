@@ -3,20 +3,18 @@ osx_image: xcode9.3
 
 env:
   global:
-    - WORKSPACE='PieCrust.xcworkspace'
+    - PROJECT='PieCrust.xcodeproj'
     - IOS_SCHEME='PieCrust'
     - IOS_DESTINATION='platform=iOS Simulator,name=iPhone X'
 
 before_install:
   - brew update
-  - gem install cocoapods
   - gem install xcpretty
   - brew outdated xctool || brew upgrade xctool
-  - pod update
 
 script:
   - set -o pipefail
-  - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$IOS_SCHEME" -destination "$IOS_DESTINATION" | xcpretty
+  - xcodebuild clean build test -project "$PROJECT" -scheme "$IOS_SCHEME" -destination "$IOS_DESTINATION" | xcpretty
   - bash <(curl -s https://codecov.io/bash) -cF ios -J 'PieCrust'
   - swiftlint lint
   - pod lib lint

@@ -1,6 +1,0 @@
-framework module Pods_PieCrustExample {
-  umbrella header "Pods-PieCrustExample-umbrella.h"
-
-  export *
-  module * { export * }
-}

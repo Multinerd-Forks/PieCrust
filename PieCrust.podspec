@@ -26,8 +26,4 @@ Pod::Spec.new do |s|
     s.ios.resource_bundle = { "PieCrustAssets" => "Assets/PieCrustAssets.bundle/Images" }
     s.ios.deployment_target = "9.0"
     s.ios.framework  = "UIKit"
-
-    s.dependency "SnapKit", "~> 4.0"
-    s.dependency "SwifterSwift/SwiftStdlib", "~> 4.3"
-    s.dependency "SwifterSwift/Foundation", "~> 4.3"
 end

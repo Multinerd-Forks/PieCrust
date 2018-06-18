@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/omar/Desktop/Opensource/iOSAppSkeleton/PieCrust.xcodeproj">
+      location = "self:PieCrust.xcodeproj">
    </FileRef>
 </Workspace>

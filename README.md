@@ -20,8 +20,6 @@
 - Custom subclasses of all major UIKit objects with convenience initializers and helper methods to enable developing iOS apps quickly and efficiently.
 - Easy keyboard events handling.
 - Essential list of extensions for `SwiftStdlib`, `Foundation` and `UIKit` objects.
-- Generic table-view and collection-view controllers to make dealing with your models a joy!
-- [SnapKit](https://github.com/SnapKit/SnapKit), [SwifterSwift/SwiftStdlib](https://github.com/SwifterSwift/SwifterSwift) and [SwifterSwift/Foundation](https://github.com/SwifterSwift/SwifterSwift) included, so you don't have to add that `import` statements everywhere.
 
 ## Requirements
 - iOS 9.0+
