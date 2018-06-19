@@ -22,7 +22,7 @@ final class PCButtonTests: XCTestCase {
 	var title = "Login"
 
 	func  testConvenienceInit() {
-		let button1 = PCButton(type: .system, title: .plain(string: title), image: nil, titleFont: .systemFont(ofSize: 40, weight: .bold), contentEdgeInsets: .zero, isEnabled: false, backgroundColor: .red, tintColor: .yellow)
+		let button1 = PCButton(type: .system, title: .plain(title), image: nil, titleFont: .systemFont(ofSize: 40, weight: .bold), contentEdgeInsets: .zero, isEnabled: false, backgroundColor: .red, tintColor: .yellow)
 
 		XCTAssertEqual(button1.buttonType, .system)
 		XCTAssertNotNil(button1.titleLabel?.text)
@@ -36,7 +36,7 @@ final class PCButtonTests: XCTestCase {
 		XCTAssertEqual(button1.tintColor, .yellow)
 		XCTAssertEqual(button1.preferredHeight, 45.0)
 
-		let button2 = TestButton(type: .system, title: .attributed(string: NSAttributedString(string: title)))
+		let button2 = TestButton(type: .system, title: TextType.attributed(NSAttributedString(string: title)))
 		XCTAssertNotNil(button2.titleLabel?.attributedText)
 		XCTAssertEqual(button2.titleLabel!.attributedText!.string, title)
 		XCTAssertEqual(button2.preferredHeight, 60.0)

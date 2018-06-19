@@ -22,7 +22,10 @@ public extension Layouting where Self: UIViewController {
 
 	/// view as PCView.
 	public var pcView: View {
-		return view as! View
+		guard let aView = view as? View else {
+			fatalError("view property has not been inialized yet, or not initialized as a \(View.self).")
+		}
+		return aView
 	}
 
 }

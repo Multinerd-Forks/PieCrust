@@ -50,6 +50,9 @@ public extension Crustable where Self: UITextView {
 			self.text = string
 		case .attributed(let string):
 			self.attributedText = string
+		case .empty:
+			self.attributedText = nil
+			self.text = nil
 		}
 
 		if let aFont = font {

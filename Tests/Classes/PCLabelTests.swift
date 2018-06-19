@@ -14,7 +14,7 @@ final class PCLabelTests: XCTestCase {
 	let helloWorld = "hello world!"
 
 	func testConvenienceInit() {
-		let label1 = PCLabel(text: .plain(string: helloWorld), textAlignment: .right, numberOfLines: 10, textColor: .red, font: .systemFont(ofSize: 40), minimumScaleFactor: 0.75, lineBreakMode: .byClipping, backgroundColor: .green, tintColor: .yellow)
+		let label1 = PCLabel(text: .plain(helloWorld), textAlignment: .right, numberOfLines: 10, textColor: .red, font: .systemFont(ofSize: 40), minimumScaleFactor: 0.75, lineBreakMode: .byClipping, backgroundColor: .green, tintColor: .yellow)
 
 		XCTAssertNotNil(label1.text)
 		XCTAssertEqual(label1.text!, helloWorld)
@@ -29,7 +29,7 @@ final class PCLabelTests: XCTestCase {
 		XCTAssertEqual(label1.backgroundColor!, .green)
 		XCTAssertEqual(label1.tintColor, .yellow)
 
-		let label2 = PCLabel(text: .attributed(string: NSAttributedString(string: helloWorld)))
+		let label2 = PCLabel(text: .attributed(NSAttributedString(string: helloWorld)))
 		XCTAssertNotNil(label2.attributedText)
 		XCTAssertEqual(label2.attributedText!.string, helloWorld)
 	}

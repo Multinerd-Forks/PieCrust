@@ -13,7 +13,7 @@ final class PCTextViewTests: XCTestCase {
 
 	func testConvenienceInit() {
 		let helloWorld = "Hello World!"
-		let textView = PCTextView(text: .plain(string: helloWorld))
+		let textView = PCTextView(text: .plain(helloWorld))
 
 		XCTAssertEqual(textView.text, helloWorld)
 
@@ -30,7 +30,7 @@ final class PCTextViewTests: XCTestCase {
 		let insets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
 
 		let customTextView = PCTextView(
-			text: .attributed(string: NSAttributedString(string: helloWorld)),
+			text: .attributed(NSAttributedString(string: helloWorld)),
 			font: UIFont.boldSystemFont(ofSize: 10),
 			textColor: .red,
 			isEditable: false,

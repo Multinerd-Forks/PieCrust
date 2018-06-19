@@ -1,17 +1,17 @@
 //
-//  UITableViewExtensionsTests.swift
+//  PCTableViewTests.swift
 //  PieCrustTests
 //
-//  Created by Omar Albeik on 6/18/18.
+//  Created by Omar Albeik on 6/19/18.
 //  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import XCTest
 @testable import PieCrust
 
-final class UITableViewExtensionsTests: XCTestCase {
+final class PCTableViewTests: XCTestCase {
 
-	let tableView = UITableView()
+	let tableView = PCTableView()
 
 	func testRegisterReusableViewWithClass() {
 		let nilTableHeaderView = tableView.dequeueReusableHeaderFooterView(withClass: UITableViewHeaderFooterView.self)

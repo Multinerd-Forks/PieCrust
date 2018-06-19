@@ -12,9 +12,12 @@ import Foundation
 ///
 /// - plain: String.
 /// - attributed: NSAttributedString.
+/// - empty: Empty string.
 public enum TextType {
 	/// String.
-	case plain(string: String)
+	case plain(String)
 	/// NSAttributedString.
-	case attributed(string: NSAttributedString)
+	case attributed(NSAttributedString)
+	/// Empty string.
+	case empty
 }

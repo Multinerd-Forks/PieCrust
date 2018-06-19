@@ -50,6 +50,9 @@ public extension Crustable where Self: UIButton {
 				setTitle(string, for: .normal)
 			case .attributed(let string):
 				setAttributedTitle(string, for: .normal)
+			case .empty:
+				setAttributedTitle(nil, for: .normal)
+				setTitle(nil, for: .normal)
 			}
 		}
 

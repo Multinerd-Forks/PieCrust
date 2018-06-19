@@ -50,6 +50,9 @@ public extension Crustable where Self: UILabel {
 			self.text = string
 		case .attributed(let attributedText):
 			self.attributedText = attributedText
+		case .empty:
+			self.attributedText = nil
+			self.text = nil
 		}
 
 		self.textAlignment = textAlignment
