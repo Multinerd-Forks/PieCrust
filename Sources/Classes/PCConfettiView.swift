@@ -13,10 +13,10 @@ import QuartzCore
 open class PCConfettiView: PCView {
 
 	/// Confetti emitter.
-	private var emitter = CAEmitterLayer()
+	internal var emitter = CAEmitterLayer()
 
 	/// Default confetti colors
-	private var colors: [UIColor] = [
+	internal var colors: [UIColor] = [
 		UIColor(red: 0.95, green: 0.40, blue: 0.27, alpha: 1.0),
 		UIColor(red: 1.00, green: 0.78, blue: 0.36, alpha: 1.0),
 		UIColor(red: 0.48, green: 0.78, blue: 0.64, alpha: 1.0),
@@ -73,7 +73,7 @@ open class PCConfettiView: PCView {
 	///
 	/// - Parameter color: color.
 	/// - Returns: CAEmitterCell for color.
-	private func confetti(forColor color: UIColor) -> CAEmitterCell {
+	internal func confetti(forColor color: UIColor) -> CAEmitterCell {
 		let cell = CAEmitterCell()
 		cell.birthRate = intensity * 6
 		cell.lifetime = intensity * 12
@@ -87,9 +87,9 @@ open class PCConfettiView: PCView {
 		cell.scaleRange = CGFloat(intensity)
 		cell.scaleSpeed = CGFloat(intensity * -0.1)
 
-		guard let bundle = Bundle.PieCrustAssetsBundle else { return cell }
-		guard let path = bundle.path(forResource: "Images/confetti", ofType: "png") else { return cell }
-		guard let image = UIImage(contentsOfFile: path) else { return cell }
+		let bundle = Bundle.PieCrustAssetsBundle!
+		let path = bundle.path(forResource: "Images/confetti", ofType: "png")!
+		let image = UIImage(contentsOfFile: path)!
 		cell.contents = image.cgImage
 
 		return cell

@@ -79,6 +79,9 @@
 		074B507B20D26A9100A3D203 /* PCScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B507A20D26A9100A3D203 /* PCScrollView.swift */; };
 		074B507D20D26C8C00A3D203 /* PCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B507C20D26C8C00A3D203 /* PCButton.swift */; };
 		074C26ED20D7A22000D1592D /* PCViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C26EC20D7A22000D1592D /* PCViewTests.swift */; };
+		0760F34C20D8DA8200B076B8 /* AnimatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F34B20D8DA8200B076B8 /* AnimatableTests.swift */; };
+		0760F34E20D8DE9200B076B8 /* ConfettiableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F34D20D8DE9200B076B8 /* ConfettiableTests.swift */; };
+		0760F35020D8E22C00B076B8 /* PCConfettiViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F34F20D8E22C00B076B8 /* PCConfettiViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +170,9 @@
 		074B507A20D26A9100A3D203 /* PCScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCScrollView.swift; sourceTree = "<group>"; };
 		074B507C20D26C8C00A3D203 /* PCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCButton.swift; sourceTree = "<group>"; };
 		074C26EC20D7A22000D1592D /* PCViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCViewTests.swift; sourceTree = "<group>"; };
+		0760F34B20D8DA8200B076B8 /* AnimatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableTests.swift; sourceTree = "<group>"; };
+		0760F34D20D8DE9200B076B8 /* ConfettiableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiableTests.swift; sourceTree = "<group>"; };
+		0760F34F20D8E22C00B076B8 /* PCConfettiViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PCConfettiViewTests.swift; path = Tests/PCConfettiViewTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,6 +395,7 @@
 				0700A51A20D7DA2400E9CD19 /* PCViewControllerTests.swift */,
 				0700A52020D7E29D00E9CD19 /* PCScrollViewTests.swift */,
 				0700A52220D7E44200E9CD19 /* PCNavigationControllerTests.swift */,
+				0760F34F20D8E22C00B076B8 /* PCConfettiViewTests.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -401,6 +408,8 @@
 				0700A52620D7E85A00E9CD19 /* AlertPresentingTests.swift */,
 				0700A52820D7E9CB00E9CD19 /* BorderableTests.swift */,
 				0700A52A20D7EC0600E9CD19 /* ShadowableTests.swift */,
+				0760F34B20D8DA8200B076B8 /* AnimatableTests.swift */,
+				0760F34D20D8DE9200B076B8 /* ConfettiableTests.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -581,6 +590,7 @@
 				0700A52920D7E9CB00E9CD19 /* BorderableTests.swift in Sources */,
 				0700A51520D7D6CD00E9CD19 /* PCAppVersionLabelTests.swift in Sources */,
 				074C26ED20D7A22000D1592D /* PCViewTests.swift in Sources */,
+				0760F34C20D8DA8200B076B8 /* AnimatableTests.swift in Sources */,
 				0700A52E20D7EE3700E9CD19 /* KeyboardNotificationTests.swift in Sources */,
 				0700A50520D7AF2B00E9CD19 /* PCTextFieldTests.swift in Sources */,
 				0700A51720D7D7E500E9CD19 /* PCLabelTests.swift in Sources */,
@@ -598,7 +608,9 @@
 				0700A53720D7F93E00E9CD19 /* UICollectionViewExtensionsTests.swift in Sources */,
 				0700A50D20D7D12C00E9CD19 /* PCDatePickerTests.swift in Sources */,
 				0700A51920D7D96700E9CD19 /* PCCollectionViewCellTests.swift in Sources */,
+				0760F34E20D8DE9200B076B8 /* ConfettiableTests.swift in Sources */,
 				0700A51120D7D39100E9CD19 /* PCStackViewTests.swift in Sources */,
+				0760F35020D8E22C00B076B8 /* PCConfettiViewTests.swift in Sources */,
 				0700A50720D7CD9A00E9CD19 /* PCTextViewTests.swift in Sources */,
 				0700A50F20D7D35D00E9CD19 /* PCSwitchTests.swift in Sources */,
 				0700A53520D7F92E00E9CD19 /* UITableViewExtensionsTests.swift in Sources */,
