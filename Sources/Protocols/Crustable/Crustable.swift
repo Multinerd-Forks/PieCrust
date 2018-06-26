@@ -8,4 +8,5 @@
 
 import Foundation
 
+/// Crustable.
 public protocol Crustable {}

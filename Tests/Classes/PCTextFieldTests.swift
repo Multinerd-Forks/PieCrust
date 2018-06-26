@@ -24,7 +24,7 @@ final class PCTextFieldTests: XCTestCase {
 	let emailAddress = "john@appleseed.com"
 
 	func testConvenienceInit() {
-		let textField1 = PCTextField(placeholder: .plain(string: placeholder), text: nil, textAlignment: .center, textType: .emailAddress, textColor: .red, font: .systemFont(ofSize: 14, weight: .bold), borderStyle: .roundedRect, backgroundColor: .yellow, tintColor: .blue)
+		let textField1 = PCTextField(placeholder: .plain(placeholder), text: nil, textAlignment: .center, textType: .emailAddress, textColor: .red, font: .systemFont(ofSize: 14, weight: .bold), borderStyle: .roundedRect, backgroundColor: .yellow, tintColor: .blue)
 
 		XCTAssertNotNil(textField1.placeholder)
 		XCTAssertEqual(textField1.placeholder!, placeholder)
@@ -36,15 +36,15 @@ final class PCTextFieldTests: XCTestCase {
 		XCTAssertEqual(textField1.backgroundColor, .yellow)
 		XCTAssertEqual(textField1.tintColor, .blue)
 
-		let textField2 = PCTextField(placeholder: .attributed(string: NSAttributedString(string: placeholder)))
+		let textField2 = PCTextField(placeholder: .attributed(NSAttributedString(string: placeholder)))
 		XCTAssertNotNil(textField2.attributedPlaceholder)
 		XCTAssertEqual(textField2.attributedPlaceholder!, NSAttributedString(string: placeholder))
 
-		let textField3 = PCTextField(placeholder: .plain(string: placeholder), text: .plain(string: emailAddress))
+		let textField3 = PCTextField(placeholder: .plain(placeholder), text: .plain(emailAddress))
 		XCTAssertNotNil(textField3.text)
 		XCTAssertEqual(textField3.text!, emailAddress)
 
-		let textField4 = PCTextField(placeholder: .plain(string: placeholder), text: .attributed(string: NSAttributedString(string: placeholder)))
+		let textField4 = PCTextField(placeholder: .plain(placeholder), text: .attributed(NSAttributedString(string: placeholder)))
 		XCTAssertNotNil(textField4.attributedText)
 		XCTAssertEqual(textField4.attributedText!.string, placeholder)
 	}

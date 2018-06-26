@@ -1,5 +1,5 @@
 //
-//  UIWindow+Extensions.swift
+//  PCWindow.swift
 //  PieCrust
 //
 //  Created by Omar Albeik on 6/14/18.
@@ -8,8 +8,14 @@
 
 import UIKit
 
-// MARK: - UIWindow extensions
-public extension UIWindow {
+/// PCWindow.
+///
+/// - Conforms to:
+///   - `Crustable`
+open class PCWindow: UIWindow, Crustable {}
+
+// MARK: - Default implementation for UIWindow.
+public extension Crustable where Self: UIWindow {
 
 	/// Switch current root view controller with a new view controller.
 	///
@@ -39,6 +45,19 @@ public extension UIWindow {
 		}, completion: { _ in
 			completion?()
 		})
+	}
+
+}
+
+// MARK: - Default implementation for UIResponder & UIApplicationDelegate.
+public extension Crustable where Self: UIResponder & UIApplicationDelegate {
+
+	/// Return UIWindow as PCWindow
+	public var pcWindow: PCWindow? {
+		guard let aWindow = window as? PCWindow else {
+			fatalError("window property has not been inialized yet, or not initialized as a PCWindow.")
+		}
+		return aWindow
 	}
 
 }

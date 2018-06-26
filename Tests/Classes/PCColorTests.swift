@@ -171,6 +171,18 @@ final class PCColorTests: XCTestCase {
 		XCTAssertEqual(alpha1, alpha2)
 	}
 
+	func testRgbComponents() {
+		let color1 = PCColor(hex: 0xFFFFFF)!
+		XCTAssertEqual(color1.rgbComponents.red, 255)
+		XCTAssertEqual(color1.rgbComponents.green, 255)
+		XCTAssertEqual(color1.rgbComponents.blue, 255)
+
+		let color2 = PCColor(hex: 0x0)!
+		XCTAssertEqual(color2.rgbComponents.red, 0)
+		XCTAssertEqual(color2.rgbComponents.green, 0)
+		XCTAssertEqual(color2.rgbComponents.blue, 0)
+	}
+
 }
 
 // swiftlint:enable function_body_length

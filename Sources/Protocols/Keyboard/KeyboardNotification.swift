@@ -10,6 +10,7 @@ import UIKit
 
 // swiftlint:disable identifier_name
 
+/// KeyboardNotification.
 public class KeyboardNotification: NSObject {
 
 	/// Keyboard start frame.

@@ -34,11 +34,16 @@
 		0700A52E20D7EE3700E9CD19 /* KeyboardNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700A52D20D7EE3700E9CD19 /* KeyboardNotificationTests.swift */; };
 		0700A53020D7F3AE00E9CD19 /* KeyboardObservingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700A52F20D7F3AE00E9CD19 /* KeyboardObservingTests.swift */; };
 		0700A53220D7F90A00E9CD19 /* BundleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700A53120D7F90A00E9CD19 /* BundleExtensionsTests.swift */; };
-		0700A53520D7F92E00E9CD19 /* UITableViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700A53420D7F92E00E9CD19 /* UITableViewExtensionsTests.swift */; };
-		0700A53720D7F93E00E9CD19 /* UICollectionViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700A53620D7F93E00E9CD19 /* UICollectionViewExtensionsTests.swift */; };
-		0700A53920D7F94D00E9CD19 /* UIWindowExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0700A53820D7F94D00E9CD19 /* UIWindowExtensionsTests.swift */; };
 		07026EFC20D0FC2B00BB7E0A /* PieCrust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07026EF220D0FC2B00BB7E0A /* PieCrust.framework */; };
 		07026F1620D0FC9D00BB7E0A /* PieCrust.h in Headers */ = {isa = PBXBuildFile; fileRef = 07026F0D20D0FC5700BB7E0A /* PieCrust.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		070F0EA420D8F21C005801B9 /* PCPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EA320D8F21C005801B9 /* PCPillButton.swift */; };
+		070F0EA620D8F245005801B9 /* PCPillButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EA520D8F245005801B9 /* PCPillButtonTests.swift */; };
+		070F0EA820D8F3B0005801B9 /* PCRoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EA720D8F3B0005801B9 /* PCRoundedImageView.swift */; };
+		070F0EAA20D8F3F4005801B9 /* PCRoundedImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EA920D8F3F4005801B9 /* PCRoundedImageViewTests.swift */; };
+		070F0EAC20D9192A005801B9 /* CellRegistering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EAB20D9192A005801B9 /* CellRegistering.swift */; };
+		070F0EAE20D91975005801B9 /* PCTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EAD20D91975005801B9 /* PCTableView.swift */; };
+		070F0EB020D91B4E005801B9 /* CellDiqueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EAF20D91B4E005801B9 /* CellDiqueing.swift */; };
+		070F0EB220D91C2A005801B9 /* PCCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EB120D91C2A005801B9 /* PCCollectionView.swift */; };
 		071E5FCD20D2835600FDA534 /* PieCrustAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 071E5FCC20D2835500FDA534 /* PieCrustAssets.bundle */; };
 		074B502720D2492100A3D203 /* PCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B502620D2492100A3D203 /* PCViewController.swift */; };
 		074B502920D2493100A3D203 /* PCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B502820D2493100A3D203 /* PCView.swift */; };
@@ -47,9 +52,7 @@
 		074B503120D24F1B00A3D203 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B503020D24F1B00A3D203 /* KeyboardNotification.swift */; };
 		074B503320D24F4D00A3D203 /* KeyboardObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B503220D24F4D00A3D203 /* KeyboardObserving.swift */; };
 		074B503520D2544800A3D203 /* AlertPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B503420D2544800A3D203 /* AlertPresenting.swift */; };
-		074B503920D2559F00A3D203 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B503820D2559F00A3D203 /* UITableView+Extensions.swift */; };
-		074B503B20D255CA00A3D203 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B503A20D255CA00A3D203 /* UICollectionView+Extensions.swift */; };
-		074B503D20D2561400A3D203 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B503C20D2561400A3D203 /* UIWindow+Extensions.swift */; };
+		074B503D20D2561400A3D203 /* PCWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B503C20D2561400A3D203 /* PCWindow.swift */; };
 		074B504020D2568300A3D203 /* TextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B503F20D2568300A3D203 /* TextType.swift */; };
 		074B504220D2572500A3D203 /* TextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B504120D2572500A3D203 /* TextFieldType.swift */; };
 		074B504520D2580200A3D203 /* Crustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B504420D2580200A3D203 /* Crustable.swift */; };
@@ -79,6 +82,12 @@
 		074B507B20D26A9100A3D203 /* PCScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B507A20D26A9100A3D203 /* PCScrollView.swift */; };
 		074B507D20D26C8C00A3D203 /* PCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B507C20D26C8C00A3D203 /* PCButton.swift */; };
 		074C26ED20D7A22000D1592D /* PCViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C26EC20D7A22000D1592D /* PCViewTests.swift */; };
+		0760F34C20D8DA8200B076B8 /* AnimatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F34B20D8DA8200B076B8 /* AnimatableTests.swift */; };
+		0760F34E20D8DE9200B076B8 /* ConfettiableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F34D20D8DE9200B076B8 /* ConfettiableTests.swift */; };
+		0760F35020D8E22C00B076B8 /* PCConfettiViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F34F20D8E22C00B076B8 /* PCConfettiViewTests.swift */; };
+		07D1105120D91E5C0011BFDA /* PCWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1105020D91E5C0011BFDA /* PCWindowTests.swift */; };
+		07D1105320D91EB40011BFDA /* PCTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1105220D91EB40011BFDA /* PCTableViewTests.swift */; };
+		07D1105520D91EE80011BFDA /* PCCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1105420D91EE80011BFDA /* PCCollectionViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,14 +128,19 @@
 		0700A52D20D7EE3700E9CD19 /* KeyboardNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationTests.swift; sourceTree = "<group>"; };
 		0700A52F20D7F3AE00E9CD19 /* KeyboardObservingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObservingTests.swift; sourceTree = "<group>"; };
 		0700A53120D7F90A00E9CD19 /* BundleExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensionsTests.swift; sourceTree = "<group>"; };
-		0700A53420D7F92E00E9CD19 /* UITableViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensionsTests.swift; sourceTree = "<group>"; };
-		0700A53620D7F93E00E9CD19 /* UICollectionViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensionsTests.swift; sourceTree = "<group>"; };
-		0700A53820D7F94D00E9CD19 /* UIWindowExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtensionsTests.swift; sourceTree = "<group>"; };
 		07026EF220D0FC2B00BB7E0A /* PieCrust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PieCrust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07026EFB20D0FC2B00BB7E0A /* PieCrustTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PieCrustTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07026F0D20D0FC5700BB7E0A /* PieCrust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieCrust.h; sourceTree = "<group>"; };
 		07026F0E20D0FC5700BB7E0A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07026F1320D0FC6400BB7E0A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		070F0EA320D8F21C005801B9 /* PCPillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillButton.swift; sourceTree = "<group>"; };
+		070F0EA520D8F245005801B9 /* PCPillButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillButtonTests.swift; sourceTree = "<group>"; };
+		070F0EA720D8F3B0005801B9 /* PCRoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCRoundedImageView.swift; sourceTree = "<group>"; };
+		070F0EA920D8F3F4005801B9 /* PCRoundedImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCRoundedImageViewTests.swift; sourceTree = "<group>"; };
+		070F0EAB20D9192A005801B9 /* CellRegistering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRegistering.swift; sourceTree = "<group>"; };
+		070F0EAD20D91975005801B9 /* PCTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTableView.swift; sourceTree = "<group>"; };
+		070F0EAF20D91B4E005801B9 /* CellDiqueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDiqueing.swift; sourceTree = "<group>"; };
+		070F0EB120D91C2A005801B9 /* PCCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionView.swift; sourceTree = "<group>"; };
 		071E5FCC20D2835500FDA534 /* PieCrustAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PieCrustAssets.bundle; path = Assets/PieCrustAssets.bundle; sourceTree = "<group>"; };
 		074B502620D2492100A3D203 /* PCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCViewController.swift; sourceTree = "<group>"; };
 		074B502820D2493100A3D203 /* PCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCView.swift; sourceTree = "<group>"; };
@@ -135,9 +149,7 @@
 		074B503020D24F1B00A3D203 /* KeyboardNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
 		074B503220D24F4D00A3D203 /* KeyboardObserving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserving.swift; sourceTree = "<group>"; };
 		074B503420D2544800A3D203 /* AlertPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenting.swift; sourceTree = "<group>"; };
-		074B503820D2559F00A3D203 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
-		074B503A20D255CA00A3D203 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
-		074B503C20D2561400A3D203 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
+		074B503C20D2561400A3D203 /* PCWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCWindow.swift; sourceTree = "<group>"; };
 		074B503F20D2568300A3D203 /* TextType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextType.swift; sourceTree = "<group>"; };
 		074B504120D2572500A3D203 /* TextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldType.swift; sourceTree = "<group>"; };
 		074B504420D2580200A3D203 /* Crustable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crustable.swift; sourceTree = "<group>"; };
@@ -167,6 +179,12 @@
 		074B507A20D26A9100A3D203 /* PCScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCScrollView.swift; sourceTree = "<group>"; };
 		074B507C20D26C8C00A3D203 /* PCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCButton.swift; sourceTree = "<group>"; };
 		074C26EC20D7A22000D1592D /* PCViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCViewTests.swift; sourceTree = "<group>"; };
+		0760F34B20D8DA8200B076B8 /* AnimatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableTests.swift; sourceTree = "<group>"; };
+		0760F34D20D8DE9200B076B8 /* ConfettiableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiableTests.swift; sourceTree = "<group>"; };
+		0760F34F20D8E22C00B076B8 /* PCConfettiViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PCConfettiViewTests.swift; path = Tests/PCConfettiViewTests.swift; sourceTree = SOURCE_ROOT; };
+		07D1105020D91E5C0011BFDA /* PCWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCWindowTests.swift; sourceTree = "<group>"; };
+		07D1105220D91EB40011BFDA /* PCTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTableViewTests.swift; sourceTree = "<group>"; };
+		07D1105420D91EE80011BFDA /* PCCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +294,8 @@
 				074B506820D265DC00A3D203 /* Borderable.swift */,
 				074B506A20D2661400A3D203 /* Shadowable.swift */,
 				074B506C20D2665400A3D203 /* Confettiable.swift */,
+				070F0EAB20D9192A005801B9 /* CellRegistering.swift */,
+				070F0EAF20D91B4E005801B9 /* CellDiqueing.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -293,17 +313,21 @@
 		074B503620D2556F00A3D203 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				074B503C20D2561400A3D203 /* PCWindow.swift */,
 				074B502820D2493100A3D203 /* PCView.swift */,
 				074B507420D2687400A3D203 /* PCImageView.swift */,
 				074B507620D268D800A3D203 /* PCPillTextField.swift */,
 				074B507820D2693B00A3D203 /* PCWebView.swift */,
+				070F0EAD20D91975005801B9 /* PCTableView.swift */,
 				074B506E20D266E100A3D203 /* PCConfettiView.swift */,
 				074B507020D2671800A3D203 /* PCRoundedView.swift */,
+				070F0EA720D8F3B0005801B9 /* PCRoundedImageView.swift */,
 				074B505320D2609400A3D203 /* PCColor.swift */,
 				074B504A20D2591400A3D203 /* PCTextField.swift */,
 				074B505920D2628800A3D203 /* PCTextView.swift */,
 				074B505D20D2640D00A3D203 /* PCActivityIndicatorView.swift */,
 				074B507C20D26C8C00A3D203 /* PCButton.swift */,
+				070F0EA320D8F21C005801B9 /* PCPillButton.swift */,
 				074B505F20D2646E00A3D203 /* PCDatePicker.swift */,
 				074B505B20D263AA00A3D203 /* PCSwitch.swift */,
 				074B505720D2620600A3D203 /* PCStackView.swift */,
@@ -315,6 +339,7 @@
 				074B507A20D26A9100A3D203 /* PCScrollView.swift */,
 				074B504F20D25FFF00A3D203 /* PCNavigationController.swift */,
 				074B505120D2601F00A3D203 /* PCTabBarController.swift */,
+				070F0EB120D91C2A005801B9 /* PCCollectionView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -323,9 +348,6 @@
 			isa = PBXGroup;
 			children = (
 				074B504C20D25DEE00A3D203 /* Internal */,
-				074B503820D2559F00A3D203 /* UITableView+Extensions.swift */,
-				074B503A20D255CA00A3D203 /* UICollectionView+Extensions.swift */,
-				074B503C20D2561400A3D203 /* UIWindow+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -359,9 +381,6 @@
 			isa = PBXGroup;
 			children = (
 				0700A53320D7F91100E9CD19 /* Internal */,
-				0700A53420D7F92E00E9CD19 /* UITableViewExtensionsTests.swift */,
-				0700A53620D7F93E00E9CD19 /* UICollectionViewExtensionsTests.swift */,
-				0700A53820D7F94D00E9CD19 /* UIWindowExtensionsTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -370,8 +389,10 @@
 			isa = PBXGroup;
 			children = (
 				074C26EC20D7A22000D1592D /* PCViewTests.swift */,
+				07D1105020D91E5C0011BFDA /* PCWindowTests.swift */,
 				0700A4F520D7A7A600E9CD19 /* PCImageViewTests.swift */,
 				0700A4FC20D7AC4100E9CD19 /* PCPillTextFieldTests.swift */,
+				070F0EA520D8F245005801B9 /* PCPillButtonTests.swift */,
 				0700A4FE20D7ACE300E9CD19 /* PCWebViewTests.swift */,
 				0700A50020D7ADA300E9CD19 /* PCRoundedViewTests.swift */,
 				0700A50220D7AE1200E9CD19 /* PCColorTests.swift */,
@@ -389,6 +410,10 @@
 				0700A51A20D7DA2400E9CD19 /* PCViewControllerTests.swift */,
 				0700A52020D7E29D00E9CD19 /* PCScrollViewTests.swift */,
 				0700A52220D7E44200E9CD19 /* PCNavigationControllerTests.swift */,
+				0760F34F20D8E22C00B076B8 /* PCConfettiViewTests.swift */,
+				070F0EA920D8F3F4005801B9 /* PCRoundedImageViewTests.swift */,
+				07D1105220D91EB40011BFDA /* PCTableViewTests.swift */,
+				07D1105420D91EE80011BFDA /* PCCollectionViewTests.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -401,6 +426,8 @@
 				0700A52620D7E85A00E9CD19 /* AlertPresentingTests.swift */,
 				0700A52820D7E9CB00E9CD19 /* BorderableTests.swift */,
 				0700A52A20D7EC0600E9CD19 /* ShadowableTests.swift */,
+				0760F34B20D8DA8200B076B8 /* AnimatableTests.swift */,
+				0760F34D20D8DE9200B076B8 /* ConfettiableTests.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -537,11 +564,13 @@
 				074B505620D2617100A3D203 /* PCLabel.swift in Sources */,
 				074B506D20D2665400A3D203 /* Confettiable.swift in Sources */,
 				074B504920D2588400A3D203 /* PCCollectionViewCell.swift in Sources */,
+				070F0EA420D8F21C005801B9 /* PCPillButton.swift in Sources */,
+				070F0EA820D8F3B0005801B9 /* PCRoundedImageView.swift in Sources */,
 				074B506B20D2661400A3D203 /* Shadowable.swift in Sources */,
 				074B505A20D2628800A3D203 /* PCTextView.swift in Sources */,
 				074B507920D2693B00A3D203 /* PCWebView.swift in Sources */,
 				074B504220D2572500A3D203 /* TextFieldType.swift in Sources */,
-				074B503D20D2561400A3D203 /* UIWindow+Extensions.swift in Sources */,
+				074B503D20D2561400A3D203 /* PCWindow.swift in Sources */,
 				074B504020D2568300A3D203 /* TextType.swift in Sources */,
 				074B502720D2492100A3D203 /* PCViewController.swift in Sources */,
 				074B505020D25FFF00A3D203 /* PCNavigationController.swift in Sources */,
@@ -551,14 +580,16 @@
 				074B506220D2653500A3D203 /* Bundle+Extensions.swift in Sources */,
 				074B504B20D2591400A3D203 /* PCTextField.swift in Sources */,
 				074B505420D2609400A3D203 /* PCColor.swift in Sources */,
+				070F0EB020D91B4E005801B9 /* CellDiqueing.swift in Sources */,
 				074B507720D268D800A3D203 /* PCPillTextField.swift in Sources */,
-				074B503920D2559F00A3D203 /* UITableView+Extensions.swift in Sources */,
+				070F0EAE20D91975005801B9 /* PCTableView.swift in Sources */,
 				074B505E20D2640D00A3D203 /* PCActivityIndicatorView.swift in Sources */,
 				074B505C20D263AA00A3D203 /* PCSwitch.swift in Sources */,
 				074B503120D24F1B00A3D203 /* KeyboardNotification.swift in Sources */,
-				074B503B20D255CA00A3D203 /* UICollectionView+Extensions.swift in Sources */,
 				074B504720D2582000A3D203 /* PCTableViewCell.swift in Sources */,
 				074B507320D2681800A3D203 /* PCAppVersionLabel.swift in Sources */,
+				070F0EAC20D9192A005801B9 /* CellRegistering.swift in Sources */,
+				070F0EB220D91C2A005801B9 /* PCCollectionView.swift in Sources */,
 				074B507D20D26C8C00A3D203 /* PCButton.swift in Sources */,
 				074B506920D265DC00A3D203 /* Borderable.swift in Sources */,
 				074B506F20D266E100A3D203 /* PCConfettiView.swift in Sources */,
@@ -581,6 +612,7 @@
 				0700A52920D7E9CB00E9CD19 /* BorderableTests.swift in Sources */,
 				0700A51520D7D6CD00E9CD19 /* PCAppVersionLabelTests.swift in Sources */,
 				074C26ED20D7A22000D1592D /* PCViewTests.swift in Sources */,
+				0760F34C20D8DA8200B076B8 /* AnimatableTests.swift in Sources */,
 				0700A52E20D7EE3700E9CD19 /* KeyboardNotificationTests.swift in Sources */,
 				0700A50520D7AF2B00E9CD19 /* PCTextFieldTests.swift in Sources */,
 				0700A51720D7D7E500E9CD19 /* PCLabelTests.swift in Sources */,
@@ -588,24 +620,28 @@
 				0700A4F620D7A7A600E9CD19 /* PCImageViewTests.swift in Sources */,
 				0700A53020D7F3AE00E9CD19 /* KeyboardObservingTests.swift in Sources */,
 				0700A53220D7F90A00E9CD19 /* BundleExtensionsTests.swift in Sources */,
+				070F0EA620D8F245005801B9 /* PCPillButtonTests.swift in Sources */,
 				0700A50920D7CE8B00E9CD19 /* PCActivityIndicatorViewTests.swift in Sources */,
 				0700A4FF20D7ACE300E9CD19 /* PCWebViewTests.swift in Sources */,
 				0700A4FD20D7AC4100E9CD19 /* PCPillTextFieldTests.swift in Sources */,
+				070F0EAA20D8F3F4005801B9 /* PCRoundedImageViewTests.swift in Sources */,
 				0700A52720D7E85A00E9CD19 /* AlertPresentingTests.swift in Sources */,
 				0700A50B20D7CF0500E9CD19 /* PCButtonTests.swift in Sources */,
 				0700A52320D7E44200E9CD19 /* PCNavigationControllerTests.swift in Sources */,
 				0700A50320D7AE1200E9CD19 /* PCColorTests.swift in Sources */,
-				0700A53720D7F93E00E9CD19 /* UICollectionViewExtensionsTests.swift in Sources */,
+				07D1105120D91E5C0011BFDA /* PCWindowTests.swift in Sources */,
 				0700A50D20D7D12C00E9CD19 /* PCDatePickerTests.swift in Sources */,
 				0700A51920D7D96700E9CD19 /* PCCollectionViewCellTests.swift in Sources */,
+				0760F34E20D8DE9200B076B8 /* ConfettiableTests.swift in Sources */,
 				0700A51120D7D39100E9CD19 /* PCStackViewTests.swift in Sources */,
+				0760F35020D8E22C00B076B8 /* PCConfettiViewTests.swift in Sources */,
+				07D1105520D91EE80011BFDA /* PCCollectionViewTests.swift in Sources */,
 				0700A50720D7CD9A00E9CD19 /* PCTextViewTests.swift in Sources */,
 				0700A50F20D7D35D00E9CD19 /* PCSwitchTests.swift in Sources */,
-				0700A53520D7F92E00E9CD19 /* UITableViewExtensionsTests.swift in Sources */,
+				07D1105320D91EB40011BFDA /* PCTableViewTests.swift in Sources */,
 				0700A52520D7E6EC00E9CD19 /* LayoutingTests.swift in Sources */,
 				0700A51B20D7DA2400E9CD19 /* PCViewControllerTests.swift in Sources */,
 				0700A52B20D7EC0600E9CD19 /* ShadowableTests.swift in Sources */,
-				0700A53920D7F94D00E9CD19 /* UIWindowExtensionsTests.swift in Sources */,
 				0700A51320D7D47A00E9CD19 /* PCTableViewCellTests.swift in Sources */,
 				0700A50120D7ADA300E9CD19 /* PCRoundedViewTests.swift in Sources */,
 			);

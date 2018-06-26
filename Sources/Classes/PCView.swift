@@ -55,4 +55,13 @@ public extension Crustable where Self: UIView {
 		return 20.0
 	}
 
+	/// Creates and returns a new UIView with setting its properties in one line.
+	///
+	/// - Parameter backgroundColor: Background color of the view.
+	public init(backgroundColor: UIColor?) {
+		self.init()
+
+		self.backgroundColor = backgroundColor
+	}
+
 }

@@ -70,4 +70,12 @@ final class PCViewTests: XCTestCase {
 		XCTAssertEqual(view!.preferredPadding, 10)
 	}
 
+	func testConvenienceInit() {
+		let view1 = PCView(backgroundColor: .red)
+		XCTAssertEqual(view1.backgroundColor, .red)
+
+		let view2 = PCView(backgroundColor: nil)
+		XCTAssertNil(view2.backgroundColor)
+	}
+
 }

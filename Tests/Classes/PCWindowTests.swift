@@ -1,21 +1,25 @@
 //
-//  UIWindowExtensionsTests.swift
+//  PCWindowTests.swift
 //  PieCrustTests
 //
-//  Created by Omar Albeik on 6/18/18.
+//  Created by Omar Albeik on 6/19/18.
 //  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import XCTest
 @testable import PieCrust
 
-final class UIWindowExtensionsTests: XCTestCase {
+private final class AppDelegate: UIResponder, UIApplicationDelegate, Crustable {
+	var window: UIWindow?
+}
+
+final class PCWindowTests: XCTestCase {
 
 	func testSwitchRootViewController() {
 		let viewController = UIViewController()
 		let tableViewController = UITableViewController()
 
-		let window = UIWindow()
+		let window = PCWindow()
 		window.rootViewController = viewController
 
 		XCTAssertNotNil(window.rootViewController)
@@ -36,4 +40,9 @@ final class UIWindowExtensionsTests: XCTestCase {
 		waitForExpectations(timeout: 1, handler: nil)
 	}
 
+	func testPcWindow() {
+		let delegate = AppDelegate()
+		delegate.window = PCWindow()
+		XCTAssertNotNil(delegate.pcWindow)
+	}
 }

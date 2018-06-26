@@ -51,6 +51,9 @@ public extension Crustable where Self: UITextField {
 				self.placeholder = string
 			case .attributed(let string):
 				self.attributedPlaceholder = string
+			case .empty:
+				self.attributedPlaceholder = nil
+				self.placeholder = nil
 			}
 		}
 
@@ -60,6 +63,9 @@ public extension Crustable where Self: UITextField {
 				self.text = string
 			case .attributed(let string):
 				self.attributedText = string
+			case .empty:
+				self.attributedText = nil
+				self.text = nil
 			}
 		}
 

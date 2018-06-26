@@ -1,17 +1,17 @@
 //
-//  UITableViewExtensionsTests.swift
+//  PCTableViewTests.swift
 //  PieCrustTests
 //
-//  Created by Omar Albeik on 6/18/18.
+//  Created by Omar Albeik on 6/19/18.
 //  Copyright © 2018 Mobilion. All rights reserved.
 //
 
 import XCTest
 @testable import PieCrust
 
-final class UITableViewExtensionsTests: XCTestCase {
+final class PCTableViewTests: XCTestCase {
 
-	let tableView = UITableView()
+	let tableView = PCTableView()
 
 	func testRegisterReusableViewWithClass() {
 		let nilTableHeaderView = tableView.dequeueReusableHeaderFooterView(withClass: UITableViewHeaderFooterView.self)
@@ -46,6 +46,37 @@ final class UITableViewExtensionsTests: XCTestCase {
 		tableView.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "UITableViewHeaderFooterView")
 		let headerFooterView = tableView.dequeueReusableHeaderFooterView(withClass: UITableViewHeaderFooterView.self)
 		XCTAssertNotNil(headerFooterView)
+	}
+
+	func testInit() {
+		let header = UIView()
+		let footer = UIView()
+
+		let view = PCTableView(style: .grouped, cells: [UITableViewCell.self], allowsSelection: true, allowsMultipleSelection: false, showsVerticalScrollIndicator: true,
+							   separatorStyle: .singleLineEtched, separatorColor: .green, separatorInset: .zero, scrollIndicatorInsets: .zero, bounces: false,
+							   tableHeaderView: header, tableFooterView: footer, backgroundColor: .yellow)
+
+		XCTAssertEqual(view.style, .grouped)
+		let cell = view.dequeueReusableCell(withClass: UITableViewCell.self)
+		XCTAssertNotNil(cell)
+		XCTAssert(view.allowsSelection)
+		XCTAssertFalse(view.allowsMultipleSelection)
+		XCTAssert(view.showsVerticalScrollIndicator)
+		XCTAssertEqual(view.separatorStyle, .singleLineEtched)
+		XCTAssertNotNil(view.separatorColor)
+		XCTAssertEqual(view.separatorColor!, .green)
+		XCTAssertEqual(view.separatorInset, .zero)
+		XCTAssertEqual(view.scrollIndicatorInsets, .zero)
+		XCTAssertFalse(view.bounces)
+
+		XCTAssertNotNil(view.tableHeaderView)
+		XCTAssertEqual(view.tableHeaderView!, header)
+
+		XCTAssertNotNil(view.tableFooterView)
+		XCTAssertEqual(view.tableFooterView!, footer)
+
+		XCTAssertNotNil(view.backgroundColor)
+		XCTAssertEqual(view.backgroundColor!, .yellow)
 	}
 
 }
