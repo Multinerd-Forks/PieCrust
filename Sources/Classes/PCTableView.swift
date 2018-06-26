@@ -29,6 +29,7 @@ public extension Crustable where Self: UITableView & CellRegistering {
 	///   - cells: cell classes to register by default.
 	///   - allowsSelection: A Boolean value that determines whether users can select a row _(default is true)_.
 	///   - allowsMultipleSelection: A Boolean value that determines whether users can select more than one row outside of editing mode _(default is false)_.
+	///   - isPagingEnabled: A Boolean value that determines whether paging is enabled for the table view. _(default is false)_.
 	///   - showsVerticalScrollIndicator: A Boolean value that controls whether the vertical scroll indicator is visible _(default is true)_.
 	///   - separatorStyle: The style for table cells used as separators _(default is .singleLine)_.
 	///   - separatorColor: The color of separator rows in the table view _(default is .gray)_.
@@ -43,6 +44,7 @@ public extension Crustable where Self: UITableView & CellRegistering {
 		cells: [UITableViewCell.Type],
 		allowsSelection: Bool = true,
 		allowsMultipleSelection: Bool = false,
+		isPagingEnabled: Bool = false,
 		showsVerticalScrollIndicator: Bool = true,
 		separatorStyle: UITableViewCellSeparatorStyle = .singleLine,
 		separatorColor: UIColor? = .gray,
@@ -61,6 +63,7 @@ public extension Crustable where Self: UITableView & CellRegistering {
 
 		self.allowsSelection = allowsSelection
 		self.allowsMultipleSelection = allowsMultipleSelection
+		self.isPagingEnabled = isPagingEnabled
 		self.showsVerticalScrollIndicator = showsVerticalScrollIndicator
 		self.separatorStyle = separatorStyle
 		self.separatorColor = separatorColor

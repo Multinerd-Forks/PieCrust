@@ -28,6 +28,28 @@ final class PCCollectionViewTests: XCTestCase {
 		XCTAssertNotNil(cell)
 	}
 
+	func testInit() {
+		let layout = UICollectionViewFlowLayout()
+
+		let view = PCCollectionView(layout: layout, cells: [UICollectionViewCell.self], allowsSelection: true, allowsMultipleSelection: false, isPagingEnabled: true, showsVerticalScrollIndicator: false, showsHorizontalScrollIndicator: true, scrollIndicatorInsets: .zero, bounces: false, backgroundColor: .green)
+
+		view.dataSource = self
+		view.delegate = self
+
+		XCTAssertEqual(view.collectionViewLayout, layout)
+		let cell = view.dequeueReusableCell(withClass: UICollectionViewCell.self, for: indexPath)
+		XCTAssertNotNil(cell)
+		XCTAssert(view.allowsSelection)
+		XCTAssertFalse(view.allowsMultipleSelection)
+		XCTAssert(view.isPagingEnabled)
+		XCTAssertFalse(view.showsVerticalScrollIndicator)
+		XCTAssert(view.showsHorizontalScrollIndicator)
+		XCTAssertEqual(view.alignmentRectInsets, .zero)
+		XCTAssertFalse(view.bounces)
+		XCTAssertNotNil(view.backgroundColor)
+		XCTAssertEqual(view.backgroundColor!, .green)
+	}
+
 }
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout
