@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Conform to Layouting protocol from a view controller to use pcView property.
 public protocol Layouting: AnyObject {
 
 	/// PCView.
@@ -18,6 +19,7 @@ public protocol Layouting: AnyObject {
 
 }
 
+// MARK: - Default implementation for UIViewController.
 public extension Layouting where Self: UIViewController {
 
 	/// view as PCView.

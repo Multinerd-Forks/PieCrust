@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = "PieCrust"
-    s.version = "0.8"
+    s.version = "0.9"
     s.summary = "PieCrust is a protocol oriented abstraction layer we use to create iOS apps quickly and efficiently."
     s.description = <<-DESC
     PieCrust is a protocol oriented abstraction layer built on top of UIKit with handy classes, protocols, extensions, syntactic sugar and more, to create iOS apps quickly and efficiently.

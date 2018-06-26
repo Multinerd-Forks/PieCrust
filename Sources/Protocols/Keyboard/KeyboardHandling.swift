@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Conform to KeyboardHandling protocol to handle UIKeyboard events in a view.
 public protocol KeyboardHandling: AnyObject {
 
 	/// Call this method from view contoller to handle KeyboardWillShow notification.
