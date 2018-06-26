@@ -48,4 +48,35 @@ final class PCTableViewTests: XCTestCase {
 		XCTAssertNotNil(headerFooterView)
 	}
 
+	func testInit() {
+		let header = UIView()
+		let footer = UIView()
+
+		let view = PCTableView(style: .grouped, cells: [UITableViewCell.self], allowsSelection: true, allowsMultipleSelection: false, showsVerticalScrollIndicator: true,
+							   separatorStyle: .singleLineEtched, separatorColor: .green, separatorInset: .zero, scrollIndicatorInsets: .zero, bounces: false,
+							   tableHeaderView: header, tableFooterView: footer, backgroundColor: .yellow)
+
+		XCTAssertEqual(view.style, .grouped)
+		let cell = view.dequeueReusableCell(withClass: UITableViewCell.self)
+		XCTAssertNotNil(cell)
+		XCTAssert(view.allowsSelection)
+		XCTAssertFalse(view.allowsMultipleSelection)
+		XCTAssert(view.showsVerticalScrollIndicator)
+		XCTAssertEqual(view.separatorStyle, .singleLineEtched)
+		XCTAssertNotNil(view.separatorColor)
+		XCTAssertEqual(view.separatorColor!, .green)
+		XCTAssertEqual(view.separatorInset, .zero)
+		XCTAssertEqual(view.scrollIndicatorInsets, .zero)
+		XCTAssertFalse(view.bounces)
+
+		XCTAssertNotNil(view.tableHeaderView)
+		XCTAssertEqual(view.tableHeaderView!, header)
+
+		XCTAssertNotNil(view.tableFooterView)
+		XCTAssertEqual(view.tableFooterView!, footer)
+
+		XCTAssertNotNil(view.backgroundColor)
+		XCTAssertEqual(view.backgroundColor!, .yellow)
+	}
+
 }
