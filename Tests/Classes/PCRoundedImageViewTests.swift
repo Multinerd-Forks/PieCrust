@@ -20,6 +20,10 @@ class PCRoundedImageViewTests: XCTestCase {
 
 		view.bounds = CGRect(x: 0, y: 0, width: 50, height: 100)
 		XCTAssertEqual(view.cornerRadius, 25)
+
+		view.bounds = CGRect(x: 0, y: 0, width: 60, height: 80)
+		view.image = nil
+		XCTAssertEqual(view.cornerRadius, 30)
 	}
 
 }
