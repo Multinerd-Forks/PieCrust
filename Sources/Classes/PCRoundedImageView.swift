@@ -18,4 +18,11 @@ open class PCRoundedImageView: PCImageView {
 		}
 	}
 
+	/// The image displayed in the image view.
+	open override var image: UIImage? {
+		didSet {
+			cornerRadius = min(bounds.height, bounds.width) / 2.0
+		}
+	}
+
 }
