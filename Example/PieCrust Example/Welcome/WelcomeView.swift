@@ -16,10 +16,7 @@ final class WelcomeView: PCView {
 	}()
 
 	lazy var startButton: PCButton = {
-		var button = PCButton(type: .system, title: .plain(string: "Start"),
-							  titleFont: .systemFont(ofSize: 22, weight: .semibold),
-							  contentEdgeInsets: .init(top: 0, left: preferredPadding * 2.5, bottom: 0, right: preferredPadding * 2.5),
-							  backgroundColor: .brown, tintColor: .white)
+		var button = PCButton(type: .system, title: .plain("Start"), titleFont: .systemFont(ofSize: 22, weight: .semibold), contentEdgeInsets: .init(top: 0, left: preferredPadding * 2.5, bottom: 0, right: preferredPadding * 2.5), backgroundColor: .brown, tintColor: .white)
 		button.cornerRadius = 8
 		return button
 	}()

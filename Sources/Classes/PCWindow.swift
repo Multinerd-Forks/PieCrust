@@ -17,6 +17,16 @@ open class PCWindow: UIWindow, Crustable {}
 // MARK: - Default implementation for UIWindow.
 public extension Crustable where Self: UIWindow {
 
+	/// Create a PCWindow and set its rootViewController in one line.
+	///
+	/// - Parameter rootViewController: The root view controller for the window.
+	public init(rootViewController: UIViewController) {
+		self.init()
+
+		self.rootViewController = rootViewController
+		self.makeKeyAndVisible()
+	}
+
 	/// Switch current root view controller with a new view controller.
 	///
 	/// - Parameters:

@@ -15,4 +15,18 @@ class FeaturesViewController: PCViewController, Layouting {
 		view = View()
 	}
 
+	override func setNavigationItem() {
+		navigationItem.rightBarButtonItem = PCBadgeBarButtonItem(title: "Messages", badgeText: "1", target: self, action: #selector(didTapInboxBarButtonItem))
+	}
+
+}
+
+// MARK: - Actions
+private extension FeaturesViewController {
+
+	@objc
+	func didTapInboxBarButtonItem() {
+
+	}
+
 }

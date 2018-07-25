@@ -85,6 +85,7 @@
 		0760F34C20D8DA8200B076B8 /* AnimatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F34B20D8DA8200B076B8 /* AnimatableTests.swift */; };
 		0760F34E20D8DE9200B076B8 /* ConfettiableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F34D20D8DE9200B076B8 /* ConfettiableTests.swift */; };
 		0760F35020D8E22C00B076B8 /* PCConfettiViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F34F20D8E22C00B076B8 /* PCConfettiViewTests.swift */; };
+		076C86F22101D19D0016794F /* PCBadgeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C86F12101D19D0016794F /* PCBadgeBarButtonItem.swift */; };
 		07D1105120D91E5C0011BFDA /* PCWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1105020D91E5C0011BFDA /* PCWindowTests.swift */; };
 		07D1105320D91EB40011BFDA /* PCTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1105220D91EB40011BFDA /* PCTableViewTests.swift */; };
 		07D1105520D91EE80011BFDA /* PCCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1105420D91EE80011BFDA /* PCCollectionViewTests.swift */; };
@@ -182,6 +183,7 @@
 		0760F34B20D8DA8200B076B8 /* AnimatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableTests.swift; sourceTree = "<group>"; };
 		0760F34D20D8DE9200B076B8 /* ConfettiableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiableTests.swift; sourceTree = "<group>"; };
 		0760F34F20D8E22C00B076B8 /* PCConfettiViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PCConfettiViewTests.swift; path = Tests/PCConfettiViewTests.swift; sourceTree = SOURCE_ROOT; };
+		076C86F12101D19D0016794F /* PCBadgeBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCBadgeBarButtonItem.swift; sourceTree = "<group>"; };
 		07D1105020D91E5C0011BFDA /* PCWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCWindowTests.swift; sourceTree = "<group>"; };
 		07D1105220D91EB40011BFDA /* PCTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTableViewTests.swift; sourceTree = "<group>"; };
 		07D1105420D91EE80011BFDA /* PCCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewTests.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				074B503C20D2561400A3D203 /* PCWindow.swift */,
+				076C86F12101D19D0016794F /* PCBadgeBarButtonItem.swift */,
 				074B502820D2493100A3D203 /* PCView.swift */,
 				074B507420D2687400A3D203 /* PCImageView.swift */,
 				074B507620D268D800A3D203 /* PCPillTextField.swift */,
@@ -570,6 +573,7 @@
 				074B505A20D2628800A3D203 /* PCTextView.swift in Sources */,
 				074B507920D2693B00A3D203 /* PCWebView.swift in Sources */,
 				074B504220D2572500A3D203 /* TextFieldType.swift in Sources */,
+				076C86F22101D19D0016794F /* PCBadgeBarButtonItem.swift in Sources */,
 				074B503D20D2561400A3D203 /* PCWindow.swift in Sources */,
 				074B504020D2568300A3D203 /* TextType.swift in Sources */,
 				074B502720D2492100A3D203 /* PCViewController.swift in Sources */,
