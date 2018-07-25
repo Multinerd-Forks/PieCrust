@@ -15,7 +15,7 @@ import UIKit
 ///   - `Animatable`
 ///   - `Borderable`
 ///   - `Shadowable`
-class PCWebView: UIWebView, Crustable, Animatable, Borderable, Shadowable {
+open class PCWebView: UIWebView, Crustable, Animatable, Borderable, Shadowable {
 
 	/// Initializes and returns a newly allocated view object with the specified frame rectangle.
 	///
