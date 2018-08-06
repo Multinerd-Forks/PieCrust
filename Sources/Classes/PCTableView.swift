@@ -15,12 +15,10 @@ import UIKit
 ///   - `Animatable`
 ///   - `Borderable`
 ///   - `Shadowable`
-///   - `CellRegistering`
-///   - `CellDiqueing`
-open class PCTableView: UITableView, Crustable, Animatable, Borderable, Shadowable, CellRegistering, CellDiqueing {}
+open class PCTableView: UITableView, Crustable, Animatable, Borderable, Shadowable {}
 
 // MARK: - Default implementation for UITableView.
-public extension Crustable where Self: UITableView & CellRegistering {
+public extension Crustable where Self: UITableView {
 
 	/// Creates and returns a new UITableView with setting its cells and properties in one line.
 	///
@@ -41,7 +39,7 @@ public extension Crustable where Self: UITableView & CellRegistering {
 	///   - backgroundColor: background color _(default is .white)_.
 	public init(
 		style: UITableViewStyle = .plain,
-		cells: [UITableViewCell.Type],
+		cells: [PCTableViewCell.Type],
 		allowsSelection: Bool = true,
 		allowsMultipleSelection: Bool = false,
 		isPagingEnabled: Bool = false,
@@ -58,7 +56,7 @@ public extension Crustable where Self: UITableView & CellRegistering {
 		self.init(frame: .zero, style: style)
 
 		for cell in cells {
-			register(cell, forCellReuseIdentifier: String(describing: cell))
+			register(cell, forCellReuseIdentifier: cell.reuseIdentifier)
 		}
 
 		self.allowsSelection = allowsSelection

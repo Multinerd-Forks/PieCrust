@@ -15,12 +15,10 @@ import UIKit
 ///   - `Animatable`
 ///   - `Borderable`
 ///   - `Shadowable`
-///   - `CellRegistering`
-///   - `CellDiqueing`
-open class PCCollectionView: UICollectionView, Crustable, Animatable, Borderable, Shadowable, CellRegistering, CellDiqueing {}
+open class PCCollectionView: UICollectionView, Crustable, Animatable, Borderable, Shadowable {}
 
 // MARK: - Default implementation for UICollectionView.
-public extension Crustable where Self: UICollectionView & CellRegistering {
+public extension Crustable where Self: UICollectionView {
 
 	/// Creates and returns a new UICollectionView with setting its cells and properties in one line.
 	///
@@ -37,7 +35,7 @@ public extension Crustable where Self: UICollectionView & CellRegistering {
 	///   - backgroundColor: background color _(default is .white)_.
 	public init(
 		layout: UICollectionViewLayout,
-		cells: [UICollectionViewCell.Type],
+		cells: [PCCollectionViewCell.Type],
 		allowsSelection: Bool = true,
 		allowsMultipleSelection: Bool = false,
 		isPagingEnabled: Bool = false,
@@ -50,7 +48,7 @@ public extension Crustable where Self: UICollectionView & CellRegistering {
 		self.init(frame: .zero, collectionViewLayout: layout)
 
 		for cell in cells {
-			register(cell, forCellWithReuseIdentifier: String(describing: cell))
+			register(cell, forCellWithReuseIdentifier: cell.reuseIdentifier)
 		}
 
 		self.allowsSelection = allowsSelection

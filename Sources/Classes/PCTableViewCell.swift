@@ -12,6 +12,7 @@ import UIKit
 ///
 /// - Conforms to:
 ///   - `Crustable`
+///   - `Reusable`
 ///   - `Animatable`
 ///   - `Borderable`
 ///   - `Shadowable`
@@ -21,7 +22,7 @@ open class PCTableViewCell: UITableViewCell, Crustable, Animatable, Borderable, 
 	///
 	/// - Parameters:
 	///   - style: A constant indicating a cell style. See UITableViewCellStyle for descriptions of these constants.
-	///   - reuseIdentifier: A constant indicating a cell style. See UITableViewCellStyle for descriptions of these constants.
+	///   - reuseIdentifier: A string used to identify the cell object if it is to be reused for drawing multiple rows of a table view. Pass nil if the cell object is not to be reused. You should use the same reuse identifier for all cells of the same form.
 	public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
 
@@ -47,5 +48,15 @@ open class PCTableViewCell: UITableViewCell, Crustable, Animatable, Borderable, 
 
 	/// Setup cell and its subviews autolayout here.
 	open func setupLayout() {}
+
+}
+
+// MARK: - Reusable
+extension PCTableViewCell: Reusable {
+
+	/// Reuse identifier _(default is type(of: self))_.
+	public static var reuseIdentifier: String {
+		return "\(type(of: self))"
+	}
 
 }

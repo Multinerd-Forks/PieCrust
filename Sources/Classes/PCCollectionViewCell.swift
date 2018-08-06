@@ -12,6 +12,7 @@ import Foundation
 ///
 /// - Conforms to:
 ///   - `Crustable`
+///   - `Reusable`
 ///   - `Animatable`
 ///   - `Borderable`
 ///   - `Shadowable`
@@ -44,5 +45,15 @@ open class PCCollectionViewCell: UICollectionViewCell, Crustable, Animatable, Bo
 
 	/// Setup cell and its subviews autolayout here.
 	open func setupLayout() {}
+
+}
+
+// MARK: - Reusable
+extension PCCollectionViewCell: Reusable {
+
+	/// Reuse identifier _(default is type(of: self))_.
+	public static var reuseIdentifier: String {
+		return "\(type(of: self))"
+	}
 
 }

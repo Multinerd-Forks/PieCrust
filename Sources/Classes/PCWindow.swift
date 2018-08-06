@@ -20,10 +20,12 @@ public extension Crustable where Self: UIWindow {
 	/// Create a PCWindow and set its rootViewController in one line.
 	///
 	/// - Parameter rootViewController: The root view controller for the window.
-	public init(rootViewController: UIViewController) {
+	///   - backgroundColor: window's background color _(default is .black)_.
+	public init(rootViewController: UIViewController, backgroundColor: UIColor? = .black) {
 		self.init()
 
 		self.rootViewController = rootViewController
+		self.backgroundColor = backgroundColor
 		self.makeKeyAndVisible()
 	}
 
