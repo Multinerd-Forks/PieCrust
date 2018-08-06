@@ -8,6 +8,6 @@
 
 import PieCrust
 
-class FeaturesView: PCView {
+final class FeaturesView: PCView {
 
 }

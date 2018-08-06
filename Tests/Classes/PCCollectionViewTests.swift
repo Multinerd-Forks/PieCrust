@@ -23,21 +23,21 @@ final class PCCollectionViewTests: XCTestCase {
 	}
 
 	func testRegisterAndDequeuCell() {
-		collectionView.register(cellWithClass: UICollectionViewCell.self)
-		let cell = collectionView.dequeueReusableCell(withClass: UICollectionViewCell.self, for: indexPath)
+		collectionView.register(PCCollectionViewCell.self, forCellWithReuseIdentifier: PCCollectionViewCell.reuseIdentifier)
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PCCollectionViewCell.reuseIdentifier, for: indexPath)
 		XCTAssertNotNil(cell)
 	}
 
 	func testInit() {
 		let layout = UICollectionViewFlowLayout()
 
-		let view = PCCollectionView(layout: layout, cells: [UICollectionViewCell.self], allowsSelection: true, allowsMultipleSelection: false, isPagingEnabled: true, showsVerticalScrollIndicator: false, showsHorizontalScrollIndicator: true, scrollIndicatorInsets: .zero, bounces: false, backgroundColor: .green)
+		let view = PCCollectionView(layout: layout, cells: [PCCollectionViewCell.self], allowsSelection: true, allowsMultipleSelection: false, isPagingEnabled: true, showsVerticalScrollIndicator: false, showsHorizontalScrollIndicator: true, scrollIndicatorInsets: .zero, bounces: false, backgroundColor: .green)
 
 		view.dataSource = self
 		view.delegate = self
 
 		XCTAssertEqual(view.collectionViewLayout, layout)
-		let cell = view.dequeueReusableCell(withClass: UICollectionViewCell.self, for: indexPath)
+		let cell = view.dequeueReusableCell(withReuseIdentifier: PCCollectionViewCell.reuseIdentifier, for: indexPath)
 		XCTAssertNotNil(cell)
 		XCTAssert(view.allowsSelection)
 		XCTAssertFalse(view.allowsMultipleSelection)

@@ -40,9 +40,7 @@
 		070F0EA620D8F245005801B9 /* PCPillButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EA520D8F245005801B9 /* PCPillButtonTests.swift */; };
 		070F0EA820D8F3B0005801B9 /* PCRoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EA720D8F3B0005801B9 /* PCRoundedImageView.swift */; };
 		070F0EAA20D8F3F4005801B9 /* PCRoundedImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EA920D8F3F4005801B9 /* PCRoundedImageViewTests.swift */; };
-		070F0EAC20D9192A005801B9 /* CellRegistering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EAB20D9192A005801B9 /* CellRegistering.swift */; };
 		070F0EAE20D91975005801B9 /* PCTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EAD20D91975005801B9 /* PCTableView.swift */; };
-		070F0EB020D91B4E005801B9 /* CellDiqueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EAF20D91B4E005801B9 /* CellDiqueing.swift */; };
 		070F0EB220D91C2A005801B9 /* PCCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F0EB120D91C2A005801B9 /* PCCollectionView.swift */; };
 		071E5FCD20D2835600FDA534 /* PieCrustAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 071E5FCC20D2835500FDA534 /* PieCrustAssets.bundle */; };
 		074B502720D2492100A3D203 /* PCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B502620D2492100A3D203 /* PCViewController.swift */; };
@@ -88,6 +86,11 @@
 		07D1105120D91E5C0011BFDA /* PCWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1105020D91E5C0011BFDA /* PCWindowTests.swift */; };
 		07D1105320D91EB40011BFDA /* PCTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1105220D91EB40011BFDA /* PCTableViewTests.swift */; };
 		07D1105520D91EE80011BFDA /* PCCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1105420D91EE80011BFDA /* PCCollectionViewTests.swift */; };
+		07DE46E221183D0100C12E8C /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE46E121183D0100C12E8C /* Reusable.swift */; };
+		07DE46E4211840D800C12E8C /* PCTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE46E3211840D800C12E8C /* PCTableViewHeaderFooterView.swift */; };
+		07DE46E72118442000C12E8C /* PCTableViewHeaderFooterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE46E52118439D00C12E8C /* PCTableViewHeaderFooterViewTests.swift */; };
+		07DE51B2211860D3009547CA /* PCSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE51B1211860D3009547CA /* PCSegmentedControl.swift */; };
+		07DE51B521186351009547CA /* PCSegmentedControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE51B3211862F5009547CA /* PCSegmentedControlTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,9 +140,7 @@
 		070F0EA520D8F245005801B9 /* PCPillButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPillButtonTests.swift; sourceTree = "<group>"; };
 		070F0EA720D8F3B0005801B9 /* PCRoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCRoundedImageView.swift; sourceTree = "<group>"; };
 		070F0EA920D8F3F4005801B9 /* PCRoundedImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCRoundedImageViewTests.swift; sourceTree = "<group>"; };
-		070F0EAB20D9192A005801B9 /* CellRegistering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRegistering.swift; sourceTree = "<group>"; };
 		070F0EAD20D91975005801B9 /* PCTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTableView.swift; sourceTree = "<group>"; };
-		070F0EAF20D91B4E005801B9 /* CellDiqueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDiqueing.swift; sourceTree = "<group>"; };
 		070F0EB120D91C2A005801B9 /* PCCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionView.swift; sourceTree = "<group>"; };
 		071E5FCC20D2835500FDA534 /* PieCrustAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PieCrustAssets.bundle; path = Assets/PieCrustAssets.bundle; sourceTree = "<group>"; };
 		074B502620D2492100A3D203 /* PCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +186,11 @@
 		07D1105020D91E5C0011BFDA /* PCWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCWindowTests.swift; sourceTree = "<group>"; };
 		07D1105220D91EB40011BFDA /* PCTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTableViewTests.swift; sourceTree = "<group>"; };
 		07D1105420D91EE80011BFDA /* PCCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCCollectionViewTests.swift; sourceTree = "<group>"; };
+		07DE46E121183D0100C12E8C /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		07DE46E3211840D800C12E8C /* PCTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		07DE46E52118439D00C12E8C /* PCTableViewHeaderFooterViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCTableViewHeaderFooterViewTests.swift; sourceTree = "<group>"; };
+		07DE51B1211860D3009547CA /* PCSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCSegmentedControl.swift; sourceTree = "<group>"; };
+		07DE51B3211862F5009547CA /* PCSegmentedControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCSegmentedControlTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,8 +300,7 @@
 				074B506820D265DC00A3D203 /* Borderable.swift */,
 				074B506A20D2661400A3D203 /* Shadowable.swift */,
 				074B506C20D2665400A3D203 /* Confettiable.swift */,
-				070F0EAB20D9192A005801B9 /* CellRegistering.swift */,
-				070F0EAF20D91B4E005801B9 /* CellDiqueing.swift */,
+				07DE46E121183D0100C12E8C /* Reusable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				074B507820D2693B00A3D203 /* PCWebView.swift */,
 				070F0EAD20D91975005801B9 /* PCTableView.swift */,
 				074B506E20D266E100A3D203 /* PCConfettiView.swift */,
+				07DE51B1211860D3009547CA /* PCSegmentedControl.swift */,
 				074B507020D2671800A3D203 /* PCRoundedView.swift */,
 				070F0EA720D8F3B0005801B9 /* PCRoundedImageView.swift */,
 				074B505320D2609400A3D203 /* PCColor.swift */,
@@ -332,6 +338,7 @@
 				074B505B20D263AA00A3D203 /* PCSwitch.swift */,
 				074B505720D2620600A3D203 /* PCStackView.swift */,
 				074B504620D2582000A3D203 /* PCTableViewCell.swift */,
+				07DE46E3211840D800C12E8C /* PCTableViewHeaderFooterView.swift */,
 				074B507220D2681800A3D203 /* PCAppVersionLabel.swift */,
 				074B505520D2617100A3D203 /* PCLabel.swift */,
 				074B504820D2588400A3D203 /* PCCollectionViewCell.swift */,
@@ -404,6 +411,8 @@
 				0700A50E20D7D35D00E9CD19 /* PCSwitchTests.swift */,
 				0700A51020D7D39100E9CD19 /* PCStackViewTests.swift */,
 				0700A51220D7D47A00E9CD19 /* PCTableViewCellTests.swift */,
+				07DE46E52118439D00C12E8C /* PCTableViewHeaderFooterViewTests.swift */,
+				07DE51B3211862F5009547CA /* PCSegmentedControlTests.swift */,
 				0700A51420D7D6CD00E9CD19 /* PCAppVersionLabelTests.swift */,
 				0700A51620D7D7E500E9CD19 /* PCLabelTests.swift */,
 				0700A51820D7D96700E9CD19 /* PCCollectionViewCellTests.swift */,
@@ -571,16 +580,18 @@
 				074B507920D2693B00A3D203 /* PCWebView.swift in Sources */,
 				074B504220D2572500A3D203 /* TextFieldType.swift in Sources */,
 				074B503D20D2561400A3D203 /* PCWindow.swift in Sources */,
+				07DE46E4211840D800C12E8C /* PCTableViewHeaderFooterView.swift in Sources */,
+				07DE46E221183D0100C12E8C /* Reusable.swift in Sources */,
 				074B504020D2568300A3D203 /* TextType.swift in Sources */,
 				074B502720D2492100A3D203 /* PCViewController.swift in Sources */,
 				074B505020D25FFF00A3D203 /* PCNavigationController.swift in Sources */,
 				074B503320D24F4D00A3D203 /* KeyboardObserving.swift in Sources */,
 				074B506020D2646E00A3D203 /* PCDatePicker.swift in Sources */,
+				07DE51B2211860D3009547CA /* PCSegmentedControl.swift in Sources */,
 				074B504520D2580200A3D203 /* Crustable.swift in Sources */,
 				074B506220D2653500A3D203 /* Bundle+Extensions.swift in Sources */,
 				074B504B20D2591400A3D203 /* PCTextField.swift in Sources */,
 				074B505420D2609400A3D203 /* PCColor.swift in Sources */,
-				070F0EB020D91B4E005801B9 /* CellDiqueing.swift in Sources */,
 				074B507720D268D800A3D203 /* PCPillTextField.swift in Sources */,
 				070F0EAE20D91975005801B9 /* PCTableView.swift in Sources */,
 				074B505E20D2640D00A3D203 /* PCActivityIndicatorView.swift in Sources */,
@@ -588,7 +599,6 @@
 				074B503120D24F1B00A3D203 /* KeyboardNotification.swift in Sources */,
 				074B504720D2582000A3D203 /* PCTableViewCell.swift in Sources */,
 				074B507320D2681800A3D203 /* PCAppVersionLabel.swift in Sources */,
-				070F0EAC20D9192A005801B9 /* CellRegistering.swift in Sources */,
 				070F0EB220D91C2A005801B9 /* PCCollectionView.swift in Sources */,
 				074B507D20D26C8C00A3D203 /* PCButton.swift in Sources */,
 				074B506920D265DC00A3D203 /* Borderable.swift in Sources */,
@@ -632,6 +642,7 @@
 				07D1105120D91E5C0011BFDA /* PCWindowTests.swift in Sources */,
 				0700A50D20D7D12C00E9CD19 /* PCDatePickerTests.swift in Sources */,
 				0700A51920D7D96700E9CD19 /* PCCollectionViewCellTests.swift in Sources */,
+				07DE51B521186351009547CA /* PCSegmentedControlTests.swift in Sources */,
 				0760F34E20D8DE9200B076B8 /* ConfettiableTests.swift in Sources */,
 				0700A51120D7D39100E9CD19 /* PCStackViewTests.swift in Sources */,
 				0760F35020D8E22C00B076B8 /* PCConfettiViewTests.swift in Sources */,
@@ -642,6 +653,7 @@
 				0700A52520D7E6EC00E9CD19 /* LayoutingTests.swift in Sources */,
 				0700A51B20D7DA2400E9CD19 /* PCViewControllerTests.swift in Sources */,
 				0700A52B20D7EC0600E9CD19 /* ShadowableTests.swift in Sources */,
+				07DE46E72118442000C12E8C /* PCTableViewHeaderFooterViewTests.swift in Sources */,
 				0700A51320D7D47A00E9CD19 /* PCTableViewCellTests.swift in Sources */,
 				0700A50120D7ADA300E9CD19 /* PCRoundedViewTests.swift in Sources */,
 			);

@@ -8,11 +8,21 @@
 
 import PieCrust
 
-class FeaturesViewController: PCViewController, Layouting {
+final class FeaturesViewController: PCViewController, Layouting {
 	typealias View = FeaturesView
 
 	override func loadView() {
 		view = View()
+	}
+
+}
+
+// MARK: - Actions
+private extension FeaturesViewController {
+
+	@objc
+	func didTapInboxBarButtonItem() {
+
 	}
 
 }

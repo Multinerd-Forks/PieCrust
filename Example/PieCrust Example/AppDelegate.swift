@@ -10,21 +10,19 @@ import UIKit
 import PieCrust
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, Crustable {
 
 	var window: UIWindow?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-		window = UIWindow()
-		window?.rootViewController = WelcomeViewController()
-		window?.makeKeyAndVisible()
+		window = PCWindow(rootViewController: WelcomeViewController())
 
 		return true
 	}
 
 	func showFeaturesViewController() {
-		window?.switchRootViewController(FeaturesViewController(), animated: true, duration: 0.7, options: .transitionFlipFromRight)
+		let navController = PCNavigationController(rootViewController: FeaturesViewController())
+		pcWindow?.switchRootViewController(to: navController, animated: true, duration: 0.7, options: .transitionFlipFromRight)
 	}
 
 }
