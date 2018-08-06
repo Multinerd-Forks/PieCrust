@@ -8,15 +8,11 @@
 
 import PieCrust
 
-class FeaturesViewController: PCViewController, Layouting {
+final class FeaturesViewController: PCViewController, Layouting {
 	typealias View = FeaturesView
 
 	override func loadView() {
 		view = View()
-	}
-
-	override func setNavigationItem() {
-		navigationItem.rightBarButtonItem = PCBadgeBarButtonItem(title: "Messages", badgeText: "1", target: self, action: #selector(didTapInboxBarButtonItem))
 	}
 
 }
